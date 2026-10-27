@@ -54,6 +54,7 @@ Swift 不读取 runtime.json，不查询 Python PATH。它启动固定 bundle-re
 python3.12 -m venv .packaging-venv
 source .packaging-venv/bin/activate
 pip install -r requirements-build.txt
+python scripts/collect_corresponding_source.py --version 0.2.0 --prepare-only
 ./scripts/build_app.sh --version 0.2.0 --exam-source-dir /path/to/local/sources
 python scripts/collect_corresponding_source.py --version 0.2.0
 python scripts/verify_macos_distribution.py dist/ChemistryWorkspace-0.2.0-arm64-INTERNAL-UNNOTARIZED.dmg

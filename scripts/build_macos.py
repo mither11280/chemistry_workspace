@@ -43,6 +43,8 @@ def collect_exams(source_dir,destination):
     return records
 
 def notices(destination):
+    for name in ['AGPL-3.0.txt','PYTHON-LICENSE.txt']:
+        if not (ROOT/'build/corresponding-source'/name).is_file():raise SystemExit('Prepare full dependency license texts before packaging: collect_corresponding_source.py --prepare-only')
     destination.mkdir(parents=True,exist_ok=True);inventory=[]
     for name in ['PyMuPDF','Pillow','jsonschema','attrs','referencing','rpds-py','jsonschema-specifications','typing_extensions','PyInstaller']:
         dist=metadata.distribution(name);folder=destination/name;folder.mkdir()

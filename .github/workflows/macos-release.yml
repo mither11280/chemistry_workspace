@@ -73,6 +73,10 @@ jobs:
           MACOS_CERTIFICATE_PASSWORD: ${{ secrets.MACOS_CERTIFICATE_PASSWORD }}
           NOTARY_KEY_P8: ${{ secrets.NOTARY_KEY_P8 }}
         run: python scripts/prepare_ci_signing.py
+      - name: Prepare exact dependency sources and full licenses before packaging
+        env:
+          APP_VERSION_INPUT: ${{ inputs.version }}
+        run: python scripts/collect_corresponding_source.py --version "$APP_VERSION_INPUT" --prepare-only
       - name: Build app and DMG
         env:
           APP_VERSION_INPUT: ${{ inputs.version }}

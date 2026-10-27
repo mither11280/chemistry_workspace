@@ -24,7 +24,7 @@ def download(url,path,expected=None):
     temp.replace(path);return digest
 
 def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--version',default='0.2.0');parser.add_argument('--output',type=Path,default=ROOT/'dist')
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--version',default='0.2.0');parser.add_argument('--output',type=Path,default=ROOT/'dist');parser.add_argument('--prepare-only',action='store_true')
     args=parser.parse_args();work=ROOT/'build/corresponding-source';work.mkdir(parents=True,exist_ok=True);records=[]
     for name in DEPENDENCIES:
         version=metadata.version(name)
@@ -57,6 +57,9 @@ def main():
     with tarfile.open(python) as archive:
         member=next(m for m in archive.getmembers() if m.name.endswith('/LICENSE'))
         (work/'PYTHON-LICENSE.txt').write_bytes(archive.extractfile(member).read())
+    (work/'source-manifest.json').write_text(json.dumps(records,indent=2))
+    if args.prepare_only:
+        print('Exact dependency sources and full license texts are prepared.',flush=True);return
     app_source=args.output/f'ChemistryWorkspace-{args.version}-AppSource.tar.gz'
     if not app_source.exists():raise SystemExit('Build AppSource before collecting complete corresponding source')
     shutil.copyfile(app_source,work/app_source.name)
