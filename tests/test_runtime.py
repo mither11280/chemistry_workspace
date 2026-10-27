@@ -69,6 +69,7 @@ class RuntimeTests(unittest.TestCase):
             self.assertEqual(json.loads(c.execute("SELECT body FROM jobs WHERE id='same'").fetchone()[0]),newjob)
             self.assertEqual(json.loads(c.execute('SELECT body FROM draft').fetchone()[0]),newjob)
             count=c.execute('SELECT count(*) FROM jobs').fetchone()[0]
+            draft_row=c.execute("SELECT updated FROM jobs WHERE title LIKE '%旧草稿%'").fetchone();self.assertGreater(draft_row[0],1700000000)
         again=import_project(old,self.cat,self.store,db);self.assertEqual(again['jobs_added'],0)
         with sqlite3.connect(db) as c:self.assertEqual(c.execute('SELECT count(*) FROM jobs').fetchone()[0],count)
         self.assertTrue(Path(report['snapshot']).exists());self.assertTrue(old_db.exists())

@@ -5,6 +5,7 @@ import json
 from pathlib import Path
 import shutil
 import sqlite3
+import time
 import uuid
 from bank.format import DataError, read_json, validate, write_json
 from bank.migration import backup, rollback
@@ -91,7 +92,7 @@ def import_project(old_root,catalog,store,personal_db):
                 if src.execute("SELECT 1 FROM sqlite_master WHERE name='draft'").fetchone():
                     row=src.execute('SELECT body FROM draft WHERE slot=1').fetchone()
                     if row and json.loads(row[0]).get('question_ids'):
-                        body=json.loads(row[0]);rows.append(('old-draft',body.get('title','旧草稿')+' · 旧草稿',row[0],0))
+                        body=json.loads(row[0]);rows.append(('old-draft',body.get('title','旧草稿')+' · 旧草稿',row[0],time.time()))
                 for oldid,title,body,updated in rows:
                     key=hashlib.sha256((origin+oldid+body).encode()).hexdigest()
                     if dst.execute('SELECT 1 FROM project_imports WHERE key=?',(key,)).fetchone():continue
