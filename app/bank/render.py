@@ -12,8 +12,9 @@ import uuid
 import fitz
 from PIL import Image
 from .format import DataError, SourceError, normalized_page, sha256
+from .pdf_layout import rotation
 
-RENDER_VERSION='webp-crop-v1'
+RENDER_VERSION='webp-crop-layout-v2'
 
 class Renderer:
     def __init__(self,catalog,sources,cache=None,max_cache_bytes=128*1024*1024):
@@ -51,11 +52,20 @@ class Renderer:
             except SourceError as e:result[kind]={'state':'missing' if '缺少' in str(e) else 'mismatch','message':str(e)}
         return result
 
+    def reading_rotations(self,qid,kind):
+        q=self.catalog.question(qid)
+        if 'question_id' not in q:return None
+        return self.catalog.source(q[kind]['source_id'])['metadata'].get('reading_rotations_clockwise')
+
+    def reading_rotation(self,qid,kind,page_index,doc):
+        declared=self.reading_rotations(qid,kind)
+        return declared.get(str(page_index),0) if declared is not None else rotation(doc,page_index)
+
     def preview(self,qid,kind,index=0,scale=1.6,use_cache=True):
         path,regions,digest,mode=self.material(qid,kind)
         if index<0 or index>=len(regions):raise DataError('区域编号超出范围')
         region=regions[index]
-        key=hashlib.sha256(json.dumps([RENDER_VERSION,qid,kind,digest,regions,index,scale,mode],sort_keys=True).encode()).hexdigest()
+        key=hashlib.sha256(json.dumps([RENDER_VERSION,qid,kind,digest,regions,index,scale,mode,self.reading_rotations(qid,kind)],sort_keys=True).encode()).hexdigest()
         target=self.cache/(key+'.webp')
         with self.lock:
             # Always verify the original before returning a cached thumbnail.
@@ -63,7 +73,7 @@ class Renderer:
                 os.utime(target,None);return target.read_bytes()
             with fitz.open(path) as doc:
                 page=normalized_page(doc,region['page_index'])
-                pix=page.get_pixmap(matrix=fitz.Matrix(scale,scale),clip=fitz.Rect(region['bbox']),alpha=False,colorspace=fitz.csRGB)
+                pix=page.get_pixmap(matrix=fitz.Matrix(scale,scale).prerotate(self.reading_rotation(qid,kind,region['page_index'],doc)),clip=fitz.Rect(region['bbox']),alpha=False,colorspace=fitz.csRGB)
                 output=io.BytesIO();Image.frombytes('RGB',[pix.width,pix.height],pix.samples).save(output,format='WEBP',quality=88,method=4)
                 data=output.getvalue()
             if use_cache:
@@ -133,11 +143,11 @@ class Renderer:
                     page.insert_text((42,y+11),label,fontsize=9);page.insert_text((56,y+39),f'{idx}.  {value}',fontsize=14);y+=65
                     continue
                 for ri,r in enumerate(regions):
-                    sp=normalized_page(src,r['page_index']);clip=fitz.Rect(r['bbox']);width=511;height=clip.height*width/clip.width
+                    sp=normalized_page(src,r['page_index']);clip=fitz.Rect(r['bbox']);angle=self.reading_rotation(qid,'answer' if answer else 'question',r['page_index'],src);view=clip*fitz.Matrix(angle);width=511;height=view.height*width/view.width
                     if height>680:width*=680/height;height=680
                     if y+height+45>785:page=new_page(title);y=70
                     page.insert_text((42,y+11),label+(' (continued)' if ri else ''),fontsize=9,color=(.2,.35,.35));y+=25
-                    page.show_pdf_page(fitz.Rect(42,y,42+width,y+height),src,r['page_index'],clip=clip,keep_proportion=True)
+                    page.show_pdf_page(fitz.Rect(42,y,42+width,y+height),src,r['page_index'],clip=clip,rotate=(-angle)%360,keep_proportion=True)
                     y+=height+22
             seen=set()
             for q in questions:

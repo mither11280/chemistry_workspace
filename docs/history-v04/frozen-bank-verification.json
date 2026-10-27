@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "app_version": "0.4.0",
+  "bank_revision": "2026-10-27.v04.3",
+  "questions": 2523,
+  "sources": 231,
+  "install_plus_text_extract_seconds": 44.1778,
+  "personal_db_byte_identical_during_install": true,
+  "old_share_code_and_jobs_preserved": true,
+  "legacy_context_and_rotated_ms_previews": "passed",
+  "question_and_ms_http_export": "passed",
+  "report_prefill": "passed, no issue submitted",
+  "environment": "Actual frozen backend with empty PATH/PYTHONPATH, unrelated cwd and isolated profile; no developer runtime used by backend."
+}

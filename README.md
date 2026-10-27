@@ -23,7 +23,15 @@ python app/server.py
 
 开发版默认继续使用项目目录数据；独立包改用 Application Support。构建机需要 Python 3.12 + Xcode，用户无需安装。[许可审查](docs/distribution-licensing.md)明确原创 MIT 源码、AGPL PyMuPDF/MuPDF 和 Cambridge 数据各自的边界；开源许可不授予考试材料再分发权。
 
-## v0.3 自动导入与独立题库更新
+## v0.4 历年题库：2,523 题
+
+在已有 266 题之外实际新增 **2,257 题**，覆盖本地已取得的 2018–2026 CIE 9701 Paper 1/2；19 题因分数或答案不一致隔离。逐年、考季和 Variant 的数量、缺卷、取消/未完成考季与原卷哈希见 [覆盖矩阵](docs/history-v04/coverage.md)。
+
+先安装 v0.4 App，再在「题库版本与更新」导入一个累计包：原 132 题使用 `full-from-132.qbank`，已升级到 266 题使用 `full-from-266.qbank`。无需逐个安装历史批次；个人作业、分享和旧 ID 保留。程序仓库仍不提交 PDF，授权原卷随 Release 题库包分发。[安装、回滚、维护流程及实测](docs/history-v04/README.md)。
+
+旧版 Section B 会附共用答题编码表；考纲周期与当前兼容性分别记录，未确认的旧题标为未知。自动校验不等于人工内容复核。
+
+## v0.3 自动导入与独立题库更新（历史说明）
 
 维护者可用仓库内 `$question-bank-import` Skill 或 `python scripts/import_bank.py analyze ...` 批量导入新的文本型 CIE 9701 Paper 1/2。引擎统一处理封面身份、QP/MS 配对、跨页坐标、分数与多知识点建议；异常题隔离并可按题修正、缓存重试。自动 QA 不等同人工内容复核，教师无需进入逐题审核工作台。
 

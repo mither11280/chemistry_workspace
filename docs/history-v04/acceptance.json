@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "bank_revision": "2026-10-27.v04.3",
+  "base_revision": "2026-10-27.import-v03.2",
+  "base_questions": 266,
+  "questions": 2523,
+  "new_questions": 2257,
+  "source_documents": 231,
+  "source_bytes": 108069587,
+  "duplicate_question_ids": 0,
+  "duplicate_exam_identities": 0,
+  "existing_266_ids_materials_marks_topics_unchanged": true,
+  "personal_databases_byte_identical": true,
+  "incremental_installations": [
+    {
+      "revision": "2026-10-27.v04.1",
+      "questions": 1273,
+      "backup_id": "b71a03c9-155d-4620-b2b5-0455fb98e7f1",
+      "package_sha256": "26e0de9e4fb4d58a9c71afdbfb64ce6e2a8636cdaf5150ce77608fd8a093861e",
+      "seconds": 19.3763
+    },
+    {
+      "revision": "2026-10-27.v04.2",
+      "questions": 1289,
+      "backup_id": "bb0dc1bb-8876-4be7-bf42-d04f4822f56e",
+      "package_sha256": "438f4317528cdc3334645b5a8c1afeaf34a3af90c279f7cd7aa82b7255864d48",
+      "seconds": 2.2685
+    },
+    {
+      "revision": "2026-10-27.v04.3",
+      "questions": 2523,
+      "backup_id": "5b28a6ac-837a-46ae-b62b-1362d6abb09a",
+      "package_sha256": "cb888d0a272390ef95a47c9fb60701dd569a1de0f0b3b114568589034922c6fb",
+      "seconds": 19.6016
+    }
+  ],
+  "cumulative_install_seconds": 38.7919,
+  "rollback_and_reinstall_passed": true,
+  "previews_rendered": 70,
+  "previews_seconds": 2.8012,
+  "local_text_extract_seconds": 5.8203,
+  "search_2018_p1_count": 280,
+  "exports": {
+    "questions": {
+      "seconds": 1.1176,
+      "bytes": 4161920,
+      "pages": 56,
+      "file": "6ca91a7cf74444ed8658d808db0ed612_questions.pdf"
+    },
+    "answers": {
+      "seconds": 0.7938,
+      "bytes": 1754607,
+      "pages": 46,
+      "file": "43cda103bb44477690d6dac0acf3a8ef_answers.pdf"
+    }
+  },
+  "packages": [
+    {
+      "sha256": "26e0de9e4fb4d58a9c71afdbfb64ce6e2a8636cdaf5150ce77608fd8a093861e",
+      "bytes": 36829862,
+      "revision": "2026-10-27.v04.1",
+      "seconds": 1.6037
+    },
+    {
+      "sha256": "438f4317528cdc3334645b5a8c1afeaf34a3af90c279f7cd7aa82b7255864d48",
+      "bytes": 2054759,
+      "revision": "2026-10-27.v04.2",
+      "seconds": 0.6462
+    },
+    {
+      "sha256": "cb888d0a272390ef95a47c9fb60701dd569a1de0f0b3b114568589034922c6fb",
+      "bytes": 38548163,
+      "revision": "2026-10-27.v04.3",
+      "seconds": 2.2156
+    },
+    {
+      "sha256": "c60c0ac370c0ae7edb7edf2eb80905a7662c94cad8058000b150eae5d5b16a70",
+      "bytes": 88001036,
+      "revision": "2026-10-27.v04.3",
+      "seconds": 3.6596
+    },
+    {
+      "sha256": "5909a1a16206833347c8c760d460e2ee9d50c8e2553c0afa1f789010bc39ba00",
+      "bytes": 88001034,
+      "revision": "2026-10-27.v04.3",
+      "seconds": 3.601
+    }
+  ],
+  "limits": [
+    "Programmatic QA is not human content review or a statistical recognition-accuracy measurement.",
+    "Unmatched marks/answers remain quarantined; see anomaly report.",
+    "Current-syllabus compatibility is unknown for historical syllabus periods.",
+    "No third-party PDF download or real GitHub Issue submission occurred."
+  ]
+}

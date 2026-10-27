@@ -2,6 +2,7 @@
 Personal SQLite is never opened. Checksums detect damage, not publisher authenticity.
 """
 from copy import deepcopy
+from collections import OrderedDict
 from pathlib import Path
 import hashlib
 import json
@@ -16,6 +17,7 @@ import fitz
 from .format import DataError,read_json,write_json,validate,validate_schema,relative_path,safe_path,sha256,geometry
 
 MAX_BYTES=512*1024*1024
+READER_VERSION=(0,4,0)
 
 def encoded(value):return (json.dumps(value,ensure_ascii=False,sort_keys=True,indent=2)+'\n').encode()
 def digest(data):return hashlib.sha256(data).hexdigest()
@@ -41,7 +43,7 @@ def compatible(old,old_manifest,index,manifest):
             raise DataError('既有 source_id、哈希和路径必须保留')
 
 
-def build_package(output,index,manifest,base_index,base_manifest,schemas,changelog,source_files=None,authorization=None):
+def build_package(output,index,manifest,base_index,base_manifest,schemas,changelog,source_files=None,authorization=None,minimum_app_version="0.3.0"):
     validate(index,manifest,schemas);compatible(base_index,base_manifest,index,manifest)
     if index['revision']==base_index['revision']:raise DataError('更新 revision 不得与基础版本相同')
     if not isinstance(changelog,str) or not changelog.strip():raise DataError('需要修复/更新说明')
@@ -52,10 +54,11 @@ def build_package(output,index,manifest,base_index,base_manifest,schemas,changel
     for s in manifest['sources']:
         path=(source_files or {}).get(s['source_id'])
         if path:
+            if rights.get('exam_years') and s['metadata'].get('role') in ['qp','ms'] and s['metadata'].get('year') not in rights['exam_years']:raise DataError('原卷年份不在授权范围: '+s['source_id'])
             if s['sha256'] not in allowed:raise DataError('原卷不在授权哈希清单: '+s['source_id'])
             if sha256(path)!=s['sha256']:raise DataError('打包源文件哈希不一致')
             files[s['path']]=Path(path).read_bytes()
-    info={'schema_version':'1.0.0','bank_id':index['bank_id'],'base_revision':base_index['revision'],'revision':index['revision'],'minimum_app_version':'0.3.0','changelog':changelog[:10000],'files':{n:digest(b) for n,b in files.items()},'authorization':{'statement':rights.get('statement','Index only; obtain source PDFs separately.'),'included_source_hashes':[digest(b) for n,b in files.items() if n.startswith('sources/')]}}
+    info={'schema_version':'1.0.0','bank_id':index['bank_id'],'base_revision':base_index['revision'],'revision':index['revision'],'minimum_app_version':minimum_app_version,'changelog':changelog[:10000],'files':{n:digest(b) for n,b in files.items()},'authorization':{'statement':rights.get('statement','Index only; obtain source PDFs separately.'),'included_source_hashes':[digest(b) for n,b in files.items() if n.startswith('sources/')]}}
     files['update.json']=encoded(info)
     output=Path(output);output.parent.mkdir(parents=True,exist_ok=True)
     fd,temp=tempfile.mkstemp(dir=output.parent,suffix='.qbank.tmp');os.close(fd)
@@ -81,7 +84,7 @@ def inspect_package(path,schemas):
                 if i.filename not in ['question-index.json','source-manifest.json','update.json'] and not (i.filename.startswith('sources/') and i.filename.endswith('.pdf')):raise DataError('归档包含非题库文件')
             info=json.loads(z.read('update.json'));index=json.loads(z.read('question-index.json'));manifest=json.loads(z.read('source-manifest.json'))
             validate_schema(info,Path(schemas)/'bank-update.schema.json')
-            if info.get('schema_version')!='1.0.0' or info.get('minimum_app_version')!='0.3.0':raise DataError('不支持的更新包版本')
+            if info.get('schema_version')!='1.0.0' or tuple(map(int,info['minimum_app_version'].split('.')))>READER_VERSION:raise DataError('更新包需要更新版本的 App')
             if set(info['files'])!=set(names)-{'update.json'}:raise DataError('更新清单与归档内容不一致')
             payload={n:z.read(n) for n in info['files']}
             if any(digest(b)!=info['files'][n] for n,b in payload.items()):raise DataError('更新包校验和不匹配')
@@ -114,24 +117,37 @@ def install_package(catalog,path,expected_sha256=None):
     previous={q['question_id']:q for q in old['questions']}
     # Sources may be absent in index-only updates; then metadata stays browsable with a missing state.
     source_map={s['source_id']:s for s in manifest['sources']}
-    for q in index['questions']:
-        if q==previous.get(q['question_id']):continue
-        if q['metadata'].get('automatic_qa',{}).get('status')=='quarantined':raise DataError('更新包包含隔离题目')
-        from .importer.quality import region_issues,answer_content_issues
-        for kind in ['question','answer']:
-            s=source_map[q[kind]['source_id']];data=payload.get(s['path']);local=safe_path(catalog.root,s['path'])
-            if data:
-                with fitz.open(stream=data,filetype='pdf') as doc:
-                    issues=region_issues(doc,q[kind]['regions'])
-                    if kind=='answer' and q['exam_board']=='CIE':issues+=answer_content_issues(q,doc)
-            elif local.is_file():
-                if sha256(local)!=s['sha256']:raise DataError('本机原卷哈希不匹配')
-                with fitz.open(local) as doc:
-                    if geometry(doc)!=s['pages']:raise DataError('本机原卷几何不匹配')
-                    issues=region_issues(doc,q[kind]['regions'])
-                    if kind=='answer' and q['exam_board']=='CIE':issues+=answer_content_issues(q,doc)
-            else:issues=[]  # Explicitly missing, not silently substituted.
-            if issues:raise DataError('修正未通过区域检测: '+q['question_id']+' '+','.join(issues))
+    documents=OrderedDict()
+    def material_document(source):
+        sid=source['source_id']
+        if sid in documents:
+            documents.move_to_end(sid);return documents[sid]
+        data=payload.get(source['path']);local=safe_path(catalog.root,source['path'])
+        if data:doc=fitz.open(stream=data,filetype='pdf')  # hash/geometry already checked during package inspection
+        elif local.is_file():
+            if sha256(local)!=source['sha256']:raise DataError('本机原卷哈希不匹配')
+            doc=fitz.open(local)
+            try:
+                if geometry(doc)!=source['pages']:raise DataError('本机原卷几何不匹配')
+            except Exception:doc.close();raise
+        else:return None
+        documents[sid]=doc
+        if len(documents)>8:documents.popitem(last=False)[1].close()
+        return doc
+    try:
+        for q in index['questions']:
+            if q==previous.get(q['question_id']):continue
+            if q['metadata'].get('automatic_qa',{}).get('status')=='quarantined':raise DataError('更新包包含隔离题目')
+            from .importer.quality import region_issues,answer_content_issues
+            for kind in ['question','answer']:
+                source=source_map[q[kind]['source_id']];doc=material_document(source)
+                # Index-only packages may be installed before originals; UI explicitly shows missing sources.
+                if doc is None:continue
+                issues=region_issues(doc,q[kind]['regions'])
+                if kind=='answer' and q['exam_board']=='CIE':issues+=answer_content_issues(q,doc)
+                if issues:raise DataError('修正未通过区域检测: '+q['question_id']+' '+','.join(issues))
+    finally:
+        for doc in documents.values():doc.close()
     folder=catalog.data/'bank-updates';folder.mkdir(parents=True,exist_ok=True)
     backup=folder/'backups'/str(uuid.uuid4());backup.mkdir(parents=True)
     pointer=pointer_path(catalog);previous_pointer=read_json(pointer) if pointer.exists() else None

@@ -84,6 +84,10 @@ def validate(index, manifest, schemas):
                 raise DataError('CropBox 超出 MediaBox')
             if abs(crop[2]-crop[0]-p['width'])>.02 or abs(crop[3]-crop[1]-p['height'])>.02:
                 raise DataError('页面参考尺寸与 CropBox 不一致')
+        rotations=s['metadata'].get('reading_rotations_clockwise',{})
+        if not isinstance(rotations,dict):raise DataError('阅读方向必须是 page_index 到顺时针角度的映射')
+        for key,angle in rotations.items():
+            if not isinstance(key,str) or not re.fullmatch(r'0|[1-9][0-9]*',key) or int(key)>=s['page_count'] or type(angle) is not int or angle not in [0,90,180,270]:raise DataError('阅读方向记录无效')
         for r in s['metadata'].get('references',[]):
             if not isinstance(r.get('page_index'),int) or not 0<=r['page_index']<s['page_count']:raise DataError('参考资料页码越界')
             p=s['pages'][r['page_index']];x0,y0,x1,y1=r['bbox']
@@ -139,4 +143,6 @@ def geometry(doc):
 def normalized_page(doc, page_index):
     page=doc[page_index]
     if page.rotation:page.set_rotation(0)  # in-memory view only; never save the source
-    return page
+    from .pdf_text import encoded_fonts,TextPageAdapter
+    fonts=encoded_fonts(doc)
+    return TextPageAdapter(page,fonts) if fonts else page

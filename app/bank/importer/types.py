@@ -14,6 +14,7 @@ class PairReport(TypedDict,total=False):
     pair:str
     status:Literal['quarantined']
     source_fingerprint:str
+    layout_strategy:str
     cache_hit:bool
     detected_questions:int
     detected_answers:int
@@ -33,6 +34,8 @@ class ImportReport(TypedDict):
     duplicate_files:int
     pairs:List[PairReport]
     accepted:int
+    new_questions:int
+    updated_existing_questions:int
     quarantined:int
     total_questions:int
     elapsed_seconds:float

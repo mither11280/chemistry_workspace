@@ -1,0 +1,383 @@
+[
+  {
+    "phase": "modern",
+    "question_id": "cie-9701-w22-21-q4",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "5b7828a1773b248315433daaa6495cce48229e56cee944522ff06cac3a04c35d",
+    "year": 2022,
+    "session": "October/November",
+    "paper": 2,
+    "variant": 1,
+    "original_question_number": "4",
+    "qp_marks": 14,
+    "ms_detected_marks": 10,
+    "source_ids": {
+      "qp": "cie-9701-2022-w-21-qp",
+      "ms": "cie-9701-2022-w-21-ms"
+    }
+  },
+  {
+    "phase": "modern",
+    "question_id": "cie-9701-w22-23-q4",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "63da8876a4001d74f438fea1a59abb3075324f86dcc33a2dec80bbd9bf540939",
+    "year": 2022,
+    "session": "October/November",
+    "paper": 2,
+    "variant": 3,
+    "original_question_number": "4",
+    "qp_marks": 14,
+    "ms_detected_marks": 10,
+    "source_ids": {
+      "qp": "cie-9701-2022-w-23-qp",
+      "ms": "cie-9701-2022-w-23-ms"
+    }
+  },
+  {
+    "phase": "modern",
+    "question_id": "cie-9701-w23-22-q1",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "ecb6d0769af5ed46291698ac4450e5088c28c57fe2cea13a282f3478ad67e62f",
+    "year": 2023,
+    "session": "October/November",
+    "paper": 2,
+    "variant": 2,
+    "original_question_number": "1",
+    "qp_marks": 13,
+    "ms_detected_marks": 11,
+    "source_ids": {
+      "qp": "cie-9701-2023-w-22-qp",
+      "ms": "cie-9701-2023-w-22-ms"
+    }
+  },
+  {
+    "phase": "modern",
+    "question_id": "cie-9701-w23-23-q1",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "fc42f02c467af61fa6493eb3d8ed732bb16e355178bf7f0fb01c4d907db666c6",
+    "year": 2023,
+    "session": "October/November",
+    "paper": 2,
+    "variant": 3,
+    "original_question_number": "1",
+    "qp_marks": 22,
+    "ms_detected_marks": 19,
+    "source_ids": {
+      "qp": "cie-9701-2023-w-23-qp",
+      "ms": "cie-9701-2023-w-23-ms"
+    }
+  },
+  {
+    "phase": "modern",
+    "question_id": "cie-9701-w23-23-q3",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "fc42f02c467af61fa6493eb3d8ed732bb16e355178bf7f0fb01c4d907db666c6",
+    "year": 2023,
+    "session": "October/November",
+    "paper": 2,
+    "variant": 3,
+    "original_question_number": "3",
+    "qp_marks": 12,
+    "ms_detected_marks": 13,
+    "source_ids": {
+      "qp": "cie-9701-2023-w-23-qp",
+      "ms": "cie-9701-2023-w-23-ms"
+    }
+  },
+  {
+    "phase": "modern",
+    "question_id": "cie-9701-w23-23-q4",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "fc42f02c467af61fa6493eb3d8ed732bb16e355178bf7f0fb01c4d907db666c6",
+    "year": 2023,
+    "session": "October/November",
+    "paper": 2,
+    "variant": 3,
+    "original_question_number": "4",
+    "qp_marks": 16,
+    "ms_detected_marks": 15,
+    "source_ids": {
+      "qp": "cie-9701-2023-w-23-qp",
+      "ms": "cie-9701-2023-w-23-ms"
+    }
+  },
+  {
+    "phase": "modern",
+    "question_id": "cie-9701-s24-22-q5",
+    "issues": [
+      "answer:empty_regions",
+      "contract:['questions', 0, 'answer', 'regions']: [] should be non-empty",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "98663a15745b2c2c7f399722fc5af2805d7856c6a7e97613bb4326d5b12e33f9",
+    "year": 2024,
+    "session": "May/June",
+    "paper": 2,
+    "variant": 2,
+    "original_question_number": "5",
+    "qp_marks": 8,
+    "ms_detected_marks": null,
+    "source_ids": {
+      "qp": "cie-9701-2024-s-22-qp",
+      "ms": "cie-9701-2024-s-22-ms"
+    }
+  },
+  {
+    "phase": "modern",
+    "question_id": "cie-9701-w24-22-q4",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "1582860f156ba3d45227c0b7a8fea1604339bb5a83342b3699a976b7c92834f9",
+    "year": 2024,
+    "session": "October/November",
+    "paper": 2,
+    "variant": 2,
+    "original_question_number": "4",
+    "qp_marks": 17,
+    "ms_detected_marks": 14,
+    "source_ids": {
+      "qp": "cie-9701-2024-w-22-qp",
+      "ms": "cie-9701-2024-w-22-ms"
+    }
+  },
+  {
+    "phase": "modern",
+    "question_id": "cie-9701-w25-21-q1",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "5798b60be7e5c0e51d420f84559922e945393af16c6a774969d6575ffc7fac9d",
+    "year": 2025,
+    "session": "October/November",
+    "paper": 2,
+    "variant": 1,
+    "original_question_number": "1",
+    "qp_marks": 20,
+    "ms_detected_marks": 18,
+    "source_ids": {
+      "qp": "cie-9701-2025-w-21-qp",
+      "ms": "cie-9701-2025-w-21-ms"
+    }
+  },
+  {
+    "phase": "modern",
+    "question_id": "cie-9701-w25-22-q1",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "674afc066dc7cf1147ae63ef9d922ea70d4e9731d0ca56b66f16c9099f7a2570",
+    "year": 2025,
+    "session": "October/November",
+    "paper": 2,
+    "variant": 2,
+    "original_question_number": "1",
+    "qp_marks": 10,
+    "ms_detected_marks": 8,
+    "source_ids": {
+      "qp": "cie-9701-2025-w-22-qp",
+      "ms": "cie-9701-2025-w-22-ms"
+    }
+  },
+  {
+    "phase": "modern",
+    "question_id": "cie-9701-w25-23-q1",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "5776f5e6bed5d2c9f996da293b0da0671c57ab63fbe80b73c4cf90a86a0fdeb8",
+    "year": 2025,
+    "session": "October/November",
+    "paper": 2,
+    "variant": 3,
+    "original_question_number": "1",
+    "qp_marks": 20,
+    "ms_detected_marks": 18,
+    "source_ids": {
+      "qp": "cie-9701-2025-w-23-qp",
+      "ms": "cie-9701-2025-w-23-ms"
+    }
+  },
+  {
+    "phase": "legacy",
+    "question_id": "cie-9701-s18-22-q2",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "d09e49b8e943288067f0383cbdc8cc6e78fa7c734b5405479a8e8f28d0e5d2a7",
+    "year": 2018,
+    "session": "May/June",
+    "paper": 2,
+    "variant": 2,
+    "original_question_number": "2",
+    "qp_marks": 17,
+    "ms_detected_marks": 13,
+    "source_ids": {
+      "qp": "cie-9701-2018-s-22-qp",
+      "ms": "cie-9701-2018-s-22-ms"
+    }
+  },
+  {
+    "phase": "legacy",
+    "question_id": "cie-9701-s18-22-q3",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "d09e49b8e943288067f0383cbdc8cc6e78fa7c734b5405479a8e8f28d0e5d2a7",
+    "year": 2018,
+    "session": "May/June",
+    "paper": 2,
+    "variant": 2,
+    "original_question_number": "3",
+    "qp_marks": 16,
+    "ms_detected_marks": 15,
+    "source_ids": {
+      "qp": "cie-9701-2018-s-22-qp",
+      "ms": "cie-9701-2018-s-22-ms"
+    }
+  },
+  {
+    "phase": "legacy",
+    "question_id": "cie-9701-s20-21-q3",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "908b398970d250822c9db5f6521a0557d05d9f521fff22c256a2b931a5269efc",
+    "year": 2020,
+    "session": "May/June",
+    "paper": 2,
+    "variant": 1,
+    "original_question_number": "3",
+    "qp_marks": 13,
+    "ms_detected_marks": 10,
+    "source_ids": {
+      "qp": "cie-9701-2020-s-21-qp",
+      "ms": "cie-9701-2020-s-21-ms"
+    }
+  },
+  {
+    "phase": "legacy",
+    "question_id": "cie-9701-s20-22-q2",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "11359b8617a2f949da9c6f8dc947a8371f576626e6049b15f1dd4c90b2920476",
+    "year": 2020,
+    "session": "May/June",
+    "paper": 2,
+    "variant": 2,
+    "original_question_number": "2",
+    "qp_marks": 12,
+    "ms_detected_marks": 10,
+    "source_ids": {
+      "qp": "cie-9701-2020-s-22-qp",
+      "ms": "cie-9701-2020-s-22-ms"
+    }
+  },
+  {
+    "phase": "legacy",
+    "question_id": "cie-9701-s20-23-q2",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "800552c536826694070323071d66924d116621590a97cd4958e49e38207e2efe",
+    "year": 2020,
+    "session": "May/June",
+    "paper": 2,
+    "variant": 3,
+    "original_question_number": "2",
+    "qp_marks": 13,
+    "ms_detected_marks": 14,
+    "source_ids": {
+      "qp": "cie-9701-2020-s-23-qp",
+      "ms": "cie-9701-2020-s-23-ms"
+    }
+  },
+  {
+    "phase": "legacy",
+    "question_id": "cie-9701-s21-21-q4",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "adc6717a2071b6a2ed663980d3be7de8ee9c727e4b38806a6a2678afc8280f6c",
+    "year": 2021,
+    "session": "May/June",
+    "paper": 2,
+    "variant": 1,
+    "original_question_number": "4",
+    "qp_marks": 9,
+    "ms_detected_marks": 8,
+    "source_ids": {
+      "qp": "cie-9701-2021-s-21-qp",
+      "ms": "cie-9701-2021-s-21-ms"
+    }
+  },
+  {
+    "phase": "legacy",
+    "question_id": "cie-9701-w21-21-q1",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "6e5035d48bc2a5efd5d4d08ccbffaf115b8ec45ac7063cdf53cd376914586150",
+    "year": 2021,
+    "session": "October/November",
+    "paper": 2,
+    "variant": 1,
+    "original_question_number": "1",
+    "qp_marks": 21,
+    "ms_detected_marks": 20,
+    "source_ids": {
+      "qp": "cie-9701-2021-w-21-qp",
+      "ms": "cie-9701-2021-w-21-ms"
+    }
+  },
+  {
+    "phase": "legacy",
+    "question_id": "cie-9701-w21-23-q1",
+    "issues": [
+      "ms_crop_marks_mismatch",
+      "qp_ms_marks_mismatch"
+    ],
+    "source_fingerprint": "9d7472df0158dee8e1f8c64e938a55257d152a4a5f816a5f10c3ed5136bc4373",
+    "year": 2021,
+    "session": "October/November",
+    "paper": 2,
+    "variant": 3,
+    "original_question_number": "1",
+    "qp_marks": 21,
+    "ms_detected_marks": 20,
+    "source_ids": {
+      "qp": "cie-9701-2021-w-23-qp",
+      "ms": "cie-9701-2021-w-23-ms"
+    }
+  }
+]

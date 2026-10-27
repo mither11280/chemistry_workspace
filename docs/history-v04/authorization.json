@@ -1,0 +1,1638 @@
+{
+  "redistribution_authorized": true,
+  "recorded_on": "2026-10-27",
+  "statement": "The maintainer explicitly confirmed in this task that authorization covers all locally supplied 2018–2026 CIE 9701 Paper 1/2 QP/MS, including published practice materials from the cancelled May/June 2020 series. Previously authorized 2025–2027 syllabus remains included. Copyright remains with the original rights holders.",
+  "evidence_type": "direct maintainer confirmation; underlying rights document not stored in repository",
+  "exam_years": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025,
+    2026
+  ],
+  "sha256": [
+    "411ce9737ebdf811d0540f0a9a1d45150cff5c7ccdcd1af6f80bd1fe8b99a648",
+    "9cc5f85359c3dd1e3ba0ebe6773536fdf311ee1baf0a01eeca5d028fd859b33d",
+    "570eb19bceae0e4eda35df1c0878b5033cd7d321df97680ac7feafd49b2dda64",
+    "a801acf9f6dbe66fa3f70f9b9af0978f6c65968af9a240962abb943d69a5b02d",
+    "e9ec58826e43b00e2ba1f7bcab53c8a11ea6abd4003ca7892c48bd935e47b032",
+    "3d9bcd4118de9bc4b60726f8da0ea5bdfe4b9277dd3430db698a354bbe02a4ed",
+    "66d630d79803daa9e4fed12a768b2ab8068229750293611af2426ec3c6f19286",
+    "20efa6e6739ba7d2e02880f0e3884b10568f999959c367c38f0b36f934011586",
+    "564c12047f6680d8038aac4549b37e8a281de2cc544df10c01b2d2619224deb5",
+    "875b2da06e1392c3020af08606e1bc4c99dc4c5a7bded236cb58ea9d6d49ed4f",
+    "98d73edf431b6baa7738b609c115c0738ee0ec2abd7e82afc539e109d24607f8",
+    "3c4fa9b12f51e4054ee2e43aab076692020334604c99bffa1e8419d8ecb96cc5",
+    "faf26ab1642c19adc6cda406b0e838af5ec1da24b5dbe54c0356923cf881ae11",
+    "c65407ccd9fad843f6b584e8e2fbbaf00a05017036c53a1842f4a04dcfe2fdca",
+    "d3337cff1a24d01f3d126ec901e631739c4bc0be2b9c0508a43e5c408b59dbf8",
+    "36a8c1afb7e3a75a2ac6469d20f8275c01ec01988158211ecc03ebeaf8c8242f",
+    "c35ec5130b80874ab1f4058c2615c7e31a7f0cc0b7b5a8fc49723490665f0bd8",
+    "9fcf7a539b7b69e1ba8871a46e99433e8e06fbff206ca110b62f1dbed482218d",
+    "d1f52ab34b39893872671c37cfd44439285fdc936ff048188b44bbacd99838cd",
+    "417b0942b6d3e2d3698903041ba7fe44620ff6500db0b0031e396c63ea6cd15e",
+    "24055a05c538d57fcb273c691918cb509f7007e8f87f38c0915ed481c6802609",
+    "4b7a1d9c75c75431bf65df4c99b2fb44a28b84e4ab40216a69d123fac76d83f7",
+    "eb3d3adf94f3fd4055362ec5c964505a8e4cced55c275cb51d3e5112e66765fd",
+    "273065fdfe3d614fc273585e147b1604e047533bd1227eb1995b5147d9e0342a",
+    "3a732f6cce8760c8a3029fda7f1b31bf5c84c77391a9ae1358f1523cc10dfae7",
+    "af92b7f7bb87899c309f9a688ddb9acf23f397f4d6fd137b3df4eda057722919",
+    "22b7f348bbe290af658439e1e017b40945139e24aaeb095723c39fdf29f9915f",
+    "98842a64a3d0d649ebba9428f6f6a8f81ad62179c660a0f4e7992c0bf74fb8ee",
+    "b8467f254a1246d6c0e897d9419d4937c4be2f713bc9e973d45fa5cb8bce8581",
+    "a3eb37b5481a2f14546ddd131a8c289c722eae29671a8431e739959a6efc4551",
+    "c1bed1a42c72bf85a51f80930aaa2594957dd868235282a8755b38ef81817dc2",
+    "6cf5aaa9d2bcd5528c200286e1355ed44834dbf5bfeab3f690372c2239aeabbf",
+    "0809177dc42c270ffa81fc0711576e35359488b86d397b72fb284e0cd0e67f13",
+    "c3ec03524f2763afb0e6e676fde643688965ce86b4b97a0df32779501e717203",
+    "c0c73acf79e26bbc864a6ea8cfc623f653c5881c2da934165258db4ecf04eb9d",
+    "7468b0b79d9c522a4264ef901fdc94760ea4fbb89e82957154420ba5fc18525c",
+    "513fc7d453c381a70b9f0fb8615e3ba23dbd8b300390b3ee6b06c4721becbcf1",
+    "b448d04ca4638853cc80f63e6d594cc185004f0ff66abece3ff6376d90613193",
+    "e746ec9c8f426f3a28ef1e5c1b4be73251465b366d13d746d07377174edb73be",
+    "c254bf509ef79d06590a7a74047e0cb10c7385876e9aec51d9e420ffd78406b4",
+    "41bef3b38e03021e893b643e03469e5205eb637b292a97bf95a3f1355ad692b8",
+    "8599983ed84f17f7b381ed36642f405f6c1bf83c6d2a2659bbb78f81d2ca5db4",
+    "5ae340b0c8b4091bf12d24b11dc3d587210efc09010402e5910179e31a4aac84",
+    "ca416318399f7126c8d972f9aa4da0b72adf186afc999c7a829f28c6b7421495",
+    "85ebdfb94f9cdb94cf787c05a4700651dbe4e7d237559b1d762ff20de8435582",
+    "68789fc9170529fda455056f5a2d7671627f5d777a21b92ee176ae892cbd9274",
+    "2aaa90892f6ef926f2f76f0717db2470107c9ce2bfe336ab4dae24c60c9d2cc6",
+    "fa400e17166b7e63a3288533b11b52195247b8205f9385f0bd962f9ae4521da0",
+    "faecbe0283556eee633f27007e2b40c807464eb52d49d9899613619855fbe441",
+    "ab053120a1017025f0d45a0765a226d8fcde295b758ba24ee1caf916b110c290",
+    "523c43c6a4305e87f731647c5119278725cdd767ecb65679836491266b232b82",
+    "7113e411158608fdfb42885166bd0ff5d15f095c6bdb76b5338f4431a9f542f8",
+    "735edc290d19a57de5629de2cec135cdcd650f2638dafea7378e527b93eccb5d",
+    "e89a6dd6ce1339592117e092db14574160c31209ec211e0d10db394f57a0adee",
+    "b781e8a8134f54b4da30fb1dbf4171ec325f5bb8c7af18d83c8f427472a7d47c",
+    "58be1b64754696724a302c97b6c6806ccdf6b05c75cb30b50d05a58cee02a5ae",
+    "5cf6a1fce8b6b68293401d4f0da557fddea3889f7464d8fed735f70325d37d5f",
+    "6b1d50f52f03e08cbaa7c825c61efac8df5d6c619275e6679590a4d099816f14",
+    "6326b1b09c505b9f5607e07c1035e509f2d249304e7537a79cbe9050af3dcab7",
+    "c1a1c180a1718523abd06f9162af5935e68f0ab790a0d247bf49f2f351786a6d",
+    "c14423f34303104a8df14c2cc15b8073c1c9d1291786748a031c180e7c3d5d0e",
+    "76b191bb70e0eb7af9006fc96675c1608f1806a6895455b142fb293485d0a21d",
+    "8fca229264236efa4cb2c92342a11e483e2c5617eed77922341d854c7fe63c28",
+    "e58e1b15d9f138e305f270be4d7d5f583ee83a77141091c4b8b2959a087fa57e",
+    "028d4773429bd623c634b866d84b6c093ac705eac2089b558e71966a58dd5a9b",
+    "3306b5138ac17d6986df3be5a02f8af4de2e8e67eab5c4ff3b63ec6580af2e4b",
+    "27aa604020b39ae160685d8422b006ab6d0612f596e1228b9c0182d0e1cea57b",
+    "44c3d03a89a056e65e07953b19da2925fb01adb1d4e00af83e1f24c47f10e418",
+    "cbfdec574f96e07aad288809cb00a3fcdcd8ca6f6367aad2d216e0532ea65b0a",
+    "8696ca0cfe71e48f70b783502eb0a804b9241b73a7055742e9a2048af32ff0af",
+    "83b1c8301fac914309d7165955012f45c7b61f1bfdd577630517c97bbc4fe8dd",
+    "c4faaf1be707ea107450197f2edec2037e1487569578580f8c6da8867fa2c60c",
+    "7593394c298c632cead2b4035d64b8b35191b6334bb30cd874dac7bd5507b30c",
+    "eb17d7aebceb5b1fc0a388ecf74ca77620545e59c4454cc38ad2e785f7e94f48",
+    "03cd159c24464f12e7f4904caf41cf522bad346462a1d7acbee86f85b25ebf06",
+    "3ce0234d2b806d106dc4cb6425303785b394f4a9f94d240a52885bc4def2afd8",
+    "3ecc773c5809315bd9c2ffb767918a445c7442f1b2df5ae54f4960dd68ee4e03",
+    "99be9c7fe0e900463fc66ab0d29ca6f4805984ee88d5005e9eb4918dcedebd7c",
+    "94f69ce9c1983fe0d30764e231818737c5cb792d6609e1ce8afdf70b5aeb0bca",
+    "bd6b3ed374e5d666616b7733fea2f26486e21764cf568258356c7108d864e7d7",
+    "006f032b534b6c1102a585436e90516fc3f70d4a450970b0fa39f1ceb4387956",
+    "02463479abb9dd19ef2bbc8297bf832f083bc6a52b95977119c3a7260d69580c",
+    "3d4fb98644a25b4baa4c8b054d497cacf56f8ed7e38dcab8c91283deaf1814f2",
+    "689d4cbed3e26102e572192abf6c960917e8345adaf03699da3ebff2ef260894",
+    "4c7dfbdda9541b5fe225accbabb53a45207e1e1597708935f3a36b59a93a3a8a",
+    "118f03b28e562393987f9f232b5bea1f790d1e988395eaaf6c18eec8d48b99f9",
+    "7f731f063888fb4a660757fe813d2fccad4da1014dd3c9f2db7f921578774672",
+    "ccec18020dd5336daa84c97d6acd803c84cff1a5632e401076e6690025795116",
+    "3a36dacd94fe58b6820c991beb87a3dbfbd48628db9dd0eeab451a33ac9dc5d1",
+    "709e7375d8d096b9c3368adbd790036a436d7a6d0e9143491d4904db5c2e1f35",
+    "8db162a9d29c108100d84337c9052b2708103b297d1b6ce89f00cf10c368e158",
+    "ed8ced8c5500fb651fda9c1341bd86f6a6c1917ead85d5efed90a4a4ac1b05b9",
+    "69135c5b4ab5bafc2562048d19e2c21a9db3e4a3e9698fe3a4df320fae0ed119",
+    "2339574fdacf18bb1ffb5e1ae0eb1a3457ac2be27d85f6d499f1fd60ffe3aa5d",
+    "00fed045a934cf30f6bad5acd8e22f27a09c37255028989cc894e8276352f712",
+    "42bf2fae589434296058dd49976f09e6db6cb41061bd8f528d396c9bc25474ed",
+    "14ed72cced0c1b6e8f6a19e2a6c9ad9e8d66bda511711fb91b09970ba9447e37",
+    "dea8f17527e2bd62bcca8be4c885f0bb4fe136ee4b7c3f7049129efc6d73ddd5",
+    "722e570432cdc8cc495c02d68d7d3f1c20129ca75ff5c347847d744fe72cf02d",
+    "c74dfdbc7e91111fbf78a08de6d13cc7f9f966a1a2c597d4bb75369dcd9042c8",
+    "160f4dd825c31c36a95cd506f2f8b75d77ac3a8d1a9de6c86f5fca1cb45209f1",
+    "e4591c27dcbee6091f84140207ec16085c5ea8ef47878bd55bc71911b8d3259c",
+    "6f739a159494ac11443230d4b5808e11cdfc1a92b856c8a76197a90dd3b9ba0e",
+    "118f739385e817f071aa872df174d0db6bbc7643f26643c88e5887e58806d7c1",
+    "5a02bc50fe099a6a4fa3b20591030d558f98fe304aab10aca202bc0f701e5711",
+    "08e1c8d351d738c049c1f245557f05ea5c150474f9d8903a9cee70b1f525f2fc",
+    "75c88be82a630199cfea6f4ecd5975d826caa88f34acf6b5f4311addbafb4db4",
+    "006afc9558562f9f969226387de474bf945d2dbbda3c263fac1daff82ef9a9d0",
+    "5e58d31b5086f9b5dc948e074a0adbe155f05c34bc48858015a6eb4c262b0059",
+    "ef853c40beacdd8bb12bd59eca7015d08d837100c200866d00cb5bd2acc785c9",
+    "33a46dad780ffd1de069a89bf6b89ca78a38ac5b5236f03d3f56ae3916d288d3",
+    "fe5d8bf5c357334f15ce488fe9756d0d9cce1641988297dc17f9953769223e45",
+    "cc9b6e2f82fa94b40539b6f390a8797c758c41ca0bfa7ae1013b536ec91971ba",
+    "e55d8e7e3bfa17b10987a64bfeca5d576c2a9e2db2fc6e11af8afbb86fde84c3",
+    "2a59515572c7e62cf76dfa2f9459f2021eb92f653573f134dab76efb3713d25b",
+    "c23110bc2d06787d1b77fc4265a35ab60c118b7aeaf4ca957a7b0de5e0d4e843",
+    "124ffcf82d70ad5541fdc06354b0c5ebb9b2651a9a2979da5ebc9f4c999c88d2",
+    "84e5b6a627c18ab251b627084757777709994dbe724da0f3cea422c31011bd62",
+    "f6942940bd933992ae88766ba454ddabf93f3522fbf19fc93c5bacd4ed1474a8",
+    "b792ea237eeadf327da2f5a8e917a74ba24ebf2ccb3b5d211a810d388172e6d9",
+    "df685a4461da2d6adfdb06e43c57c0c0e767f6e984d55c2169de07d7dbad2aea",
+    "d3fce7cc1acb6727b1117fcaaa922970cafdbfcd2887952307b624313e6900f4",
+    "27df514c33f725e0f0b55b53c834ac337740239ca527d8c862ec762fc76220d9",
+    "3d6270e7a9e30f009f26e190b613915703c0104a8d00cb75e6a2fc29149e4853",
+    "b122f36ec1867c34e5394cf5533608719b8383ef58ba2dd9e8fc50ddb56ab4c8",
+    "c0e647b367d015b208344b8a414bc41cb317109e727c7759a0bca7ae6c8e8739",
+    "5276623e7a283954cd51191ba92af223472b333e4ae6a43bd9f6ab29672cdf07",
+    "2cae96bad8a5d43daa4189e83d88aa64bc9c928e554858aa78b1f0beffa2d073",
+    "bd3ebd2e825af82686e10f80ea7ac41df1ad57c2e9d202a3c59abdcba82f97ae",
+    "e8d793cbde2df4d659b0f5053fc193027fefe5ae3ddfe38b3159443c2c302b2c",
+    "cae25b608b6c2c2f1a45e8adc03da43a0d2b0456fb3722587ddb2cb772ff8c0a",
+    "81f9515b0932c0a3675f99903bc7cd902e0cdb9635b2785270104be676e0b4c3",
+    "2173e8fbf72fe1e1015a822c87b31002864947dabadc6dda90f318fe63369f4c",
+    "1adf6c6105fdcaa0c3f5424f40859f72e06c195aa4468cde043b8190687b23d1",
+    "2768b02363380351d0e49a1fb5d2cb2c1b2d0ded7274a2f0e370b2d2c442d559",
+    "c2334ee1c412d24933b2f6ae3183674ef1ee00e6602a2ff960d7648c4a5d96c9",
+    "a51626c193b79f3c37c060cdbdd3f7d09dfed2bdf80f802521878ba44193b118",
+    "18ea881f67f1767cd6b839283a29c2aa9a4b4a94f37161c8a04c8ec55f6244c1",
+    "97468c3d2344d2cc5c511649177f1089d789c37587ca6dc3d56e9065806b004f",
+    "7b913df572a141d702f88b033863a0a7c5a7a30bb010f12b806b9461f0455286",
+    "7579bcac25394e70221e02073a3aed92027d9a5b684d04269d775a792944f1fe",
+    "3b0f535119b77a78e5eca7209d6c2b8f9e54e241715173e4d070810c0740aeb3",
+    "0ded03c233fed8d882f39c64d5922edb851ae485065493b912464b0e8e6065b4",
+    "7a023febf440f3185f09d85b6371d921a03aa4138d1be5cd8a9ffff2a79eea56",
+    "5055656b51f629ff6d65ef50dec15afd0a54c62bab0e462159c21a41ca8f4115",
+    "af2fdbf303607367afa7929e98b9d2f688975ebff6b2c023ac084f11626223ef",
+    "00241b33af1ec03606331f7788a9dd591b2905cb69114cf59fa3de7fd1a0662c",
+    "1f46fa842e97d3aea9efa915e88b674ca75056abd42dcdb14cd3b357e37a7d02",
+    "56d54bced8cf0a58e3f893b89f672145b428bf32f003a441ad104801b5e9d8f2",
+    "c4a3da0a9d0528089aab87613fab2dad60653b6be988d399132ea041fccf74db",
+    "6cf7b14cc68723dc5ad226980dab989d37cb56c9432949e5bee87a7ed83db953",
+    "a8e25aa348ae5de62816520d3b13ff127949a370e43f52ba55c5203a10fb3ae8",
+    "5cea38422562bbb646ffd078ecbfda126481075169720782cf8bb6caa71f60af",
+    "c32e5aa83bf83c1b5038d318cb2d0714ac0a5641ed9cc05146650e5038f493b1",
+    "208e00e7ee1a24eaebf03d3273735bedb28c06254cb87519832738946413e30e",
+    "15f63b9b6444c996dcfd70ce7b7140bb08f9e687dcc40c5405e62f791fa8cd7c",
+    "8b1f31ca6afbee98dceb8e7cd2f4e42036a254ad45633f71e6819d4f53762c1f",
+    "c92796321e5ea8c147daed549cf3c3a9f553671d7526d76963b719989448dd3b",
+    "557ddcbfd0df544ecdbcd53f6841591e550155ca431a064ede8885f031b145a0",
+    "cc49218fcf765acb5c526754b5a85c3c86ab7f3840a5b137ccd52b4f1d888934",
+    "a424c673db3f0b1713e9d0101f4a050b3b5ba8407f22c22ea2f258bdcd35b43c",
+    "7cf7ef4d1253be61120f94799a41e9f346e054ed5e94defb30d60dbfb2bab95d",
+    "da1b9eeec92e32a7f90eb26e60381a9ab7f09cde9f7fdb44a5f5d8f9b3782dd7",
+    "7e5ea58a7f3dece013fef824b37d06988edfc4bb113855686c0455ae93683b03",
+    "d428277b4232a2647df51f39879f8d101195178edee458df774d30bb30c3cfc2",
+    "e98edc07b45c0540e485d4e74ec0b0992460b4ae152413246662481dab6d2035",
+    "7b1053f2eb8c1ff8f916fc8baf76eadd5f91284447938a116c5d5c89e9f3d485",
+    "65c36b715982c4332626b89ee0deb1cfb94b67e07667c6c37c6bfaeb8475888b",
+    "607c6467cf2ac78acbc9d6b9162ad02e4fa7185c9cc5d807bddcdf976efc7c6e",
+    "5351a8844e88970a59b9dfe2c3aeffc02fb7400d4da86321e192c7dd86d1ed04",
+    "087e744ae444bc3ada49115fb05aa85917e8c20cec764bd3fc6308c13ab2b2db",
+    "9f565167380a5825c5b5eebf2464b2cab0c2a49a90503a8c6871b325f3473e6d",
+    "537b0730c4f7b3c6c1cca9d5b5a94814cf0f91d4e21ab20dba74ecd73fe735ae",
+    "5ef61a3370defa4f2d97a56ab658dc4505848f3b5b99aa5b5b8b86dc6de65492",
+    "e7cc216a2350615ab5670cdc0ca24bc6d1cc8c958e9a3481d2cee021f34eb078",
+    "da393e4195a4c8df56ca25084bf90cdfd2364779138a1b43008fb3c31eb3be35",
+    "fb3d46e81ad222f828371de2f3d155f2bd5d0f221326df5888b197db8b86ce54",
+    "248559f7bfd2ce2cf9a49a36d1df87a8ae95536f70dc3f9182f76ff880759fe5",
+    "390b0826e5d0c3daa754c0ede1ee9ca047ef3a551250a33c2e9b2274c655fad4",
+    "b3623bc3c409fd77a662ea0f8864a52299266ce43163055aab2e5b147c0ad1c6",
+    "f0c95fae35d7735ebcc8be1ee74f64e77593c4b2661152f9f3c9c65ec316931b",
+    "dd5bf4de1b4b6d1ef4011fe1c1dd2a115a90d241fd0733465ff9b1890b920130",
+    "092fde4781fa2d70674b3130f58cbdaa53a3f88d2a36ae4d683223e14cf7760f",
+    "d57838f067e29e1d6b7080c77c628fcaa99095f9034bbd94c71403b15fe8a9dd",
+    "28e9a21a7cf9f3afa0b1fdf2659d894d66a378597a41ada52819695bd7e637d2",
+    "14402e20d6ce16065c296b01bc050c9254085642feb92c33d2efcf1354c365f3",
+    "41d3d173362e416749af92f23e8e354a6c763eff316c73f54304ff1ff135c838",
+    "630b2d0c535a722c20dd7198a1c10d2811164ae01d5764b0deed2d451e8407ea",
+    "24ca994beac8603e406cc9600c06de5a40b258a38396e3db4158c338adb7d184",
+    "3e5bb040a83933f84230e8593c2dfbd5c8897887a70a2fa5a64810f6fa6605a2",
+    "c34c29d46d4488f563e9e2c4d550a71e0c6edc111f24d31e386d1f732cda7387",
+    "eda14e668c67668f74195bdab491151346ac3e172a923b26bf23422c559d62b9",
+    "6f30ae92c0e95edcd07590d337205f06a922751d0a51646ce9377f283dbedc1d",
+    "f7991fa427108731591576546a1682889bbc91e1f651ba8be4058fd2ae5d967a",
+    "d7ec90f1278ee1dcc5ba3ef6ca214c875952b14fa871c77a34909f1582b06766",
+    "6cd47336c7a9483d6acf1011f7f93ffd829606b45962e1d14996c45896446c3a",
+    "426c81ab9bfa4c71d9b2533d0b24097617b8973ccd0709837f85e4e62e5ad34a",
+    "7b287ebccef7d0ca6a8f1690330b0ca610c6c564382a5374849f7bc7ac436268",
+    "05c6932726cef43962bd2ff0477f8a8216c7cb554d577a6dff123c44dac48d9d",
+    "4c224519910c0384a85e1eadcfd898643a1074fac938696fc9003e29bed40e5e",
+    "4a8a26118e9b28d24e5539d7dbfd68b278c0bc1bda2a22bb5946de16223742eb",
+    "93169a318ff6f753dac63a1737383711b693d56c4f7dbfe470d2ac627745a587",
+    "54702580b32f0b71f34f509adf8c71ca911ab09290486270e175bdc8c62f13e4",
+    "e047c894eef27edcfa49d8a4f36be824f7146b18baba3e5afe8b55d0319e67a9",
+    "a1b4a6328bb4806e2dbc42a634731d9ef58e714ef89c5d745c665eee53259d58",
+    "e97c8a8cca5738aab3538c3c696eac1a8fa02f98ab1aa26ee279d3d86db796ae",
+    "90bd79c242a8e92e6243d98d922389b87bf22e1072de55209271656b304aaac0",
+    "96a66894e636d80c96fb2ad67e6c2f6af46c7d13d7de42733dc76df7d0e054dd",
+    "df0085dbdad0ecee7e5a644ee87f00c659bd7a290737f7533f2ffc6c61aee17d",
+    "12776df2a7b1aa4e7949d9edff84fc5d05dc997aab7437a8c25b4aeb2a7214ea",
+    "66ad0192313fe7b82dcd9d0f4d014a0b77ca988b2482babad11736f48a398cdd",
+    "33fad5e2abdf7f588cd4a42c95d394f4fb9f9650eb66ca76702288ec15907723",
+    "2a5f925b289dddc4c140308101c80056ae318bd6da31ca2434eb5b245ac28b5c",
+    "8403e152d5664fe223cc31bd98ac73aeb3556bd322e2142d9e9e86aecfecab23",
+    "c0660b6d56a856c07b8c896b002aecee25f77143519ec8bbf7fca1fb38f3e3cd",
+    "e0beee19067773793525cce6304f38ba0af441b154770b74a29862fd3b3dbe90",
+    "6195efbe5e2d94ca503398b55dde9a3e8eecf79349481580b62dc33d55e4e6a3",
+    "de3bb8b0ff8b460cc22388eb29ad696b7d89df2b6667ead9fa48ca379eb95ae7",
+    "f5b4ddd6010a8d010193606eedd8e11c67f7247fd70d6647388851298579243b",
+    "5fa905788360cd6dd5b58b423c7ea9f0fd313cc7591b95d6cfd8ea30d2922064",
+    "d0f52653e0277fb94b45bcab79391f883a30c574297f1a88c11fd4124f7540c5",
+    "e2de2b1f755e52b9f25e80363a1c7b34a3ac9cb3b2c049c47ee57489d071b383",
+    "07c82103a745742e65467b4584d864241f5cf1c04fc2c511e918983faff542eb",
+    "a01c1b7dc89e67218841f68ee7350c93429bb90a0075e7fe8c5592eaf2ed52fe",
+    "a209d63b537d8d86c129ce06181825b00e49e6bc7f2651f80e3eb60946082a86",
+    "a5daaa79950870848fbcbeff1ca51613c0126f11fef9851ebf6ae0ce596c6209",
+    "ffbcd32ff1a0b3b3a2c13b0a8adb68b57d5d405f6bf6f33d95a3997a1592ace4",
+    "69e73c0843ae5f54de89a2d30527ef6b07ce307b1b27fb676dcfdaeccd97b792",
+    "984d707d7de9a66d868b7769d9ff39e72d12f738ff5417a44710949cbed6d617",
+    "d27d88904ab5fac3df83b4e5edbc3be3d596114e1a95e8cd8799225c31219b4d",
+    "c47489f2c64bf589e822e8f4ca780737f7010b0757c9535fadd4e56e27e7cc5c"
+  ],
+  "sources": [
+    {
+      "source_id": "cie-9701-syllabus-2025-2027",
+      "sha256": "411ce9737ebdf811d0540f0a9a1d45150cff5c7ccdcd1af6f80bd1fe8b99a648",
+      "year": null,
+      "role": "syllabus"
+    },
+    {
+      "source_id": "cie-9701-2024-m-12-qp",
+      "sha256": "9cc5f85359c3dd1e3ba0ebe6773536fdf311ee1baf0a01eeca5d028fd859b33d",
+      "year": 2024,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2024-m-12-ms",
+      "sha256": "570eb19bceae0e4eda35df1c0878b5033cd7d321df97680ac7feafd49b2dda64",
+      "year": 2024,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2024-m-22-qp",
+      "sha256": "a801acf9f6dbe66fa3f70f9b9af0978f6c65968af9a240962abb943d69a5b02d",
+      "year": 2024,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2024-m-22-ms",
+      "sha256": "e9ec58826e43b00e2ba1f7bcab53c8a11ea6abd4003ca7892c48bd935e47b032",
+      "year": 2024,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2025-m-12-qp",
+      "sha256": "3d9bcd4118de9bc4b60726f8da0ea5bdfe4b9277dd3430db698a354bbe02a4ed",
+      "year": 2025,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2025-m-12-ms",
+      "sha256": "66d630d79803daa9e4fed12a768b2ab8068229750293611af2426ec3c6f19286",
+      "year": 2025,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2025-m-22-qp",
+      "sha256": "20efa6e6739ba7d2e02880f0e3884b10568f999959c367c38f0b36f934011586",
+      "year": 2025,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2025-m-22-ms",
+      "sha256": "564c12047f6680d8038aac4549b37e8a281de2cc544df10c01b2d2619224deb5",
+      "year": 2025,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2026-m-12-qp",
+      "sha256": "875b2da06e1392c3020af08606e1bc4c99dc4c5a7bded236cb58ea9d6d49ed4f",
+      "year": 2026,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2026-m-12-ms",
+      "sha256": "98d73edf431b6baa7738b609c115c0738ee0ec2abd7e82afc539e109d24607f8",
+      "year": 2026,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2026-m-22-qp",
+      "sha256": "3c4fa9b12f51e4054ee2e43aab076692020334604c99bffa1e8419d8ecb96cc5",
+      "year": 2026,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2026-m-22-ms",
+      "sha256": "faf26ab1642c19adc6cda406b0e838af5ec1da24b5dbe54c0356923cf881ae11",
+      "year": 2026,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2023-m-12-qp",
+      "sha256": "c65407ccd9fad843f6b584e8e2fbbaf00a05017036c53a1842f4a04dcfe2fdca",
+      "year": 2023,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2023-m-12-ms",
+      "sha256": "d3337cff1a24d01f3d126ec901e631739c4bc0be2b9c0508a43e5c408b59dbf8",
+      "year": 2023,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2023-m-22-qp",
+      "sha256": "36a8c1afb7e3a75a2ac6469d20f8275c01ec01988158211ecc03ebeaf8c8242f",
+      "year": 2023,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2023-m-22-ms",
+      "sha256": "c35ec5130b80874ab1f4058c2615c7e31a7f0cc0b7b5a8fc49723490665f0bd8",
+      "year": 2023,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2024-w-13-qp",
+      "sha256": "9fcf7a539b7b69e1ba8871a46e99433e8e06fbff206ca110b62f1dbed482218d",
+      "year": 2024,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2024-w-13-ms",
+      "sha256": "d1f52ab34b39893872671c37cfd44439285fdc936ff048188b44bbacd99838cd",
+      "year": 2024,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2024-w-23-qp",
+      "sha256": "417b0942b6d3e2d3698903041ba7fe44620ff6500db0b0031e396c63ea6cd15e",
+      "year": 2024,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2024-w-23-ms",
+      "sha256": "24055a05c538d57fcb273c691918cb509f7007e8f87f38c0915ed481c6802609",
+      "year": 2024,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2025-s-11-qp",
+      "sha256": "4b7a1d9c75c75431bf65df4c99b2fb44a28b84e4ab40216a69d123fac76d83f7",
+      "year": 2025,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2025-s-11-ms",
+      "sha256": "eb3d3adf94f3fd4055362ec5c964505a8e4cced55c275cb51d3e5112e66765fd",
+      "year": 2025,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2025-s-21-qp",
+      "sha256": "273065fdfe3d614fc273585e147b1604e047533bd1227eb1995b5147d9e0342a",
+      "year": 2025,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2025-s-21-ms",
+      "sha256": "3a732f6cce8760c8a3029fda7f1b31bf5c84c77391a9ae1358f1523cc10dfae7",
+      "year": 2025,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2022-m-12-qp",
+      "sha256": "af92b7f7bb87899c309f9a688ddb9acf23f397f4d6fd137b3df4eda057722919",
+      "year": 2022,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2022-m-12-ms",
+      "sha256": "22b7f348bbe290af658439e1e017b40945139e24aaeb095723c39fdf29f9915f",
+      "year": 2022,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2022-m-22-qp",
+      "sha256": "98842a64a3d0d649ebba9428f6f6a8f81ad62179c660a0f4e7992c0bf74fb8ee",
+      "year": 2022,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2022-m-22-ms",
+      "sha256": "b8467f254a1246d6c0e897d9419d4937c4be2f713bc9e973d45fa5cb8bce8581",
+      "year": 2022,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2022-s-11-qp",
+      "sha256": "a3eb37b5481a2f14546ddd131a8c289c722eae29671a8431e739959a6efc4551",
+      "year": 2022,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2022-s-11-ms",
+      "sha256": "c1bed1a42c72bf85a51f80930aaa2594957dd868235282a8755b38ef81817dc2",
+      "year": 2022,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2022-s-12-qp",
+      "sha256": "6cf5aaa9d2bcd5528c200286e1355ed44834dbf5bfeab3f690372c2239aeabbf",
+      "year": 2022,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2022-s-12-ms",
+      "sha256": "0809177dc42c270ffa81fc0711576e35359488b86d397b72fb284e0cd0e67f13",
+      "year": 2022,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2022-s-13-qp",
+      "sha256": "c3ec03524f2763afb0e6e676fde643688965ce86b4b97a0df32779501e717203",
+      "year": 2022,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2022-s-13-ms",
+      "sha256": "c0c73acf79e26bbc864a6ea8cfc623f653c5881c2da934165258db4ecf04eb9d",
+      "year": 2022,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2022-s-21-qp",
+      "sha256": "7468b0b79d9c522a4264ef901fdc94760ea4fbb89e82957154420ba5fc18525c",
+      "year": 2022,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2022-s-21-ms",
+      "sha256": "513fc7d453c381a70b9f0fb8615e3ba23dbd8b300390b3ee6b06c4721becbcf1",
+      "year": 2022,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2022-s-22-qp",
+      "sha256": "b448d04ca4638853cc80f63e6d594cc185004f0ff66abece3ff6376d90613193",
+      "year": 2022,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2022-s-22-ms",
+      "sha256": "e746ec9c8f426f3a28ef1e5c1b4be73251465b366d13d746d07377174edb73be",
+      "year": 2022,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2022-s-23-qp",
+      "sha256": "c254bf509ef79d06590a7a74047e0cb10c7385876e9aec51d9e420ffd78406b4",
+      "year": 2022,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2022-s-23-ms",
+      "sha256": "41bef3b38e03021e893b643e03469e5205eb637b292a97bf95a3f1355ad692b8",
+      "year": 2022,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2022-w-11-qp",
+      "sha256": "8599983ed84f17f7b381ed36642f405f6c1bf83c6d2a2659bbb78f81d2ca5db4",
+      "year": 2022,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2022-w-11-ms",
+      "sha256": "5ae340b0c8b4091bf12d24b11dc3d587210efc09010402e5910179e31a4aac84",
+      "year": 2022,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2022-w-12-qp",
+      "sha256": "ca416318399f7126c8d972f9aa4da0b72adf186afc999c7a829f28c6b7421495",
+      "year": 2022,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2022-w-12-ms",
+      "sha256": "85ebdfb94f9cdb94cf787c05a4700651dbe4e7d237559b1d762ff20de8435582",
+      "year": 2022,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2022-w-13-qp",
+      "sha256": "68789fc9170529fda455056f5a2d7671627f5d777a21b92ee176ae892cbd9274",
+      "year": 2022,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2022-w-13-ms",
+      "sha256": "2aaa90892f6ef926f2f76f0717db2470107c9ce2bfe336ab4dae24c60c9d2cc6",
+      "year": 2022,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2022-w-21-qp",
+      "sha256": "fa400e17166b7e63a3288533b11b52195247b8205f9385f0bd962f9ae4521da0",
+      "year": 2022,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2022-w-21-ms",
+      "sha256": "faecbe0283556eee633f27007e2b40c807464eb52d49d9899613619855fbe441",
+      "year": 2022,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2022-w-22-qp",
+      "sha256": "ab053120a1017025f0d45a0765a226d8fcde295b758ba24ee1caf916b110c290",
+      "year": 2022,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2022-w-22-ms",
+      "sha256": "523c43c6a4305e87f731647c5119278725cdd767ecb65679836491266b232b82",
+      "year": 2022,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2022-w-23-qp",
+      "sha256": "7113e411158608fdfb42885166bd0ff5d15f095c6bdb76b5338f4431a9f542f8",
+      "year": 2022,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2022-w-23-ms",
+      "sha256": "735edc290d19a57de5629de2cec135cdcd650f2638dafea7378e527b93eccb5d",
+      "year": 2022,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2023-s-11-qp",
+      "sha256": "e89a6dd6ce1339592117e092db14574160c31209ec211e0d10db394f57a0adee",
+      "year": 2023,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2023-s-11-ms",
+      "sha256": "b781e8a8134f54b4da30fb1dbf4171ec325f5bb8c7af18d83c8f427472a7d47c",
+      "year": 2023,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2023-s-12-qp",
+      "sha256": "58be1b64754696724a302c97b6c6806ccdf6b05c75cb30b50d05a58cee02a5ae",
+      "year": 2023,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2023-s-12-ms",
+      "sha256": "5cf6a1fce8b6b68293401d4f0da557fddea3889f7464d8fed735f70325d37d5f",
+      "year": 2023,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2023-s-13-qp",
+      "sha256": "6b1d50f52f03e08cbaa7c825c61efac8df5d6c619275e6679590a4d099816f14",
+      "year": 2023,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2023-s-13-ms",
+      "sha256": "6326b1b09c505b9f5607e07c1035e509f2d249304e7537a79cbe9050af3dcab7",
+      "year": 2023,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2023-s-22-qp",
+      "sha256": "c1a1c180a1718523abd06f9162af5935e68f0ab790a0d247bf49f2f351786a6d",
+      "year": 2023,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2023-s-22-ms",
+      "sha256": "c14423f34303104a8df14c2cc15b8073c1c9d1291786748a031c180e7c3d5d0e",
+      "year": 2023,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2023-s-23-qp",
+      "sha256": "76b191bb70e0eb7af9006fc96675c1608f1806a6895455b142fb293485d0a21d",
+      "year": 2023,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2023-s-23-ms",
+      "sha256": "8fca229264236efa4cb2c92342a11e483e2c5617eed77922341d854c7fe63c28",
+      "year": 2023,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2023-w-11-qp",
+      "sha256": "e58e1b15d9f138e305f270be4d7d5f583ee83a77141091c4b8b2959a087fa57e",
+      "year": 2023,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2023-w-11-ms",
+      "sha256": "028d4773429bd623c634b866d84b6c093ac705eac2089b558e71966a58dd5a9b",
+      "year": 2023,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2023-w-12-qp",
+      "sha256": "3306b5138ac17d6986df3be5a02f8af4de2e8e67eab5c4ff3b63ec6580af2e4b",
+      "year": 2023,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2023-w-12-ms",
+      "sha256": "27aa604020b39ae160685d8422b006ab6d0612f596e1228b9c0182d0e1cea57b",
+      "year": 2023,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2023-w-13-qp",
+      "sha256": "44c3d03a89a056e65e07953b19da2925fb01adb1d4e00af83e1f24c47f10e418",
+      "year": 2023,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2023-w-13-ms",
+      "sha256": "cbfdec574f96e07aad288809cb00a3fcdcd8ca6f6367aad2d216e0532ea65b0a",
+      "year": 2023,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2023-w-22-qp",
+      "sha256": "8696ca0cfe71e48f70b783502eb0a804b9241b73a7055742e9a2048af32ff0af",
+      "year": 2023,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2023-w-22-ms",
+      "sha256": "83b1c8301fac914309d7165955012f45c7b61f1bfdd577630517c97bbc4fe8dd",
+      "year": 2023,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2023-w-23-qp",
+      "sha256": "c4faaf1be707ea107450197f2edec2037e1487569578580f8c6da8867fa2c60c",
+      "year": 2023,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2023-w-23-ms",
+      "sha256": "7593394c298c632cead2b4035d64b8b35191b6334bb30cd874dac7bd5507b30c",
+      "year": 2023,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2024-s-11-qp",
+      "sha256": "eb17d7aebceb5b1fc0a388ecf74ca77620545e59c4454cc38ad2e785f7e94f48",
+      "year": 2024,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2024-s-11-ms",
+      "sha256": "03cd159c24464f12e7f4904caf41cf522bad346462a1d7acbee86f85b25ebf06",
+      "year": 2024,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2024-s-12-qp",
+      "sha256": "3ce0234d2b806d106dc4cb6425303785b394f4a9f94d240a52885bc4def2afd8",
+      "year": 2024,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2024-s-12-ms",
+      "sha256": "3ecc773c5809315bd9c2ffb767918a445c7442f1b2df5ae54f4960dd68ee4e03",
+      "year": 2024,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2024-s-13-qp",
+      "sha256": "99be9c7fe0e900463fc66ab0d29ca6f4805984ee88d5005e9eb4918dcedebd7c",
+      "year": 2024,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2024-s-13-ms",
+      "sha256": "94f69ce9c1983fe0d30764e231818737c5cb792d6609e1ce8afdf70b5aeb0bca",
+      "year": 2024,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2024-s-21-qp",
+      "sha256": "bd6b3ed374e5d666616b7733fea2f26486e21764cf568258356c7108d864e7d7",
+      "year": 2024,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2024-s-21-ms",
+      "sha256": "006f032b534b6c1102a585436e90516fc3f70d4a450970b0fa39f1ceb4387956",
+      "year": 2024,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2024-s-22-qp",
+      "sha256": "02463479abb9dd19ef2bbc8297bf832f083bc6a52b95977119c3a7260d69580c",
+      "year": 2024,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2024-s-22-ms",
+      "sha256": "3d4fb98644a25b4baa4c8b054d497cacf56f8ed7e38dcab8c91283deaf1814f2",
+      "year": 2024,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2024-s-23-qp",
+      "sha256": "689d4cbed3e26102e572192abf6c960917e8345adaf03699da3ebff2ef260894",
+      "year": 2024,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2024-s-23-ms",
+      "sha256": "4c7dfbdda9541b5fe225accbabb53a45207e1e1597708935f3a36b59a93a3a8a",
+      "year": 2024,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2024-w-11-qp",
+      "sha256": "118f03b28e562393987f9f232b5bea1f790d1e988395eaaf6c18eec8d48b99f9",
+      "year": 2024,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2024-w-11-ms",
+      "sha256": "7f731f063888fb4a660757fe813d2fccad4da1014dd3c9f2db7f921578774672",
+      "year": 2024,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2024-w-12-qp",
+      "sha256": "ccec18020dd5336daa84c97d6acd803c84cff1a5632e401076e6690025795116",
+      "year": 2024,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2024-w-12-ms",
+      "sha256": "3a36dacd94fe58b6820c991beb87a3dbfbd48628db9dd0eeab451a33ac9dc5d1",
+      "year": 2024,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2024-w-21-qp",
+      "sha256": "709e7375d8d096b9c3368adbd790036a436d7a6d0e9143491d4904db5c2e1f35",
+      "year": 2024,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2024-w-21-ms",
+      "sha256": "8db162a9d29c108100d84337c9052b2708103b297d1b6ce89f00cf10c368e158",
+      "year": 2024,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2024-w-22-qp",
+      "sha256": "ed8ced8c5500fb651fda9c1341bd86f6a6c1917ead85d5efed90a4a4ac1b05b9",
+      "year": 2024,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2024-w-22-ms",
+      "sha256": "69135c5b4ab5bafc2562048d19e2c21a9db3e4a3e9698fe3a4df320fae0ed119",
+      "year": 2024,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2025-s-12-qp",
+      "sha256": "2339574fdacf18bb1ffb5e1ae0eb1a3457ac2be27d85f6d499f1fd60ffe3aa5d",
+      "year": 2025,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2025-s-12-ms",
+      "sha256": "00fed045a934cf30f6bad5acd8e22f27a09c37255028989cc894e8276352f712",
+      "year": 2025,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2025-s-13-qp",
+      "sha256": "42bf2fae589434296058dd49976f09e6db6cb41061bd8f528d396c9bc25474ed",
+      "year": 2025,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2025-s-13-ms",
+      "sha256": "14ed72cced0c1b6e8f6a19e2a6c9ad9e8d66bda511711fb91b09970ba9447e37",
+      "year": 2025,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2025-s-22-qp",
+      "sha256": "dea8f17527e2bd62bcca8be4c885f0bb4fe136ee4b7c3f7049129efc6d73ddd5",
+      "year": 2025,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2025-s-22-ms",
+      "sha256": "722e570432cdc8cc495c02d68d7d3f1c20129ca75ff5c347847d744fe72cf02d",
+      "year": 2025,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2025-s-23-qp",
+      "sha256": "c74dfdbc7e91111fbf78a08de6d13cc7f9f966a1a2c597d4bb75369dcd9042c8",
+      "year": 2025,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2025-s-23-ms",
+      "sha256": "160f4dd825c31c36a95cd506f2f8b75d77ac3a8d1a9de6c86f5fca1cb45209f1",
+      "year": 2025,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2025-w-11-qp",
+      "sha256": "e4591c27dcbee6091f84140207ec16085c5ea8ef47878bd55bc71911b8d3259c",
+      "year": 2025,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2025-w-11-ms",
+      "sha256": "6f739a159494ac11443230d4b5808e11cdfc1a92b856c8a76197a90dd3b9ba0e",
+      "year": 2025,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2025-w-12-qp",
+      "sha256": "118f739385e817f071aa872df174d0db6bbc7643f26643c88e5887e58806d7c1",
+      "year": 2025,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2025-w-12-ms",
+      "sha256": "5a02bc50fe099a6a4fa3b20591030d558f98fe304aab10aca202bc0f701e5711",
+      "year": 2025,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2025-w-13-qp",
+      "sha256": "08e1c8d351d738c049c1f245557f05ea5c150474f9d8903a9cee70b1f525f2fc",
+      "year": 2025,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2025-w-13-ms",
+      "sha256": "75c88be82a630199cfea6f4ecd5975d826caa88f34acf6b5f4311addbafb4db4",
+      "year": 2025,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2025-w-21-qp",
+      "sha256": "006afc9558562f9f969226387de474bf945d2dbbda3c263fac1daff82ef9a9d0",
+      "year": 2025,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2025-w-21-ms",
+      "sha256": "5e58d31b5086f9b5dc948e074a0adbe155f05c34bc48858015a6eb4c262b0059",
+      "year": 2025,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2025-w-22-qp",
+      "sha256": "ef853c40beacdd8bb12bd59eca7015d08d837100c200866d00cb5bd2acc785c9",
+      "year": 2025,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2025-w-22-ms",
+      "sha256": "33a46dad780ffd1de069a89bf6b89ca78a38ac5b5236f03d3f56ae3916d288d3",
+      "year": 2025,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2025-w-23-qp",
+      "sha256": "fe5d8bf5c357334f15ce488fe9756d0d9cce1641988297dc17f9953769223e45",
+      "year": 2025,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2025-w-23-ms",
+      "sha256": "cc9b6e2f82fa94b40539b6f390a8797c758c41ca0bfa7ae1013b536ec91971ba",
+      "year": 2025,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2026-s-21-qp",
+      "sha256": "e55d8e7e3bfa17b10987a64bfeca5d576c2a9e2db2fc6e11af8afbb86fde84c3",
+      "year": 2026,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2026-s-21-ms",
+      "sha256": "2a59515572c7e62cf76dfa2f9459f2021eb92f653573f134dab76efb3713d25b",
+      "year": 2026,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2026-s-22-qp",
+      "sha256": "c23110bc2d06787d1b77fc4265a35ab60c118b7aeaf4ca957a7b0de5e0d4e843",
+      "year": 2026,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2026-s-22-ms",
+      "sha256": "124ffcf82d70ad5541fdc06354b0c5ebb9b2651a9a2979da5ebc9f4c999c88d2",
+      "year": 2026,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2026-s-23-qp",
+      "sha256": "84e5b6a627c18ab251b627084757777709994dbe724da0f3cea422c31011bd62",
+      "year": 2026,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2026-s-23-ms",
+      "sha256": "f6942940bd933992ae88766ba454ddabf93f3522fbf19fc93c5bacd4ed1474a8",
+      "year": 2026,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2018-m-12-qp",
+      "sha256": "b792ea237eeadf327da2f5a8e917a74ba24ebf2ccb3b5d211a810d388172e6d9",
+      "year": 2018,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2018-m-12-ms",
+      "sha256": "df685a4461da2d6adfdb06e43c57c0c0e767f6e984d55c2169de07d7dbad2aea",
+      "year": 2018,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2018-m-22-qp",
+      "sha256": "d3fce7cc1acb6727b1117fcaaa922970cafdbfcd2887952307b624313e6900f4",
+      "year": 2018,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2018-m-22-ms",
+      "sha256": "27df514c33f725e0f0b55b53c834ac337740239ca527d8c862ec762fc76220d9",
+      "year": 2018,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2018-s-11-qp",
+      "sha256": "3d6270e7a9e30f009f26e190b613915703c0104a8d00cb75e6a2fc29149e4853",
+      "year": 2018,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2018-s-11-ms",
+      "sha256": "b122f36ec1867c34e5394cf5533608719b8383ef58ba2dd9e8fc50ddb56ab4c8",
+      "year": 2018,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2018-s-12-qp",
+      "sha256": "c0e647b367d015b208344b8a414bc41cb317109e727c7759a0bca7ae6c8e8739",
+      "year": 2018,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2018-s-12-ms",
+      "sha256": "5276623e7a283954cd51191ba92af223472b333e4ae6a43bd9f6ab29672cdf07",
+      "year": 2018,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2018-s-13-qp",
+      "sha256": "2cae96bad8a5d43daa4189e83d88aa64bc9c928e554858aa78b1f0beffa2d073",
+      "year": 2018,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2018-s-13-ms",
+      "sha256": "bd3ebd2e825af82686e10f80ea7ac41df1ad57c2e9d202a3c59abdcba82f97ae",
+      "year": 2018,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2018-s-21-qp",
+      "sha256": "e8d793cbde2df4d659b0f5053fc193027fefe5ae3ddfe38b3159443c2c302b2c",
+      "year": 2018,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2018-s-21-ms",
+      "sha256": "cae25b608b6c2c2f1a45e8adc03da43a0d2b0456fb3722587ddb2cb772ff8c0a",
+      "year": 2018,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2018-s-22-qp",
+      "sha256": "81f9515b0932c0a3675f99903bc7cd902e0cdb9635b2785270104be676e0b4c3",
+      "year": 2018,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2018-s-22-ms",
+      "sha256": "2173e8fbf72fe1e1015a822c87b31002864947dabadc6dda90f318fe63369f4c",
+      "year": 2018,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2018-s-23-qp",
+      "sha256": "1adf6c6105fdcaa0c3f5424f40859f72e06c195aa4468cde043b8190687b23d1",
+      "year": 2018,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2018-s-23-ms",
+      "sha256": "2768b02363380351d0e49a1fb5d2cb2c1b2d0ded7274a2f0e370b2d2c442d559",
+      "year": 2018,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2018-w-11-qp",
+      "sha256": "c2334ee1c412d24933b2f6ae3183674ef1ee00e6602a2ff960d7648c4a5d96c9",
+      "year": 2018,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2018-w-11-ms",
+      "sha256": "a51626c193b79f3c37c060cdbdd3f7d09dfed2bdf80f802521878ba44193b118",
+      "year": 2018,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2018-w-12-qp",
+      "sha256": "18ea881f67f1767cd6b839283a29c2aa9a4b4a94f37161c8a04c8ec55f6244c1",
+      "year": 2018,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2018-w-12-ms",
+      "sha256": "97468c3d2344d2cc5c511649177f1089d789c37587ca6dc3d56e9065806b004f",
+      "year": 2018,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2018-w-13-qp",
+      "sha256": "7b913df572a141d702f88b033863a0a7c5a7a30bb010f12b806b9461f0455286",
+      "year": 2018,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2018-w-13-ms",
+      "sha256": "7579bcac25394e70221e02073a3aed92027d9a5b684d04269d775a792944f1fe",
+      "year": 2018,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2018-w-21-qp",
+      "sha256": "3b0f535119b77a78e5eca7209d6c2b8f9e54e241715173e4d070810c0740aeb3",
+      "year": 2018,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2018-w-21-ms",
+      "sha256": "0ded03c233fed8d882f39c64d5922edb851ae485065493b912464b0e8e6065b4",
+      "year": 2018,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2018-w-22-qp",
+      "sha256": "7a023febf440f3185f09d85b6371d921a03aa4138d1be5cd8a9ffff2a79eea56",
+      "year": 2018,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2018-w-22-ms",
+      "sha256": "5055656b51f629ff6d65ef50dec15afd0a54c62bab0e462159c21a41ca8f4115",
+      "year": 2018,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2018-w-23-qp",
+      "sha256": "af2fdbf303607367afa7929e98b9d2f688975ebff6b2c023ac084f11626223ef",
+      "year": 2018,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2018-w-23-ms",
+      "sha256": "00241b33af1ec03606331f7788a9dd591b2905cb69114cf59fa3de7fd1a0662c",
+      "year": 2018,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2019-m-12-qp",
+      "sha256": "1f46fa842e97d3aea9efa915e88b674ca75056abd42dcdb14cd3b357e37a7d02",
+      "year": 2019,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2019-m-12-ms",
+      "sha256": "56d54bced8cf0a58e3f893b89f672145b428bf32f003a441ad104801b5e9d8f2",
+      "year": 2019,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2019-m-22-qp",
+      "sha256": "c4a3da0a9d0528089aab87613fab2dad60653b6be988d399132ea041fccf74db",
+      "year": 2019,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2019-m-22-ms",
+      "sha256": "6cf7b14cc68723dc5ad226980dab989d37cb56c9432949e5bee87a7ed83db953",
+      "year": 2019,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2019-s-11-qp",
+      "sha256": "a8e25aa348ae5de62816520d3b13ff127949a370e43f52ba55c5203a10fb3ae8",
+      "year": 2019,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2019-s-11-ms",
+      "sha256": "5cea38422562bbb646ffd078ecbfda126481075169720782cf8bb6caa71f60af",
+      "year": 2019,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2019-s-12-qp",
+      "sha256": "c32e5aa83bf83c1b5038d318cb2d0714ac0a5641ed9cc05146650e5038f493b1",
+      "year": 2019,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2019-s-12-ms",
+      "sha256": "208e00e7ee1a24eaebf03d3273735bedb28c06254cb87519832738946413e30e",
+      "year": 2019,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2019-s-13-qp",
+      "sha256": "15f63b9b6444c996dcfd70ce7b7140bb08f9e687dcc40c5405e62f791fa8cd7c",
+      "year": 2019,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2019-s-13-ms",
+      "sha256": "8b1f31ca6afbee98dceb8e7cd2f4e42036a254ad45633f71e6819d4f53762c1f",
+      "year": 2019,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2019-s-21-qp",
+      "sha256": "c92796321e5ea8c147daed549cf3c3a9f553671d7526d76963b719989448dd3b",
+      "year": 2019,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2019-s-21-ms",
+      "sha256": "557ddcbfd0df544ecdbcd53f6841591e550155ca431a064ede8885f031b145a0",
+      "year": 2019,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2019-s-22-qp",
+      "sha256": "cc49218fcf765acb5c526754b5a85c3c86ab7f3840a5b137ccd52b4f1d888934",
+      "year": 2019,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2019-s-22-ms",
+      "sha256": "a424c673db3f0b1713e9d0101f4a050b3b5ba8407f22c22ea2f258bdcd35b43c",
+      "year": 2019,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2019-s-23-qp",
+      "sha256": "7cf7ef4d1253be61120f94799a41e9f346e054ed5e94defb30d60dbfb2bab95d",
+      "year": 2019,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2019-s-23-ms",
+      "sha256": "da1b9eeec92e32a7f90eb26e60381a9ab7f09cde9f7fdb44a5f5d8f9b3782dd7",
+      "year": 2019,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2019-w-11-qp",
+      "sha256": "7e5ea58a7f3dece013fef824b37d06988edfc4bb113855686c0455ae93683b03",
+      "year": 2019,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2019-w-11-ms",
+      "sha256": "d428277b4232a2647df51f39879f8d101195178edee458df774d30bb30c3cfc2",
+      "year": 2019,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2019-w-12-qp",
+      "sha256": "e98edc07b45c0540e485d4e74ec0b0992460b4ae152413246662481dab6d2035",
+      "year": 2019,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2019-w-12-ms",
+      "sha256": "7b1053f2eb8c1ff8f916fc8baf76eadd5f91284447938a116c5d5c89e9f3d485",
+      "year": 2019,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2019-w-13-qp",
+      "sha256": "65c36b715982c4332626b89ee0deb1cfb94b67e07667c6c37c6bfaeb8475888b",
+      "year": 2019,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2019-w-13-ms",
+      "sha256": "607c6467cf2ac78acbc9d6b9162ad02e4fa7185c9cc5d807bddcdf976efc7c6e",
+      "year": 2019,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2019-w-21-qp",
+      "sha256": "5351a8844e88970a59b9dfe2c3aeffc02fb7400d4da86321e192c7dd86d1ed04",
+      "year": 2019,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2019-w-21-ms",
+      "sha256": "087e744ae444bc3ada49115fb05aa85917e8c20cec764bd3fc6308c13ab2b2db",
+      "year": 2019,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2019-w-22-qp",
+      "sha256": "9f565167380a5825c5b5eebf2464b2cab0c2a49a90503a8c6871b325f3473e6d",
+      "year": 2019,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2019-w-22-ms",
+      "sha256": "537b0730c4f7b3c6c1cca9d5b5a94814cf0f91d4e21ab20dba74ecd73fe735ae",
+      "year": 2019,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2019-w-23-qp",
+      "sha256": "5ef61a3370defa4f2d97a56ab658dc4505848f3b5b99aa5b5b8b86dc6de65492",
+      "year": 2019,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2019-w-23-ms",
+      "sha256": "e7cc216a2350615ab5670cdc0ca24bc6d1cc8c958e9a3481d2cee021f34eb078",
+      "year": 2019,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2020-m-12-qp",
+      "sha256": "da393e4195a4c8df56ca25084bf90cdfd2364779138a1b43008fb3c31eb3be35",
+      "year": 2020,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2020-m-12-ms",
+      "sha256": "fb3d46e81ad222f828371de2f3d155f2bd5d0f221326df5888b197db8b86ce54",
+      "year": 2020,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2020-m-22-qp",
+      "sha256": "248559f7bfd2ce2cf9a49a36d1df87a8ae95536f70dc3f9182f76ff880759fe5",
+      "year": 2020,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2020-m-22-ms",
+      "sha256": "390b0826e5d0c3daa754c0ede1ee9ca047ef3a551250a33c2e9b2274c655fad4",
+      "year": 2020,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2020-s-11-qp",
+      "sha256": "b3623bc3c409fd77a662ea0f8864a52299266ce43163055aab2e5b147c0ad1c6",
+      "year": 2020,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2020-s-11-ms",
+      "sha256": "f0c95fae35d7735ebcc8be1ee74f64e77593c4b2661152f9f3c9c65ec316931b",
+      "year": 2020,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2020-s-12-qp",
+      "sha256": "dd5bf4de1b4b6d1ef4011fe1c1dd2a115a90d241fd0733465ff9b1890b920130",
+      "year": 2020,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2020-s-12-ms",
+      "sha256": "092fde4781fa2d70674b3130f58cbdaa53a3f88d2a36ae4d683223e14cf7760f",
+      "year": 2020,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2020-s-13-qp",
+      "sha256": "d57838f067e29e1d6b7080c77c628fcaa99095f9034bbd94c71403b15fe8a9dd",
+      "year": 2020,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2020-s-13-ms",
+      "sha256": "28e9a21a7cf9f3afa0b1fdf2659d894d66a378597a41ada52819695bd7e637d2",
+      "year": 2020,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2020-s-21-qp",
+      "sha256": "14402e20d6ce16065c296b01bc050c9254085642feb92c33d2efcf1354c365f3",
+      "year": 2020,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2020-s-21-ms",
+      "sha256": "41d3d173362e416749af92f23e8e354a6c763eff316c73f54304ff1ff135c838",
+      "year": 2020,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2020-s-22-qp",
+      "sha256": "630b2d0c535a722c20dd7198a1c10d2811164ae01d5764b0deed2d451e8407ea",
+      "year": 2020,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2020-s-22-ms",
+      "sha256": "24ca994beac8603e406cc9600c06de5a40b258a38396e3db4158c338adb7d184",
+      "year": 2020,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2020-s-23-qp",
+      "sha256": "3e5bb040a83933f84230e8593c2dfbd5c8897887a70a2fa5a64810f6fa6605a2",
+      "year": 2020,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2020-s-23-ms",
+      "sha256": "c34c29d46d4488f563e9e2c4d550a71e0c6edc111f24d31e386d1f732cda7387",
+      "year": 2020,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2020-w-11-qp",
+      "sha256": "eda14e668c67668f74195bdab491151346ac3e172a923b26bf23422c559d62b9",
+      "year": 2020,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2020-w-11-ms",
+      "sha256": "6f30ae92c0e95edcd07590d337205f06a922751d0a51646ce9377f283dbedc1d",
+      "year": 2020,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2020-w-12-qp",
+      "sha256": "f7991fa427108731591576546a1682889bbc91e1f651ba8be4058fd2ae5d967a",
+      "year": 2020,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2020-w-12-ms",
+      "sha256": "d7ec90f1278ee1dcc5ba3ef6ca214c875952b14fa871c77a34909f1582b06766",
+      "year": 2020,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2020-w-13-qp",
+      "sha256": "6cd47336c7a9483d6acf1011f7f93ffd829606b45962e1d14996c45896446c3a",
+      "year": 2020,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2020-w-13-ms",
+      "sha256": "426c81ab9bfa4c71d9b2533d0b24097617b8973ccd0709837f85e4e62e5ad34a",
+      "year": 2020,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2020-w-21-qp",
+      "sha256": "7b287ebccef7d0ca6a8f1690330b0ca610c6c564382a5374849f7bc7ac436268",
+      "year": 2020,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2020-w-21-ms",
+      "sha256": "05c6932726cef43962bd2ff0477f8a8216c7cb554d577a6dff123c44dac48d9d",
+      "year": 2020,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2020-w-22-qp",
+      "sha256": "4c224519910c0384a85e1eadcfd898643a1074fac938696fc9003e29bed40e5e",
+      "year": 2020,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2020-w-22-ms",
+      "sha256": "4a8a26118e9b28d24e5539d7dbfd68b278c0bc1bda2a22bb5946de16223742eb",
+      "year": 2020,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2020-w-23-qp",
+      "sha256": "93169a318ff6f753dac63a1737383711b693d56c4f7dbfe470d2ac627745a587",
+      "year": 2020,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2020-w-23-ms",
+      "sha256": "54702580b32f0b71f34f509adf8c71ca911ab09290486270e175bdc8c62f13e4",
+      "year": 2020,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2021-m-12-qp",
+      "sha256": "e047c894eef27edcfa49d8a4f36be824f7146b18baba3e5afe8b55d0319e67a9",
+      "year": 2021,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2021-m-12-ms",
+      "sha256": "a1b4a6328bb4806e2dbc42a634731d9ef58e714ef89c5d745c665eee53259d58",
+      "year": 2021,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2021-m-22-qp",
+      "sha256": "e97c8a8cca5738aab3538c3c696eac1a8fa02f98ab1aa26ee279d3d86db796ae",
+      "year": 2021,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2021-m-22-ms",
+      "sha256": "90bd79c242a8e92e6243d98d922389b87bf22e1072de55209271656b304aaac0",
+      "year": 2021,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2021-s-11-qp",
+      "sha256": "96a66894e636d80c96fb2ad67e6c2f6af46c7d13d7de42733dc76df7d0e054dd",
+      "year": 2021,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2021-s-11-ms",
+      "sha256": "df0085dbdad0ecee7e5a644ee87f00c659bd7a290737f7533f2ffc6c61aee17d",
+      "year": 2021,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2021-s-12-qp",
+      "sha256": "12776df2a7b1aa4e7949d9edff84fc5d05dc997aab7437a8c25b4aeb2a7214ea",
+      "year": 2021,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2021-s-12-ms",
+      "sha256": "66ad0192313fe7b82dcd9d0f4d014a0b77ca988b2482babad11736f48a398cdd",
+      "year": 2021,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2021-s-13-qp",
+      "sha256": "33fad5e2abdf7f588cd4a42c95d394f4fb9f9650eb66ca76702288ec15907723",
+      "year": 2021,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2021-s-13-ms",
+      "sha256": "2a5f925b289dddc4c140308101c80056ae318bd6da31ca2434eb5b245ac28b5c",
+      "year": 2021,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2021-s-21-qp",
+      "sha256": "8403e152d5664fe223cc31bd98ac73aeb3556bd322e2142d9e9e86aecfecab23",
+      "year": 2021,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2021-s-21-ms",
+      "sha256": "c0660b6d56a856c07b8c896b002aecee25f77143519ec8bbf7fca1fb38f3e3cd",
+      "year": 2021,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2021-s-22-qp",
+      "sha256": "e0beee19067773793525cce6304f38ba0af441b154770b74a29862fd3b3dbe90",
+      "year": 2021,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2021-s-22-ms",
+      "sha256": "6195efbe5e2d94ca503398b55dde9a3e8eecf79349481580b62dc33d55e4e6a3",
+      "year": 2021,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2021-s-23-qp",
+      "sha256": "de3bb8b0ff8b460cc22388eb29ad696b7d89df2b6667ead9fa48ca379eb95ae7",
+      "year": 2021,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2021-s-23-ms",
+      "sha256": "f5b4ddd6010a8d010193606eedd8e11c67f7247fd70d6647388851298579243b",
+      "year": 2021,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2021-w-11-qp",
+      "sha256": "5fa905788360cd6dd5b58b423c7ea9f0fd313cc7591b95d6cfd8ea30d2922064",
+      "year": 2021,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2021-w-11-ms",
+      "sha256": "d0f52653e0277fb94b45bcab79391f883a30c574297f1a88c11fd4124f7540c5",
+      "year": 2021,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2021-w-12-qp",
+      "sha256": "e2de2b1f755e52b9f25e80363a1c7b34a3ac9cb3b2c049c47ee57489d071b383",
+      "year": 2021,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2021-w-12-ms",
+      "sha256": "07c82103a745742e65467b4584d864241f5cf1c04fc2c511e918983faff542eb",
+      "year": 2021,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2021-w-13-qp",
+      "sha256": "a01c1b7dc89e67218841f68ee7350c93429bb90a0075e7fe8c5592eaf2ed52fe",
+      "year": 2021,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2021-w-13-ms",
+      "sha256": "a209d63b537d8d86c129ce06181825b00e49e6bc7f2651f80e3eb60946082a86",
+      "year": 2021,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2021-w-21-qp",
+      "sha256": "a5daaa79950870848fbcbeff1ca51613c0126f11fef9851ebf6ae0ce596c6209",
+      "year": 2021,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2021-w-21-ms",
+      "sha256": "ffbcd32ff1a0b3b3a2c13b0a8adb68b57d5d405f6bf6f33d95a3997a1592ace4",
+      "year": 2021,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2021-w-22-qp",
+      "sha256": "69e73c0843ae5f54de89a2d30527ef6b07ce307b1b27fb676dcfdaeccd97b792",
+      "year": 2021,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2021-w-22-ms",
+      "sha256": "984d707d7de9a66d868b7769d9ff39e72d12f738ff5417a44710949cbed6d617",
+      "year": 2021,
+      "role": "ms"
+    },
+    {
+      "source_id": "cie-9701-2021-w-23-qp",
+      "sha256": "d27d88904ab5fac3df83b4e5edbc3be3d596114e1a95e8cd8799225c31219b4d",
+      "year": 2021,
+      "role": "qp"
+    },
+    {
+      "source_id": "cie-9701-2021-w-23-ms",
+      "sha256": "c47489f2c64bf589e822e8f4ca780737f7010b0757c9535fadd4e56e27e7cc5c",
+      "year": 2021,
+      "role": "ms"
+    }
+  ]
+}

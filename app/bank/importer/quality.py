@@ -16,6 +16,9 @@ def region_issues(doc, regions):
             issues.append('out_of_bounds');continue
         pix=p.get_pixmap(matrix=fitz.Matrix(.25,.25),clip=clip,colorspace=fitz.csGRAY,alpha=False)
         if not pix.samples or min(pix.samples)>245:issues.append('blank_region')
+        # Inspect the reading orientation while keeping the source bbox canonical.
+        from ..pdf_layout import layout_page,transform
+        p=layout_page(doc,pi);clip=clip*transform(doc,pi)
         # Ignore diagonal watermarks. Check horizontal text crossing a crop edge.
         for b in p.get_text('dict')['blocks']:
             for line in b.get('lines',[]):
@@ -53,10 +56,6 @@ def question_issues(q,qp,ms,qdoc,mdoc):
     issues += ['answer:'+v for v in region_issues(mdoc,q['answer']['regions'])]
     if q['answer']['regions'] and not any('out_of_bounds' in i or 'invalid_region' in i for i in issues):
         issues+=answer_content_issues(q,mdoc)
-    if q['paper']==1:
-        text='\n'.join(normalized_page(mdoc,r['page_index']).get_text(clip=fitz.Rect(r['bbox'])) for r in q['answer']['regions'])
-        letters=re.findall(r'\b[A-D]\b',text)
-        if letters!=[q['answer'].get('value')]:issues.append('mcq_answer_row_ambiguous')
     return sorted(set(issues))
 
 
@@ -64,15 +63,17 @@ def answer_content_issues(q,doc):
     """Check the actual cropped MS rows, including question identity, not just its manifest."""
     number=int(q['original_question_number']);issues=[];marks=0;labels=set();letters=[]
     for r in q['answer']['regions']:
-        p=normalized_page(doc,r['page_index']);box=fitz.Rect(r['bbox']);ws=p.get_text('words',clip=box)
+        from ..pdf_layout import layout_page,transform
+        from .ms_layout import labels as ms_labels,count_marks
+        p=layout_page(doc,r['page_index']);box=fitz.Rect(r['bbox'])*transform(doc,r['page_index']);ws=p.get_text('words',clip=box)
         if q['paper']==1:
             labels.update(int(w[4]) for w in ws if w[4].isdigit() and p.rect.width*.10<w[0]<p.rect.width*.22)
             letters += [w[4] for w in ws if w[4] in ['A','B','C','D']]
         else:
-            labels.update(int(re.match(r'^(\d+)\(',w[4])[1]) for w in ws if re.match(r'^\d+\([a-z]\)',w[4]) and p.rect.width*.06<w[0]<p.rect.width*.17)
-            marks+=sum(int(w[4]) for w in ws if w[4].isdigit() and 0<int(w[4])<=30 and w[0]>p.rect.width*.87 and not any('total' in z[4].lower() for z in ws if abs(z[1]-w[1])<3))
+            labels.update(n for n,_ in ms_labels(p,ws))
+            marks+=count_marks(p,ws)
     if labels!={number}:issues.append('ms_crop_question_identity_mismatch')
     if q['paper']==1:
-        if letters!=[q['answer'].get('value')]:issues.append('mcq_answer_row_ambiguous')
+        if len(letters)!=1 or (q['answer'].get('value') is not None and letters[0]!=q['answer']['value']):issues.append('mcq_answer_row_ambiguous')
     elif marks!=q['marks']:issues.append('ms_crop_marks_mismatch')
     return issues

@@ -1,14 +1,18 @@
 """Conservative text/geometry parsers. Region order follows the source; diagrams stay vector."""
-from collections import defaultdict
+from collections import defaultdict,Counter
 import re
+from itertools import product
 import fitz
-from ..format import normalized_page
+from ..pdf_layout import layout_page as normalized_page
+from .ms_layout import columns,labels as ms_labels,count_marks
 
 def words(page):return page.get_text('words')
 def body(page):
     w,h=page.rect.width,page.rect.height
-    foot=[r[1] for r in words(page) if r[1]>h*.85 and (r[4]=='©' or re.match(r'9701/',r[4]) or r[4]=='[Turn')]
-    return 54,min(foot)-3 if foot else h-35
+    foot=[r[1] for r in words(page) if r[1]>h*.35 and (r[4]=='©' or re.match(r'(?:\d{2}_)?9701[_/]',r[4]) or r[4]=='[Turn')]
+    page_numbers=[r[3]+4 for r in words(page) if r[4]==str(page.number+1) and w*.43<r[0]<w*.57 and r[1]<min(54,h*.065)]
+    scale=min(1,(min(foot)/(h*.94))) if foot else 1
+    return max([54*scale]+page_numbers),min(foot)-1 if foot else h-35
 
 def reference_page(page):return bool(re.search(r'^\s*(?:BLANK PAGE|The Periodic Table(?: of Elements)?)\s*$',page.get_text(),re.I|re.M))
 def region(page,bbox):return {'page_index':page,'bbox':[round(float(v),3) for v in bbox]}
@@ -19,19 +23,40 @@ def question_starts(doc):
         p=normalized_page(doc,pi)
         if reference_page(p):continue
         top,bottom=body(p)
-        for block in p.get_text('dict')['blocks']:
+        blocks=p.get_text('dict')['blocks']
+        all_spans=[s for b in blocks for line in b.get('lines',[]) if abs(line.get('dir',(1,0))[1])<.01 for s in line['spans']]
+        for block in blocks:
             for line in block.get('lines',[]):
                 for span in line['spans']:
                     text=span['text'].strip();box=span['bbox']
                     if text.isdigit() and 1<=int(text)<=200 and p.rect.width*.07<=box[0]<=p.rect.width*.105 and top<=box[1]<bottom:
-                        rec=(int(text),pi,box[1]-3)
+                        baseline=span['origin'][1]
+                        start=min([box[1]]+[s['bbox'][1] for s in all_spans if abs(s['origin'][1]-baseline)<7 and s['bbox'][0]>box[0]])-3
+                        rec=(int(text),pi,start,box[0])
                         weak.append(rec)
                         if 'bold' in span['font'].lower() or span['flags']&16:strong.append(rec)
     selected=strong if strong else weak
+    if not selected:return []
+    alignment=Counter(round(r[3]) for r in selected).most_common(1)[0][0]
+    # Main numbers align down the margin; diagram labels can be bold digits nearby.
+    selected=[r[:3] for r in selected if abs(r[3]-alignment)<=2.5]
     return sorted(set(selected),key=lambda r:(r[1],r[2]))
 
-def parse_qp(doc,paper):
-    starts=question_starts(doc);result={};issues=[]
+def parse_qp(doc,paper,starts=None):
+    starts=question_starts(doc) if starts is None else starts;result={};issues=[]
+    by_number=defaultdict(list)
+    for anchor in starts:by_number[anchor[0]].append(anchor)
+    expected=list(range(1,(40 if paper==1 else max(by_number,default=0))+1))
+    combinations=1
+    for anchors in by_number.values():combinations*=len(anchors)
+    if set(by_number)==set(expected) and 1<combinations<=64:
+        # A repeated digit after a later question can be a diagram label. Resolve only
+        # when exactly one choice preserves the complete chronological question sequence.
+        valid=[]
+        for selection in product(*(by_number[n] for n in expected)):
+            ordered=sorted(selection,key=lambda v:(v[1],v[2]))
+            if [v[0] for v in ordered]==expected:valid.append(ordered)
+        if len(valid)==1:starts=valid[0]
     counts=defaultdict(int)
     for n,_,_ in starts:counts[n]+=1
     if any(x>1 for x in counts.values()):issues.append('ambiguous_question_number_anchors')
@@ -48,7 +73,9 @@ def parse_qp(doc,paper):
             stop=False
             if paper!=1 and totals:
                 bottom=min(bottom,totals[0].y1+6);stop=True
-            if bottom>top+8:regions.append(region(k,[44,top,p.rect.width-43,bottom]))
+            if bottom>top+8:
+                box=[25,top,p.rect.width-20,bottom]
+                if k==pi or has_content(p,box):regions.append(region(k,box))
             if stop:break
         if n in result:continue
         text='\n'.join(normalized_page(doc,r['page_index']).get_text(clip=fitz.Rect(r['bbox'])) for r in regions)
@@ -57,13 +84,25 @@ def parse_qp(doc,paper):
         result[n]={'regions':regions,'marks':1 if paper==1 else int(totals[-1]) if len(totals)==1 else sum(bracket_marks) if bracket_marks else None,'explicit_total':int(totals[-1]) if len(totals)==1 else None,'bracket_sum':sum(bracket_marks),'text':text}
     return result,issues
 
+def has_content(page,box):
+    clip=fitz.Rect(box)
+    if page.get_text(clip=clip).strip():return True
+    for drawing in page.get_drawings():
+        rect=drawing['rect'];rect=fitz.Rect(rect.x0-1,rect.y0-1,rect.x1+1,rect.y1+1)
+        if not (rect&clip).is_empty:return True
+    for image in page.get_images(full=True):
+        for rect in page.get_image_rects(image[0]):
+            if hasattr(page,'matrix'):rect=rect*page.matrix
+            if not (rect&clip).is_empty:return True
+    return False
+
 def horizontal_rules(page):
-    ys=[]
+    ys=[];left_limit=columns(page)['left']+18
     for draw in page.get_drawings():
         box=draw['rect']
-        if box.width>page.rect.width*.7:ys.extend([box.y0,box.y1])
+        if box.width>page.rect.width*.7 and box.x0<=left_limit:ys.extend([box.y0,box.y1])
         for item in draw['items']:
-            if item[0]=='l' and abs(item[1].y-item[2].y)<.2 and abs(item[1].x-item[2].x)>page.rect.width*.7:ys.append(item[1].y)
+            if item[0]=='l' and abs(item[1].y-item[2].y)<.2 and abs(item[1].x-item[2].x)>page.rect.width*.7 and min(item[1].x,item[2].x)<=left_limit:ys.append(item[1].y)
     return sorted(set(ys))
 
 def parse_ms(doc,paper):
@@ -82,24 +121,23 @@ def parse_ms(doc,paper):
     else:
         for pi in range(1,len(doc)):
             p=normalized_page(doc,pi);ws=words(p);top,bottom=body(p)
-            labels=[]
-            for word in ws:
-                match=re.fullmatch(r'(\d+)(?:\([a-z]\))(?:\([ivx]+\))?',word[4])
-                if match and p.rect.width*.06<word[0]<p.rect.width*.17 and top<=word[1]<bottom:labels.append((int(match[1]),word[1]))
+            labels=[v for v in ms_labels(p,ws) if top<=v[1]<bottom]
             labels=sorted(set(labels),key=lambda v:v[1]);groups=[]
             for n,y in labels:
                 if not groups or groups[-1][0]!=n:groups.append((n,y))
             if not groups:continue
             rules=horizontal_rules(p)
-            def border(y):return max((v for v in rules if y-45<v<=y),default=y-7)
+            def border(y):return max((v for v in rules if v<=y),default=y-7)
             for i,(n,y) in enumerate(groups):
                 start=max(top,border(y));end=border(groups[i+1][1]) if i+1<len(groups) else min(bottom,max((v for v in rules if v>y and v<=bottom),default=bottom))
-                rs=region(pi,[max(35,p.rect.width*.07),start,p.rect.width-60,end])
-                marks=[int(w[4]) for w in ws if w[4].isdigit() and 0<int(w[4])<=30 and w[0]>p.rect.width*.87 and start<=w[1] and w[3]<=end+.5 and not any('total' in z[4].lower() for z in ws if abs(z[1]-w[1])<3)]
-                entry=result.setdefault(n,{'regions':[],'marks':0,'row_count':0});entry['regions'].append(rs);entry['marks']+=sum(marks);entry['row_count']+=sum(1 for num,yy in labels if num==n and start<=yy<=end)
+                col=columns(p);rs=region(pi,[col['left'],start,col['right'],end])
+                marks=count_marks(p,[w for w in ws if start<=w[1] and w[3]<=end+.5])
+                entry=result.setdefault(n,{'regions':[],'marks':0,'row_count':0});entry['regions'].append(rs);entry['marks']+=marks;entry['row_count']+=sum(1 for num,yy in labels if num==n and start<=yy<=end)
     return result,issues
 
 def references(doc,paper,role,ms):
+    from ..format import normalized_page
+    from ..pdf_layout import rotation
     refs=[]
     for pi in range(1,len(doc)):
         p=normalized_page(doc,pi);text=p.get_text()
@@ -110,5 +148,5 @@ def references(doc,paper,role,ms):
                 refs.append(dict(region(pi,[44,hit.y0,p.rect.width-43,body(p)[1]]),rotate=0))
     if role=='ms' and paper!=1 and ms:
         first=min(r['page_index'] for value in ms.values() for r in value['regions'])
-        refs=[dict(region(pi,list(normalized_page(doc,pi).rect)),rotate=0) for pi in range(1,first) if not reference_page(normalized_page(doc,pi))]
+        refs=[dict(region(pi,list(normalized_page(doc,pi).rect)),rotate=(-rotation(doc,pi))%360) for pi in range(1,first) if not reference_page(normalized_page(doc,pi))]
     return refs

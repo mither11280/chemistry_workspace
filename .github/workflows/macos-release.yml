@@ -6,9 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: Application version (e.g. 0.3.0)
+        description: Application version (e.g. 0.4.0)
         required: true
-        default: '0.3.0'
+        default: '0.4.0'
       seed_release_tag:
         description: Existing Release containing the Cambridge-enabled seed DMG
         required: true

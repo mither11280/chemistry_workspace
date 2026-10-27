@@ -9,7 +9,7 @@
     "bank_id": {"type": "string", "minLength": 1},
     "base_revision": {"type": "string", "minLength": 1},
     "revision": {"type": "string", "minLength": 1},
-    "minimum_app_version": {"const": "0.3.0"},
+    "minimum_app_version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"},
     "changelog": {"type": "string", "minLength": 1, "maxLength": 10000},
     "files": {"type": "object", "minProperties": 2, "additionalProperties": {"type": "string", "pattern": "^[a-f0-9]{64}$"}},
     "authorization": {

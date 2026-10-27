@@ -64,8 +64,8 @@ def main():
                 replacement=installed/'replacement.app';subprocess.run(['/usr/bin/ditto',str(app),str(replacement)],check=True)
                 for p in replacement.rglob('*'):
                     if not p.is_symlink():p.chmod(p.stat().st_mode | 0o200 | (0o100 if p.is_dir() else 0))
-                build=replacement/'Contents/Resources/workspace/build-info.json';value=json.loads(build.read_text());value['version']='0.3.1-test-upgrade';build.write_text(json.dumps(value))
-                plist=replacement/'Contents/Info.plist';info=plistlib.loads(plist.read_bytes());info['CFBundleShortVersionString']='0.3.1';info['CFBundleVersion']='0.3.1';plist.write_bytes(plistlib.dumps(info))
+                build=replacement/'Contents/Resources/workspace/build-info.json';value=json.loads(build.read_text());parts=[int(x) for x in value['version'].split('.')];parts[-1]+=1;upgrade='.'.join(map(str,parts));value['version']=upgrade+'-test-upgrade';build.write_text(json.dumps(value))
+                plist=replacement/'Contents/Info.plist';info=plistlib.loads(plist.read_bytes());info['CFBundleShortVersionString']=upgrade;info['CFBundleVersion']=upgrade;plist.write_bytes(plistlib.dumps(info))
                 subprocess.run(['/usr/bin/codesign','--force','--sign','-',str(replacement)],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
                 app.rename(installed/'previous.app');replacement.rename(app)
             for p in app.rglob('*'):

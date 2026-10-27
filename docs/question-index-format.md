@@ -66,3 +66,13 @@ jsonschema 检查类型与结构；验证工具进一步检查 ID 唯一、相�
 ## 版权边界
 
 索引仅描述来源身份、几何区域和编者分类；原卷、原题图形、考纲与评分内容不随公开分发。用户自行导入合法获取的原始文件。源码 MIT 许可不授予考试材料权利。公开索引也不能被解释为权利人允许重分发试卷或商业使用。
+
+### v0.4 的可选阅读方向与历史卷上下文（规范仍为 1.0.0）
+
+旧 MS 的内容流可能在纵向未旋转 CropBox 内竖排、通过页面 `/Rotate` 才横向阅读。所有题目 bbox 依旧保存未旋转 CropBox 坐标，**不能把阅读方向坐标写入 regions**。本导入器在临时阅读坐标上分析后，用逆矩阵回写规范坐标。
+
+Source `metadata.reading_rotations_clockwise` 是可选的显示扩展，如 `{"1":90,"2":90}`：键是十进制、从 0 开始的 page_index；值是以 bbox 中心旋转的顺时针度数，仅允许 0/90/180/270。字段存在时未列出的页为 0；字段缺失时保留既有显示行为。这个字段不改变 MediaBox/CropBox、源文件或定位坐标，独立实现可从同一 bbox 取矢量内容，再按指定角度呈现。缓存应包含此扩展及渲染版本。
+
+历史 Paper 1 Section B 题目在 `question.regions` 前置原卷共用答题编码表，`metadata.shared_context_regions` 记录前置区域数量（当前为 1），`metadata.section` 为 `B`。这些区域必须随学生卷一起导出；列表缩略图可优先展示其后的题干。不能按现代选择题假设只保留题干就完整。
+
+`metadata.original_syllabus` 记录原卷归属周期、文档修订版未知状态和证据；`metadata.current_syllabus` 分开记录目标考纲、候选章节映射和兼容性。`compatibility=unknown` 不表示适用；宽泛知识点的章节候选不能当作逐条考纲校验。2020 May/June 使用 `exam_series_status=cancelled-published-practice-materials`，不能据此声称实际举办了考试。
