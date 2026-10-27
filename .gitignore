@@ -218,3 +218,25 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Chemistry workspace local files
+__pycache__/
+data/cache/
+data/swift-cache/
+data/*.sqlite3*
+data/server.log
+exports/
+.DS_Store
+
+# Local runtime, generated application and exam content
+runtime.json
+*.app/
+data/bank.json
+data/sources/
+tests/*.pdf
+tests/*.png
+.env
+.env.*
+!.env.example
+.venv/
+venv/
