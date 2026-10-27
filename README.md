@@ -2,7 +2,7 @@
 
 面向 A-Level 化学教师的本地组卷软件。保留题库浏览、SQLite 筛选、离线描述助手、作业编辑、学生卷/Mark Scheme 导出、个人作业与 `CIE1.` 分享代码。
 
-**当前采用原始 PDF + 公开坐标 JSON + SQLite + 按需 WebP。公开仓库不随附真题文件或原题全文。** 随附 CIE AS Chemistry 9701 的 2024–2026 February/March Paper 12、22 共 132 题坐标。Paper 2 保留整道大题；题目与知识点仍为待逐题复核的候选，不能视为完整历年题库。
+**当前采用原始 PDF + 公开坐标 JSON + SQLite + 按需 WebP。公开仓库不随附真题文件或原题全文。** 随附 CIE AS Chemistry 9701 的 2024–2026 February/March Paper 12、22 共 132 题坐标。Paper 2 保留整道大题；题目和建议分类经过程序检查，未标记为人工内容复核通过，不能视为完整历年题库。
 
 ## macOS 安装包
 
@@ -10,18 +10,26 @@ Apple Silicon 用户可使用独立 DMG：将 App 拖入 Applications，双击�
 
 当前本机输出为 **INTERNAL-UNNOTARIZED 内部测试包**：ad-hoc 签名，没有 Developer ID 和 Apple 公证，Gatekeeper 可能阻止首次打开。不能把它当作正式可信发行版。[完整安装、构建、公证及 Release 说明](docs/macos-distribution.md)。
 
-旧项目通过菜单「题间 → 从旧项目导入数据…」复制。原目录保留，同 ID 不同作业保存副本，当前草稿不覆盖。校准与题库功能继续保留。
+旧项目通过菜单「题间 → 从旧项目导入数据…」复制。原目录保留，同 ID 不同作业保存副本，当前草稿不覆盖。教师日常界面提供题库更新与报错；旧校准仅作为维护者兼容工具保留。
 
 源码开发版仍可直接运行：
 
 ```sh
-python3 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 python app/server.py
 ```
 
 开发版默认继续使用项目目录数据；独立包改用 Application Support。构建机需要 Python 3.12 + Xcode，用户无需安装。[许可审查](docs/distribution-licensing.md)明确原创 MIT 源码、AGPL PyMuPDF/MuPDF 和 Cambridge 数据各自的边界；开源许可不授予考试材料再分发权。
+
+## v0.3 自动导入与独立题库更新
+
+维护者可用仓库内 `$question-bank-import` Skill 或 `python scripts/import_bank.py analyze ...` 批量导入新的文本型 CIE 9701 Paper 1/2。引擎统一处理封面身份、QP/MS 配对、跨页坐标、分数与多知识点建议；异常题隔离并可按题修正、缓存重试。自动 QA 不等同人工内容复核，教师无需进入逐题审核工作台。
+
+教师在原题/答案预览点击「题目报错」，检查报告后复制、保存或自行提交预填 GitHub Issue。通过「题库版本与更新」导入 `.qbank`，确认版本/修复说明后安装；保留旧 ID、分享与个人作业。基础 App 仍带 132 题，新增批次包再加入 134 题，安装后共 266 题；随后纯索引修复包独立更新，无需重装 App。
+
+[完整工作流、实测与限制](docs/import-system-v03.md) · [Skill](.agents/skills/question-bank-import/SKILL.md) · [机器验收报告](docs/import-acceptance-v03.json)。程序 Git 仓库保持轻量；取得授权的 PDF 只随 Release 包/题库包分发，不进入 Git 历史。
 
 ## 新架构与目录
 
@@ -41,7 +49,7 @@ python app/server.py
 
 现有稳定题 ID 和 CIE1 来源哈希规则保持不变。个人作业与草稿仍在 `data/personal.sqlite3`，按题序保存标题、备注与题目列表；可复制、恢复、导入后修改。公开索引重建不覆盖个人作业。
 
-旧题库不会自动删除。已具备可信原卷坐标的题目可迁移；没有可信坐标时保留旧 PDF 浏览/组卷，并标记待校准。题目卡片中的「校准区域」支持在原卷上拖动框选、跨页追加、编辑区域顺序，保存前自动备份并验证。详见 [迁移与回滚](docs/migration-guide.md)。
+旧题库不会自动删除。已具备可信原卷坐标的题目可迁移；没有可信坐标时保留旧 PDF 浏览/组卷，并标记待校准。维护者设置 `QUESTION_BANK_MAINTAINER=1` 后的「校准区域」支持在原卷上拖动框选、跨页追加、编辑区域顺序，保存前自动备份并验证。详见 [迁移与回滚](docs/migration-guide.md)。
 
 ```sh
 python scripts/bank_tool.py migrate --legacy "/path/to/old-bank"

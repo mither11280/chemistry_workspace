@@ -74,12 +74,12 @@ def source_archive(destination):
     try:
         paths=subprocess.check_output(['git','ls-files','--cached','--others','--exclude-standard','-z'],cwd=ROOT,stderr=subprocess.DEVNULL).decode().split('\0')
     except (subprocess.CalledProcessError,FileNotFoundError):
-        paths=[str(p.relative_to(ROOT)) for folder in ['app','native','scripts','packaging','tests','docs','schemas','indexes','examples','.github'] for p in (ROOT/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts]
+        paths=[str(p.relative_to(ROOT)) for folder in ['app','native','scripts','packaging','tests','docs','schemas','indexes','examples','.github','.agents'] for p in (ROOT/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts]
         paths += ['README.md','LICENSE','requirements.txt','requirements-build.txt','.gitignore','启动.command']
     with tarfile.open(destination,'w:gz') as archive:
         for relative in sorted(set(paths)):
             if not relative:continue
-            allowed_prefixes=('app/','native/','scripts/','packaging/','tests/','docs/','schemas/','indexes/','examples/','.github/')
+            allowed_prefixes=('app/','native/','scripts/','packaging/','tests/','docs/','schemas/','indexes/','examples/','.github/','.agents/')
             allowed_files={'README.md','LICENSE','requirements.txt','requirements-build.txt','.gitignore','启动.command'}
             if not relative.startswith(allowed_prefixes) and relative not in allowed_files:continue
             p=ROOT/relative
@@ -100,7 +100,7 @@ def sign_bundle(app,identity,internal):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--version',default='0.2.0')
+    parser.add_argument('--version',default='0.3.0')
     parser.add_argument('--exam-source-dir',type=Path,default=ROOT/'sources')
     parser.add_argument('--output',type=Path,default=ROOT/'dist')
     parser.add_argument('--sign-identity',default=os.environ.get('CODESIGN_IDENTITY'))
@@ -112,6 +112,7 @@ def main():
     work=ROOT/'build/macos';work.mkdir(parents=True,exist_ok=True)
     internal=not args.sign_identity;identity=args.sign_identity or '-'
     env=dict(os.environ,APP_VERSION=args.version,MACOSX_DEPLOYMENT_TARGET='13.0')
+    env.setdefault('PYINSTALLER_CONFIG_DIR',str(work/'pyinstaller-cache'))
     if args.sign_identity:env['CODESIGN_IDENTITY']=args.sign_identity
     run([sys.executable,'-m','PyInstaller','--noconfirm','--clean','--distpath',work/'pyinstaller-dist','--workpath',work/'pyinstaller-work',ROOT/'packaging/backend.spec'],env=env,cwd=ROOT)
     app=output/'题间.app'

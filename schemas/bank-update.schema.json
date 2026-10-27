@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Chemistry Workspace offline bank update manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "bank_id", "base_revision", "revision", "minimum_app_version", "changelog", "files", "authorization"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "bank_id": {"type": "string", "minLength": 1},
+    "base_revision": {"type": "string", "minLength": 1},
+    "revision": {"type": "string", "minLength": 1},
+    "minimum_app_version": {"const": "0.3.0"},
+    "changelog": {"type": "string", "minLength": 1, "maxLength": 10000},
+    "files": {"type": "object", "minProperties": 2, "additionalProperties": {"type": "string", "pattern": "^[a-f0-9]{64}$"}},
+    "authorization": {
+      "type": "object", "additionalProperties": false,
+      "required": ["statement", "included_source_hashes"],
+      "properties": {
+        "statement": {"type": "string", "minLength": 1},
+        "included_source_hashes": {"type": "array", "uniqueItems": true, "items": {"type": "string", "pattern": "^[a-f0-9]{64}$"}}
+      }
+    }
+  }
+}

@@ -1,0 +1,246 @@
+{
+  "schema_version": 1,
+  "original_bank_questions": 132,
+  "new_batch": {
+    "parser_version": "0.3.0-parser.4",
+    "base_revision": "2026-10-27.coordinates.1",
+    "revision": "2026-10-27.import-v03.1",
+    "files_failed": [],
+    "duplicate_files": 0,
+    "pairs": [
+      {
+        "pair": "9701-2023-m-12",
+        "source_fingerprint": "3c0809dc68d15bca66ee1dddf64c38bd699a53bf4a66c5d1c342ce55f6ddcda7",
+        "cache_hit": false,
+        "detected_questions": 40,
+        "detected_answers": 40,
+        "accepted": 40,
+        "quarantined": 0,
+        "missing_questions": [],
+        "missing_answers": [],
+        "qp_marks": 40,
+        "ms_marks": 40,
+        "issues": []
+      },
+      {
+        "pair": "9701-2023-m-22",
+        "source_fingerprint": "d335e6edb566d1abcff65f39db8eafc92e87354925d29932c46df76afd28eb34",
+        "cache_hit": false,
+        "detected_questions": 4,
+        "detected_answers": 4,
+        "accepted": 4,
+        "quarantined": 0,
+        "missing_questions": [],
+        "missing_answers": [],
+        "qp_marks": 60,
+        "ms_marks": 60,
+        "issues": []
+      },
+      {
+        "pair": "9701-2024-w-13",
+        "source_fingerprint": "fcaa5595153e1ddc1c7697faffd30c9e0d1aa6c83f4223e23104341cf709336e",
+        "cache_hit": false,
+        "detected_questions": 40,
+        "detected_answers": 40,
+        "accepted": 40,
+        "quarantined": 0,
+        "missing_questions": [],
+        "missing_answers": [],
+        "qp_marks": 40,
+        "ms_marks": 40,
+        "issues": []
+      },
+      {
+        "pair": "9701-2024-w-23",
+        "source_fingerprint": "4a7d4ab8587edbd845f5af0bfa96a310587a50cdeb335cd350556e20dd1ffee6",
+        "cache_hit": false,
+        "detected_questions": 4,
+        "detected_answers": 4,
+        "accepted": 4,
+        "quarantined": 0,
+        "missing_questions": [],
+        "missing_answers": [],
+        "qp_marks": 60,
+        "ms_marks": 60,
+        "issues": []
+      },
+      {
+        "pair": "9701-2025-s-11",
+        "source_fingerprint": "a8cfb7cb66389af9c7ebfd6a93c5763db4ea10ab747c1d3af978eff92d41b07e",
+        "cache_hit": false,
+        "detected_questions": 40,
+        "detected_answers": 40,
+        "accepted": 40,
+        "quarantined": 0,
+        "missing_questions": [],
+        "missing_answers": [],
+        "qp_marks": 40,
+        "ms_marks": 40,
+        "issues": []
+      },
+      {
+        "pair": "9701-2025-s-21",
+        "source_fingerprint": "f91e103adab5e0822f06034805027830321ab3f3d23e2aaaa514c0e156999f18",
+        "cache_hit": false,
+        "detected_questions": 6,
+        "detected_answers": 6,
+        "accepted": 6,
+        "quarantined": 0,
+        "missing_questions": [],
+        "missing_answers": [],
+        "qp_marks": 60,
+        "ms_marks": 60,
+        "issues": []
+      }
+    ],
+    "accepted": 134,
+    "quarantined": 0,
+    "total_questions": 266,
+    "elapsed_seconds": 5.213,
+    "review_claim": "Programmatic consistency checks only; not human content review. Missing-number detection is not a measured semantic recall score."
+  },
+  "original_parser_regression": {
+    "parser_version": "0.3.0-parser.4",
+    "base_revision": "2026-10-27.coordinates.1",
+    "revision": "regression-only",
+    "files_failed": [],
+    "duplicate_files": 0,
+    "pairs": [
+      {
+        "pair": "9701-2024-m-12",
+        "source_fingerprint": "4a6f5a6e94b81a80fea3de664eb67d67fdb06e67b0e248b8a9bdb0176ce3e2e9",
+        "cache_hit": false,
+        "detected_questions": 40,
+        "detected_answers": 40,
+        "accepted": 40,
+        "quarantined": 0,
+        "missing_questions": [],
+        "missing_answers": [],
+        "qp_marks": 40,
+        "ms_marks": 40,
+        "issues": []
+      },
+      {
+        "pair": "9701-2024-m-22",
+        "source_fingerprint": "a4828bdc494c4ad5991c3545cfcc8984b0a68943a43fa353361ec9e8244c796f",
+        "cache_hit": false,
+        "detected_questions": 4,
+        "detected_answers": 4,
+        "accepted": 4,
+        "quarantined": 0,
+        "missing_questions": [],
+        "missing_answers": [],
+        "qp_marks": 60,
+        "ms_marks": 60,
+        "issues": []
+      },
+      {
+        "pair": "9701-2025-m-12",
+        "source_fingerprint": "68aa282b488de11bac3f5a001b0b38e844c4487703d76ce3bdf603a23c4c3a85",
+        "cache_hit": false,
+        "detected_questions": 40,
+        "detected_answers": 40,
+        "accepted": 40,
+        "quarantined": 0,
+        "missing_questions": [],
+        "missing_answers": [],
+        "qp_marks": 40,
+        "ms_marks": 40,
+        "issues": []
+      },
+      {
+        "pair": "9701-2025-m-22",
+        "source_fingerprint": "e2fad786ec699ed8c2de316645d072e80392c50df4b5fdcfcd50908ed3389148",
+        "cache_hit": false,
+        "detected_questions": 4,
+        "detected_answers": 4,
+        "accepted": 4,
+        "quarantined": 0,
+        "missing_questions": [],
+        "missing_answers": [],
+        "qp_marks": 60,
+        "ms_marks": 60,
+        "issues": []
+      },
+      {
+        "pair": "9701-2026-m-12",
+        "source_fingerprint": "7cb5a68e5b990667b709d09e598cbd23027922f637f79adf53cd93daa9a27b4e",
+        "cache_hit": false,
+        "detected_questions": 40,
+        "detected_answers": 40,
+        "accepted": 40,
+        "quarantined": 0,
+        "missing_questions": [],
+        "missing_answers": [],
+        "qp_marks": 40,
+        "ms_marks": 40,
+        "issues": []
+      },
+      {
+        "pair": "9701-2026-m-22",
+        "source_fingerprint": "8ebe96f5015e1c7c876fbc26b0a5af442838cd20ce9fa373f7ffc1029aff6f8f",
+        "cache_hit": false,
+        "detected_questions": 4,
+        "detected_answers": 4,
+        "accepted": 4,
+        "quarantined": 0,
+        "missing_questions": [],
+        "missing_answers": [],
+        "qp_marks": 60,
+        "ms_marks": 60,
+        "issues": []
+      }
+    ],
+    "accepted": 132,
+    "quarantined": 0,
+    "total_questions": 132,
+    "elapsed_seconds": 6.629,
+    "review_claim": "Programmatic consistency checks only; not human content review. Missing-number detection is not a measured semantic recall score."
+  },
+  "resumed_cache_pairs": 6,
+  "new_question_automatic_gate_pass_ratio": 1.0,
+  "new_question_number_gaps": 0,
+  "new_missing_answers": 0,
+  "new_qp_ms_pairs_matching_counts": 6,
+  "installed_total": 266,
+  "search_and_twenty_question_export": {
+    "keyword_matches": 5,
+    "local_text_extract_seconds": 0.9279,
+    "first_preview_seconds": 0.0543,
+    "cached_preview_seconds": 0.001,
+    "export_seconds": {
+      "questions": 0.1952,
+      "answers": 0.1183
+    },
+    "export_bytes": {
+      "questions": 859170,
+      "answers": 264886
+    }
+  },
+  "packages": [
+    {
+      "sha256": "be7dc02c8f5a684ae91ddeb0440b8ca4a604cd11cd724068c648ca26d6d3b721",
+      "bytes": 4456650,
+      "revision": "2026-10-27.import-v03.1"
+    },
+    {
+      "sha256": "e092b110a3ee0a3cd7804af05b57a861bd9e388c2fa188baf36368020e6923db",
+      "bytes": 20736,
+      "revision": "2026-10-27.import-v03.2"
+    }
+  ],
+  "report_fix_update_rollback_verified": true,
+  "personal_job_database_byte_identical": true,
+  "limits": [
+    "Only these six new textual QP/MS pairs were tested; not a statistical accuracy estimate.",
+    "Automated agreement and geometric gates are not human review or proof of diagram semantics.",
+    "GitHub Issue URL generated and validated locally; no issue was submitted.",
+    "Original 132 public indices are structurally validated and preserved; parser re-analysis may quarantine conservative anomalies."
+  ],
+  "automated_tests": {
+    "passed": 43,
+    "failed": 0,
+    "javascript_syntax": "passed",
+    "skill_quick_validate": "passed"
+  }
+}

@@ -18,6 +18,9 @@ from bank.sources import SourceStore
 from bank.render import Renderer
 from bank.format import DataError, SourceError, write_json
 from bank.calibration import calibrate
+from bank.feedback import build_report
+from bank.updates import inspect_package,install_package
+from bank.format import sha256
 from runtime import RuntimePaths
 
 PATHS=RuntimePaths.discover();PATHS.prepare()
@@ -98,7 +101,7 @@ def bank_info():
         counts=dict(c.execute(CATALOG.CANDIDATES+"SELECT j.value,count(DISTINCT q.question_id) FROM candidates q,json_each(q.payload,'$.topics') j GROUP BY j.value").fetchall())
         years=[r[0] for r in c.execute(CATALOG.CANDIDATES+'SELECT DISTINCT year FROM candidates ORDER BY year DESC')]
     return {'bank_id':CATALOG.index['bank_id'],'revision':CATALOG.index['revision'],'total':total,
-            'topics':[dict(t,count=counts.get(t['id'],0)) for t in CATALOG.index['topics']],'years':years}
+            'topics':[dict(t,count=counts.get(t['id'],0)) for t in CATALOG.index['topics']],'years':years,'app_version':PATHS.build['version'],'maintainer':os.environ.get('QUESTION_BANK_MAINTAINER')=='1'}
 
 def make_pdf(job,kind):return RENDERER.export(validate_job(job),kind,EXPORTS)
 
@@ -155,7 +158,23 @@ class Handler(BaseHTTPRequestHandler):
         if not self.trusted() or self.headers.get('X-Local-Request')!='1' or (origin and origin!=f'http://{self.headers.get("Host")}'):return self.send({'error':'Invalid origin'},403)
         try:
             size=int(self.headers.get('Content-Length','0'));path=urlparse(self.path).path
-            if size<0 or size>(64*1024*1024 if path=='/api/source-upload' else 600000):raise DataError('请求过大')
+            if size<0 or size>(512*1024*1024 if path=='/api/bank-update-upload' else 64*1024*1024 if path=='/api/source-upload' else 600000):raise DataError('请求过大')
+            if path=='/api/bank-update-upload':
+                staging=DATA/'bank-updates/staging';staging.mkdir(parents=True,exist_ok=True)
+                token=uuid.uuid4().hex;target=staging/(token+'.qbank')
+                # Bound disk retention for abandoned confirmations.
+                for old in staging.glob('*.qbank'):
+                    if old.stat().st_mtime<time.time()-86400:old.unlink(missing_ok=True)
+                try:
+                    with target.open('xb') as stream:
+                        remaining=size
+                        while remaining:
+                            chunk=self.rfile.read(min(remaining,1024*1024))
+                            if not chunk:raise DataError('上传未完成')
+                            stream.write(chunk);remaining-=len(chunk)
+                    info,index,manifest,_=inspect_package(target,RESOURCES/'schemas')
+                    return self.send({'token':token,'sha256':sha256(target),'revision':info['revision'],'base_revision':info['base_revision'],'changelog':info['changelog'],'questions':len(index['questions']),'included_sources':len([n for n in info['files'] if n.startswith('sources/')])})
+                except Exception:target.unlink(missing_ok=True);raise
             if path=='/api/source-upload':
                 name=parse_qs(urlparse(self.path).query).get('name',['upload.pdf'])[0]
                 fd,temp=tempfile.mkstemp(dir=DATA,suffix='.pdf')
@@ -170,6 +189,16 @@ class Handler(BaseHTTPRequestHandler):
                     return self.send(result)
                 finally:Path(temp).unlink(missing_ok=True)
             body=json.loads(self.rfile.read(size))
+            if path=='/api/report':return self.send(build_report(CATALOG,body['question_id'],body['category'],body['description'],PATHS.build['version']))
+            if path=='/api/bank-update-install':
+                token=body.get('token','')
+                if not re.fullmatch(r'[a-f0-9]{32}',token):raise DataError('无效更新包')
+                target=DATA/'bank-updates/staging'/(token+'.qbank')
+                with MUTATION_LOCK:
+                    result=install_package(CATALOG,target,body['sha256'])
+                    SOURCES.extract_local_content()
+                target.unlink(missing_ok=True)
+                return self.send(result)
             if path=='/api/import-project':
                 from profile_import import import_project
                 with MUTATION_LOCK:result=import_project(body['path'],CATALOG,SOURCES,DB)
@@ -181,6 +210,7 @@ class Handler(BaseHTTPRequestHandler):
                 chosen=CATALOG.search(body.get('filters',{}),remaining,exclude=excluded,random_order=True)['questions'] if remaining else []
                 return self.send({'questions':[compat(q) for q in chosen]})
             if path=='/api/calibrate':
+                if os.environ.get('QUESTION_BANK_MAINTAINER')!='1':raise DataError('坐标维护请使用导入 Skill / CLI')
                 with MUTATION_LOCK:result=calibrate(CATALOG,SOURCES,body)
                 return self.send(result)
             if path=='/api/maintenance':
@@ -190,6 +220,7 @@ class Handler(BaseHTTPRequestHandler):
                     if action=='rebuild':
                         result=CATALOG.rebuild(force=True);SOURCES.extract_local_content();return self.send(result)
                     if action=='migrate':
+                        if os.environ.get('QUESTION_BANK_MAINTAINER')!='1':raise DataError('旧库迁移请使用维护者 CLI')
                         from bank.migration import migrate
                         return self.send(migrate(ROOT,body['path'],CATALOG,SOURCES))
                 raise DataError('未知维护操作')

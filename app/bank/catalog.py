@@ -47,8 +47,14 @@ class Catalog:
                 c.execute('ALTER TABLE local_content ADD COLUMN answer_hash TEXT')
                 c.execute('PRAGMA user_version=2')
 
-    def read_contract(self):
+    def public_contract(self):
         index=read_json(self.index_path);manifest=read_json(self.manifest_path)
+        from .updates import active_contract
+        index,manifest=active_contract(self,index,manifest)
+        return index,manifest
+
+    def read_contract(self):
+        index,manifest=self.public_contract()
         # Calibrated or migrated data is local and never automatically published.
         local_index=self.data/'question-index.local.json';local_manifest=self.data/'source-manifest.local.json'
         if local_manifest.exists():
@@ -57,7 +63,9 @@ class Catalog:
             manifest['sources']=list(merged.values())
         if local_index.exists():
             local=read_json(local_index)
-            merged={q['question_id']:q for q in index['questions']};merged.update({q['question_id']:q for q in local['questions']})
+            merged={q['question_id']:q for q in index['questions']}
+            for q in local['questions']:
+                if q['question_id'] not in merged or q['metadata'].get('calibration')=='manual':merged[q['question_id']]=q
             index['questions']=list(merged.values())
         validate(index,manifest,self.resource_root/'schemas')
         return index,manifest

@@ -264,3 +264,8 @@ tmp/
 release-inputs/
 .packaging-venv/
 !packaging/backend.spec
+
+# Maintainer import caches and independent bank release artifacts
+*.qbank
+*.qbank.tmp
+import-work/

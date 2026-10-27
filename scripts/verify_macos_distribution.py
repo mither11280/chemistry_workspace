@@ -64,8 +64,8 @@ def main():
                 replacement=installed/'replacement.app';subprocess.run(['/usr/bin/ditto',str(app),str(replacement)],check=True)
                 for p in replacement.rglob('*'):
                     if not p.is_symlink():p.chmod(p.stat().st_mode | 0o200 | (0o100 if p.is_dir() else 0))
-                build=replacement/'Contents/Resources/workspace/build-info.json';value=json.loads(build.read_text());value['version']='0.2.1-test-upgrade';build.write_text(json.dumps(value))
-                plist=replacement/'Contents/Info.plist';info=plistlib.loads(plist.read_bytes());info['CFBundleShortVersionString']='0.2.1';info['CFBundleVersion']='0.2.1';plist.write_bytes(plistlib.dumps(info))
+                build=replacement/'Contents/Resources/workspace/build-info.json';value=json.loads(build.read_text());value['version']='0.3.1-test-upgrade';build.write_text(json.dumps(value))
+                plist=replacement/'Contents/Info.plist';info=plistlib.loads(plist.read_bytes());info['CFBundleShortVersionString']='0.3.1';info['CFBundleVersion']='0.3.1';plist.write_bytes(plistlib.dumps(info))
                 subprocess.run(['/usr/bin/codesign','--force','--sign','-',str(replacement)],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
                 app.rename(installed/'previous.app');replacement.rename(app)
             for p in app.rglob('*'):
@@ -100,6 +100,9 @@ def main():
                             import fitz
                             with fitz.open(stream=data,filetype='pdf') as doc:
                                 text=''.join(p.get_text() for p in doc);assert 'Assignment 1' in text and 'Assignment 2' in text
+                        feedback=post('/api/report',{'question_id':job['question_ids'][0],'category':'crop','description':'Frozen runtime report preview, no issue submitted.'})
+                        assert feedback['report']['app_version']==health['version']
+                        assert feedback['issue_url'].startswith('https://github.com/mither11280/chemistry_workspace/issues/new?')
                         report['checks'].append('Native app: SQL query, missing-source detection, HTTP PDF import, WebP, QP/MS export, share, save and draft passed')
                     else:
                         jobs=json.loads(get('/api/jobs'));saved=next(j for j in jobs if j['id']==expected_job['id'])

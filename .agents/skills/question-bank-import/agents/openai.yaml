@@ -1,0 +1,6 @@
+interface:
+  display_name: "题库自动导入"
+  short_description: "批量导入 CIE 化学真题，隔离异常并发布可独立安装的题库更新"
+  default_prompt: "使用 $question-bank-import 导入我提供的 CIE 9701 QP/MS，生成自动质量报告和可安装的题库更新包。"
+policy:
+  allow_implicit_invocation: true

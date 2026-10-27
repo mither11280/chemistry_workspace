@@ -208,8 +208,11 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
                 do { try data.write(to: file); DispatchQueue.main.async { NSWorkspace.shared.open(file) } } catch { }
             }.resume()
         }
+        if dict["action"] == "openExternal", let value = dict["url"], let url = URL(string: value), url.scheme == "https", url.host == "github.com", url.path == "/mither11280/chemistry_workspace/issues/new" {
+            NSWorkspace.shared.open(url)
+        }
         if dict["action"] == "saveText", let text = dict["text"] {
-            let panel = NSSavePanel(); panel.nameFieldStringValue = "作业方案.ciepaper"
+            let panel = NSSavePanel(); panel.nameFieldStringValue = ((dict["name"] ?? "作业方案.ciepaper") as NSString).lastPathComponent
             panel.beginSheetModal(for: window) { response in
                 if response == .OK, let url = panel.url { try? text.write(to: url, atomically: true, encoding: .utf8) }
             }

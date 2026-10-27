@@ -69,3 +69,30 @@ for kind in ['questions','answers']:
 assert json.loads(get('/api/check'))['catalog']['integrity']=='ok'
 assert post('/api/maintenance',{'action':'cache-clear'})['files']==0
 ''')
+    def test_report_and_bank_update_http_workflow(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);make_fixture(root)
+            self.run_server_test(root,r'''
+from copy import deepcopy
+from bank.updates import build_package
+from bank.format import sha256
+job={'title':'Persist across bank update','question_ids':['fixture-q1'],'notes':'private teacher note'}
+post('/api/save',job);post('/api/draft',job)
+feedback=post('/api/report',{'question_id':'fixture-q1','category':'topics','description':'Wrong topic; local file /Users/teacher/private.pdf','ignored_personal_job':job})
+assert feedback['issue_url'].startswith('https://github.com/mither11280/chemistry_workspace/issues/new?')
+assert 'private teacher note' not in json.dumps(feedback)
+assert '/Users/teacher' not in json.dumps(feedback)
+index=deepcopy(server.CATALOG.index);index['revision']='http-update.1';index['questions'][0]['topics']=[]
+package=root=server.ROOT/'update.qbank'
+build_package(package,index,server.CATALOG.manifest,server.CATALOG.index,server.CATALOG.manifest,server.RESOURCES/'schemas','Fix classification')
+request=urllib.request.Request(base+'/api/bank-update-upload',package.read_bytes(),headers={'X-Local-Request':'1','Content-Type':'application/octet-stream'})
+preview=json.loads(urllib.request.urlopen(request).read())
+assert json.loads(get('/api/bank'))['revision']=='example.1'
+assert preview['sha256']==sha256(package)
+post('/api/bank-update-install',{'token':preview['token'],'sha256':preview['sha256']})
+assert json.loads(get('/api/bank'))['revision']=='http-update.1'
+assert json.loads(get('/api/draft'))==job
+assert json.loads(get('/api/jobs'))[0]['title']==job['title']
+try:post('/api/calibrate',{});raise AssertionError('teacher should not see maintenance workbench')
+except urllib.error.HTTPError as e:assert e.code==400
+''')
