@@ -2,6 +2,21 @@
 
 这是可在当前 Mac 使用的 v0.1 开发版。界面使用原生 macOS 窗口，题库、草稿、个人作业与 PDF 都留在项目目录；不需要账号、云端服务或 API Key。
 
+## 下载后直接使用
+
+仓库现在附带 **132 道题的内置题库**，包括切好的题目 PDF、官方答案 PDF、分类索引和来源资料。下载 ZIP 并解压（或 `git clone`）后，无需自行准备真题、导入题库或设置原作者的本地路径。
+
+```sh
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python3 app/server.py
+```
+
+打开终端显示的本机网址，即可选题、组卷、保存个人作业和导出 PDF。Python 3.9 或更新版本可用；这个入口支持 macOS、Windows 和 Linux（Windows 激活命令为 `.venv\Scripts\activate`）。首次运行会自动生成个人数据库和缓存，下载者不会得到作者的个人作业。
+
+macOS 若要使用桌面窗口，在虚拟环境激活后执行 `./scripts/build_app.sh`，然后打开 `题间.app`。构建需要 Xcode Command Line Tools / Swift；当前仍需保留整个项目目录，不是独立安装包。
+
 ## 启动
 
 双击 `题间.app`，或者双击 `启动.command`。**请保留整个项目目录，不要只把 .app 单独移走。** 当前使用这台 Mac 已安装的 Python 3.9 + PyMuPDF，路径记录在 `runtime.json`。这不是已签名、捆绑运行时的通用安装包；另一台 Mac 需要 Python 3 + PyMuPDF 后执行 `scripts/build_app.sh`，Windows 桌面壳尚未制作。
@@ -25,7 +40,7 @@
 | 2025 March | 40 题 / 40 分 | 4 道大题 / 60 分 |
 | 2026 March | 40 题 / 40 分 | 4 道大题 / 60 分 |
 
-共 132 道题。来源是用户提供的本地 QP / MS，已复制至 `data/sources`，附 2025–2027 考纲。原始文件未改动。每道题保留原始页序、裁剪坐标、题号、分值、来源哈希与状态。
+共 132 道题。来源是用户提供的本地 QP / MS，随内置题库保存在 `question_bank/CIE/9701/AS/sources`，附 2025–2027 考纲。原始文件未改动。每道题保留原始页序、裁剪坐标、题号、分值、来源哈希与状态。
 
 **这是待复核的起始题库，不是完整历年题库或正式验收题册。** 自动分割、答案区域匹配及关键词分类未经独立逐题内容验收，所有题目维持 `pending_review`。标签是候选主题，尚未建立逐条考纲映射；旧年份不宣称完全符合现行考纲。PDF 显式标注教师试用稿。
 
@@ -35,8 +50,10 @@ Paper 2 目前以完整大题为最小组卷单位，不支持独立小问选择
 
 - `app/`：本地 HTTP API、PDF 引擎、HTML/CSS/JS 界面。
 - `native/`：Swift + WKWebView 桌面窗口，负责服务生命周期与本机文件打开。
-- `data/bank.json`：可重建题库清单、裁剪区域、来源与覆盖统计。
-- `data/sources/`：本地原卷、评分标准和考纲副本。
+- `question_bank/CIE/9701/AS/`：随仓库提交的可移植题库；`index.json` 为运行索引、`topics.json` 为知识点交叉索引。
+- `question_bank/.../2025-March/Paper-1/Q03/`：每题一目录，包含 `question.pdf`、`answer.pdf`、`metadata.json`；年份、Paper 和题号直接可查。
+- `question_bank/.../sources/`：原卷、评分标准和考纲，用于溯源、打开完整原卷及导出参考数据。
+- `data/bank.json`、`data/sources/`：本机导入中间资料，不提交；仅旧版缺少内置题库时作为后备。
 - `data/personal.sqlite3`：个人作业与当前草稿。备份时退出 App 后复制这个文件；建议连同整个 `data/` 备份。
 - `data/cache/`：题图缓存，可重建。
 - `exports/`：用户导出的 PDF；`tests/` 中的 PDF 为验收示例。
@@ -57,18 +74,16 @@ node --check app/app.js
 下一阶段：逐题内容复核与准确考纲分类 → Paper 2 小问和依赖 → 扩充年份 → 独立运行时打包与 Windows 版本。
 
 
-## 从 GitHub 恢复
+## 维护题库
 
-仓库保存源码与文档；真题 PDF、提取题干和本机路径的 `data/bank.json`、个人作业数据库、图片缓存、测试导出、`runtime.json` 与编译出的 `.app` 都不提交。已在本机的这些文件不受上传影响。
+普通使用者无需运行导入脚本。维护者重新切题后，可重建并提交内置题库：
 
 ```sh
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
 python3 scripts/import_bank.py --source-root "/path/to/9701" --syllabus "/path/to/9701-syllabus-2025-2027.pdf"
-./scripts/build_app.sh
+python3 scripts/package_bank.py
+python3 -m unittest discover -s tests -v
 ```
 
-`--source-root` 下应有 `2024_M`、`2025_M`、`2026_M`，每个目录包含 `9701_mYY_qp_12.pdf`、`9701_mYY_ms_12.pdf`、`9701_mYY_qp_22.pdf`、`9701_mYY_ms_22.pdf`（YY 为 24、25、26）。题库索引和预览缓存目录会自动生成。
+`--source-root` 下应有 `2024_M`、`2025_M`、`2026_M`，每个目录包含 `9701_mYY_qp_12.pdf`、`9701_mYY_ms_12.pdf`、`9701_mYY_qp_22.pdf`、`9701_mYY_ms_22.pdf`。导入器是当前批次专用，扩充其他批次前需要核对版式与覆盖范围。打包脚本从既有坐标生成独立矢量 PDF，保留稳定 ID、来源哈希、原始区域和待复核状态，移除原作者的绝对路径。更新文件哈希会使预览缓存自动失效。
 
-Mac 构建需要 Swift / Xcode Command Line Tools。也可直接运行 `python3 app/server.py`，在浏览器中打开打印的本机地址。完整功能测试需先导入题库；没有题库时可运行 `python3 -m py_compile app/server.py scripts/import_bank.py` 和 `node --check app/app.js` 检查源码。
+知识点目前仍是关键词建议标签，通过 `topics.json` 引用同一题目，避免跨知识点重复保存 PDF；不是经过复核的逐条考纲分类。源码的 MIT 许可证不授予 Cambridge / UCLES 真题和评分标准的版权许可，见 [题库说明](question_bank/README.md)。

@@ -11,12 +11,34 @@ class CoreTests(unittest.TestCase):
   for row in server.BANK['coverage']:self.assertEqual(row['marks'],40 if row['paper']==1 else 60)
  def test_regions_and_sources(self):
   import hashlib
-  for name,source in server.BANK['sources'].items():self.assertEqual(hashlib.sha256((server.DATA/'sources'/name).read_bytes()).hexdigest(),source['sha256'])
+  for name,source in server.BANK['sources'].items():self.assertEqual(hashlib.sha256((server.BANK_ROOT/'sources'/name).read_bytes()).hexdigest(),source['sha256'])
   for q in server.QUESTIONS.values():
    for kind in ['question','answer']:
-    with fitz.open(server.DATA/'sources'/q['qp' if kind=='question' else 'ms']) as d:
+    with fitz.open(server.BANK_ROOT/'sources'/q['qp' if kind=='question' else 'ms']) as d:
      for r in q[kind+'_regions']:
       rect=fitz.Rect(r['bbox']);self.assertTrue(d[r['page']-1].rect.contains(rect));self.assertGreater(rect.height,10)
+ def test_portable_bank(self):
+  import hashlib
+  self.assertEqual(server.BANK_ROOT,server.BUNDLED)
+  self.assertNotIn('original_path',json.dumps(server.BANK))
+  topics=json.loads((server.BANK_ROOT/'topics.json').read_text())
+  for topic in topics:
+   self.assertEqual(topic['question_ids'],[q['id'] for q in server.BANK['questions'] if topic['id'] in q['topics']])
+  for q in server.QUESTIONS.values():
+   folder=server.BANK_ROOT/Path(q['files']['question']).parent
+   self.assertEqual(json.loads((folder/'metadata.json').read_text()),q)
+   for kind in ['question','answer']:
+    path,regions=server.question_material(q,kind)
+    self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(),q['file_sha256'][kind])
+    self.assertEqual(len(regions),len(q[kind+'_regions']))
+    with fitz.open(path) as doc:
+     for page,original in zip(doc,q[kind+'_regions']):
+      rect=fitz.Rect(original['bbox'])
+      self.assertAlmostEqual(page.rect.width,rect.width,places=2)
+      self.assertAlmostEqual(page.rect.height,rect.height,places=2)
+      # Every packaged region must actually render ink, including graphical questions.
+      pixels=page.get_pixmap(matrix=fitz.Matrix(.5,.5),colorspace=fitz.csGRAY)
+      self.assertLess(min(pixels.samples),200)
  def test_share_roundtrip_and_tampering(self):
   code=server.share(self.job);self.assertEqual(server.unshare(code),self.job)
   payload=json.loads(zlib.decompress(base64.urlsafe_b64decode(code[5:]+'='*(-len(code[5:])%4))))

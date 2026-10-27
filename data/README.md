@@ -1,5 +1,5 @@
-# 本地数据目录
+# 个人运行数据
 
-GitHub 只保存程序源码。真题 PDF、考纲、提取的题库索引、个人作业数据库、缓存和导出文件保留在本机，不提交。
+随仓库提供的共享题库位于 `question_bank/CIE/9701/AS/`，首次启动无需导入。程序自动建立本目录及预览缓存、个人作业 SQLite 数据库；这些个人文件不提交到 GitHub。
 
-按照项目 README 的「从 GitHub 恢复」步骤导入本地资料，会生成 `sources/`、`cache/` 和 `bank.json`。运行 App 后自动生成 `personal.sqlite3`。
+`bank.json` 和 `sources/` 是维护者本机切题中间资料，不是新用户运行的依赖。维护流程见项目 README。

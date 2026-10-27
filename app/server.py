@@ -5,10 +5,14 @@ from urllib.parse import urlparse, parse_qs, unquote
 import fitz
 ROOT=Path(__file__).resolve().parents[1]
 DATA=ROOT/'data'; EXPORTS=ROOT/'exports'; EXPORTS.mkdir(exist_ok=True)
-if not (DATA/'bank.json').exists():
- raise SystemExit('Local bank not found. Run scripts/import_bank.py --source-root PATH --syllabus PATH first; see README.md.')
+BUNDLED=ROOT/'question_bank/CIE/9701/AS'
+# A fresh clone uses the checked-in bank. Older local-only installations still work.
+BANK_ROOT=BUNDLED if (BUNDLED/'index.json').exists() else DATA
+INDEX=BANK_ROOT/('index.json' if BANK_ROOT==BUNDLED else 'bank.json')
+if not INDEX.exists():
+ raise SystemExit('Question bank not found. Restore question_bank/ from the repository; see README.md.')
 (DATA/'cache').mkdir(parents=True,exist_ok=True)
-BANK=json.loads((DATA/'bank.json').read_text()); QUESTIONS={q['id']:q for q in BANK['questions']}
+BANK=json.loads(INDEX.read_text(encoding='utf-8')); QUESTIONS={q['id']:q for q in BANK['questions']}
 DB=Path(os.environ.get('QUESTION_BANK_DB',str(DATA/'personal.sqlite3')))
 def connection():
  c=sqlite3.connect(DB);c.row_factory=sqlite3.Row
@@ -46,13 +50,22 @@ def unshare(code):
  if not isinstance(hashes,dict) or any(hashes.get(n)!=BANK['sources'][n]['sha256'] for n in expected):raise ValueError('题库版本或原卷内容不一致，不能静默替换题目')
  return job
 
+def question_material(q,kind):
+ # Portable pages already contain the crop. Original coordinates remain in the index for provenance.
+ if q.get('files',{}).get(kind):
+  path=BANK_ROOT/q['files'][kind]
+  with fitz.open(path) as doc:
+   regions=[{'page':i+1,'bbox':list(p.rect)} for i,p in enumerate(doc)]
+  return path,regions
+ return BANK_ROOT/'sources'/q['qp' if kind=='question' else 'ms'],q[kind+'_regions']
+
 def make_pdf(job,kind):
  job=validate_job(job)
  if not job['question_ids']:raise ValueError('请先加入题目')
  if kind not in ['questions','answers']:raise ValueError('无效的导出类型')
  doc=fitz.open();source_docs={};is_answer=kind=='answers'
  def source(name):
-  if name not in source_docs:source_docs[name]=fitz.open(DATA/'sources'/name)
+  if name not in source_docs:source_docs[name]=fitz.open(BANK_ROOT/'sources'/name)
   return source_docs[name]
  def page(header,landscape=False):
   p=doc.new_page(width=841.89 if landscape else 595.28,height=595.28 if landscape else 841.89)
@@ -68,7 +81,9 @@ def make_pdf(job,kind):
  if job['notes']:p.insert_textbox(fitz.Rect(42,350,553,490),job['notes'],fontname='china-s',fontsize=11)
  y=515
  for idx,qid in enumerate(job['question_ids'],1):
-  q=QUESTIONS[qid];regions=q['answer_regions' if is_answer else 'question_regions'];name=q['ms' if is_answer else 'qp'];src=source(name)
+  q=QUESTIONS[qid];path,regions=question_material(q,'answer' if is_answer else 'question')
+  if path not in source_docs:source_docs[path]=fitz.open(path)
+  src=source_docs[path]
   label=f"Assignment {idx}  |  {q['year']} March 9701/{q['variant']} Q{q['number']}  |  {q['marks']} marks"
   for ri,r in enumerate(regions):
    clip=fitz.Rect(r['bbox']);width=511; height=clip.height*width/clip.width
@@ -126,10 +141,14 @@ class Handler(BaseHTTPRequestHandler):
     with connection() as c:rows=c.execute('SELECT * FROM jobs ORDER BY updated DESC').fetchall()
     return self.send([dict(json.loads(r['body']),id=r['id'],updated=r['updated']) for r in rows])
    if path.startswith('/preview/'):
-    _,_,qid,kind,index=path.split('/');q=QUESTIONS[qid];r=q['answer_regions' if kind=='answer' else 'question_regions'][int(index)]
-    name=q['ms' if kind=='answer' else 'qp'];cache=DATA/'cache'/f'{qid}-{kind}-{index}.png'
+    _,_,qid,kind,index=path.split('/');q=QUESTIONS[qid]
+    if kind not in ['question','answer']:raise ValueError('无效预览类型')
+    material,regions=question_material(q,kind);r=regions[int(index)]
+    # Include crop identity to invalidate previews when the packaged bank changes.
+    version=q.get('file_sha256',{}).get(kind,BANK['revision'])[:16]
+    cache=DATA/'cache'/f'{qid}-{kind}-{index}-{version}.png'
     if not cache.exists():
-     with fitz.open(DATA/'sources'/name) as d:cache.write_bytes(d[r['page']-1].get_pixmap(matrix=fitz.Matrix(1.6,1.6),clip=fitz.Rect(r['bbox']),alpha=False).tobytes('png'))
+     with fitz.open(material) as d:cache.write_bytes(d[r['page']-1].get_pixmap(matrix=fitz.Matrix(1.6,1.6),clip=fitz.Rect(r['bbox']),alpha=False).tobytes('png'))
     return self.send(cache.read_bytes(),ctype='image/png')
    if path.startswith('/exports/'):
     name=path.split('/')[-1]
@@ -138,7 +157,7 @@ class Handler(BaseHTTPRequestHandler):
    if path.startswith('/source/'):
     name=path.split('/')[-1]
     if name not in BANK['sources']:raise ValueError('无效原卷')
-    return self.send((DATA/'sources'/name).read_bytes(),ctype='application/pdf')
+    return self.send((BANK_ROOT/'sources'/name).read_bytes(),ctype='application/pdf')
    files={'/':'index.html','/app.js':'app.js','/tokens.css':'tokens.css','/style.css':'style.css'}
    if path in files:
     mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8'};f=ROOT/'app'/files[path]

@@ -228,7 +228,7 @@ data/server.log
 exports/
 .DS_Store
 
-# Local runtime, generated application and exam content
+# Local runtime, generated application and import intermediates
 runtime.json
 *.app/
 data/bank.json
