@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.0.0",
+  "coordinate_system": "pdf-point-unrotated-cropbox-top-left-v1",
+  "sources": [
+    {
+      "source_id": "fixture-qp",
+      "filename": "original-qp.pdf",
+      "path": "sources/fixture/original-qp.pdf",
+      "sha256": "65d51ad7fcf702a09b61e37ea6163621387fdb19ce975db8c9cc88d42d5dc07b",
+      "page_count": 3,
+      "pages": [
+        {
+          "page_index": 0,
+          "media_box": [
+            0.0,
+            0.0,
+            600.0,
+            800.0
+          ],
+          "crop_box": [
+            20.0,
+            40.0,
+            580.0,
+            770.0
+          ],
+          "rotation": 90,
+          "width": 560.0,
+          "height": 730.0,
+          "user_unit": 1
+        },
+        {
+          "page_index": 1,
+          "media_box": [
+            0.0,
+            0.0,
+            600.0,
+            800.0
+          ],
+          "crop_box": [
+            0.0,
+            0.0,
+            600.0,
+            800.0
+          ],
+          "rotation": 0,
+          "width": 600.0,
+          "height": 800.0,
+          "user_unit": 1
+        },
+        {
+          "page_index": 2,
+          "media_box": [
+            0.0,
+            0.0,
+            600.0,
+            800.0
+          ],
+          "crop_box": [
+            0.0,
+            0.0,
+            600.0,
+            800.0
+          ],
+          "rotation": 0,
+          "width": 600.0,
+          "height": 800.0,
+          "user_unit": 1
+        }
+      ],
+      "metadata": {
+        "role": "qp"
+      }
+    },
+    {
+      "source_id": "fixture-ms",
+      "filename": "original-ms.pdf",
+      "path": "sources/fixture/original-ms.pdf",
+      "sha256": "ba45c8a8e2a9a4c9f4bc7ed0631cb31281c6028fab32d98994af67c4eb893c07",
+      "page_count": 2,
+      "pages": [
+        {
+          "page_index": 0,
+          "media_box": [
+            0.0,
+            0.0,
+            600.0,
+            800.0
+          ],
+          "crop_box": [
+            0.0,
+            0.0,
+            600.0,
+            800.0
+          ],
+          "rotation": 0,
+          "width": 600.0,
+          "height": 800.0,
+          "user_unit": 1
+        },
+        {
+          "page_index": 1,
+          "media_box": [
+            0.0,
+            0.0,
+            600.0,
+            800.0
+          ],
+          "crop_box": [
+            0.0,
+            0.0,
+            600.0,
+            800.0
+          ],
+          "rotation": 0,
+          "width": 600.0,
+          "height": 800.0,
+          "user_unit": 1
+        }
+      ],
+      "metadata": {
+        "role": "ms"
+      }
+    }
+  ]
+}

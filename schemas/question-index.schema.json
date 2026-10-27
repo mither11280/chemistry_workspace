@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Chemistry Workspace question-index",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "coordinate_system": {
+      "const": "pdf-point-unrotated-cropbox-top-left-v1"
+    },
+    "bank_id": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,159}$"
+    },
+    "revision": {
+      "type": "string"
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,159}$"
+          },
+          "name": {
+            "type": "string"
+          },
+          "english": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name",
+          "english"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "question_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,159}$"
+          },
+          "exam_board": {
+            "type": "string",
+            "minLength": 1
+          },
+          "qualification": {
+            "type": "string",
+            "minLength": 1
+          },
+          "subject_code": {
+            "type": "string",
+            "minLength": 1
+          },
+          "year": {
+            "type": "integer",
+            "minimum": 1900,
+            "maximum": 2200
+          },
+          "session": {
+            "type": "string",
+            "minLength": 1
+          },
+          "paper": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "variant": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "original_question_number": {
+            "type": "string",
+            "minLength": 1
+          },
+          "marks": {
+            "type": [
+              "number",
+              "null"
+            ],
+            "minimum": 0
+          },
+          "topics": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,159}$"
+            },
+            "uniqueItems": true
+          },
+          "question": {
+            "type": "object",
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,159}$"
+              },
+              "regions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "page_index": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "bbox": {
+                      "type": "array",
+                      "items": {
+                        "type": "number"
+                      },
+                      "minItems": 4,
+                      "maxItems": 4
+                    }
+                  },
+                  "required": [
+                    "page_index",
+                    "bbox"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 1
+              }
+            },
+            "required": [
+              "source_id",
+              "regions"
+            ],
+            "additionalProperties": false
+          },
+          "answer": {
+            "type": "object",
+            "properties": {
+              "source_id": {
+                "type": "string",
+                "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,159}$"
+              },
+              "regions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "page_index": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "bbox": {
+                      "type": "array",
+                      "items": {
+                        "type": "number"
+                      },
+                      "minItems": 4,
+                      "maxItems": 4
+                    }
+                  },
+                  "required": [
+                    "page_index",
+                    "bbox"
+                  ],
+                  "additionalProperties": false
+                },
+                "minItems": 1
+              },
+              "type": {
+                "enum": [
+                  "mcq",
+                  "regions"
+                ]
+              },
+              "value": {
+                "enum": [
+                  "A",
+                  "B",
+                  "C",
+                  "D"
+                ]
+              }
+            },
+            "required": [
+              "source_id",
+              "regions",
+              "type"
+            ],
+            "additionalProperties": false
+          },
+          "metadata": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "question_id",
+          "exam_board",
+          "qualification",
+          "subject_code",
+          "year",
+          "session",
+          "paper",
+          "variant",
+          "original_question_number",
+          "marks",
+          "topics",
+          "question",
+          "answer",
+          "metadata"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "coordinate_system",
+    "bank_id",
+    "revision",
+    "topics",
+    "questions"
+  ],
+  "additionalProperties": false
+}

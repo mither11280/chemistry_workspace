@@ -29,13 +29,21 @@ final class AppDelegate: NSObject, NSApplicationDelegate, WKNavigationDelegate, 
  func applicationWillTerminate(_ notification:Notification){pipe?.fileHandleForReading.readabilityHandler=nil;process?.terminationHandler=nil;process?.terminate()}
  func webView(_ webView:WKWebView,runJavaScriptConfirmPanelWithMessage message:String,initiatedByFrame frame:WKFrameInfo,completionHandler:@escaping(Bool)->Void){let a=NSAlert();a.messageText=message;a.addButton(withTitle:"继续");a.addButton(withTitle:"取消");a.beginSheetModal(for:window){completionHandler($0 == .alertFirstButtonReturn)}}
  func webView(_ webView:WKWebView,decidePolicyFor navigationAction:WKNavigationAction,decisionHandler:@escaping(WKNavigationActionPolicy)->Void){guard let url=navigationAction.request.url else{decisionHandler(.cancel);return};decisionHandler(url.host=="127.0.0.1" && url.port==base?.port ? .allow:.cancel)}
+ func webView(_ webView:WKWebView,runOpenPanelWith parameters:WKOpenPanelParameters,initiatedByFrame frame:WKFrameInfo,completionHandler:@escaping([URL]?)->Void){let panel=NSOpenPanel();panel.canChooseFiles=true;panel.canChooseDirectories=false;panel.allowsMultipleSelection=parameters.allowsMultipleSelection;panel.beginSheetModal(for:window){response in completionHandler(response == .OK ? panel.urls:nil)}}
  func userContentController(_ userContentController:WKUserContentController,didReceive message:WKScriptMessage){
   guard message.frameInfo.isMainFrame,message.frameInfo.request.url?.host=="127.0.0.1",let dict=message.body as? [String:String] else{return}
   if dict["action"]=="open",let path=dict["url"]{
    let name=URL(fileURLWithPath:path).lastPathComponent
    let file:URL
    if path.hasPrefix("/exports/"),name.hasSuffix(".pdf"){file=project.appendingPathComponent("exports").appendingPathComponent(name)}
-   else if path.hasPrefix("/source/"),name.hasSuffix(".pdf"){file=project.appendingPathComponent("data/sources").appendingPathComponent(name)}else{return}
+   else if path.hasPrefix("/source/"),let url=URL(string:path,relativeTo:base){
+    // Resolve through the verified local HTTP API; source layout is owned by Python.
+    URLSession.shared.dataTask(with:url){data,response,error in
+     guard let data=data,let response=response as? HTTPURLResponse,response.statusCode==200 else{DispatchQueue.main.async{self.fail("原卷缺失或校验失败，请在原卷导入页面处理。")};return}
+     let temp=FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString+"-"+name+(name.hasSuffix(".pdf") ? "":".pdf"))
+     do{try data.write(to:temp);DispatchQueue.main.async{NSWorkspace.shared.open(temp)}}catch{DispatchQueue.main.async{self.fail(error.localizedDescription)}}
+    }.resume();return
+   }else{return}
    NSWorkspace.shared.open(file)
   }
   if dict["action"]=="saveText",let text=dict["text"]{let panel=NSSavePanel();panel.nameFieldStringValue="作业方案.ciepaper";panel.beginSheetModal(for:window){response in if response == .OK,let url=panel.url{do{try text.write(to:url,atomically:true,encoding:.utf8)}catch{self.fail(error.localizedDescription)}}}}

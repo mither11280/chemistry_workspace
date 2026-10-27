@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0.0",
+  "coordinate_system": "pdf-point-unrotated-cropbox-top-left-v1",
+  "bank_id": "fixture-bank",
+  "revision": "example.1",
+  "topics": [
+    {
+      "id": "example",
+      "name": "原创示例",
+      "english": "Original example"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "fixture-q1",
+      "exam_board": "DEMO",
+      "qualification": "Example",
+      "subject_code": "DEMO",
+      "year": 2024,
+      "session": "Example",
+      "paper": 2,
+      "variant": 2,
+      "original_question_number": "1",
+      "marks": 5,
+      "topics": [
+        "example"
+      ],
+      "question": {
+        "source_id": "fixture-qp",
+        "regions": [
+          {
+            "page_index": 0,
+            "bbox": [
+              40,
+              50,
+              530,
+              170
+            ]
+          },
+          {
+            "page_index": 1,
+            "bbox": [
+              40,
+              55,
+              550,
+              180
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "source_id": "fixture-ms",
+        "type": "regions",
+        "regions": [
+          {
+            "page_index": 0,
+            "bbox": [
+              40,
+              55,
+              550,
+              140
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "syllabus_mapping_status": "original_example"
+      }
+    },
+    {
+      "question_id": "fixture-q2",
+      "exam_board": "DEMO",
+      "qualification": "Example",
+      "subject_code": "DEMO",
+      "year": 2024,
+      "session": "Example",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "2",
+      "marks": 1,
+      "topics": [
+        "example"
+      ],
+      "question": {
+        "source_id": "fixture-qp",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              40,
+              55,
+              550,
+              180
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "source_id": "fixture-ms",
+        "type": "mcq",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              40,
+              55,
+              550,
+              140
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "syllabus_mapping_status": "original_example"
+      }
+    }
+  ]
+}

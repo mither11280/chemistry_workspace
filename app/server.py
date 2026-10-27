@@ -1,199 +1,215 @@
-import base64, hashlib, io, json, os, re, secrets, sqlite3, sys, threading, time, uuid, zlib
-from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
+"""Local HTTP boundary. Portable data, catalog and PDF engines live in bank/."""
+import base64
+import json
+import os
+import re
+import sqlite3
+import sys
+import tempfile
+import threading
+import time
+import uuid
+import zlib
 from pathlib import Path
+from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
 from urllib.parse import urlparse, parse_qs, unquote
-import fitz
-ROOT=Path(__file__).resolve().parents[1]
-DATA=ROOT/'data'; EXPORTS=ROOT/'exports'; EXPORTS.mkdir(exist_ok=True)
-BUNDLED=ROOT/'question_bank/CIE/9701/AS'
-# A fresh clone uses the checked-in bank. Older local-only installations still work.
-BANK_ROOT=BUNDLED if (BUNDLED/'index.json').exists() else DATA
-INDEX=BANK_ROOT/('index.json' if BANK_ROOT==BUNDLED else 'bank.json')
-if not INDEX.exists():
- raise SystemExit('Question bank not found. Restore question_bank/ from the repository; see README.md.')
-(DATA/'cache').mkdir(parents=True,exist_ok=True)
-BANK=json.loads(INDEX.read_text(encoding='utf-8')); QUESTIONS={q['id']:q for q in BANK['questions']}
+from bank.catalog import Catalog
+from bank.sources import SourceStore
+from bank.render import Renderer
+from bank.format import DataError, SourceError, write_json
+from bank.calibration import calibrate
+
+ROOT=Path(os.environ.get('QUESTION_BANK_ROOT',Path(__file__).resolve().parents[1])).resolve()
+DATA=ROOT/'data';DATA.mkdir(parents=True,exist_ok=True)
+EXPORTS=ROOT/'exports';EXPORTS.mkdir(exist_ok=True)
+CATALOG=Catalog(ROOT);SOURCES=SourceStore(ROOT,CATALOG);RENDERER=Renderer(CATALOG,SOURCES)
 DB=Path(os.environ.get('QUESTION_BANK_DB',str(DATA/'personal.sqlite3')))
+MUTATION_LOCK=threading.RLock()
+
 def connection():
- c=sqlite3.connect(DB);c.row_factory=sqlite3.Row
- c.execute('CREATE TABLE IF NOT EXISTS jobs (id TEXT PRIMARY KEY, title TEXT NOT NULL, body TEXT NOT NULL, updated REAL NOT NULL)');return c
-with connection() as c:
- c.execute('CREATE TABLE IF NOT EXISTS draft (slot INTEGER PRIMARY KEY, body TEXT NOT NULL)')
+    DB.parent.mkdir(parents=True,exist_ok=True)
+    c=sqlite3.connect(DB,timeout=30);c.row_factory=sqlite3.Row
+    version=c.execute('PRAGMA user_version').fetchone()[0]
+    if version>1:c.close();raise DataError('个人作业数据库版本较新，不能降级')
+    c.execute('CREATE TABLE IF NOT EXISTS jobs (id TEXT PRIMARY KEY,title TEXT NOT NULL,body TEXT NOT NULL,updated REAL NOT NULL)')
+    c.execute('CREATE TABLE IF NOT EXISTS draft (slot INTEGER PRIMARY KEY,body TEXT NOT NULL)')
+    c.execute('PRAGMA user_version=1')
+    return c
+with connection():pass
 
 def validate_job(job):
- if not isinstance(job,dict):raise ValueError('作业格式不正确')
- ids=job.get('question_ids',[])
- if not isinstance(ids,list) or len(ids)>200 or any(not isinstance(x,str) for x in ids):raise ValueError('每份作业最多 200 题')
- if len(set(ids))!=len(ids):raise ValueError('一份作业不能重复加入同一题')
- missing=[x for x in ids if x not in QUESTIONS]
- if missing:raise ValueError('本地题库缺少题目：'+', '.join(missing[:5]))
- title=job.get('title','未命名作业')
- if not isinstance(title,str) or len(title)>120:raise ValueError('作业名称最多 120 个字符')
- return {'title':title.strip() or '未命名作业','question_ids':ids,'notes':str(job.get('notes',''))[:2000]}
+    if not isinstance(job,dict):raise DataError('作业格式不正确')
+    ids=job.get('question_ids',[])
+    if not isinstance(ids,list) or len(ids)>200 or any(not isinstance(x,str) for x in ids):raise DataError('每份作业最多 200 题')
+    if len(ids)!=len(set(ids)):raise DataError('一份作业不能重复加入同一题')
+    for qid in ids:CATALOG.question(qid)
+    title=job.get('title','未命名作业')
+    if not isinstance(title,str) or len(title)>120:raise DataError('作业名称最多 120 个字符')
+    return {'title':title.strip() or '未命名作业','question_ids':ids,'notes':str(job.get('notes',''))[:2000]}
+
+def source_hashes(job):
+    hashes={}
+    for qid in job['question_ids']:
+        q=CATALOG.question(qid)
+        if 'question_id' in q:
+            for kind in ['question','answer']:
+                s=CATALOG.source(q[kind]['source_id'])
+                if s['filename'] in hashes and hashes[s['filename']]!=s['sha256']:raise DataError('CIE1 不支持同名异版来源混合，请为修订来源使用独立文件名')
+                hashes[s['filename']]=s['sha256']
+        else:
+            # Existing legacy CIE1 codes continue using original filenames/hashes if recorded.
+            for name in [q.get('qp'),q.get('ms')]:
+                s=next((x for x in CATALOG.manifest['sources'] if x['filename']==name),None)
+                if not s:raise DataError('此旧题缺少已核验来源，请先校准后分享')
+                hashes[name]=s['sha256']
+    return hashes
 
 def share(job):
- job=validate_job(job)
- payload={'schema':1,'bank':BANK['bank_id'],'revision':BANK['revision'],'job':job,'hashes':{name:BANK['sources'][name]['sha256'] for qid in job['question_ids'] for name in [QUESTIONS[qid]['qp'],QUESTIONS[qid]['ms']]}}
- return 'CIE1.'+base64.urlsafe_b64encode(zlib.compress(json.dumps(payload,ensure_ascii=False).encode())).decode().rstrip('=')
+    job=validate_job(job)
+    p={'schema':1,'bank':CATALOG.index['bank_id'],'revision':CATALOG.index['revision'],'job':job,'hashes':source_hashes(job)}
+    return 'CIE1.'+base64.urlsafe_b64encode(zlib.compress(json.dumps(p,ensure_ascii=False).encode())).decode().rstrip('=')
+
 def unshare(code):
- if not isinstance(code,str) or len(code)>100000 or not code.startswith('CIE1.'):raise ValueError('不是有效的 CIE1 组卷代码')
- try:
-  raw=base64.b64decode(code[5:]+'='*(-len(code[5:])%4),altchars=b'-_',validate=True)
-  d=zlib.decompressobj();unpacked=d.decompress(raw,500001)
-  if len(unpacked)>500000 or d.unconsumed_tail or not d.eof:raise ValueError()
-  p=json.loads(unpacked)
- except Exception:raise ValueError('组卷代码已损坏或过大')
- if not isinstance(p,dict) or p.get('schema')!=1 or p.get('bank')!=BANK['bank_id']:raise ValueError('不支持的题库或分享版本')
- job=validate_job(p.get('job'))
- expected={name for qid in job['question_ids'] for name in [QUESTIONS[qid]['qp'],QUESTIONS[qid]['ms']]}
- hashes=p.get('hashes')
- if not isinstance(hashes,dict) or any(hashes.get(n)!=BANK['sources'][n]['sha256'] for n in expected):raise ValueError('题库版本或原卷内容不一致，不能静默替换题目')
- return job
+    if not isinstance(code,str) or len(code)>100000 or not code.startswith('CIE1.'):raise DataError('不是有效的 CIE1 组卷代码')
+    try:
+        raw=base64.b64decode(code[5:]+'='*(-len(code[5:])%4),altchars=b'-_',validate=True)
+        d=zlib.decompressobj();value=d.decompress(raw,500001)
+        if len(value)>500000 or d.unconsumed_tail or not d.eof:raise ValueError()
+        p=json.loads(value)
+    except Exception:raise DataError('组卷代码已损坏或过大')
+    if not isinstance(p,dict) or p.get('schema')!=1 or p.get('bank')!=CATALOG.index['bank_id']:raise DataError('不支持的题库或分享版本')
+    job=validate_job(p.get('job'));hashes=p.get('hashes')
+    if not isinstance(hashes,dict) or any(hashes.get(n)!=h for n,h in source_hashes(job).items()):raise DataError('题库版本或原卷内容不一致，不能静默替换题目')
+    return job
 
-def question_material(q,kind):
- # Portable pages already contain the crop. Original coordinates remain in the index for provenance.
- if q.get('files',{}).get(kind):
-  path=BANK_ROOT/q['files'][kind]
-  with fitz.open(path) as doc:
-   regions=[{'page':i+1,'bbox':list(p.rect)} for i,p in enumerate(doc)]
-  return path,regions
- return BANK_ROOT/'sources'/q['qp' if kind=='question' else 'ms'],q[kind+'_regions']
+def compat(q):
+    if 'question_id' not in q:
+        return dict(q,availability=RENDERER.availability(q['id']),text='',summary='',question_regions=q.get('question_regions') or [{'page':1}],answer_regions=q.get('answer_regions') or [{'page':1}])
+    value=dict(q,id=q['question_id'],number=q['original_question_number'],variant=str(q['paper'])+str(q['variant']),text='',summary='',
+        qp=CATALOG.source(q['question']['source_id'])['filename'],ms=CATALOG.source(q['answer']['source_id'])['filename'],
+        question_regions=q['question']['regions'],answer_regions=q['answer']['regions'],availability=RENDERER.availability(q['question_id']))
+    return value
 
-def make_pdf(job,kind):
- job=validate_job(job)
- if not job['question_ids']:raise ValueError('请先加入题目')
- if kind not in ['questions','answers']:raise ValueError('无效的导出类型')
- doc=fitz.open();source_docs={};is_answer=kind=='answers'
- def source(name):
-  if name not in source_docs:source_docs[name]=fitz.open(BANK_ROOT/'sources'/name)
-  return source_docs[name]
- def page(header,landscape=False):
-  p=doc.new_page(width=841.89 if landscape else 595.28,height=595.28 if landscape else 841.89)
-  p.insert_textbox(fitz.Rect(42,24,553,47),header,fontname='china-s',fontsize=11,color=(.16,.22,.25))
-  p.draw_line((42,51),(553,51),color=(.8,.83,.84),width=.5)
-  return p
- title=job['title'];p=page('CIE AS Chemistry 9701 | '+('Mark scheme' if is_answer else 'Worksheet'))
- p.insert_textbox(fitz.Rect(42,88,553,165),title,fontname='china-s',fontsize=24)
- total=sum(QUESTIONS[i]['marks'] or 0 for i in job['question_ids'])
- p.insert_text((42,190),f"{len(job['question_ids'])} questions  /  {total} marks",fontsize=12)
- p.insert_textbox(fitz.Rect(42,220,553,285),'教师试用稿：题图与分类尚待逐题复核。请核对后使用。\n保留原题编号；Assignment 编号对应本作业题序。',fontname='china-s',fontsize=11)
- if not is_answer:p.insert_text((42,315),'Name: ____________________    Class: _______________',fontsize=11)
- if job['notes']:p.insert_textbox(fitz.Rect(42,350,553,490),job['notes'],fontname='china-s',fontsize=11)
- y=515
- for idx,qid in enumerate(job['question_ids'],1):
-  q=QUESTIONS[qid];path,regions=question_material(q,'answer' if is_answer else 'question')
-  if path not in source_docs:source_docs[path]=fitz.open(path)
-  src=source_docs[path]
-  label=f"Assignment {idx}  |  {q['year']} March 9701/{q['variant']} Q{q['number']}  |  {q['marks']} marks"
-  for ri,r in enumerate(regions):
-   clip=fitz.Rect(r['bbox']);width=511; height=clip.height*width/clip.width
-   if height>700:width*=700/height;height=700
-   if y+height+45>785:p=page(title);y=70
-   p.insert_text((42,y+11),label+(' (continued)' if ri else ''),fontsize=9,color=(.2,.35,.35));y+=25
-   p.show_pdf_page(fitz.Rect(42,y,42+width,y+height),src,r['page']-1,clip=clip,keep_proportion=True)
-   y+=height+22
- # Include source-provided data / official marking principles, once per source.
- seen=set();data_years=set()
- for qid in job['question_ids']:
-  q=QUESTIONS[qid];name=q['ms' if is_answer else 'qp']
-  if name in seen:continue
-  seen.add(name);src=source(name);append=[]
-  if is_answer and q['paper']==2:
-   first=min(r['page'] for item in BANK['questions'] if item['ms']==name for r in item['answer_regions'])
-   append=[(i,src[i].rect) for i in range(1,first-1)]
-  elif not is_answer and q['year'] not in data_years:
-   data_years.add(q['year'])
-   append=[(len(src)-1,src[-1].rect)]
-   for i,sp in enumerate(src):
-    hits=sp.search_for('Important values')
-    if i>0 and hits:
-     bottom=min(780,hits[0].y0+235)
-     table_lines=[drawing['rect'].y1 for drawing in sp.get_drawings() if drawing['rect'].y0>=hits[0].y0 and drawing['rect'].y1<hits[0].y0+260]
-     if table_lines:bottom=max(table_lines)+8
-     append.insert(0,(i,fitz.Rect(44,hits[0].y0,552,bottom)))
-  for pi,clip in append:
-   periodic=not is_answer and pi==len(src)-1
-   landscape=periodic or src[pi].rect.width>src[pi].rect.height
-   p=page('Source reference | '+name,landscape)
-   p.show_pdf_page(fitz.Rect(35,65,p.rect.width-35,p.rect.height-45),src,pi,clip=clip,rotate=270 if periodic else 0)
- for i,p in enumerate(doc):
-  p.insert_text((42,p.rect.height-25),'TEACHER REVIEW DRAFT - Original content: Cambridge / UCLES',fontsize=7,color=(.45,.48,.5))
-  p.insert_text((p.rect.width-85,p.rect.height-25),f'{i+1} / {len(doc)}',fontsize=8)
- out=EXPORTS/f'{uuid.uuid4().hex}_{kind}.pdf';doc.save(out,garbage=4,deflate=True)
- for d in source_docs.values():d.close()
- doc.close();return out
+def bank_info():
+    with CATALOG.connect() as c:
+        total=c.execute(CATALOG.CANDIDATES+'SELECT count(*) FROM candidates').fetchone()[0]
+        counts=dict(c.execute(CATALOG.CANDIDATES+"SELECT j.value,count(DISTINCT q.question_id) FROM candidates q,json_each(q.payload,'$.topics') j GROUP BY j.value").fetchall())
+        years=[r[0] for r in c.execute(CATALOG.CANDIDATES+'SELECT DISTINCT year FROM candidates ORDER BY year DESC')]
+    return {'bank_id':CATALOG.index['bank_id'],'revision':CATALOG.index['revision'],'total':total,
+            'topics':[dict(t,count=counts.get(t['id'],0)) for t in CATALOG.index['topics']],'years':years}
+
+def make_pdf(job,kind):return RENDERER.export(validate_job(job),kind,EXPORTS)
 
 class Handler(BaseHTTPRequestHandler):
- def log_message(self,*a):pass
- def send(self,data,status=200,ctype='application/json; charset=utf-8'):
-  if not isinstance(data,bytes):data=json.dumps(data,ensure_ascii=False).encode()
-  self.send_response(status);self.send_header('Content-Type',ctype);self.send_header('Content-Length',str(len(data)));self.send_header('X-Content-Type-Options','nosniff');self.send_header('Cache-Control','no-store');self.end_headers();self.wfile.write(data)
- def trusted(self):return self.headers.get('Host') in [f'127.0.0.1:{self.server.server_port}',f'localhost:{self.server.server_port}']
- def do_GET(self):
-  if not self.trusted():return self.send({'error':'Invalid host'},403)
-  path=unquote(urlparse(self.path).path)
-  try:
-   if path=='/api/bank':return self.send(BANK)
-   if path=='/api/draft':
-    with connection() as c:row=c.execute('SELECT body FROM draft WHERE slot=1').fetchone()
-    return self.send(json.loads(row[0]) if row else None)
-   if path=='/api/jobs':
-    with connection() as c:rows=c.execute('SELECT * FROM jobs ORDER BY updated DESC').fetchall()
-    return self.send([dict(json.loads(r['body']),id=r['id'],updated=r['updated']) for r in rows])
-   if path.startswith('/preview/'):
-    _,_,qid,kind,index=path.split('/');q=QUESTIONS[qid]
-    if kind not in ['question','answer']:raise ValueError('无效预览类型')
-    material,regions=question_material(q,kind);r=regions[int(index)]
-    # Include crop identity to invalidate previews when the packaged bank changes.
-    version=q.get('file_sha256',{}).get(kind,BANK['revision'])[:16]
-    cache=DATA/'cache'/f'{qid}-{kind}-{index}-{version}.png'
-    if not cache.exists():
-     with fitz.open(material) as d:cache.write_bytes(d[r['page']-1].get_pixmap(matrix=fitz.Matrix(1.6,1.6),clip=fitz.Rect(r['bbox']),alpha=False).tobytes('png'))
-    return self.send(cache.read_bytes(),ctype='image/png')
-   if path.startswith('/exports/'):
-    name=path.split('/')[-1]
-    if not re.fullmatch(r'[a-f0-9]{32}_(questions|answers)\.pdf',name):raise ValueError('无效文件')
-    return self.send((EXPORTS/name).read_bytes(),ctype='application/pdf')
-   if path.startswith('/source/'):
-    name=path.split('/')[-1]
-    if name not in BANK['sources']:raise ValueError('无效原卷')
-    return self.send((BANK_ROOT/'sources'/name).read_bytes(),ctype='application/pdf')
-   files={'/':'index.html','/app.js':'app.js','/tokens.css':'tokens.css','/style.css':'style.css'}
-   if path in files:
-    mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8'};f=ROOT/'app'/files[path]
-    return self.send(f.read_bytes(),ctype=mime[f.suffix])
-   self.send({'error':'Not found'},404)
-  except (ValueError,KeyError,IndexError,FileNotFoundError):self.send({'error':'找不到文件或题目'},404)
- def do_POST(self):
-  origin=self.headers.get('Origin')
-  if not self.trusted() or self.headers.get('X-Local-Request')!='1' or (origin and origin!=f'http://{self.headers.get("Host")}'):return self.send({'error':'Invalid origin'},403)
-  try:
-   size=int(self.headers.get('Content-Length','0'))
-   if size>600000:raise ValueError('请求过大')
-   body=json.loads(self.rfile.read(size));path=urlparse(self.path).path
-   if path=='/api/draft':
-    job=validate_job(body)
-    if body.get('id'):job['id']=body['id']
-    with connection() as c:c.execute('INSERT OR REPLACE INTO draft VALUES (1,?)',(json.dumps(job,ensure_ascii=False),))
-    return self.send({'ok':True})
-   if path=='/api/save':
-    job=validate_job(body);ident=body.get('id') or str(uuid.uuid4())
-    if not isinstance(ident,str) or not re.fullmatch(r'[a-f0-9-]{36}',ident):raise ValueError('无效作业 ID')
-    with connection() as c:c.execute('INSERT OR REPLACE INTO jobs VALUES (?,?,?,?)',(ident,job['title'],json.dumps(job,ensure_ascii=False),time.time()))
-    return self.send(dict(job,id=ident))
-   if path=='/api/delete':
-    with connection() as c:c.execute('DELETE FROM jobs WHERE id=?',(body.get('id'),))
-    return self.send({'ok':True})
-   if path=='/api/share':return self.send({'code':share(body)})
-   if path=='/api/import':return self.send(unshare(body.get('code','').strip()))
-   if path=='/api/export':
-    out=make_pdf(body['job'],body['kind']);return self.send({'url':'/exports/'+out.name,'filename':out.name})
-   self.send({'error':'Not found'},404)
-  except (ValueError,KeyError,TypeError) as e:self.send({'error':str(e)},400)
-  except Exception as e:
-   print('ERROR',repr(e),file=sys.stderr);self.send({'error':'操作失败，请检查本地文件或磁盘空间'},500)
+    def log_message(self,*a):pass
+    def send(self,data,status=200,ctype='application/json; charset=utf-8'):
+        if not isinstance(data,bytes):data=json.dumps(data,ensure_ascii=False).encode()
+        self.send_response(status);self.send_header('Content-Type',ctype);self.send_header('Content-Length',str(len(data)))
+        self.send_header('X-Content-Type-Options','nosniff');self.send_header('Cache-Control','no-store');self.end_headers();self.wfile.write(data)
+    def trusted(self):return self.headers.get('Host') in [f'127.0.0.1:{self.server.server_port}',f'localhost:{self.server.server_port}']
+    def do_GET(self):
+        if not self.trusted():return self.send({'error':'Invalid host'},403)
+        url=urlparse(self.path);path=unquote(url.path);params={k:v[0] for k,v in parse_qs(url.query).items()}
+        try:
+            if path=='/api/bank':return self.send(bank_info())
+            if path=='/api/questions':
+                if params.get('ids'):return self.send({'questions':[compat(CATALOG.question(x)) for x in params['ids'].split(',')[:200]]})
+                result=CATALOG.search(params,int(params.get('limit',8)),int(params.get('offset',0)))
+                result['questions']=[compat(q) for q in result['questions']];return self.send(result)
+            if path=='/api/sources':return self.send([dict(s,status=SOURCES.status(s['source_id'])) for s in CATALOG.manifest['sources']])
+            if path=='/api/check':return self.send({'catalog':CATALOG.check(),'cache':RENDERER.clean(),'sources':[{'source_id':s['source_id'],**SOURCES.status(s['source_id'])} for s in CATALOG.manifest['sources']]})
+            if path=='/api/draft':
+                with connection() as c:r=c.execute('SELECT body FROM draft WHERE slot=1').fetchone()
+                return self.send(json.loads(r[0]) if r else None)
+            if path=='/api/jobs':
+                with connection() as c:rows=c.execute('SELECT * FROM jobs ORDER BY updated DESC').fetchall()
+                return self.send([dict(json.loads(r['body']),id=r['id'],updated=r['updated']) for r in rows])
+            if path.startswith('/preview/'):
+                _,_,qid,kind,index=path.split('/')
+                return self.send(RENDERER.preview(qid,kind,int(index),use_cache=params.get('cache')!='0'),ctype='image/webp')
+            if path.startswith('/page/'):
+                _,_,sid,index=path.split('/')
+                return self.send(RENDERER.page_preview(sid,int(index)),ctype='image/png')
+            if path.startswith('/source/'):
+                name=path.split('/')[-1];s=next((s for s in CATALOG.manifest['sources'] if s['filename']==name or s['source_id']==name),None)
+                if not s:raise DataError('未知原卷')
+                return self.send(SOURCES.resolve(s['source_id']).read_bytes(),ctype='application/pdf')
+            if path.startswith('/exports/'):
+                name=path.split('/')[-1]
+                if not re.fullmatch(r'[a-f0-9]{32}_(questions|answers)\.pdf',name):raise DataError('无效文件')
+                return self.send((EXPORTS/name).read_bytes(),ctype='application/pdf')
+            files={'/':'index.html','/app.js':'app.js','/tokens.css':'tokens.css','/style.css':'style.css'}
+            if path in files:
+                f=ROOT/'app'/files[path];mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8'}
+                return self.send(f.read_bytes(),ctype=mime[f.suffix])
+            self.send({'error':'Not found'},404)
+        except SourceError as e:self.send({'error':str(e),'code':'source_unavailable'},409)
+        except (DataError,ValueError,KeyError,IndexError,FileNotFoundError) as e:self.send({'error':str(e)},400)
+        except Exception as e:
+            print('ERROR',repr(e),file=sys.stderr);self.send({'error':'读取失败，请检查本地数据'},500)
+    def do_POST(self):
+        origin=self.headers.get('Origin')
+        if not self.trusted() or self.headers.get('X-Local-Request')!='1' or (origin and origin!=f'http://{self.headers.get("Host")}'):return self.send({'error':'Invalid origin'},403)
+        try:
+            size=int(self.headers.get('Content-Length','0'));path=urlparse(self.path).path
+            if size<0 or size>(64*1024*1024 if path=='/api/source-upload' else 600000):raise DataError('请求过大')
+            if path=='/api/source-upload':
+                name=parse_qs(urlparse(self.path).query).get('name',['upload.pdf'])[0]
+                fd,temp=tempfile.mkstemp(dir=DATA,suffix='.pdf')
+                try:
+                    with os.fdopen(fd,'wb') as stream:
+                        remaining=size
+                        while remaining:
+                            chunk=self.rfile.read(min(remaining,1024*1024))
+                            if not chunk:raise DataError('上传未完成')
+                            stream.write(chunk);remaining-=len(chunk)
+                    with MUTATION_LOCK:result=SOURCES.import_file(temp,name)
+                    return self.send(result)
+                finally:Path(temp).unlink(missing_ok=True)
+            body=json.loads(self.rfile.read(size))
+            if path=='/api/select':
+                excluded=body.get('exclude',[]);count=int(body.get('count',10))
+                if not isinstance(excluded,list) or any(not isinstance(x,str) for x in excluded) or not 1<=count<=200 or len(excluded)>200:raise DataError('每份作业最多 200 题')
+                remaining=min(count,200-len(excluded))
+                chosen=CATALOG.search(body.get('filters',{}),remaining,exclude=excluded,random_order=True)['questions'] if remaining else []
+                return self.send({'questions':[compat(q) for q in chosen]})
+            if path=='/api/calibrate':
+                with MUTATION_LOCK:result=calibrate(CATALOG,SOURCES,body)
+                return self.send(result)
+            if path=='/api/maintenance':
+                action=body.get('action')
+                with MUTATION_LOCK:
+                    if action=='cache-clear':return self.send(RENDERER.clean(clear=True))
+                    if action=='rebuild':
+                        result=CATALOG.rebuild(force=True);SOURCES.extract_local_content();return self.send(result)
+                    if action=='migrate':
+                        from bank.migration import migrate
+                        return self.send(migrate(ROOT,body['path'],CATALOG,SOURCES))
+                raise DataError('未知维护操作')
+            if path=='/api/draft':
+                job=validate_job(body)
+                if body.get('id'):job['id']=body['id']
+                with connection() as c:c.execute('INSERT OR REPLACE INTO draft VALUES (1,?)',(json.dumps(job,ensure_ascii=False),))
+                return self.send({'ok':True})
+            if path=='/api/save':
+                job=validate_job(body);ident=body.get('id') or str(uuid.uuid4())
+                if not isinstance(ident,str) or not re.fullmatch(r'[a-f0-9-]{36}',ident):raise DataError('无效作业 ID')
+                with connection() as c:c.execute('INSERT OR REPLACE INTO jobs VALUES (?,?,?,?)',(ident,job['title'],json.dumps(job,ensure_ascii=False),time.time()))
+                return self.send(dict(job,id=ident))
+            if path=='/api/delete':
+                with connection() as c:c.execute('DELETE FROM jobs WHERE id=?',(body.get('id'),))
+                return self.send({'ok':True})
+            if path=='/api/share':return self.send({'code':share(body)})
+            if path=='/api/import':return self.send(unshare(body.get('code','').strip()))
+            if path=='/api/export':
+                out=make_pdf(body['job'],body['kind']);return self.send({'url':'/exports/'+out.name,'filename':out.name})
+            self.send({'error':'Not found'},404)
+        except SourceError as e:self.send({'error':str(e),'code':'source_unavailable'},409)
+        except (DataError,ValueError,KeyError,TypeError) as e:self.send({'error':str(e)},400)
+        except Exception as e:
+            print('ERROR',repr(e),file=sys.stderr);self.send({'error':'操作失败，请检查本地文件或磁盘空间'},500)
 
 def main():
- server=ThreadingHTTPServer(('127.0.0.1',int(os.environ.get('QUESTION_BANK_PORT','0'))),Handler)
- print(f'http://127.0.0.1:{server.server_port}',flush=True);server.serve_forever()
+    http=ThreadingHTTPServer(('127.0.0.1',int(os.environ.get('QUESTION_BANK_PORT','0'))),Handler)
+    print(f'http://127.0.0.1:{http.server_port}',flush=True);http.serve_forever()
 if __name__=='__main__':main()

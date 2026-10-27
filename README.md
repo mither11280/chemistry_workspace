@@ -1,89 +1,81 @@
-# 题间 · CIE AS Chemistry 本地题库
+# 题间 · Chemistry Workspace
 
-这是可在当前 Mac 使用的 v0.1 开发版。界面使用原生 macOS 窗口，题库、草稿、个人作业与 PDF 都留在项目目录；不需要账号、云端服务或 API Key。
+面向 A-Level 化学教师的本地组卷软件。保留题库浏览、SQLite 筛选、离线描述助手、作业编辑、学生卷/Mark Scheme 导出、个人作业与 `CIE1.` 分享代码。
 
-## 下载后直接使用
+**当前采用原始 PDF + 公开坐标 JSON + SQLite + 按需 WebP。公开仓库不随附真题文件或原题全文。** 随附 CIE AS Chemistry 9701 的 2024–2026 February/March Paper 12、22 共 132 题坐标。Paper 2 保留整道大题；题目与知识点仍为待逐题复核的候选，不能视为完整历年题库。
 
-仓库现在附带 **132 道题的内置题库**，包括切好的题目 PDF、官方答案 PDF、分类索引和来源资料。下载 ZIP 并解压（或 `git clone`）后，无需自行准备真题、导入题库或设置原作者的本地路径。
+## 安装与首次使用
+
+Python 3.9+，本地运行，无账号、API Key 或 CDN 依赖。
 
 ```sh
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python3 app/server.py
+python app/server.py
 ```
 
-打开终端显示的本机网址，即可选题、组卷、保存个人作业和导出 PDF。Python 3.9 或更新版本可用；这个入口支持 macOS、Windows 和 Linux（Windows 激活命令为 `.venv\Scripts\activate`）。首次运行会自动生成个人数据库和缓存，下载者不会得到作者的个人作业。
+Windows 激活虚拟环境使用 `.venv\Scripts\activate`。打开终端输出的 127.0.0.1 地址：即使还没有原卷，也能浏览题目元数据、筛选、编排和保存作业；预览与正式导出会明确提示缺失文件。
 
-macOS 若要使用桌面窗口，在虚拟环境激活后执行 `./scripts/build_app.sh`，然后打开 `题间.app`。构建需要 Xcode Command Line Tools / Swift；当前仍需保留整个项目目录，不是独立安装包。
+点击页面上方或侧栏的「原卷导入与维护」，批量选择**自行合法获取**的 Question Paper、Mark Scheme（可附考纲）。程序按 manifest 的 SHA-256 识别，文件名只作提示；同名不同版本不会关联，已有不同内容文件不会被覆盖。不从第三方网站自动下载试卷。
 
-## 启动
+当前来源清单为各年份的 `9701_mYY_qp_12.pdf`、`9701_mYY_ms_12.pdf`、`9701_mYY_qp_22.pdf`、`9701_mYY_ms_22.pdf`（YY=24/25/26）及 `9701-syllabus-2025-2027.pdf`。不同字节版本即使题目相似也不能套用现有坐标；需要显式登记该版本及校准。原题全文只在导入后提取到本机搜索数据库。
 
-双击 `题间.app`，或者双击 `启动.command`。**请保留整个项目目录，不要只把 .app 单独移走。** 当前使用这台 Mac 已安装的 Python 3.9 + PyMuPDF，路径记录在 `runtime.json`。这不是已签名、捆绑运行时的通用安装包；另一台 Mac 需要 Python 3 + PyMuPDF 后执行 `scripts/build_app.sh`，Windows 桌面壳尚未制作。
-
-开发时可运行 `python3 app/server.py`，然后打开终端显示的本机 URL。服务只监听 127.0.0.1，拒绝不匹配的 Host 和跨站写请求。退出原生 App 会终止它启动的服务。
-
-## 已实现
-
-- **题库**：Paper 1 / Paper 2、年份、建议知识点、题干与来源编号搜索；原题图、官方评分标准、完整原卷查看。
-- **组卷**：加入与移除、上下移动排序、标题与说明、题量与分值统计；Paper 2 可展开全部跨页内容。
-- **离线描述助手**：规则识别知识点、题量、Paper、年份，再由教师确认条件；随机选题，避开当前作业已有题。不足时明确提示，不自行放宽条件。不是大模型，不理解复杂排除、难度或教学进度。
-- **个人作业**：SQLite 草稿自动保存、命名保存、重新打开、复制和删除。导入分享后是独立草稿。
-- **分享**：`CIE1.` 压缩代码与 `.ciepaper` 文本文件；包含来源 SHA-256、稳定题目 ID、顺序、标题和说明；缺题、来源版本不同或损坏代码会被拒绝。没有短链接或云社区。
-- **PDF**：学生卷及官方评分标准卷，保留原始矢量图形和跨页内容，双编号（作业题序 + 原题号），包含参考数据/评分原则。生成文件写入 `exports/`，原生窗口通过系统 PDF 应用打开，可另存或打印。
-
-## 题库覆盖与内容状态
-
-| 考季 | Paper 1 (12) | Paper 2 (22) |
-|---|---|---|
-| 2024 March | 40 题 / 40 分 | 4 道大题 / 60 分 |
-| 2025 March | 40 题 / 40 分 | 4 道大题 / 60 分 |
-| 2026 March | 40 题 / 40 分 | 4 道大题 / 60 分 |
-
-共 132 道题。来源是用户提供的本地 QP / MS，随内置题库保存在 `question_bank/CIE/9701/AS/sources`，附 2025–2027 考纲。原始文件未改动。每道题保留原始页序、裁剪坐标、题号、分值、来源哈希与状态。
-
-**这是待复核的起始题库，不是完整历年题库或正式验收题册。** 自动分割、答案区域匹配及关键词分类未经独立逐题内容验收，所有题目维持 `pending_review`。标签是候选主题，尚未建立逐条考纲映射；旧年份不宣称完全符合现行考纲。PDF 显式标注教师试用稿。
-
-Paper 2 目前以完整大题为最小组卷单位，不支持独立小问选择；通过保留整题来避免丢失共享条件。后续应依据切题技能建立小问依赖、评分点配对和独立复核记录后再开放小问组卷。
-
-## 文件和备份
-
-- `app/`：本地 HTTP API、PDF 引擎、HTML/CSS/JS 界面。
-- `native/`：Swift + WKWebView 桌面窗口，负责服务生命周期与本机文件打开。
-- `question_bank/CIE/9701/AS/`：随仓库提交的可移植题库；`index.json` 为运行索引、`topics.json` 为知识点交叉索引。
-- `question_bank/.../2025-March/Paper-1/Q03/`：每题一目录，包含 `question.pdf`、`answer.pdf`、`metadata.json`；年份、Paper 和题号直接可查。
-- `question_bank/.../sources/`：原卷、评分标准和考纲，用于溯源、打开完整原卷及导出参考数据。
-- `data/bank.json`、`data/sources/`：本机导入中间资料，不提交；仅旧版缺少内置题库时作为后备。
-- `data/personal.sqlite3`：个人作业与当前草稿。备份时退出 App 后复制这个文件；建议连同整个 `data/` 备份。
-- `data/cache/`：题图缓存，可重建。
-- `exports/`：用户导出的 PDF；`tests/` 中的 PDF 为验收示例。
-- `scripts/import_bank.py`：起始批次导入器。重新运行会重建题库索引，不会清除个人作业；若修改裁剪区域，应同时清理对应图片缓存。此脚本只针对当前批次验证过的版式，不能不经检查直接扩到所有年份。
-
-## 开发与测试
-
-依赖：Python 3 + `PyMuPDF`；原生构建另需 Xcode Command Line Tools / Swift。前端没有构建步骤、CDN 或运行时外网依赖。
+也可从命令行批量导入：
 
 ```sh
-python3 -m unittest discover -s tests -v
+python scripts/bank_tool.py import "/path/to/legally-obtained-pdfs"
+python scripts/bank_tool.py check
+```
+
+macOS 原生窗口需要 Xcode Command Line Tools / Swift：在虚拟环境激活后运行 `./scripts/build_app.sh`，再打开 `题间.app`。保留整个项目目录，当前尚未提供捆绑 Python 的独立安装包。Windows/Linux 可使用本机浏览器入口，未提供原生壳。
+
+## 新架构与目录
+
+- `indexes/`：132 题可移植坐标及 Source Manifest，无原题全文、图片或评分原文。
+- `schemas/`、`examples/`、`docs/`：独立可解析规范、JSON Schema、原创可重建示例、迁移与性能说明。
+- `app/bank/format.py`：格式、来源身份、跨页区域和页面几何校验。
+- `app/bank/catalog.py`：SQLite 题库、标签、FTS5/LIKE、事务重建与数据库版本。
+- `app/bank/sources.py`：不可变原卷导入、SHA-256/几何验证、本机文本提取。
+- `app/bank/render.py`：按需 WebP、缓存限额、从原卷矢量组卷和题序映射。
+- `app/bank/migration.py`、`calibration.py`：自动备份、保守迁移、旧 PDF 兼容、可视化框选后保存规范坐标。
+- `app/server.py`、`app/app.js`：本地 API 与现有界面；筛选在 SQL 中完成，浏览器按页加载。
+- `sources/`、`data/`、`exports/`：仅本机保存原卷、个人状态、缓存、备份和导出，不提交。
+
+每份 QP/MS 只保存一份原始 PDF，题目不预先导出成独立 PDF。坐标单位是 PDF point，page_index 从 0 开始，原点为未旋转 CropBox 左上角。格式定义、原生 PDF 坐标转换及版本规则见 [公开坐标规范](docs/question-index-format.md)。
+
+## 作业、分享与兼容
+
+现有稳定题 ID 和 CIE1 来源哈希规则保持不变。个人作业与草稿仍在 `data/personal.sqlite3`，按题序保存标题、备注与题目列表；可复制、恢复、导入后修改。公开索引重建不覆盖个人作业。
+
+旧题库不会自动删除。已具备可信原卷坐标的题目可迁移；没有可信坐标时保留旧 PDF 浏览/组卷，并标记待校准。题目卡片中的「校准区域」支持在原卷上拖动框选、跨页追加、编辑区域顺序，保存前自动备份并验证。详见 [迁移与回滚](docs/migration-guide.md)。
+
+```sh
+python scripts/bank_tool.py migrate --legacy "/path/to/old-bank"
+# 停止 App 后回滚：
+python scripts/bank_tool.py rollback --backup "/path/to/data/backups/migration-TIMESTAMP"
+python scripts/bank_tool.py rebuild
+```
+
+若原卷被修改，预览、缓存和导出均拒绝使用错误坐标。缓存可删，默认限额 128 MiB。作业 PDF 从原始 PDF 生成，保留矢量文字/化学图形；答案顺序与题序一致，并附 `.mapping.json`。原题号仍可见，Assignment 号为作业题序。clip 不等于 PDF 内容脱敏，可能保留可见区域之外的资源。
+
+## 验证与开发
+
+```sh
+python scripts/bank_tool.py validate
+python scripts/bank_tool.py validate --index examples/question-index.example.json --manifest examples/source-manifest.example.json
+python -m unittest discover -s tests -v
 node --check app/app.js
-./scripts/build_app.sh
 ```
 
-自动测试覆盖题量与分值、来源哈希、区域边界、分享往返及版本冲突、恶意过大代码、未知/重复题目、数据库持久化、PDF 的题序与草稿标记。内容正确性不能由这些结构测试代替。界面已在当前 Mac 原生窗口验证选题、命名保存与个人作业流程。
+测试使用原创生成的 PDF，不需要也不提交 Cambridge 文件。覆盖坐标规范、页面旋转/CropBox、多页、来源哈希、答案顺序、矢量输出、缓存失效、缺卷导入、旧题迁移与失败回滚、CIE1 兼容及个人数据持久化。结构检测与抽查不能代替独立逐题内容复核。
 
-下一阶段：逐题内容复核与准确考纲分类 → Paper 2 小问和依赖 → 扩充年份 → 独立运行时打包与 Windows 版本。
+维护命令见 `python scripts/bank_tool.py --help`。已有导入器 `scripts/import_bank.py` 是当前 CIE 批次专用的坐标候选生成工具；其本机中间数据不公开。旧 `package_bank.py` 入口现在迁移坐标，不再制造每题 PDF。
 
+实测与方法见 [性能报告](docs/performance.md) 和 [原始结果](docs/benchmark-results.json)。仅在本地保留旧资料时可执行 `python scripts/benchmark_bank.py` 复测；这不是跨平台基准承诺。
 
-## 维护题库
+## 发布和内容版权
 
-普通使用者无需运行导入脚本。维护者重新切题后，可重建并提交内置题库：
+程序源码使用 MIT 许可。考试题目、图形、考纲及评分内容属于原权利人；源码许可不授予这些材料的使用或再分发权。公开索引不包含原题文本、题图或答案原文。本机导入、备份和缓存默认全部忽略。
 
-```sh
-python3 scripts/import_bank.py --source-root "/path/to/9701" --syllabus "/path/to/9701-syllabus-2025-2027.pdf"
-python3 scripts/package_bank.py
-python3 -m unittest discover -s tests -v
-```
-
-`--source-root` 下应有 `2024_M`、`2025_M`、`2026_M`，每个目录包含 `9701_mYY_qp_12.pdf`、`9701_mYY_ms_12.pdf`、`9701_mYY_qp_22.pdf`、`9701_mYY_ms_22.pdf`。导入器是当前批次专用，扩充其他批次前需要核对版式与覆盖范围。打包脚本从既有坐标生成独立矢量 PDF，保留稳定 ID、来源哈希、原始区域和待复核状态，移除原作者的绝对路径。更新文件哈希会使预览缓存自动失效。
-
-知识点目前仍是关键词建议标签，通过 `topics.json` 引用同一题目，避免跨知识点重复保存 PDF；不是经过复核的逐条考纲分类。源码的 MIT 许可证不授予 Cambridge / UCLES 真题和评分标准的版权许可，见 [题库说明](question_bank/README.md)。
+**历史说明：** 旧提交曾包含试卷和裁片，现已按维护者授权重写 main 及 v 标签所引用的历史，移除旧题库内容；完整原始 Git 备份仅保存在本机。旧版 v 是历史源码，不是当前安装版本，请使用 main。分支/标签清理不代表 GitHub 的悬空对象、旧 URL、缓存或外部 fork 会立即消失；这些不属于普通 Git 推送可以物理清除的范围。

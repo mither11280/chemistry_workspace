@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Chemistry Workspace source-manifest",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "coordinate_system": {
+      "const": "pdf-point-unrotated-cropbox-top-left-v1"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "source_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]{0,159}$"
+          },
+          "filename": {
+            "type": "string",
+            "pattern": "^[^/\\\\]+\\.pdf$"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "page_count": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "pages": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "page_index": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "media_box": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 4,
+                  "maxItems": 4
+                },
+                "crop_box": {
+                  "type": "array",
+                  "items": {
+                    "type": "number"
+                  },
+                  "minItems": 4,
+                  "maxItems": 4
+                },
+                "rotation": {
+                  "enum": [
+                    0,
+                    90,
+                    180,
+                    270
+                  ]
+                },
+                "width": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "height": {
+                  "type": "number",
+                  "exclusiveMinimum": 0
+                },
+                "user_unit": {
+                  "const": 1
+                }
+              },
+              "required": [
+                "page_index",
+                "media_box",
+                "crop_box",
+                "rotation",
+                "width",
+                "height",
+                "user_unit"
+              ],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "metadata": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "source_id",
+          "filename",
+          "path",
+          "sha256",
+          "page_count",
+          "pages",
+          "metadata"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "coordinate_system",
+    "sources"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,53 @@
+{
+  "sample": {
+    "questions": 132,
+    "sources": 13,
+    "export_questions": 20,
+    "export_composition": "16 MCQ + 4 structured; 2024-2026 March; 3 median runs"
+  },
+  "bytes": {
+    "legacy_total": 31452026,
+    "legacy_cut_pdfs_only": 22204581,
+    "original_pdfs": 8613221,
+    "public_json": 277322,
+    "catalog_with_local_text": 614400,
+    "new_total_without_cache": 9504943,
+    "webp_first_block_all_132": 3134326,
+    "new_total_with_cache": 12639269,
+    "new_export_questions": 503065,
+    "legacy_export_questions": 517501,
+    "new_export_answers": 612248
+  },
+  "milliseconds": {
+    "legacy_json_read_and_id_map_median5": 1.01,
+    "first_catalog_build": 67.796,
+    "existing_catalog_load_median5": 56.698,
+    "verify_all_sources": 79.906,
+    "extract_all_local_text": 649.083,
+    "generate_132_first_block_cache": 3160.943,
+    "search_filter_median20": 0.448,
+    "new_export20_median3": 317.95,
+    "legacy_export20_median3": 359.88,
+    "new_answer_export20_median3": 256.474
+  },
+  "previews": {
+    "cie-9701-m25-12-q3": {
+      "coordinates_uncached_ms": 22.735,
+      "webp_cache_ms": 0.561,
+      "legacy_png_uncached_ms": 12.344
+    },
+    "cie-9701-m25-22-q4": {
+      "coordinates_uncached_ms": 38.467,
+      "webp_cache_ms": 0.566,
+      "legacy_png_uncached_ms": 17.159
+    }
+  },
+  "limits": [
+    "Single Mac; one measured run, process/OS caches not forcibly flushed.",
+    "Existing legacy batch has 132 questions; results do not predict a full historical corpus.",
+    "PDF clip may retain hidden resources outside visible rectangles. Exports are not redacted or sanitized PDFs.",
+    "Public JSON carries no question text; local FTS extraction is included in catalog size.",
+    "Old JSON load does not perform schema or geometry validation; new load includes validation and SQLite setup. Preview encodings differ: old PNG versus new WebP.",
+    "Legacy export uses the same pagination engine and original reference appendices for an apples-to-apples storage comparison."
+  ]
+}

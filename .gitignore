@@ -240,3 +240,18 @@ tests/*.png
 !.env.example
 .venv/
 venv/
+
+# Coordinate architecture: never publish exam content or private state
+sources/
+data/*
+!data/README.md
+question_bank/**
+!question_bank/README.md
+*.pdf
+*.webp
+*.sqlite3
+*.sqlite3-*
+backups/
+tmp/
+*.[pP][dD][fF]
+*.[wW][eE][bB][pP]
