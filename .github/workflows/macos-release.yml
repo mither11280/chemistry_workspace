@@ -120,7 +120,7 @@ jobs:
             EXTRA=""
           fi
           DMG=$(find dist -maxdepth 1 -name '*.dmg' ! -name '*BEFORE-NOTARIZATION*' -print -quit)
-          gh release create "$TAG" --title "$TITLE" --notes-file packaging/release-notes.md $EXTRA "$DMG" "$DMG.sha256" dist/*.json dist/*Source.tar.gz
+          gh release create "$TAG" --target "$GITHUB_SHA" --title "$TITLE" --notes-file packaging/release-notes.md $EXTRA "$DMG" "$DMG.sha256" dist/*.json dist/*Source.tar.gz
       - name: Remove ephemeral signing credentials
         if: always() && env.CODESIGN_IDENTITY != ''
         run: |
