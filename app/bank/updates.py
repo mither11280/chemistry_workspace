@@ -17,7 +17,7 @@ import fitz
 from .format import DataError,read_json,write_json,validate,validate_schema,relative_path,safe_path,sha256,geometry
 
 MAX_BYTES=512*1024*1024
-READER_VERSION=(0,4,0)
+READER_VERSION=(0,4,1)
 
 def encoded(value):return (json.dumps(value,ensure_ascii=False,sort_keys=True,indent=2)+'\n').encode()
 def digest(data):return hashlib.sha256(data).hexdigest()

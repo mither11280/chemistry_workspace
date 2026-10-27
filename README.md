@@ -1,5 +1,7 @@
 # 题间 · Chemistry Workspace
 
+最新界面补丁：[v0.4.1 更新说明](docs/releases/v0.4.1.md) · [下载安装包](https://github.com/mither11280/chemistry_workspace/releases/tag/internal-v0.4.1)。
+
 面向 A-Level 化学教师的本地组卷软件。保留题库浏览、SQLite 筛选、离线描述助手、作业编辑、学生卷/Mark Scheme 导出、个人作业与 `CIE1.` 分享代码。
 
 **当前采用原始 PDF + 公开坐标 JSON + SQLite + 按需 WebP。公开仓库不随附真题文件或原题全文。** 随附 CIE AS Chemistry 9701 的 2024–2026 February/March Paper 12、22 共 132 题坐标。Paper 2 保留整道大题；题目和建议分类经过程序检查，未标记为人工内容复核通过，不能视为完整历年题库。
