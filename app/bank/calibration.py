@@ -14,7 +14,7 @@ def calibrate(catalog, store, payload):
     q['metadata'].update({'review_status':'pending_review','calibration':'manual','migration_status':'manually_calibrated'})
     for kind in ['question','answer']:store.resolve(q[kind]['source_id'])
     index,manifest=catalog.read_contract();index['questions']=[x for x in index['questions'] if x['question_id']!=qid]+[q]
-    validate(index,manifest,catalog.root/'schemas')
+    validate(index,manifest,catalog.resource_root/'schemas')
     saved=backup(catalog.root)
     write_json(catalog.data/'question-index.local.json',index)
     try:catalog.rebuild(force=True)

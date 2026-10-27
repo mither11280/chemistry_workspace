@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "recorded_on": "2026-10-27",
+  "scope": "Cambridge 9701 QP, Mark Scheme and syllabus PDFs listed in indexes/source-manifest.json, bundled in Chemistry Workspace GitHub Release DMG",
+  "publisher_attestation": "Repository maintainer explicitly confirmed redistribution authorization in this development task.",
+  "evidence_type": "direct maintainer confirmation; underlying rights document is not stored in source",
+  "copyright_owner": "Cambridge / respective original rights holders",
+  "software_license_does_not_relicense_exam_data": true
+}

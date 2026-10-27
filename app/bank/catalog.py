@@ -8,11 +8,11 @@ from .format import DataError, read_json, validate
 DB_VERSION=2
 
 class Catalog:
-    def __init__(self, root, data=None):
-        self.root=Path(root);self.data=Path(data or self.root/'data');self.data.mkdir(parents=True,exist_ok=True)
+    def __init__(self, root, data=None, resources=None):
+        self.root=Path(root);self.resource_root=Path(resources or root);self.data=Path(data or self.root/'data');self.data.mkdir(parents=True,exist_ok=True)
         self.path=self.data/'catalog.sqlite3'
-        self.index_path=self.root/'indexes/question-index.json'
-        self.manifest_path=self.root/'indexes/source-manifest.json'
+        self.index_path=self.resource_root/'indexes/question-index.json'
+        self.manifest_path=self.resource_root/'indexes/source-manifest.json'
         self.initialize()
         self.rebuild()
 
@@ -59,7 +59,7 @@ class Catalog:
             local=read_json(local_index)
             merged={q['question_id']:q for q in index['questions']};merged.update({q['question_id']:q for q in local['questions']})
             index['questions']=list(merged.values())
-        validate(index,manifest,self.root/'schemas')
+        validate(index,manifest,self.resource_root/'schemas')
         return index,manifest
 
     def rebuild(self, force=False):
@@ -113,13 +113,13 @@ class Catalog:
         filters=filters or {};where=[];args=[]
         for key in ['year','paper','type']:
             if filters.get(key) not in [None,'',0,'0']:
-                where.append('q.'+key+'=?');args.append(filters[key])
+                where.append('q.'+key+'=?');args.append(str(filters[key]) if key=='type' else int(filters[key]))
         for key,op in [('min_marks','>='),('max_marks','<=')]:
             if filters.get(key) not in [None,'']:
                 where.append('q.marks'+op+'?');args.append(float(filters[key]))
         topics=filters.get('topics') or ([filters['topic']] if filters.get('topic') else [])
         if topics:
-            where.append('(EXISTS(SELECT 1 FROM tags t WHERE t.question_id=q.question_id AND t.topic IN ('+','.join('?'*len(topics))+')) OR EXISTS(SELECT 1 FROM json_each(q.payload,"$.topics") WHERE value IN ('+','.join('?'*len(topics))+')))');args.extend(topics);args.extend(topics)
+            where.append('(EXISTS(SELECT 1 FROM tags t WHERE t.question_id=q.question_id AND t.topic IN ('+','.join('?'*len(topics))+')) OR EXISTS(SELECT 1 FROM json_each(q.payload,\'$.topics\') WHERE value IN ('+','.join('?'*len(topics))+')))');args.extend(topics);args.extend(topics)
         if exclude:
             where.append('q.question_id NOT IN ('+','.join('?'*len(exclude))+')');args.extend(exclude)
         text=filters.get('search','').strip()

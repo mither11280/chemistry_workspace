@@ -1,0 +1,128 @@
+name: macOS standalone app
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Application version (e.g. 0.2.0)
+        required: true
+        default: '0.2.0'
+      seed_release_tag:
+        description: Existing Release containing the Cambridge-enabled seed DMG
+        required: true
+        default: 'internal-seed-0.2.0'
+      publish:
+        description: Publish a GitHub Release after all verification gates
+        type: boolean
+        default: false
+      exam_redistribution_authorized:
+        description: I confirm permission to redistribute all bundled Cambridge QP/MS/syllabus files
+        type: boolean
+        default: false
+permissions:
+  contents: read
+concurrency:
+  group: macos-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  tests:
+    runs-on: macos-14
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          architecture: arm64
+      - run: python -m pip install -r requirements-build.txt
+      - run: python -m unittest discover -s tests -v
+      - run: node --check app/app.js
+  build:
+    if: github.event_name == 'workflow_dispatch'
+    needs: tests
+    runs-on: macos-14
+    permissions:
+      contents: write
+    env:
+      GH_TOKEN: ${{ github.token }}
+      CODESIGN_IDENTITY: ${{ secrets.CODESIGN_IDENTITY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          architecture: arm64
+      - name: Install isolated build dependencies
+        run: python -m pip install -r requirements-build.txt
+      - name: Download explicit seed artifact (no third-party paper scraping)
+        env:
+          SEED_TAG: ${{ inputs.seed_release_tag }}
+        run: |
+          mkdir -p release-inputs
+          gh release download "$SEED_TAG" --repo "$GITHUB_REPOSITORY" --pattern '*arm64*.dmg' --dir release-inputs
+          DMG=$(find release-inputs -maxdepth 1 -name '*.dmg' -print -quit)
+          mkdir -p "$RUNNER_TEMP/exam-seed"
+          hdiutil attach -readonly -nobrowse -mountpoint "$RUNNER_TEMP/exam-seed" "$DMG"
+          ditto "$RUNNER_TEMP/exam-seed/题间.app/Contents/Resources/workspace/bundled-sources" release-inputs/exams
+          hdiutil detach "$RUNNER_TEMP/exam-seed"
+      - name: Import Developer ID credentials when configured
+        if: env.CODESIGN_IDENTITY != ''
+        env:
+          MACOS_CERTIFICATE_P12: ${{ secrets.MACOS_CERTIFICATE_P12 }}
+          MACOS_CERTIFICATE_PASSWORD: ${{ secrets.MACOS_CERTIFICATE_PASSWORD }}
+          NOTARY_KEY_P8: ${{ secrets.NOTARY_KEY_P8 }}
+        run: python scripts/prepare_ci_signing.py
+      - name: Build app and DMG
+        env:
+          APP_VERSION_INPUT: ${{ inputs.version }}
+        run: python scripts/build_macos.py --version "$APP_VERSION_INPUT" --exam-source-dir release-inputs/exams
+      - name: Notarize Developer ID build
+        if: env.CODESIGN_IDENTITY != ''
+        env:
+          NOTARY_KEY_ID: ${{ secrets.NOTARY_KEY_ID }}
+          NOTARY_ISSUER_ID: ${{ secrets.NOTARY_ISSUER_ID }}
+        run: python scripts/notarize_macos.py dist/题间.app --identity "$CODESIGN_IDENTITY" --key "$RUNNER_TEMP/AuthKey.p8" --key-id "$NOTARY_KEY_ID" --issuer "$NOTARY_ISSUER_ID"
+      - name: Collect exact corresponding source and licenses
+        env:
+          APP_VERSION_INPUT: ${{ inputs.version }}
+        run: python scripts/collect_corresponding_source.py --version "$APP_VERSION_INPUT"
+      - name: Verify real DMG install, native startup, APIs, persistence and upgrade
+        run: |
+          DMG=$(find dist -maxdepth 1 -name '*.dmg' ! -name '*BEFORE-NOTARIZATION*' -print -quit)
+          python scripts/verify_macos_distribution.py "$DMG"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ChemistryWorkspace-arm64
+          path: |
+            dist/*.dmg
+            !dist/*BEFORE-NOTARIZATION*
+            dist/*.sha256
+            dist/*.json
+            dist/*Source.tar.gz
+          retention-days: 30
+      - name: Publish release only with explicit exam redistribution confirmation
+        if: inputs.publish
+        env:
+          RIGHTS_CONFIRMED: ${{ inputs.exam_redistribution_authorized }}
+          APP_VERSION_INPUT: ${{ inputs.version }}
+        run: |
+          test "$RIGHTS_CONFIRMED" = true || { echo 'Publishing bundled exam PDFs requires confirmed redistribution rights.'; exit 1; }
+          test -f "dist/ChemistryWorkspace-$APP_VERSION_INPUT-CorrespondingSource.tar.gz"
+          if [ -z "$CODESIGN_IDENTITY" ]; then
+            TAG="internal-v$APP_VERSION_INPUT"
+            TITLE="题间 $APP_VERSION_INPUT · INTERNAL / UNNOTARIZED"
+            EXTRA="--prerelease"
+          else
+            TAG="v$APP_VERSION_INPUT"
+            TITLE="题间 $APP_VERSION_INPUT · Apple Silicon"
+            test -f dist/notarization-report.json
+            EXTRA=""
+          fi
+          DMG=$(find dist -maxdepth 1 -name '*.dmg' ! -name '*BEFORE-NOTARIZATION*' -print -quit)
+          gh release create "$TAG" --title "$TITLE" --notes-file packaging/release-notes.md $EXTRA "$DMG" "$DMG.sha256" dist/*.json dist/*Source.tar.gz
+      - name: Remove ephemeral signing credentials
+        if: always() && env.CODESIGN_IDENTITY != ''
+        run: |
+          security delete-keychain "$RUNNER_TEMP/question-space-signing.keychain-db" || true
+          rm -f "$RUNNER_TEMP/AuthKey.p8" "$RUNNER_TEMP/developer-id.p12"

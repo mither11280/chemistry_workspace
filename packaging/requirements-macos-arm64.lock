@@ -1,0 +1,14 @@
+altgraph==0.17.5
+attrs==26.1.0
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+macholib==1.16.4
+packaging==26.3
+pillow==11.3.0
+pyinstaller==6.16.0
+pyinstaller-hooks-contrib==2026.9
+PyMuPDF==1.26.5
+referencing==0.37.0
+rpds-py==2026.9.1
+setuptools==84.2.1
+typing_extensions==4.16.0

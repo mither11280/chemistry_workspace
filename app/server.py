@@ -18,11 +18,13 @@ from bank.sources import SourceStore
 from bank.render import Renderer
 from bank.format import DataError, SourceError, write_json
 from bank.calibration import calibrate
+from runtime import RuntimePaths
 
-ROOT=Path(os.environ.get('QUESTION_BANK_ROOT',Path(__file__).resolve().parents[1])).resolve()
+PATHS=RuntimePaths.discover();PATHS.prepare()
+ROOT=PATHS.home;RESOURCES=PATHS.resources
 DATA=ROOT/'data';DATA.mkdir(parents=True,exist_ok=True)
 EXPORTS=ROOT/'exports';EXPORTS.mkdir(exist_ok=True)
-CATALOG=Catalog(ROOT);SOURCES=SourceStore(ROOT,CATALOG);RENDERER=Renderer(CATALOG,SOURCES)
+CATALOG=Catalog(ROOT,resources=RESOURCES);SOURCES=SourceStore(ROOT,CATALOG);RENDERER=Renderer(CATALOG,SOURCES)
 DB=Path(os.environ.get('QUESTION_BANK_DB',str(DATA/'personal.sqlite3')))
 MUTATION_LOCK=threading.RLock()
 
@@ -111,6 +113,7 @@ class Handler(BaseHTTPRequestHandler):
         if not self.trusted():return self.send({'error':'Invalid host'},403)
         url=urlparse(self.path);path=unquote(url.path);params={k:v[0] for k,v in parse_qs(url.query).items()}
         try:
+            if path=='/api/health':return self.send({'ready':True,'pid':os.getpid(),'instance_id':os.environ.get('QUESTION_BANK_INSTANCE',''),'version':PATHS.build['version'],'distribution':PATHS.build['distribution']})
             if path=='/api/bank':return self.send(bank_info())
             if path=='/api/questions':
                 if params.get('ids'):return self.send({'questions':[compat(CATALOG.question(x)) for x in params['ids'].split(',')[:200]]})
@@ -140,7 +143,7 @@ class Handler(BaseHTTPRequestHandler):
                 return self.send((EXPORTS/name).read_bytes(),ctype='application/pdf')
             files={'/':'index.html','/app.js':'app.js','/tokens.css':'tokens.css','/style.css':'style.css'}
             if path in files:
-                f=ROOT/'app'/files[path];mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8'}
+                f=RESOURCES/'app'/files[path];mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8'}
                 return self.send(f.read_bytes(),ctype=mime[f.suffix])
             self.send({'error':'Not found'},404)
         except SourceError as e:self.send({'error':str(e),'code':'source_unavailable'},409)
@@ -167,6 +170,10 @@ class Handler(BaseHTTPRequestHandler):
                     return self.send(result)
                 finally:Path(temp).unlink(missing_ok=True)
             body=json.loads(self.rfile.read(size))
+            if path=='/api/import-project':
+                from profile_import import import_project
+                with MUTATION_LOCK:result=import_project(body['path'],CATALOG,SOURCES,DB)
+                return self.send(result)
             if path=='/api/select':
                 excluded=body.get('exclude',[]);count=int(body.get('count',10))
                 if not isinstance(excluded,list) or any(not isinstance(x,str) for x in excluded) or not 1<=count<=200 or len(excluded)>200:raise DataError('每份作业最多 200 题')
@@ -210,6 +217,23 @@ class Handler(BaseHTTPRequestHandler):
             print('ERROR',repr(e),file=sys.stderr);self.send({'error':'操作失败，请检查本地文件或磁盘空间'},500)
 
 def main():
+    import signal
+    lock=(DATA/'backend.lock').open('a+')
+    try:
+        if sys.platform=='win32':
+            import msvcrt
+            lock.seek(0)
+            if not lock.read(1):lock.write('0');lock.flush()
+            lock.seek(0);msvcrt.locking(lock.fileno(),msvcrt.LK_NBLCK,1)
+        else:
+            import fcntl
+            fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+    except (BlockingIOError,OSError):raise SystemExit('此用户数据目录已有一个后端正在运行，请退出另一实例。')
+    PATHS.seed_sources(SOURCES);PATHS.mark_ready()
     http=ThreadingHTTPServer(('127.0.0.1',int(os.environ.get('QUESTION_BANK_PORT','0'))),Handler)
-    print(f'http://127.0.0.1:{http.server_port}',flush=True);http.serve_forever()
+    def stop(*_):threading.Thread(target=http.shutdown,daemon=True).start()
+    signal.signal(signal.SIGTERM,stop);signal.signal(signal.SIGINT,stop)
+    print(f'http://127.0.0.1:{http.server_port}',flush=True)
+    try:http.serve_forever()
+    finally:http.server_close();lock.close()
 if __name__=='__main__':main()

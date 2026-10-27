@@ -4,9 +4,15 @@
 
 **当前采用原始 PDF + 公开坐标 JSON + SQLite + 按需 WebP。公开仓库不随附真题文件或原题全文。** 随附 CIE AS Chemistry 9701 的 2024–2026 February/March Paper 12、22 共 132 题坐标。Paper 2 保留整道大题；题目与知识点仍为待逐题复核的候选，不能视为完整历年题库。
 
-## 安装与首次使用
+## macOS 安装包
 
-Python 3.9+，本地运行，无账号、API Key 或 CDN 依赖。
+Apple Silicon 用户可使用独立 DMG：将 App 拖入 Applications，双击运行。不需要 Python、pip、Swift 或 Xcode。包内已包含当前 132 题所需 QP/MS 和内置运行时；首次启动复制到 `~/Library/Application Support/ChemistryWorkspace`。个人原卷、数据库、作业、缓存和导出保存在那里，替换 App 不清空数据。
+
+当前本机输出为 **INTERNAL-UNNOTARIZED 内部测试包**：ad-hoc 签名，没有 Developer ID 和 Apple 公证，Gatekeeper 可能阻止首次打开。不能把它当作正式可信发行版。[完整安装、构建、公证及 Release 说明](docs/macos-distribution.md)。
+
+旧项目通过菜单「题间 → 从旧项目导入数据…」复制。原目录保留，同 ID 不同作业保存副本，当前草稿不覆盖。校准与题库功能继续保留。
+
+源码开发版仍可直接运行：
 
 ```sh
 python3 -m venv .venv
@@ -15,20 +21,7 @@ pip install -r requirements.txt
 python app/server.py
 ```
 
-Windows 激活虚拟环境使用 `.venv\Scripts\activate`。打开终端输出的 127.0.0.1 地址：即使还没有原卷，也能浏览题目元数据、筛选、编排和保存作业；预览与正式导出会明确提示缺失文件。
-
-点击页面上方或侧栏的「原卷导入与维护」，批量选择**自行合法获取**的 Question Paper、Mark Scheme（可附考纲）。程序按 manifest 的 SHA-256 识别，文件名只作提示；同名不同版本不会关联，已有不同内容文件不会被覆盖。不从第三方网站自动下载试卷。
-
-当前来源清单为各年份的 `9701_mYY_qp_12.pdf`、`9701_mYY_ms_12.pdf`、`9701_mYY_qp_22.pdf`、`9701_mYY_ms_22.pdf`（YY=24/25/26）及 `9701-syllabus-2025-2027.pdf`。不同字节版本即使题目相似也不能套用现有坐标；需要显式登记该版本及校准。原题全文只在导入后提取到本机搜索数据库。
-
-也可从命令行批量导入：
-
-```sh
-python scripts/bank_tool.py import "/path/to/legally-obtained-pdfs"
-python scripts/bank_tool.py check
-```
-
-macOS 原生窗口需要 Xcode Command Line Tools / Swift：在虚拟环境激活后运行 `./scripts/build_app.sh`，再打开 `题间.app`。保留整个项目目录，当前尚未提供捆绑 Python 的独立安装包。Windows/Linux 可使用本机浏览器入口，未提供原生壳。
+开发版默认继续使用项目目录数据；独立包改用 Application Support。构建机需要 Python 3.12 + Xcode，用户无需安装。[许可审查](docs/distribution-licensing.md)明确原创 MIT 源码、AGPL PyMuPDF/MuPDF 和 Cambridge 数据各自的边界；开源许可不授予考试材料再分发权。
 
 ## 新架构与目录
 

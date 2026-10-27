@@ -63,6 +63,7 @@ class ArchitectureTests(unittest.TestCase):
         self.assertEqual(self.store.resolve('fixture-qp').read_bytes(),before)
     def test_sql_filters_local_fts_and_rebuild(self):
         self.assertEqual(self.cat.search({'paper':1,'topic':'example','min_marks':1,'max_marks':1})['total'],1)
+        self.assertEqual(self.cat.search({'paper':'1','year':'2024','topic':'example','min_marks':'1','max_marks':'1'})['total'],1)
         self.import_all();self.assertEqual(self.cat.search({'search':'CONTINUED'})['total'],1)
         personal=self.root/'data/personal.sqlite3'
         with sqlite3.connect(personal) as c:c.execute('CREATE TABLE jobs(id TEXT)');c.execute("INSERT INTO jobs VALUES ('preserve')")

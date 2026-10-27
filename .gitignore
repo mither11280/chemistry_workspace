@@ -255,3 +255,12 @@ backups/
 tmp/
 *.[pP][dD][fF]
 *.[wW][eE][bB][pP]
+.build-venv/
+*.dmg
+*.p12
+*.p8
+*.mobileprovision
+*.keychain-db
+release-inputs/
+.packaging-venv/
+!packaging/backend.spec

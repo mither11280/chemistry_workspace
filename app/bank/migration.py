@@ -67,7 +67,7 @@ def source_references(doc, info, questions):
     return references
 
 
-def convert_legacy(old, legacy_root):
+def convert_legacy(old, legacy_root, schemas=None):
     """Return only proven coordinates. Failures are returned for PDF-only fallback."""
     legacy_root=Path(legacy_root);manifest={'schema_version':VERSION,'coordinate_system':COORDINATES,'sources':[]};source_map={};failures=[]
     for name,info in old.get('sources',{}).items():
@@ -96,7 +96,7 @@ def convert_legacy(old, legacy_root):
                 'answer':{'type':'mcq' if q['paper']==1 else 'regions','source_id':ms['source_id'],'regions':[{'page_index':r['page']-1,'bbox':r['bbox']} for r in q['answer_regions']]},
                 'metadata':{'review_status':'pending_review','classification_basis':'Legacy keyword candidates; syllabus statements not verified','syllabus_version':'2025-2027','syllabus_mapping_status':'unverified','granularity':q.get('granularity','whole_question'),'migration_status':'coordinates_verified_against_source_hash'}}
             single=copy.deepcopy(index);single['questions']=[question]
-            validate(single,manifest,Path(__file__).resolve().parents[2]/'schemas')
+            validate(single,manifest,schemas or Path(__file__).resolve().parents[2]/'schemas')
             index['questions'].append(question)
         except (DataError,KeyError,IndexError,ValueError) as e:
             failures.append({'question_id':q.get('id','unknown'),'reason':str(e),'status':'pending_calibration','legacy':q})
@@ -114,12 +114,12 @@ def migrate(root, legacy_root, catalog, store):
         else:
             old={'bank_id':'legacy-local','topics':catalog.index['topics'],'sources':{},'questions':[read_json(p) for p in legacy_root.rglob('metadata.json')]}
             # Standalone folders have no trustworthy source hashes: keep PDF compatibility.
-        index,manifest,failures=convert_legacy(old,legacy_root)
+        index,manifest,failures=convert_legacy(old,legacy_root,catalog.resource_root/'schemas')
         migrated_ids=[q['question_id'] for q in index['questions']]
         merged={q['question_id']:q for q in catalog.index['questions']};merged.update({q['question_id']:q for q in index['questions']});index['questions']=list(merged.values())
         topic_map={t['id']:t for t in catalog.index['topics']};topic_map.update({t['id']:t for t in index['topics']});index['topics']=list(topic_map.values())
         sources={s['source_id']:s for s in catalog.manifest['sources']};sources.update({s['source_id']:s for s in manifest['sources']});manifest['sources']=list(sources.values())
-        validate(index,manifest,root/'schemas')
+        validate(index,manifest,catalog.resource_root/'schemas')
         write_json(root/'data/question-index.local.json',index);write_json(root/'data/source-manifest.local.json',manifest)
         catalog.rebuild(force=True)
         with catalog.connect() as c:
