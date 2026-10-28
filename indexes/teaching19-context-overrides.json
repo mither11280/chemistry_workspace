@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "questions": {
+    "cie-9701-s25-22-q4-d-i": [
+      {
+        "from_question_id": "cie-9701-s25-22-q4-c-i",
+        "context_key": "4(c)",
+        "reason": "The alcohol identities A, B and C and their four-carbon constraint are introduced in part c and are required by the identification table in part d."
+      }
+    ],
+    "cie-9701-s25-22-q4-d-ii": [
+      {
+        "from_question_id": "cie-9701-s25-22-q4-c-i",
+        "context_key": "4(c)",
+        "reason": "The alcohol identities A, B and C and their four-carbon constraint are introduced in part c and are required by the identification table in part d."
+      }
+    ],
+    "cie-9701-s25-22-q4-d-iii": [
+      {
+        "from_question_id": "cie-9701-s25-22-q4-c-i",
+        "context_key": "4(c)",
+        "reason": "The alcohol identities A, B and C and their four-carbon constraint are introduced in part c and are required by the identification table in part d."
+      }
+    ],
+    "cie-9701-s24-22-q4-e-i": [
+      {
+        "from_question_id": "cie-9701-s24-22-q4-d-i",
+        "context_key": "4(d)",
+        "reason": "The structure labelled E is given only in the shared reaction diagram of part d and is required for the hybridisation count in e(i)."
+      }
+    ],
+    "cie-9701-s23-23-q4-c-i": [
+      {
+        "from_question_id": "cie-9701-s23-23-q4-b-i",
+        "context_key": "4(b)",
+        "reason": "The original HI equilibrium equation, 764 K reference Kc and experimental definition are supplied in part b and are required for comparison at 500 K."
+      }
+    ],
+    "cie-9701-s23-23-q4-c-ii": [
+      {
+        "from_question_id": "cie-9701-s23-23-q4-b-i",
+        "context_key": "4(b)",
+        "reason": "The original HI equilibrium equation, 764 K reference Kc and experimental definition are supplied in part b and are required for comparison at 500 K."
+      }
+    ],
+    "cie-9701-s26-23-q4-d-i": [
+      {
+        "from_question_id": "cie-9701-s26-23-q4-c-i",
+        "context_key": "4(c)",
+        "reason": "The alternatives W, X and Y are drawn only in the shared part c diagram and are needed to choose the isomer oxidised in part d(i)."
+      }
+    ],
+    "cie-9701-s22-22-q3-b": [
+      {
+        "from_question_id": "cie-9701-s22-22-q3-a-i",
+        "context_key": "3(a)",
+        "reason": "Equation 1, expressly required for the bond-enthalpy calculation in part b, is introduced only in the unscored lead-in to part a."
+      }
+    ],
+    "cie-9701-w22-22-q3-b-i": [
+      {
+        "from_question_id": "cie-9701-w22-22-q3-a-i",
+        "context_key": "3(a)",
+        "reason": "The D2 monomer structure is supplied only in the unscored compound table in part a; part b needs that table to identify and draw the polymer."
+      }
+    ],
+    "cie-9701-w22-22-q3-b-ii": [
+      {
+        "from_question_id": "cie-9701-w22-22-q3-a-i",
+        "context_key": "3(a)",
+        "reason": "The D2 monomer structure is supplied only in the unscored compound table in part a; part b needs that table to identify and draw the polymer."
+      }
+    ],
+    "cie-9701-s21-22-q4-b-i": [
+      {
+        "from_question_id": "cie-9701-s21-22-q4-a-i",
+        "context_key": "4(a)",
+        "reason": "Part b(i) asks to choose A, B, C or D, whose structure/letter correspondence is supplied only in the unscored table in part a."
+      }
+    ],
+    "cie-9701-w21-21-q4-d": [
+      {
+        "from_question_id": "cie-9701-w21-21-q4-c-i",
+        "context_key": "4(c)",
+        "reason": "Part d asks about solubility of C. The C structure is reprinted in the unscored part-c reaction scheme, which supplies the needed OH and COOH groups without requiring the separate infrared task in part b."
+      }
+    ],
+    "cie-9701-w21-23-q4-d": [
+      {
+        "from_question_id": "cie-9701-w21-23-q4-c-i",
+        "context_key": "4(c)",
+        "reason": "Part d asks about solubility of C. The C structure is reprinted in the unscored part-c reaction scheme, which supplies the needed OH and COOH groups without requiring the separate infrared task in part b."
+      }
+    ],
+    "cie-9701-s20-23-q4-d-i": [
+      {
+        "from_question_id": "cie-9701-s20-23-q4-c-i",
+        "context_key": "4(c)",
+        "reason": "The definition of B as a straight-chain C6H12 alkene is introduced in the unscored part-c lead-in; this is needed to interpret part d independently."
+      }
+    ],
+    "cie-9701-s20-23-q4-d-ii": [
+      {
+        "from_question_id": "cie-9701-s20-23-q4-c-i",
+        "context_key": "4(c)",
+        "reason": "The definition of B as a straight-chain C6H12 alkene is introduced in the unscored part-c lead-in; this is needed to interpret part d independently."
+      }
+    ],
+    "cie-9701-s18-23-q4-c-i": [
+      {
+        "from_question_id": "cie-9701-s18-23-q4-a-i",
+        "context_key": "4(a)",
+        "reason": "Reaction 1 and reaction 2 are defined only in the unscored shared reaction diagram in 4(a)."
+      }
+    ],
+    "cie-9701-s18-23-q4-c-ii": [
+      {
+        "from_question_id": "cie-9701-s18-23-q4-a-i",
+        "context_key": "4(a)",
+        "reason": "Reaction 1 and reaction 2 are defined only in the unscored shared reaction diagram in 4(a)."
+      }
+    ],
+    "cie-9701-s18-23-q4-e": [
+      {
+        "from_question_id": "cie-9701-s18-23-q4-a-i",
+        "context_key": "4(a)",
+        "reason": "Reaction 1 and reaction 2 are defined only in the unscored shared reaction diagram in 4(a)."
+      }
+    ],
+    "cie-9701-s18-23-q1-d-i": [
+      {
+        "from_question_id": "cie-9701-s18-23-q1-c-i",
+        "context_key": "1(c)",
+        "reason": "The balanced sulfur dioxide oxidation equilibrium used by part d is printed in the unscored introduction to part c."
+      }
+    ],
+    "cie-9701-s18-23-q1-d-ii": [
+      {
+        "from_question_id": "cie-9701-s18-23-q1-c-i",
+        "context_key": "1(c)",
+        "reason": "The balanced sulfur dioxide oxidation equilibrium used by part d is printed in the unscored introduction to part c."
+      }
+    ],
+    "cie-9701-s18-23-q1-d-iii": [
+      {
+        "from_question_id": "cie-9701-s18-23-q1-c-i",
+        "context_key": "1(c)",
+        "reason": "The balanced sulfur dioxide oxidation equilibrium used by part d is printed in the unscored introduction to part c."
+      }
+    ]
+  }
+}

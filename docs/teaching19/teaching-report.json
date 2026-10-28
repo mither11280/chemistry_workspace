@@ -1,0 +1,1186 @@
+{
+  "candidate_units": 4457,
+  "paper1": 2280,
+  "paper2_subparts": 2177,
+  "ready": 4389,
+  "pending": 68,
+  "explicit_classification_decisions": 4457,
+  "chapter_counts": {
+    "ch01": 345,
+    "ch02": 197,
+    "ch03": 338,
+    "ch04": 92,
+    "ch05": 179,
+    "ch06": 176,
+    "ch07": 242,
+    "ch08": 175,
+    "ch09": 286,
+    "ch10": 212,
+    "ch11": 205,
+    "ch12": 230,
+    "ch13": 388,
+    "ch14": 329,
+    "ch15": 180,
+    "ch16": 124,
+    "ch17": 217,
+    "ch18": 353,
+    "ch19": 121
+  },
+  "dependency_units": 85,
+  "issue_counts": {
+    "ms_answer_table_contamination_visual_confirmed": 3,
+    "exact_ms_label_missing": 32,
+    "subpart_marks_mismatch": 52,
+    "ms_parent_question_absent": 7,
+    "prerequisite_pending": 3,
+    "official_mass_fraction_interpretation_conflict": 1,
+    "official_ms_numeric_marks_absent": 1,
+    "official_question_withdrawn": 3,
+    "official_ms_duplicate_subpart_label": 14,
+    "official_qp_ms_marks_disagreement": 1,
+    "question:text_crosses_crop_edge": 8,
+    "official_ms_unbalanced_equation": 2,
+    "official_ambiguous_thermochemistry": 1
+  },
+  "coverage": [
+    {
+      "year": 2018,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2018,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 34
+    },
+    {
+      "year": 2018,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2018,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2018,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2018,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 1,
+      "status": "ready",
+      "count": 32
+    },
+    {
+      "year": 2018,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 2,
+      "status": "pending",
+      "count": 6
+    },
+    {
+      "year": 2018,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 32
+    },
+    {
+      "year": 2018,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 31
+    },
+    {
+      "year": 2018,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2018,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2018,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2018,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 1,
+      "status": "pending",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 1,
+      "status": "ready",
+      "count": 35
+    },
+    {
+      "year": 2018,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 2,
+      "status": "pending",
+      "count": 3
+    },
+    {
+      "year": 2018,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 30
+    },
+    {
+      "year": 2018,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 3,
+      "status": "pending",
+      "count": 1
+    },
+    {
+      "year": 2018,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 35
+    },
+    {
+      "year": 2019,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2019,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "status": "pending",
+      "count": 1
+    },
+    {
+      "year": 2019,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 36
+    },
+    {
+      "year": 2019,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2019,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2019,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2019,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 1,
+      "status": "ready",
+      "count": 32
+    },
+    {
+      "year": 2019,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 2,
+      "status": "pending",
+      "count": 2
+    },
+    {
+      "year": 2019,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 38
+    },
+    {
+      "year": 2019,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 3,
+      "status": "pending",
+      "count": 2
+    },
+    {
+      "year": 2019,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 37
+    },
+    {
+      "year": 2019,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2019,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2019,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2019,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 1,
+      "status": "pending",
+      "count": 2
+    },
+    {
+      "year": 2019,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 1,
+      "status": "ready",
+      "count": 35
+    },
+    {
+      "year": 2019,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 42
+    },
+    {
+      "year": 2019,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 3,
+      "status": "pending",
+      "count": 2
+    },
+    {
+      "year": 2019,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 35
+    },
+    {
+      "year": 2020,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2020,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 37
+    },
+    {
+      "year": 2020,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2020,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2020,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2020,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 1,
+      "status": "pending",
+      "count": 1
+    },
+    {
+      "year": 2020,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 1,
+      "status": "ready",
+      "count": 37
+    },
+    {
+      "year": 2020,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 2,
+      "status": "pending",
+      "count": 4
+    },
+    {
+      "year": 2020,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 29
+    },
+    {
+      "year": 2020,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 3,
+      "status": "pending",
+      "count": 3
+    },
+    {
+      "year": 2020,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 35
+    },
+    {
+      "year": 2020,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2020,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2020,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2020,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 1,
+      "status": "ready",
+      "count": 39
+    },
+    {
+      "year": 2020,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2020,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 39
+    },
+    {
+      "year": 2021,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2021,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 41
+    },
+    {
+      "year": 2021,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2021,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2021,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2021,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2021,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 37
+    },
+    {
+      "year": 2021,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 31
+    },
+    {
+      "year": 2021,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2021,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2021,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2021,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 1,
+      "status": "pending",
+      "count": 4
+    },
+    {
+      "year": 2021,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 1,
+      "status": "ready",
+      "count": 34
+    },
+    {
+      "year": 2021,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 2,
+      "status": "pending",
+      "count": 5
+    },
+    {
+      "year": 2021,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 34
+    },
+    {
+      "year": 2021,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 3,
+      "status": "pending",
+      "count": 4
+    },
+    {
+      "year": 2021,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 34
+    },
+    {
+      "year": 2022,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2022,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 31
+    },
+    {
+      "year": 2022,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2022,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2022,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2022,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 1,
+      "status": "ready",
+      "count": 34
+    },
+    {
+      "year": 2022,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 39
+    },
+    {
+      "year": 2022,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 32
+    },
+    {
+      "year": 2022,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2022,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2022,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2022,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 1,
+      "status": "pending",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 1,
+      "status": "ready",
+      "count": 35
+    },
+    {
+      "year": 2022,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 31
+    },
+    {
+      "year": 2022,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 3,
+      "status": "pending",
+      "count": 1
+    },
+    {
+      "year": 2022,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 35
+    },
+    {
+      "year": 2023,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2023,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2023,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2023,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2023,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2023,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 43
+    },
+    {
+      "year": 2023,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 46
+    },
+    {
+      "year": 2023,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2023,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2023,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2023,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 2,
+      "status": "pending",
+      "count": 1
+    },
+    {
+      "year": 2023,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 33
+    },
+    {
+      "year": 2023,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 3,
+      "status": "pending",
+      "count": 1
+    },
+    {
+      "year": 2023,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 36
+    },
+    {
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2024,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "status": "pending",
+      "count": 4
+    },
+    {
+      "year": 2024,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 33
+    },
+    {
+      "year": 2024,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2024,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2024,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2024,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 1,
+      "status": "ready",
+      "count": 37
+    },
+    {
+      "year": 2024,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 2,
+      "status": "pending",
+      "count": 7
+    },
+    {
+      "year": 2024,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 27
+    },
+    {
+      "year": 2024,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 39
+    },
+    {
+      "year": 2024,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2024,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2024,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2024,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 1,
+      "status": "pending",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 1,
+      "status": "ready",
+      "count": 43
+    },
+    {
+      "year": 2024,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 2,
+      "status": "pending",
+      "count": 3
+    },
+    {
+      "year": 2024,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 37
+    },
+    {
+      "year": 2024,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 3,
+      "status": "pending",
+      "count": 1
+    },
+    {
+      "year": 2024,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 43
+    },
+    {
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2025,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 37
+    },
+    {
+      "year": 2025,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2025,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2025,
+      "session": "May/June",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2025,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2025,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 41
+    },
+    {
+      "year": 2025,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 41
+    },
+    {
+      "year": 2025,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 1,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2025,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2025,
+      "session": "October/November",
+      "paper": 1,
+      "variant": 3,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2025,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 1,
+      "status": "pending",
+      "count": 3
+    },
+    {
+      "year": 2025,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 1,
+      "status": "ready",
+      "count": 39
+    },
+    {
+      "year": 2025,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 2,
+      "status": "pending",
+      "count": 1
+    },
+    {
+      "year": 2025,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 38
+    },
+    {
+      "year": 2025,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 3,
+      "status": "pending",
+      "count": 3
+    },
+    {
+      "year": 2025,
+      "session": "October/November",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 39
+    },
+    {
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2026,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 39
+    },
+    {
+      "year": 2026,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 1,
+      "status": "ready",
+      "count": 38
+    },
+    {
+      "year": 2026,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 2,
+      "status": "ready",
+      "count": 40
+    },
+    {
+      "year": 2026,
+      "session": "May/June",
+      "paper": 2,
+      "variant": 3,
+      "status": "ready",
+      "count": 32
+    }
+  ],
+  "paper2_parent_questions": 262,
+  "dependency_parent_groups": 63,
+  "source_pairs": 115
+}

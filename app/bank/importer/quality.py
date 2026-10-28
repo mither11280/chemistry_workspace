@@ -61,7 +61,14 @@ def question_issues(q,qp,ms,qdoc,mdoc):
 
 def answer_content_issues(q,doc):
     """Check the actual cropped MS rows, including question identity, not just its manifest."""
-    number=int(q['original_question_number']);issues=[];marks=0;labels=set();letters=[]
+    label=q['original_question_number'];number=int(__import__('re').match(r'\d+',label)[0]);issues=[];marks=0;labels=set();letters=[]
+    if q.get('metadata',{}).get('teaching') and q['paper']==2:
+        from ..teaching.parts import ms_parts,label_path
+        rows,_=ms_parts(doc);expected=label_path(label);entry=rows.get(expected)
+        if not entry:return ['ms_crop_subpart_identity_mismatch']
+        if entry['regions']!=q['answer']['regions']:issues.append('ms_crop_subpart_region_mismatch')
+        if entry['marks']!=q['marks']:issues.append('ms_crop_marks_mismatch')
+        return issues
     for r in q['answer']['regions']:
         from ..pdf_layout import layout_page,transform
         from .ms_layout import labels as ms_labels,count_marks

@@ -37,10 +37,11 @@ class ArchitectureTests(unittest.TestCase):
             with self.subTest(mutation=mutation),self.assertRaises(DataError):validate(index,manifest,ROOT/'schemas')
     def test_public_real_index(self):
         index=read_json(ROOT/'indexes/question-index.json');manifest=read_json(ROOT/'indexes/source-manifest.json')
-        validate(index,manifest,ROOT/'schemas');self.assertEqual(len(index['questions']),132)
+        validate(index,manifest,ROOT/'schemas');self.assertTrue(index['questions'])
+        self.assertEqual(len({q['question_id'] for q in index['questions']}),len(index['questions']))
         for q in index['questions']:
             self.assertNotIn('text',q);self.assertNotIn('summary',q);self.assertNotIn('value',q['answer'])
-        self.assertEqual(sum(q['marks'] for q in index['questions']),300)
+        self.assertTrue(all(type(q['marks']) is int and q['marks']>0 for q in index['questions']))
     def test_missing_and_wrong_source(self):
         self.assertEqual(self.renderer.availability('fixture-q1')['question']['state'],'missing')
         with self.assertRaises(SourceError):self.renderer.preview('fixture-q1','question')
@@ -70,6 +71,12 @@ class ArchitectureTests(unittest.TestCase):
         self.cat.rebuild(force=True)
         with sqlite3.connect(personal) as c:self.assertEqual(c.execute('SELECT * FROM jobs').fetchone()[0],'preserve')
         self.assertEqual(self.cat.check()['integrity'],'ok')
+    def test_full_id_search_does_not_match_next_roman_suffix(self):
+        index=copy.deepcopy(self.index);q=index['questions'][1];q['question_id']='fixture-q2-i'
+        other=copy.deepcopy(q);other['question_id']='fixture-q2-ii';index['questions'].append(other)
+        write_json(self.root/'indexes/question-index.json',index);self.cat.rebuild()
+        found=self.cat.search({'search':'fixture-q2-i'})
+        self.assertEqual(found['total'],1);self.assertEqual(found['questions'][0]['question_id'],'fixture-q2-i')
     def test_answer_order_and_vector_output(self):
         self.import_all();job={'title':'Reordered','question_ids':['fixture-q2','fixture-q1'],'notes':'Teacher notes'}
         for kind in ['questions','answers']:
@@ -92,6 +99,15 @@ class ArchitectureTests(unittest.TestCase):
         q=copy.deepcopy(self.index['questions'][1]);q['question']['regions'][0]['bbox'][1]+=1
         calibrate(self.cat,self.store,q);self.renderer.preview('fixture-q2','question')
         self.assertEqual(len(list(self.renderer.cache.glob('*.webp'))),1)
+    def test_coordinate_update_invalidates_local_text(self):
+        self.import_all();self.assertEqual(self.cat.search({'search':'BEGIN'})['total'],1)
+        changed=copy.deepcopy(self.index)
+        changed['questions'][0]['question']['regions']=changed['questions'][0]['question']['regions'][1:]
+        write_json(self.root/'indexes/question-index.json',changed);self.cat.rebuild()
+        self.assertEqual(self.cat.search({'search':'BEGIN'})['total'],0)
+        self.store.ensure_local_content()
+        self.assertEqual(self.cat.search({'search':'BEGIN'})['total'],0)
+        self.assertEqual(self.cat.search({'search':'CONTINUED'})['total'],1)
     def test_calibration_and_rollback(self):
         self.import_all();q=copy.deepcopy(self.index['questions'][0]);q['question']['regions'][0]['bbox'][0]=45
         result=calibrate(self.cat,self.store,q)

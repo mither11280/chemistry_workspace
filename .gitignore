@@ -269,3 +269,8 @@ release-inputs/
 *.qbank
 *.qbank.tmp
 import-work/
+
+# Archived private work across teaching-bank generations
+generation-archives/
+.generation.lock
+.teaching-transition.json

@@ -100,7 +100,7 @@ def sign_bundle(app,identity,internal):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--version',default='0.4.1')
+    parser.add_argument('--version',default='0.5.0')
     parser.add_argument('--exam-source-dir',type=Path,default=ROOT/'sources')
     parser.add_argument('--output',type=Path,default=ROOT/'dist')
     parser.add_argument('--sign-identity',default=os.environ.get('CODESIGN_IDENTITY'))
@@ -124,7 +124,7 @@ def main():
     resources=app/'Contents/Resources/workspace';resources.mkdir()
     for folder in ['indexes','schemas']:shutil.copytree(ROOT/folder,resources/folder)
     (resources/'app').mkdir()
-    for name in ['index.html','app.js','style.css','tokens.css']:shutil.copyfile(ROOT/'app'/name,resources/'app'/name)
+    for name in ['index.html','app.js','prompt.js','style.css','tokens.css']:shutil.copyfile(ROOT/'app'/name,resources/'app'/name)
     exams=collect_exams(args.exam_source_dir,resources/'bundled-sources')
     build_info={'version':args.version,'architecture':'arm64','distribution':'internal-adhoc' if internal else 'developer-id','notarized':False,'includes_cambridge_pdfs':True,'exam_files':exams,'runtime_python':platform.python_version()}
     (resources/'build-info.json').write_text(json.dumps(build_info,indent=2))

@@ -47,7 +47,9 @@ def validate_job(job):
     ids=job.get('question_ids',[])
     if not isinstance(ids,list) or len(ids)>200 or any(not isinstance(x,str) for x in ids):raise DataError('每份作业最多 200 题')
     if len(ids)!=len(set(ids)):raise DataError('一份作业不能重复加入同一题')
-    for qid in ids:CATALOG.question(qid)
+    from bank.teaching.worksheet import resolve
+    resolved=resolve(CATALOG,ids)
+    ids=resolved['question_ids']
     title=job.get('title','未命名作业')
     if not isinstance(title,str) or len(title)>120:raise DataError('作业名称最多 120 个字符')
     return {'title':title.strip() or '未命名作业','question_ids':ids,'notes':str(job.get('notes',''))[:2000]}
@@ -71,18 +73,20 @@ def source_hashes(job):
 
 def share(job):
     job=validate_job(job)
-    p={'schema':1,'bank':CATALOG.index['bank_id'],'revision':CATALOG.index['revision'],'job':job,'hashes':source_hashes(job)}
-    return 'CIE1.'+base64.urlsafe_b64encode(zlib.compress(json.dumps(p,ensure_ascii=False).encode())).decode().rstrip('=')
+    p={'schema':2 if CATALOG.index['bank_id']=='cie-9701-as-teaching19-v1' else 1,'bank':CATALOG.index['bank_id'],'revision':CATALOG.index['revision'],'job':job,'hashes':source_hashes(job)}
+    return ('CIE2.' if CATALOG.index['bank_id']=='cie-9701-as-teaching19-v1' else 'CIE1.')+base64.urlsafe_b64encode(zlib.compress(json.dumps(p,ensure_ascii=False).encode())).decode().rstrip('=')
 
 def unshare(code):
-    if not isinstance(code,str) or len(code)>100000 or not code.startswith('CIE1.'):raise DataError('不是有效的 CIE1 组卷代码')
+    teaching=CATALOG.index['bank_id']=='cie-9701-as-teaching19-v1'
+    if teaching and isinstance(code,str) and code.startswith('CIE1.'):raise DataError('这是旧版题库的分享代码，请使用旧版App与归档数据打开')
+    if not isinstance(code,str) or len(code)>100000 or not code.startswith('CIE2.' if teaching else 'CIE1.'):raise DataError('不是当前题库代际的组卷代码')
     try:
         raw=base64.b64decode(code[5:]+'='*(-len(code[5:])%4),altchars=b'-_',validate=True)
         d=zlib.decompressobj();value=d.decompress(raw,500001)
         if len(value)>500000 or d.unconsumed_tail or not d.eof:raise ValueError()
         p=json.loads(value)
     except Exception:raise DataError('组卷代码已损坏或过大')
-    if not isinstance(p,dict) or p.get('schema')!=1 or p.get('bank')!=CATALOG.index['bank_id']:raise DataError('不支持的题库或分享版本')
+    if not isinstance(p,dict) or p.get('schema')!=(2 if teaching else 1) or p.get('bank')!=CATALOG.index['bank_id']:raise DataError('不支持的题库或分享版本')
     job=validate_job(p.get('job'));hashes=p.get('hashes')
     if not isinstance(hashes,dict) or any(hashes.get(n)!=h for n,h in source_hashes(job).items()):raise DataError('题库版本或原卷内容不一致，不能静默替换题目')
     return job
@@ -100,7 +104,10 @@ def bank_info():
         total=c.execute(CATALOG.CANDIDATES+'SELECT count(*) FROM candidates').fetchone()[0]
         counts=dict(c.execute(CATALOG.CANDIDATES+"SELECT j.value,count(DISTINCT q.question_id) FROM candidates q,json_each(q.payload,'$.topics') j GROUP BY j.value").fetchall())
         years=[r[0] for r in c.execute(CATALOG.CANDIDATES+'SELECT DISTINCT year FROM candidates ORDER BY year DESC')]
-    return {'bank_id':CATALOG.index['bank_id'],'revision':CATALOG.index['revision'],'total':total,
+    teaching=CATALOG.index['bank_id']=='cie-9701-as-teaching19-v1'
+    pending=CATALOG.search({'collection':'pending'},limit=1)['total'] if teaching else 0
+    if teaching:total=CATALOG.search(limit=1)['total']
+    return {'teaching':teaching,'pending':pending,'bank_id':CATALOG.index['bank_id'],'revision':CATALOG.index['revision'],'total':total,
             'topics':[dict(t,count=counts.get(t['id'],0)) for t in CATALOG.index['topics']],'years':years,'app_version':PATHS.build['version'],'maintainer':os.environ.get('QUESTION_BANK_MAINTAINER')=='1'}
 
 def make_pdf(job,kind):return RENDERER.export(validate_job(job),kind,EXPORTS)
@@ -127,6 +134,10 @@ class Handler(BaseHTTPRequestHandler):
             if path=='/api/draft':
                 with connection() as c:r=c.execute('SELECT body FROM draft WHERE slot=1').fetchone()
                 return self.send(json.loads(r[0]) if r else None)
+            if path=='/api/holding-list':return self.send({'schema_version':'1.0.0','bank_id':CATALOG.index['bank_id'],'revision':CATALOG.index['revision'],'questions':[q for q in CATALOG.index['questions'] if q.get('metadata',{}).get('teaching',{}).get('status')=='pending']})
+            if path=='/api/worksheet':
+                from bank.teaching.worksheet import resolve
+                return self.send(resolve(CATALOG,[v for v in params.get('ids','').split(',') if v]))
             if path=='/api/jobs':
                 with connection() as c:rows=c.execute('SELECT * FROM jobs ORDER BY updated DESC').fetchall()
                 return self.send([dict(json.loads(r['body']),id=r['id'],updated=r['updated']) for r in rows])
@@ -144,7 +155,7 @@ class Handler(BaseHTTPRequestHandler):
                 name=path.split('/')[-1]
                 if not re.fullmatch(r'[a-f0-9]{32}_(questions|answers)\.pdf',name):raise DataError('无效文件')
                 return self.send((EXPORTS/name).read_bytes(),ctype='application/pdf')
-            files={'/':'index.html','/app.js':'app.js','/tokens.css':'tokens.css','/style.css':'style.css'}
+            files={'/':'index.html','/app.js':'app.js','/prompt.js':'prompt.js','/tokens.css':'tokens.css','/style.css':'style.css'}
             if path in files:
                 f=RESOURCES/'app'/files[path];mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8'}
                 return self.send(f.read_bytes(),ctype=mime[f.suffix])
@@ -200,10 +211,12 @@ class Handler(BaseHTTPRequestHandler):
                 target.unlink(missing_ok=True)
                 return self.send(result)
             if path=='/api/import-project':
+                if CATALOG.index['bank_id']=='cie-9701-as-teaching19-v1':raise DataError('旧项目请使用归档恢复工具与旧版App打开')
                 from profile_import import import_project
                 with MUTATION_LOCK:result=import_project(body['path'],CATALOG,SOURCES,DB)
                 return self.send(result)
             if path=='/api/select':
+                if CATALOG.index['bank_id']=='cie-9701-as-teaching19-v1' and body.get('filters',{}).get('collection')=='pending':raise DataError('待整理题目不参与自动组卷')
                 excluded=body.get('exclude',[]);count=int(body.get('count',10))
                 if not isinstance(excluded,list) or any(not isinstance(x,str) for x in excluded) or not 1<=count<=200 or len(excluded)>200:raise DataError('每份作业最多 200 题')
                 remaining=min(count,200-len(excluded))

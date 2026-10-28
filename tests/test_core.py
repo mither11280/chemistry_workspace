@@ -5,12 +5,18 @@ import os
 from pathlib import Path
 import sys
 import tempfile
+import shutil
 import unittest
 import zlib
 from fixtures import ROOT
 sys.path.insert(0,str(ROOT/'app'))
 _tmp=tempfile.TemporaryDirectory();os.environ['QUESTION_BANK_DB']=str(Path(_tmp.name)/'test.sqlite3')
+_legacy=Path(_tmp.name)/'legacy';_legacy.mkdir()
+shutil.copytree(ROOT/'indexes/releases/v0.4-base-132',_legacy/'indexes')
+shutil.copytree(ROOT/'schemas',_legacy/'schemas')
+os.environ['QUESTION_BANK_ROOT']=str(_legacy)
 import server
+os.environ.pop('QUESTION_BANK_ROOT',None)
 class CoreTests(unittest.TestCase):
     def setUp(self):self.job={'title':'原子结构 · 课堂练习','question_ids':['cie-9701-m25-12-q3','cie-9701-m25-22-q4'],'notes':'请写出完整步骤。'}
     def test_coverage(self):self.assertEqual(server.bank_info()['total'],132)

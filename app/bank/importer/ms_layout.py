@@ -39,4 +39,12 @@ def labels(page,ws=None):
 
 def count_marks(page,ws):
     col=columns(page);threshold=col['marks_min']
-    return sum(int(w[4]) for w in ws if w[4].isdigit() and 0<int(w[4])<=30 and threshold<=w[0]<col['marks_max'] and not any('total' in z[4].lower() for z in ws if abs(z[1]-w[1])<3))
+    result=0
+    for w in ws:
+        if not (w[4].isdigit() and 0<int(w[4])<=30 and threshold<=w[0]<col['marks_max']):continue
+        left=sorted((z for z in ws if abs(z[1]-w[1])<3 and z[0]<threshold),key=lambda z:z[0])
+        # A subtotal label is not an awarded mark. "total electrons in s
+        # subshell", however, is an actual scored table row, not a subtotal.
+        if re.search(r'\btotal(?:\s+marks?)?\s*:?\s*$',' '.join(z[4] for z in left),re.I):continue
+        result+=int(w[4])
+    return result

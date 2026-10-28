@@ -128,7 +128,7 @@
                   ],
                   "additionalProperties": false
                 },
-                "minItems": 1
+                "minItems": 0
               }
             },
             "required": [
@@ -168,7 +168,7 @@
                   ],
                   "additionalProperties": false
                 },
-                "minItems": 1
+                "minItems": 0
               },
               "type": {
                 "enum": [
@@ -193,7 +193,177 @@
             "additionalProperties": false
           },
           "metadata": {
-            "type": "object"
+            "type": "object",
+            "properties": {
+              "teaching": {
+                "type": "object",
+                "properties": {
+                  "taxonomy_id": {
+                    "const": "chemistry-workspace-teaching19-1.0.0"
+                  },
+                  "status": {
+                    "enum": [
+                      "ready",
+                      "pending"
+                    ]
+                  },
+                  "primary_chapter": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 1,
+                    "maximum": 19
+                  },
+                  "required_chapters": {
+                    "type": "array",
+                    "items": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 19
+                    },
+                    "uniqueItems": true
+                  },
+                  "candidate_chapters": {
+                    "description": "Unconfirmed retrieval hints for the holding area; never used for chapter selection.",
+                    "type": "array",
+                    "items": {"type": "integer", "minimum": 1, "maximum": 19},
+                    "uniqueItems": true
+                  },
+                  "prerequisites": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "uniqueItems": true
+                  },
+                  "parent_question_id": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "part_path": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "pattern": "^[a-z]+$"
+                    },
+                    "maxItems": 2
+                  },
+                  "source_order": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "own_regions": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "page_index": {
+                          "type": "integer",
+                          "minimum": 0
+                        },
+                        "bbox": {
+                          "type": "array",
+                          "items": {
+                            "type": "number"
+                          },
+                          "minItems": 4,
+                          "maxItems": 4
+                        }
+                      },
+                      "required": [
+                        "page_index",
+                        "bbox"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "contexts": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "key": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "global_key": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "regions": {
+                          "type": "array",
+                          "items": {
+                            "type": "object",
+                            "properties": {
+                              "page_index": {
+                                "type": "integer",
+                                "minimum": 0
+                              },
+                              "bbox": {
+                                "type": "array",
+                                "items": {
+                                  "type": "number"
+                                },
+                                "minItems": 4,
+                                "maxItems": 4
+                              }
+                            },
+                            "required": [
+                              "page_index",
+                              "bbox"
+                            ],
+                            "additionalProperties": false
+                          }
+                        }
+                      },
+                      "required": [
+                        "key",
+                        "regions"
+                      ],
+                      "additionalProperties": false
+                    }
+                  },
+                  "evidence": {
+                    "type": "array",
+                    "items": {
+                      "type": "object"
+                    }
+                  },
+                  "issues": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "uniqueItems": true
+                  },
+                  "missing_prerequisites": {
+                    "type": "array",
+                    "items": {
+                      "type": "string",
+                      "minLength": 1
+                    }
+                  }
+                },
+                "required": [
+                  "taxonomy_id",
+                  "status",
+                  "primary_chapter",
+                  "required_chapters",
+                  "prerequisites",
+                  "parent_question_id",
+                  "part_path",
+                  "source_order",
+                  "own_regions",
+                  "contexts",
+                  "evidence",
+                  "issues"
+                ],
+                "additionalProperties": false
+              }
+            }
           }
         },
         "required": [
@@ -212,7 +382,54 @@
           "answer",
           "metadata"
         ],
-        "additionalProperties": false
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "required": [
+                "metadata"
+              ],
+              "properties": {
+                "metadata": {
+                  "required": [
+                    "teaching"
+                  ],
+                  "properties": {
+                    "teaching": {
+                      "required": [
+                        "status"
+                      ],
+                      "properties": {
+                        "status": {
+                          "const": "pending"
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            "then": {},
+            "else": {
+              "properties": {
+                "question": {
+                  "properties": {
+                    "regions": {
+                      "minItems": 1
+                    }
+                  }
+                },
+                "answer": {
+                  "properties": {
+                    "regions": {
+                      "minItems": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
       }
     }
   },

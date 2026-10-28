@@ -57,6 +57,9 @@ def main():
         assert all(str(app) in p for p in runtime['sys_path'])
         report['runtime']={k:runtime[k] for k in ['python','pymupdf','pillow','sqlite','frozen','webp']}
         report['checks'].append('Actual DMG mounted; copied app and Applications drag target verified; frozen stdlib and dependencies internal')
+        index=json.loads((resources/'indexes/question-index.json').read_text()); manifest=json.loads((resources/'indexes/source-manifest.json').read_text())
+        ready_units=[q for q in index['questions'] if q.get('metadata',{}).get('teaching',{}).get('status','ready')=='ready']
+        p2_id='cie-9701-m25-22-q4-b-i' if index.get('bank_id')=='cie-9701-as-teaching19-v1' else 'cie-9701-m25-22-q4'
         expected_job=None;source_hash=None
         for iteration in [0,1]:
             if iteration==1:
@@ -71,7 +74,7 @@ def main():
             for p in app.rglob('*'):
                 if not p.is_symlink():p.chmod(p.stat().st_mode & ~0o222)
             before=tree_digest(app);ready=root/f'ready-{iteration}.json';log=root/f'native-{iteration}.log'
-            env=dict(environment,QUESTION_SPACE_READY_FILE=str(ready),QUESTION_SPACE_AUTO_QUIT_SECONDS='12')
+            env=dict(environment,QUESTION_SPACE_READY_FILE=str(ready),QUESTION_SPACE_AUTO_QUIT_SECONDS='45')
             with log.open('w') as stream:
                 process=subprocess.Popen([str(app/'Contents/MacOS/QuestionSpace')],env=env,cwd=cwd,stdout=stream,stderr=stream)
                 try:
@@ -80,19 +83,20 @@ def main():
                     def post(path,value):
                         req=urllib.request.Request(base+path,json.dumps(value).encode(),headers={'Content-Type':'application/json','X-Local-Request':'1'})
                         return json.loads(urllib.request.urlopen(req,timeout=60).read())
-                    bank=json.loads(get('/api/bank'));assert bank['total']==132
-                    selected=json.loads(get('/api/questions?paper=1&year=2025&limit=8'));assert selected['total']==40
+                    assert get('/prompt.js')==(resources/'app/prompt.js').read_bytes()
+                    bank=json.loads(get('/api/bank'));assert bank['total']==len(ready_units)
+                    selected=json.loads(get('/api/questions?paper=1&year=2025&limit=8'));assert selected['total']==sum(q['paper']==1 and q['year']==2025 for q in ready_units)
                     if iteration==0:
-                        sources=json.loads(get('/api/sources'));assert len(sources)==13 and all(s['status']['state']=='ready' for s in sources)
-                        report['checks'].append('First launch seeded all 13 exact original sources into fresh Application Support')
+                        sources=json.loads(get('/api/sources'));assert len(sources)==len(manifest['sources']) and all(s['status']['state']=='ready' for s in sources)
+                        report['checks'].append('First launch seeded all '+str(len(sources))+' exact original sources into fresh Application Support')
                         qp=next(s for s in sources if s['filename']=='9701_m25_qp_12.pdf');path=profile/qp['path'];source_hash=hashlib.sha256(path.read_bytes()).hexdigest();path.unlink()
                         try:get('/preview/cie-9701-m25-12-q3/question/0');raise AssertionError('Missing source unexpectedly rendered')
                         except urllib.error.HTTPError as e:assert e.code==409
                         req=urllib.request.Request(base+'/api/source-upload?name='+qp['filename'],(resources/'bundled-sources'/qp['filename']).read_bytes(),headers={'Content-Type':'application/pdf','X-Local-Request':'1'})
                         assert json.loads(urllib.request.urlopen(req).read())['state']=='ready'
                         assert get('/preview/cie-9701-m25-12-q3/question/0').startswith(b'RIFF')
-                        assert get('/preview/cie-9701-m25-22-q4/answer/0').startswith(b'RIFF')
-                        job={'title':'Standalone installer verification','question_ids':['cie-9701-m25-12-q3','cie-9701-m25-22-q4'],'notes':'Persistent teacher notes'}
+                        assert get('/preview/'+p2_id+'/answer/0').startswith(b'RIFF')
+                        job={'title':'Standalone installer verification','question_ids':['cie-9701-m25-12-q3',p2_id],'notes':'Persistent teacher notes'}
                         expected_job=post('/api/save',job);post('/api/draft',expected_job)
                         assert post('/api/import',{'code':post('/api/share',job)['code']})==job
                         for kind in ['questions','answers']:
@@ -112,7 +116,7 @@ def main():
                         assert hashlib.sha256((profile/'sources/cie/9701/2025/march/9701_m25_qp_12.pdf').read_bytes()).hexdigest()==source_hash
                         assert get('/preview/cie-9701-m25-12-q3/question/0').startswith(b'RIFF')
                         report['checks'].append('Replaced/reopened native app with version-bump fixture: saved jobs, notes, draft, sources and cache remained usable; upgrade backup created')
-                    process.wait(timeout=25);assert process.returncode==0
+                    process.wait(timeout=60);assert process.returncode==0
                     check_child_exited(health['pid'])
                     assert tree_digest(app)==before
                     report['checks'].append('Native termination closed embedded backend; no orphan and no writes into app bundle (pass '+str(iteration+1)+')')

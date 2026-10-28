@@ -32,6 +32,8 @@ class RuntimePaths:
         return read_json(path) if path.exists() else {'version':'development','distribution':'development'}
 
     def prepare(self):
+        from bank.teaching.generation import prepare
+        prepare(self.home,self.resources)
         (self.home/'data').mkdir(parents=True,exist_ok=True)
         (self.home/'exports').mkdir(exist_ok=True)
         previous=self.home/'data/install-state.json'
@@ -61,6 +63,6 @@ class RuntimePaths:
                 try:
                     result=store.import_file(candidate,extract=False);new_ids.update(result['source_ids']);report.append(result)
                 except ValueError as error:report.append({'filename':source['filename'],'error':str(error)})
-        if new_ids:store.extract_local_content(new_ids)
+        store.ensure_local_content()
         if report:write_json(self.home/'data/bundled-sources-report.json',report)
         return report

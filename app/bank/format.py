@@ -110,6 +110,8 @@ def validate(index, manifest, schemas):
                 p=source['pages'][r['page_index']];x0,y0,x1,y1=r['bbox']
                 if not all(math.isfinite(v) for v in r['bbox']) or not (0<=x0<x1<=p['width']+.01 and 0<=y0<y1<=p['height']+.01):
                     raise DataError(f"区域越界: {q['question_id']} {kind}")
+    from .teaching.taxonomy import validate_teaching
+    validate_teaching(index)
     return True
 
 def raw_box(page, name, default=None):

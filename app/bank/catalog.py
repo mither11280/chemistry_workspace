@@ -81,12 +81,18 @@ class Catalog:
                 for source in manifest['sources']:
                     if source['source_id'] in existing and existing[source['source_id']]!=source['sha256']:
                         raise DataError('source_id 已关联不同哈希；修订版必须登记新的 source_id: '+source['source_id'])
+                old_material={r['question_id']:json.loads(r['payload']) for r in c.execute('SELECT question_id,payload FROM questions')}
+                for q in index['questions']:
+                    previous=old_material.get(q['question_id'])
+                    if previous and any(previous[k]!=q[k] for k in ['question','answer']):
+                        c.execute('DELETE FROM local_content WHERE question_id=?',(q['question_id'],))
                 # Single transaction: a bad update never leaves a partial catalog. Does not touch personal DB.
                 c.execute('DELETE FROM tags');c.execute('DELETE FROM questions');c.execute('DELETE FROM sources')
                 c.executemany('INSERT INTO sources VALUES (?,?)',[(s['source_id'],json.dumps(s)) for s in manifest['sources']])
                 for q in index['questions']:
                     c.execute('INSERT INTO questions VALUES (?,?,?,?,?,?)',(q['question_id'],q['year'],q['paper'],q['marks'],q['answer']['type'],json.dumps(q)))
                     c.executemany('INSERT INTO tags VALUES (?,?)',[(q['question_id'],t) for t in q['topics']])
+                c.execute('DELETE FROM local_content WHERE question_id NOT IN (SELECT question_id FROM questions)')
                 c.execute("INSERT OR REPLACE INTO settings VALUES ('fingerprint',?)",(fingerprint,))
                 self._refresh_search(c,index)
         self.index=index;self.manifest=manifest
@@ -119,6 +125,9 @@ class Catalog:
 
     def search(self,filters=None,limit=8,offset=0,exclude=None,random_order=False):
         filters=filters or {};where=[];args=[]
+        from .teaching.taxonomy import BANK_ID
+        if self.index['bank_id']==BANK_ID:
+            where.append("json_extract(q.payload,'$.metadata.teaching.status')=?");args.append('pending' if filters.get('collection')=='pending' else 'ready')
         for key in ['year','paper','type']:
             if filters.get(key) not in [None,'',0,'0']:
                 where.append('q.'+key+'=?');args.append(str(filters[key]) if key=='type' else int(filters[key]))
@@ -132,7 +141,10 @@ class Catalog:
             where.append('q.question_id NOT IN ('+','.join('?'*len(exclude))+')');args.extend(exclude)
         text=filters.get('search','').strip()
         with self.connect() as c:
-            if text:
+            exact_id=text and c.execute('SELECT 1 FROM questions WHERE question_id=? UNION ALL SELECT 1 FROM legacy WHERE question_id=? LIMIT 1',(text,text)).fetchone()
+            if exact_id:
+                where.append('q.question_id=?');args.append(text)
+            elif text:
                 fts=c.execute("SELECT value FROM settings WHERE key='fts'").fetchone()[0]=='1'
                 if fts:
                     terms=['"'+term.replace('"','""')+'"' for term in text.split()[:20]]
@@ -141,7 +153,7 @@ class Catalog:
                     where.append('q.question_id IN (SELECT question_id FROM search WHERE text LIKE ?)');args.append('%'+text+'%')
             clause=' WHERE '+' AND '.join(where) if where else ''
             total=c.execute(self.CANDIDATES+'SELECT count(*) FROM candidates q'+clause,args).fetchone()[0]
-            order='RANDOM()' if random_order else "year,paper,CAST(COALESCE(json_extract(payload,'$.original_question_number'),json_extract(payload,'$.number')) AS INTEGER),question_id"
+            order='RANDOM()' if random_order else "year,paper,CAST(COALESCE(json_extract(payload,'$.original_question_number'),json_extract(payload,'$.number')) AS INTEGER),COALESCE(json_extract(payload,'$.metadata.teaching.source_order'),0),question_id"
             rows=c.execute(self.CANDIDATES+'SELECT payload FROM candidates q'+clause+' ORDER BY '+order+' LIMIT ? OFFSET ?',args+[min(max(int(limit),1),200),max(0,int(offset))]).fetchall()
         return {'total':total,'questions':[json.loads(r[0]) for r in rows]}
 

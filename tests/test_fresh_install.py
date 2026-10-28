@@ -33,10 +33,12 @@ def post(path,data):
             root=Path(temp)
             for folder in ['indexes','schemas']:shutil.copytree(ROOT/folder,root/folder)
             self.run_server_test(root,r'''
-assert json.loads(get('/api/bank'))['total']==132
+public=json.loads((Path('indexes')/'question-index.json').read_text())
+ready=[q for q in public['questions'] if q.get('metadata',{}).get('teaching',{}).get('status','ready')=='ready']
+assert json.loads(get('/api/bank'))['total']==len(ready)
 assert json.loads(get('/api/jobs'))==[]
 r=json.loads(get('/api/questions?limit=8&paper=1&year=2025'))
-assert r['total']==40
+assert r['total']==sum(q['paper']==1 and q['year']==2025 for q in ready)
 assert r['questions'][0]['availability']['question']['state']=='missing'
 assert not (server.ROOT/'sources').exists()
 qid=r['questions'][0]['id']

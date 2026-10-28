@@ -58,6 +58,25 @@ class SourceStore:
         if extract:self.extract_local_content(set(results))
         return {'filename':name,'source_ids':results,'state':'ready'}
 
+    def ensure_local_content(self):
+        """Index already present PDFs after a generation switch, once per material.
+
+        Bundled assets may all exist from the old generation, so copying no new
+        files does not imply the new SQLite catalog already contains their text.
+        """
+        with self.catalog.connect() as c:
+            rows=c.execute('SELECT q.payload,l.source_hash FROM questions q LEFT JOIN local_content l USING(question_id)').fetchall()
+        source_map={s['source_id']:s for s in self.catalog.manifest['sources']};needed=set()
+        for row in rows:
+            q=json.loads(row['payload']);sid=q['question']['source_id']
+            if row['source_hash']!=source_map[sid]['sha256']:needed.add(sid)
+        available=set()
+        for sid in needed:
+            try:self.resolve(sid);available.add(sid)
+            except SourceError:continue
+        if available:self.extract_local_content(available)
+        return available
+
     def extract_local_content(self,source_ids=None):
         # Copyright text and MCQ answers stay exclusively in the ignored local catalog.
         with self.catalog.connect() as c:

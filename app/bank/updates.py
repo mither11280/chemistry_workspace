@@ -17,7 +17,7 @@ import fitz
 from .format import DataError,read_json,write_json,validate,validate_schema,relative_path,safe_path,sha256,geometry
 
 MAX_BYTES=512*1024*1024
-READER_VERSION=(0,4,1)
+READER_VERSION=(0,5,0)
 
 def encoded(value):return (json.dumps(value,ensure_ascii=False,sort_keys=True,indent=2)+'\n').encode()
 def digest(data):return hashlib.sha256(data).hexdigest()
@@ -137,6 +137,7 @@ def install_package(catalog,path,expected_sha256=None):
     try:
         for q in index['questions']:
             if q==previous.get(q['question_id']):continue
+            if index['bank_id']=='cie-9701-as-teaching19-v1' and q['metadata'].get('teaching',{}).get('status')=='pending':continue
             if q['metadata'].get('automatic_qa',{}).get('status')=='quarantined':raise DataError('更新包包含隔离题目')
             from .importer.quality import region_issues,answer_content_issues
             for kind in ['question','answer']:

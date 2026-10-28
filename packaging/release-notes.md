@@ -1,7 +1,13 @@
-题间 macOS arm64 独立包。将 App 拖入 Applications 即可运行，已内置 Python、PyMuPDF、Pillow、SQLite 及当前 132 题所需 Cambridge QP/MS。
+题间 v0.5.0 · 按 19 章教学顺序重切题库。
 
-个人数据保存在 `~/Library/Application Support/ChemistryWorkspace`，更新只需替换 App。可在「题间 → 从旧项目导入数据」安全复制旧项目；原目录不删除，已有作业不覆盖。
+4,389 个可用选题单位，68 个待整理项目；Paper 1 保留 2,280 道题，Paper 2 从 262 道来源大题拆为 2,177 个计分小问。覆盖本地登记的 2018–2026 年 115 对 QP/MS。
 
-文件名含 INTERNAL-UNNOTARIZED 时为 ad-hoc 内部测试包，未经 Apple 公证，Gatekeeper 可能阻止首次打开。它不是正式签名发行版。
+按真正所需知识的最靠后章节分类。必要前问自动连带，共用题干与图表合并，分数只计一次；学生卷与答案按作业顺序导出。新版 CIE2 分享可导入再编辑。
 
-程序源码 MIT；PyMuPDF/MuPDF 使用 AGPL-3.0 或另行商业许可。AppSource 和 CorrespondingSource 作为相邻附件提供。Cambridge PDF 是独立版权数据，不受上述开源许可授权；发布者负责确认再分发权。
+升级前旧作业、草稿、局部校准和激活状态自动归档；新版个人作业从空白开始，重复安装保留新版作业。旧 CIE1 代码需使用旧版题库。恢复步骤见 README。
+
+App 包含全部 231 份已登记授权原卷、评分标准和考纲；完整 .qbank 为源码用户补齐相同资料。Git 仓库仅保存程序、规范与坐标，不包含 PDF 或个人数据。
+
+macOS Apple Silicon 独立包，拖入 Applications 即可运行，无需 Python。INTERNAL-UNNOTARIZED 为 ad-hoc 内部测试包，未经 Apple 公证。
+
+程序源码 MIT；PyMuPDF/MuPDF 为 AGPL-3.0 或商业许可。AppSource、CorrespondingSource 与验证报告随附件提供。Cambridge 材料是单独版权数据，不由开源许可授权。分类未宣称独立人工逐题复核，具体待整理清单、每章数量和覆盖报告见 docs/teaching19。

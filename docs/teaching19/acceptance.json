@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "generation": "cie-9701-as-teaching19-v1",
+  "ready": 4389,
+  "pending": 68,
+  "old_personal_data_archived": true,
+  "fresh_personal_work": true,
+  "relaunch_does_not_reset": true,
+  "chapter_filters": 19,
+  "prerequisite_closure_marks_and_context": "passed",
+  "new_share_and_old_share_rejection": "passed",
+  "preview_regions": 17,
+  "preview_seconds": 0.4162,
+  "exports": {
+    "questions": {
+      "seconds": 0.1514,
+      "bytes": 323415
+    },
+    "answers": {
+      "seconds": 0.1495,
+      "bytes": 204223
+    }
+  },
+  "archive_id": "e91344270fa14bdaba28c154dc6dc087",
+  "restore_old_generation_preserves_new_work": true
+}

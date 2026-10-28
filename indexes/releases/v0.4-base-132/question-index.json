@@ -1,0 +1,7293 @@
+{
+  "schema_version": "1.0.0",
+  "coordinate_system": "pdf-point-unrotated-cropbox-top-left-v1",
+  "bank_id": "cie-9701-as-starter",
+  "revision": "2026-10-27.coordinates.1",
+  "topics": [
+    {
+      "id": "atomic",
+      "name": "原子结构",
+      "english": "Atomic structure"
+    },
+    {
+      "id": "stoich",
+      "name": "物质的量",
+      "english": "Atoms, molecules and stoichiometry"
+    },
+    {
+      "id": "bonding",
+      "name": "化学键",
+      "english": "Chemical bonding"
+    },
+    {
+      "id": "states",
+      "name": "物质状态",
+      "english": "States of matter"
+    },
+    {
+      "id": "energetics",
+      "name": "化学能量",
+      "english": "Chemical energetics"
+    },
+    {
+      "id": "electro",
+      "name": "氧化还原",
+      "english": "Electrochemistry"
+    },
+    {
+      "id": "equilibrium",
+      "name": "化学平衡",
+      "english": "Equilibria"
+    },
+    {
+      "id": "kinetics",
+      "name": "反应速率",
+      "english": "Reaction kinetics"
+    },
+    {
+      "id": "periodic",
+      "name": "周期表与无机",
+      "english": "Periodicity and inorganic chemistry"
+    },
+    {
+      "id": "organic",
+      "name": "有机化学",
+      "english": "Organic chemistry"
+    },
+    {
+      "id": "analysis",
+      "name": "分析技术",
+      "english": "Analytical techniques"
+    },
+    {
+      "id": "unclassified",
+      "name": "待分类",
+      "english": "Unclassified"
+    }
+  ],
+  "questions": [
+    {
+      "question_id": "cie-9701-m24-12-q1",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "1",
+      "marks": 1,
+      "topics": [
+        "atomic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              44,
+              61.37,
+              552,
+              144.69
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              88.16,
+              546.2,
+              110.65
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q2",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "2",
+      "marks": 1,
+      "topics": [
+        "stoich",
+        "energetics"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              44,
+              149.69,
+              552,
+              274.77
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              112.99,
+              546.2,
+              135.48
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q3",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "3",
+      "marks": 1,
+      "topics": [
+        "stoich"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              44,
+              279.77,
+              552,
+              401.25
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              137.01,
+              546.2,
+              159.5
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q4",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "4",
+      "marks": 1,
+      "topics": [
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              44,
+              406.25,
+              552,
+              475.53
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              161.83,
+              546.2,
+              184.32
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q5",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "5",
+      "marks": 1,
+      "topics": [
+        "bonding"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              44,
+              480.53,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              185.86,
+              546.2,
+              208.35
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q6",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "6",
+      "marks": 1,
+      "topics": [
+        "bonding"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              44,
+              58.73,
+              552,
+              260.49
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              210.69,
+              546.2,
+              233.18
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q7",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "7",
+      "marks": 1,
+      "topics": [
+        "bonding"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              44,
+              265.49,
+              552,
+              484.29
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              234.69,
+              546.2,
+              257.18
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q8",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "8",
+      "marks": 1,
+      "topics": [
+        "atomic",
+        "bonding",
+        "states"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              44,
+              489.29,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              259.51,
+              546.2,
+              282.0
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q9",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "9",
+      "marks": 1,
+      "topics": [
+        "energetics"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              332.37
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              283.54,
+              546.2,
+              306.03
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q10",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "10",
+      "marks": 1,
+      "topics": [
+        "energetics"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              44,
+              337.37,
+              552,
+              474.81
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              308.36,
+              546.2,
+              330.85
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q11",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "11",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              44,
+              479.81,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              333.19,
+              546.2,
+              355.68
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q12",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "12",
+      "marks": 1,
+      "topics": [
+        "electro"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 4,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              260.85
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              357.21,
+              546.2,
+              379.7
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q13",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "13",
+      "marks": 1,
+      "topics": [
+        "states",
+        "equilibrium",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 4,
+            "bbox": [
+              44,
+              265.85,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              382.04,
+              546.2,
+              404.53
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q14",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "14",
+      "marks": 1,
+      "topics": [
+        "states",
+        "equilibrium",
+        "kinetics"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 5,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              351.45
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              406.06,
+              546.2,
+              428.55
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q15",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "15",
+      "marks": 1,
+      "topics": [
+        "stoich",
+        "kinetics",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 5,
+            "bbox": [
+              44,
+              356.45,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              430.89,
+              546.2,
+              453.38
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q16",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "16",
+      "marks": 1,
+      "topics": [
+        "atomic",
+        "bonding",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 6,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              462.33
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              454.91,
+              546.2,
+              477.4
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q17",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "17",
+      "marks": 1,
+      "topics": [
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 6,
+            "bbox": [
+              44,
+              467.33,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              479.74,
+              546.2,
+              502.23
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q18",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "18",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              272.61
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              504.56,
+              546.2,
+              527.05
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q19",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "19",
+      "marks": 1,
+      "topics": [
+        "electro",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              44,
+              277.61,
+              552,
+              539.13
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              528.58,
+              546.2,
+              551.07
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q20",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "20",
+      "marks": 1,
+      "topics": [
+        "stoich"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              44,
+              544.13,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              553.39,
+              546.2,
+              575.88
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q21",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "21",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 8,
+            "bbox": [
+              44,
+              59.45,
+              552,
+              313.05
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              577.41,
+              546.2,
+              599.9
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q22",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "22",
+      "marks": 1,
+      "topics": [
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 8,
+            "bbox": [
+              44,
+              318.05,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              602.24,
+              546.2,
+              624.73
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q23",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "23",
+      "marks": 1,
+      "topics": [
+        "electro",
+        "equilibrium",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              277.89
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              626.26,
+              546.2,
+              648.75
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q24",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "24",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              44,
+              282.89,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              651.09,
+              546.2,
+              673.58
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q25",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "25",
+      "marks": 1,
+      "topics": [
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 10,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              423.57
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              675.11,
+              546.2,
+              697.6
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q26",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "26",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 10,
+            "bbox": [
+              44,
+              428.57,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              699.93,
+              546.2,
+              722.42
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q27",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "27",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 11,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              230.61
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              724.76,
+              546.2,
+              747.25
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q28",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "28",
+      "marks": 1,
+      "topics": [
+        "states"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 11,
+            "bbox": [
+              44,
+              235.61,
+              552,
+              501.09
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              748.79,
+              546.2,
+              771.28
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q29",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "29",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 11,
+            "bbox": [
+              44,
+              506.09,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              88.16,
+              546.2,
+              110.65
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q30",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "30",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 12,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              222.09
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              112.99,
+              546.2,
+              135.48
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q31",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "31",
+      "marks": 1,
+      "topics": [
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 12,
+            "bbox": [
+              44,
+              227.09,
+              552,
+              496.77
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              137.01,
+              546.2,
+              159.5
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q32",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "32",
+      "marks": 1,
+      "topics": [
+        "stoich"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 12,
+            "bbox": [
+              44,
+              501.77,
+              552,
+              559.05
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              161.83,
+              546.2,
+              184.32
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q33",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "33",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 12,
+            "bbox": [
+              44,
+              564.05,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              185.86,
+              546.2,
+              208.35
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q34",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "34",
+      "marks": 1,
+      "topics": [
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              180.69
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              210.69,
+              546.2,
+              233.18
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q35",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "35",
+      "marks": 1,
+      "topics": [
+        "equilibrium",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              44,
+              185.69,
+              552,
+              439.29
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              234.69,
+              546.2,
+              257.18
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q36",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "36",
+      "marks": 1,
+      "topics": [
+        "stoich",
+        "periodic",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              44,
+              444.29,
+              552,
+              526.17
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              259.51,
+              546.2,
+              282.0
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q37",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "37",
+      "marks": 1,
+      "topics": [
+        "equilibrium",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              44,
+              531.17,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              283.54,
+              546.2,
+              306.03
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q38",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "38",
+      "marks": 1,
+      "topics": [
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 14,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              231.93
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              308.36,
+              546.2,
+              330.85
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q39",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "39",
+      "marks": 1,
+      "topics": [
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 14,
+            "bbox": [
+              44,
+              236.93,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              333.19,
+              546.2,
+              355.68
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-12-q40",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "40",
+      "marks": 1,
+      "topics": [
+        "organic",
+        "analysis"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-12-qp",
+        "regions": [
+          {
+            "page_index": 15,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2024-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              357.21,
+              546.2,
+              379.7
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-22-q1",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "original_question_number": "1",
+      "marks": 16,
+      "topics": [
+        "stoich",
+        "bonding",
+        "electro"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-22-qp",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              44,
+              57.53,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 2,
+            "bbox": [
+              44,
+              56,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 3,
+            "bbox": [
+              44,
+              56,
+              552,
+              487.22
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "regions",
+        "source_id": "cie-9701-2024-m-22-ms",
+        "regions": [
+          {
+            "page_index": 4,
+            "bbox": [
+              60,
+              73.36,
+              781.6,
+              540.2
+            ]
+          },
+          {
+            "page_index": 5,
+            "bbox": [
+              60,
+              73.36,
+              781.6,
+              173.11
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "whole_question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-22-q2",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "original_question_number": "2",
+      "marks": 18,
+      "topics": [
+        "bonding",
+        "electro",
+        "periodic",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-22-qp",
+        "regions": [
+          {
+            "page_index": 4,
+            "bbox": [
+              44,
+              57.53,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 5,
+            "bbox": [
+              44,
+              56,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 6,
+            "bbox": [
+              44,
+              56,
+              552,
+              688.97
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "regions",
+        "source_id": "cie-9701-2024-m-22-ms",
+        "regions": [
+          {
+            "page_index": 5,
+            "bbox": [
+              60,
+              191.11,
+              781.6,
+              540.2
+            ]
+          },
+          {
+            "page_index": 6,
+            "bbox": [
+              60,
+              73.36,
+              781.6,
+              540.2
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "whole_question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-22-q3",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "original_question_number": "3",
+      "marks": 15,
+      "topics": [
+        "bonding",
+        "states",
+        "energetics",
+        "kinetics",
+        "periodic",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-22-qp",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              44,
+              57.53,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 8,
+            "bbox": [
+              44,
+              56,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 9,
+            "bbox": [
+              44,
+              56,
+              552,
+              636.34
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "regions",
+        "source_id": "cie-9701-2024-m-22-ms",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              60,
+              73.36,
+              781.6,
+              540.2
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "whole_question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m24-22-q4",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2024,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "original_question_number": "4",
+      "marks": 11,
+      "topics": [
+        "equilibrium",
+        "organic",
+        "analysis"
+      ],
+      "question": {
+        "source_id": "cie-9701-2024-m-22-qp",
+        "regions": [
+          {
+            "page_index": 10,
+            "bbox": [
+              44,
+              57.53,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 11,
+            "bbox": [
+              44,
+              56,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 12,
+            "bbox": [
+              44,
+              56,
+              552,
+              768.49
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "regions",
+        "source_id": "cie-9701-2024-m-22-ms",
+        "regions": [
+          {
+            "page_index": 8,
+            "bbox": [
+              60,
+              73.36,
+              781.6,
+              540.2
+            ]
+          },
+          {
+            "page_index": 9,
+            "bbox": [
+              60,
+              73.36,
+              781.6,
+              540.2
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "whole_question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q1",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "1",
+      "marks": 1,
+      "topics": [
+        "bonding",
+        "kinetics"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              348.81
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              88.16,
+              546.2,
+              110.65
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q2",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "2",
+      "marks": 1,
+      "topics": [
+        "stoich",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              44,
+              353.81,
+              552,
+              486.69
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              112.99,
+              546.2,
+              135.48
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q3",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "3",
+      "marks": 1,
+      "topics": [
+        "atomic",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              44,
+              491.69,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              137.01,
+              546.2,
+              159.5
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q4",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "4",
+      "marks": 1,
+      "topics": [
+        "atomic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              140.37
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              161.83,
+              546.2,
+              184.32
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q5",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "5",
+      "marks": 1,
+      "topics": [
+        "bonding"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              44,
+              145.37,
+              552,
+              485.01
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              185.86,
+              546.2,
+              208.35
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q6",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "6",
+      "marks": 1,
+      "topics": [
+        "equilibrium",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              44,
+              490.01,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              210.69,
+              546.2,
+              233.18
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q7",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "7",
+      "marks": 1,
+      "topics": [
+        "bonding"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              336.69
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              234.69,
+              546.2,
+              257.18
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q8",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "8",
+      "marks": 1,
+      "topics": [
+        "stoich",
+        "states"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              44,
+              341.69,
+              552,
+              499.41
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              259.51,
+              546.2,
+              282.0
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q9",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "9",
+      "marks": 1,
+      "topics": [
+        "stoich",
+        "kinetics"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              44,
+              504.41,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              283.54,
+              546.2,
+              306.03
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q10",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "10",
+      "marks": 1,
+      "topics": [
+        "states",
+        "equilibrium",
+        "kinetics",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 4,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              231.69
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              308.36,
+              546.2,
+              330.85
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q11",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "11",
+      "marks": 1,
+      "topics": [
+        "electro",
+        "equilibrium",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 4,
+            "bbox": [
+              44,
+              236.69,
+              552,
+              453.33
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              333.19,
+              546.2,
+              355.68
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q12",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "12",
+      "marks": 1,
+      "topics": [
+        "stoich",
+        "energetics"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 4,
+            "bbox": [
+              44,
+              458.33,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              357.21,
+              546.2,
+              379.7
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q13",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "13",
+      "marks": 1,
+      "topics": [
+        "energetics",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 5,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              380.61
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              382.04,
+              546.2,
+              404.53
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q14",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "14",
+      "marks": 1,
+      "topics": [
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 5,
+            "bbox": [
+              44,
+              385.61,
+              552,
+              505.89
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              406.06,
+              546.2,
+              428.55
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q15",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "15",
+      "marks": 1,
+      "topics": [
+        "energetics"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 5,
+            "bbox": [
+              44,
+              510.89,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              430.89,
+              546.2,
+              453.38
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q16",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "16",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 6,
+            "bbox": [
+              44,
+              59.33,
+              552,
+              206.97
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              454.91,
+              546.2,
+              477.4
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q17",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "17",
+      "marks": 1,
+      "topics": [
+        "atomic",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 6,
+            "bbox": [
+              44,
+              211.97,
+              552,
+              400.77
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              479.74,
+              546.2,
+              502.23
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q18",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "18",
+      "marks": 1,
+      "topics": [
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 6,
+            "bbox": [
+              44,
+              405.77,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              504.56,
+              546.2,
+              527.05
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q19",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "19",
+      "marks": 1,
+      "topics": [
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              369.81
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              528.58,
+              546.2,
+              551.07
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q20",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "20",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              44,
+              374.81,
+              552,
+              692.25
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              553.39,
+              546.2,
+              575.88
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q21",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "21",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              44,
+              697.25,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              577.41,
+              546.2,
+              599.9
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q22",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "22",
+      "marks": 1,
+      "topics": [
+        "periodic",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 8,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              230.61
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              602.24,
+              546.2,
+              624.73
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q23",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "23",
+      "marks": 1,
+      "topics": [
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 8,
+            "bbox": [
+              44,
+              235.61,
+              552,
+              553.77
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              626.26,
+              546.2,
+              648.75
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q24",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "24",
+      "marks": 1,
+      "topics": [
+        "electro"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 8,
+            "bbox": [
+              44,
+              558.77,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              651.09,
+              546.2,
+              673.58
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q25",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "25",
+      "marks": 1,
+      "topics": [
+        "stoich",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              411.33
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              675.11,
+              546.2,
+              697.6
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q26",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "26",
+      "marks": 1,
+      "topics": [
+        "stoich",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              44,
+              416.33,
+              552,
+              588.69
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              699.93,
+              546.2,
+              722.42
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q27",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "27",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              44,
+              593.69,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              724.76,
+              546.2,
+              747.25
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q28",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "28",
+      "marks": 1,
+      "topics": [
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 10,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              192.69
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              748.79,
+              546.2,
+              771.28
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q29",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "29",
+      "marks": 1,
+      "topics": [
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 10,
+            "bbox": [
+              44,
+              197.69,
+              552,
+              482.49
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              88.16,
+              546.2,
+              110.65
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q30",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "30",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 10,
+            "bbox": [
+              44,
+              487.49,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              112.99,
+              546.2,
+              135.48
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q31",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "31",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 11,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              231.57
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              137.01,
+              546.2,
+              159.5
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q32",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "32",
+      "marks": 1,
+      "topics": [
+        "periodic",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 11,
+            "bbox": [
+              44,
+              236.57,
+              552,
+              387.45
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              161.83,
+              546.2,
+              184.32
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q33",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "33",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 11,
+            "bbox": [
+              44,
+              392.45,
+              552,
+              568.65
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              185.86,
+              546.2,
+              208.35
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q34",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "34",
+      "marks": 1,
+      "topics": [
+        "periodic",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 11,
+            "bbox": [
+              44,
+              573.65,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              210.69,
+              546.2,
+              233.18
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q35",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "35",
+      "marks": 1,
+      "topics": [
+        "periodic",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 12,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              337.41
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              234.69,
+              546.2,
+              257.18
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q36",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "36",
+      "marks": 1,
+      "topics": [
+        "stoich",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 12,
+            "bbox": [
+              44,
+              342.41,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              259.51,
+              546.2,
+              282.0
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q37",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "37",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              234.21
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              283.54,
+              546.2,
+              306.03
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q38",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "38",
+      "marks": 1,
+      "topics": [
+        "stoich",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              44,
+              239.21,
+              552,
+              567.33
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              308.36,
+              546.2,
+              330.85
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q39",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "39",
+      "marks": 1,
+      "topics": [
+        "atomic",
+        "bonding"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              44,
+              572.33,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              333.19,
+              546.2,
+              355.68
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-12-q40",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "40",
+      "marks": 1,
+      "topics": [
+        "analysis"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-12-qp",
+        "regions": [
+          {
+            "page_index": 14,
+            "bbox": [
+              44,
+              58.49,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2025-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              357.21,
+              546.2,
+              379.7
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-22-q1",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "original_question_number": "1",
+      "marks": 17,
+      "topics": [
+        "stoich",
+        "bonding",
+        "states",
+        "electro",
+        "equilibrium",
+        "periodic",
+        "analysis"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-22-qp",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              44,
+              59.82,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 2,
+            "bbox": [
+              44,
+              56,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 3,
+            "bbox": [
+              44,
+              56,
+              552,
+              732.8
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "regions",
+        "source_id": "cie-9701-2025-m-22-ms",
+        "regions": [
+          {
+            "page_index": 4,
+            "bbox": [
+              60,
+              73.36,
+              781.6,
+              540.2
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "whole_question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-22-q2",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "original_question_number": "2",
+      "marks": 17,
+      "topics": [
+        "atomic",
+        "bonding",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-22-qp",
+        "regions": [
+          {
+            "page_index": 4,
+            "bbox": [
+              44,
+              59.82,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 5,
+            "bbox": [
+              44,
+              56,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 6,
+            "bbox": [
+              44,
+              56,
+              552,
+              290.86
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "regions",
+        "source_id": "cie-9701-2025-m-22-ms",
+        "regions": [
+          {
+            "page_index": 5,
+            "bbox": [
+              60,
+              73.36,
+              781.6,
+              540.2
+            ]
+          },
+          {
+            "page_index": 6,
+            "bbox": [
+              60,
+              73.36,
+              781.6,
+              145.89
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "whole_question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-22-q3",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "original_question_number": "3",
+      "marks": 15,
+      "topics": [
+        "bonding",
+        "energetics",
+        "periodic",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-22-qp",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              44,
+              59.82,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 8,
+            "bbox": [
+              44,
+              56,
+              552,
+              627.84
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "regions",
+        "source_id": "cie-9701-2025-m-22-ms",
+        "regions": [
+          {
+            "page_index": 6,
+            "bbox": [
+              60,
+              163.89,
+              781.6,
+              540.2
+            ]
+          },
+          {
+            "page_index": 7,
+            "bbox": [
+              60,
+              73.36,
+              781.6,
+              149.09
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "whole_question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m25-22-q4",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2025,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "original_question_number": "4",
+      "marks": 11,
+      "topics": [
+        "equilibrium",
+        "kinetics"
+      ],
+      "question": {
+        "source_id": "cie-9701-2025-m-22-qp",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              44,
+              59.82,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 10,
+            "bbox": [
+              44,
+              56,
+              552,
+              498.69
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "regions",
+        "source_id": "cie-9701-2025-m-22-ms",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              60,
+              167.09,
+              781.6,
+              540.2
+            ]
+          },
+          {
+            "page_index": 8,
+            "bbox": [
+              60,
+              73.36,
+              781.6,
+              540.2
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "whole_question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q1",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "1",
+      "marks": 1,
+      "topics": [
+        "atomic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              44,
+              58.0,
+              552,
+              193.26
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              88.32,
+              546.32,
+              110.57
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q2",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "2",
+      "marks": 1,
+      "topics": [
+        "atomic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              44,
+              198.26,
+              552,
+              453.59
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              112.74,
+              546.32,
+              134.99
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q3",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "3",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              44,
+              458.59,
+              552,
+              571.86
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              137.24,
+              546.32,
+              159.49
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q4",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "4",
+      "marks": 1,
+      "topics": [
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              44,
+              576.86,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              161.66,
+              546.32,
+              183.91
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q5",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "5",
+      "marks": 1,
+      "topics": [
+        "bonding",
+        "periodic",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              44,
+              58.0,
+              552,
+              256.06
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              186.14,
+              546.32,
+              208.39
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q6",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "6",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              44,
+              261.06,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              210.56,
+              546.32,
+              232.81
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q7",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "7",
+      "marks": 1,
+      "topics": [
+        "stoich",
+        "states",
+        "equilibrium"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              44,
+              58.0,
+              552,
+              240.22
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              235.04,
+              546.32,
+              257.29
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q8",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "8",
+      "marks": 1,
+      "topics": [
+        "energetics",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              44,
+              245.22,
+              552,
+              483.67
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              259.46,
+              546.32,
+              281.71
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q9",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "9",
+      "marks": 1,
+      "topics": [
+        "energetics"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              44,
+              488.67,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              283.94,
+              546.32,
+              306.19
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q10",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "10",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 4,
+            "bbox": [
+              44,
+              58.0,
+              552,
+              186.28
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              308.36,
+              546.32,
+              330.61
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q11",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "11",
+      "marks": 1,
+      "topics": [
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 4,
+            "bbox": [
+              44,
+              191.28,
+              552,
+              278.4
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              332.84,
+              546.32,
+              355.09
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q12",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "12",
+      "marks": 1,
+      "topics": [
+        "states",
+        "energetics",
+        "equilibrium",
+        "kinetics"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 4,
+            "bbox": [
+              44,
+              283.4,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              357.26,
+              546.32,
+              379.51
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q13",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "13",
+      "marks": 1,
+      "topics": [
+        "states",
+        "equilibrium"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 5,
+            "bbox": [
+              44,
+              58.0,
+              552,
+              350.25
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              381.74,
+              546.32,
+              403.99
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q14",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "14",
+      "marks": 1,
+      "topics": [
+        "states"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 5,
+            "bbox": [
+              44,
+              355.25,
+              552,
+              600.59
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              406.18,
+              546.32,
+              428.43
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q15",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "15",
+      "marks": 1,
+      "topics": [
+        "energetics",
+        "kinetics"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 5,
+            "bbox": [
+              44,
+              605.59,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              430.66,
+              546.32,
+              452.91
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q16",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "16",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 6,
+            "bbox": [
+              44,
+              58.0,
+              552,
+              118.5
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              455.08,
+              546.32,
+              477.33
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q17",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "17",
+      "marks": 1,
+      "topics": [
+        "bonding"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 6,
+            "bbox": [
+              44,
+              123.5,
+              552,
+              397.74
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              479.56,
+              546.32,
+              501.81
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q18",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "18",
+      "marks": 1,
+      "topics": [
+        "bonding",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 6,
+            "bbox": [
+              44,
+              402.74,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              503.98,
+              546.32,
+              526.23
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q19",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "19",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              44,
+              58.0,
+              552,
+              276.98
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              528.46,
+              546.32,
+              550.71
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q20",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "20",
+      "marks": 1,
+      "topics": [
+        "kinetics",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              44,
+              281.98,
+              552,
+              433.95
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              552.88,
+              546.32,
+              575.13
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q21",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "21",
+      "marks": 1,
+      "topics": [
+        "electro",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              44,
+              438.95,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              577.36,
+              546.32,
+              599.61
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q22",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "22",
+      "marks": 1,
+      "topics": [
+        "electro",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 8,
+            "bbox": [
+              44,
+              58.0,
+              552,
+              305.09
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              601.78,
+              546.32,
+              624.03
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q23",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "23",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 8,
+            "bbox": [
+              44,
+              310.09,
+              552,
+              584.36
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              626.2,
+              546.32,
+              648.45
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q24",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "24",
+      "marks": 1,
+      "topics": [
+        "kinetics"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 8,
+            "bbox": [
+              44,
+              589.36,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              650.68,
+              546.32,
+              672.93
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q25",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "25",
+      "marks": 1,
+      "topics": [
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              44,
+              58.0,
+              552,
+              144.88
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              675.1,
+              546.32,
+              697.35
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q26",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "26",
+      "marks": 1,
+      "topics": [
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              44,
+              149.88,
+              552,
+              275.23
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              699.6,
+              546.32,
+              721.85
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q27",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "27",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              44,
+              280.23,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              724.02,
+              546.32,
+              746.27
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q28",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "28",
+      "marks": 1,
+      "topics": [
+        "periodic",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 10,
+            "bbox": [
+              44,
+              58.0,
+              552,
+              225.3
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              49,
+              748.5,
+              546.32,
+              770.75
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q29",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "29",
+      "marks": 1,
+      "topics": [
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 10,
+            "bbox": [
+              44,
+              230.3,
+              552,
+              382.27
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              88.32,
+              546.32,
+              110.57
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q30",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "30",
+      "marks": 1,
+      "topics": [
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 10,
+            "bbox": [
+              44,
+              387.27,
+              552,
+              514.78
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              112.74,
+              546.32,
+              134.99
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q31",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "31",
+      "marks": 1,
+      "topics": [
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 10,
+            "bbox": [
+              44,
+              519.78,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              137.24,
+              546.32,
+              159.49
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q32",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "32",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 11,
+            "bbox": [
+              44,
+              58.0,
+              552,
+              229.7
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              161.66,
+              546.32,
+              183.91
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q33",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "33",
+      "marks": 1,
+      "topics": [
+        "electro"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 11,
+            "bbox": [
+              44,
+              234.7,
+              552,
+              399.85
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              186.14,
+              546.32,
+              208.39
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q34",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "34",
+      "marks": 1,
+      "topics": [
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 11,
+            "bbox": [
+              44,
+              404.85,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              210.56,
+              546.32,
+              232.81
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q35",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "35",
+      "marks": 1,
+      "topics": [
+        "unclassified"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 12,
+            "bbox": [
+              44,
+              58.0,
+              552,
+              295.0
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              235.04,
+              546.32,
+              257.29
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q36",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "36",
+      "marks": 1,
+      "topics": [
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 12,
+            "bbox": [
+              44,
+              300.0,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              259.46,
+              546.32,
+              281.71
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q37",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "37",
+      "marks": 1,
+      "topics": [
+        "states",
+        "equilibrium",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              44,
+              58.0,
+              552,
+              464.16
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              283.94,
+              546.32,
+              306.19
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q38",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "38",
+      "marks": 1,
+      "topics": [
+        "periodic",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              44,
+              469.16,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              308.36,
+              546.32,
+              330.61
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q39",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "39",
+      "marks": 1,
+      "topics": [
+        "equilibrium",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 14,
+            "bbox": [
+              44,
+              58.0,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              332.84,
+              546.32,
+              355.09
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-12-q40",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 1,
+      "variant": 2,
+      "original_question_number": "40",
+      "marks": 1,
+      "topics": [
+        "organic",
+        "analysis"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-12-qp",
+        "regions": [
+          {
+            "page_index": 15,
+            "bbox": [
+              44,
+              58.0,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "mcq",
+        "source_id": "cie-9701-2026-m-12-ms",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              49,
+              357.26,
+              546.32,
+              379.51
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-22-q1",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "original_question_number": "1",
+      "marks": 14,
+      "topics": [
+        "atomic",
+        "periodic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-22-qp",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              44,
+              59.82,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 2,
+            "bbox": [
+              44,
+              56,
+              552,
+              667.83
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "regions",
+        "source_id": "cie-9701-2026-m-22-ms",
+        "regions": [
+          {
+            "page_index": 6,
+            "bbox": [
+              60,
+              73.56,
+              781.92,
+              540.32
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "whole_question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-22-q2",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "original_question_number": "2",
+      "marks": 13,
+      "topics": [
+        "atomic",
+        "bonding",
+        "energetics",
+        "equilibrium",
+        "kinetics",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-22-qp",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              44,
+              59.82,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 4,
+            "bbox": [
+              44,
+              56,
+              552,
+              768.91
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "regions",
+        "source_id": "cie-9701-2026-m-22-ms",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              60,
+              73.56,
+              781.92,
+              540.32
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "whole_question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-22-q3",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "original_question_number": "3",
+      "marks": 14,
+      "topics": [
+        "stoich",
+        "periodic",
+        "organic"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-22-qp",
+        "regions": [
+          {
+            "page_index": 5,
+            "bbox": [
+              44,
+              59.82,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 6,
+            "bbox": [
+              44,
+              56,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 7,
+            "bbox": [
+              44,
+              56,
+              552,
+              411.01
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "regions",
+        "source_id": "cie-9701-2026-m-22-ms",
+        "regions": [
+          {
+            "page_index": 8,
+            "bbox": [
+              60,
+              73.56,
+              781.92,
+              540.32
+            ]
+          },
+          {
+            "page_index": 9,
+            "bbox": [
+              60,
+              73.56,
+              781.92,
+              351.98
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "whole_question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    },
+    {
+      "question_id": "cie-9701-m26-22-q4",
+      "exam_board": "CIE",
+      "qualification": "AS",
+      "subject_code": "9701",
+      "year": 2026,
+      "session": "March",
+      "paper": 2,
+      "variant": 2,
+      "original_question_number": "4",
+      "marks": 19,
+      "topics": [
+        "stoich",
+        "bonding",
+        "equilibrium",
+        "organic",
+        "analysis"
+      ],
+      "question": {
+        "source_id": "cie-9701-2026-m-22-qp",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              44,
+              59.82,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 10,
+            "bbox": [
+              44,
+              56,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 11,
+            "bbox": [
+              44,
+              56,
+              552,
+              780
+            ]
+          },
+          {
+            "page_index": 12,
+            "bbox": [
+              44,
+              56,
+              552,
+              780
+            ]
+          }
+        ]
+      },
+      "answer": {
+        "type": "regions",
+        "source_id": "cie-9701-2026-m-22-ms",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              60,
+              369.98,
+              781.92,
+              540.32
+            ]
+          },
+          {
+            "page_index": 10,
+            "bbox": [
+              60,
+              73.56,
+              781.92,
+              540.32
+            ]
+          }
+        ]
+      },
+      "metadata": {
+        "review_status": "pending_review",
+        "classification_basis": "Legacy keyword candidates; syllabus statements not verified",
+        "syllabus_version": "2025-2027",
+        "syllabus_mapping_status": "unverified",
+        "granularity": "whole_question",
+        "migration_status": "coordinates_verified_against_source_hash"
+      }
+    }
+  ]
+}

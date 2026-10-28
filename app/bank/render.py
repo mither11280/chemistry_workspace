@@ -37,6 +37,7 @@ class Renderer:
         q=self.catalog.question(qid)
         if 'question_id' not in q:return self.legacy(qid,kind)
         block=q[kind]
+        if not block['regions']:raise SourceError('此小问的'+('评分标准' if kind=='answer' else '题干')+'区域待整理')
         try:return self.sources.resolve(block['source_id']),block['regions'],self.catalog.source(block['source_id'])['sha256'],'coordinates'
         except SourceError as e:
             # A mismatched source must never silently downgrade. Missing sources may use explicitly marked legacy PDFs.
@@ -120,15 +121,22 @@ class Renderer:
                 return p
             page=new_page('CIE AS Chemistry 9701 | '+('Mark scheme' if answer else 'Worksheet'))
             page.insert_textbox(fitz.Rect(42,88,553,165),title,fontname='china-s',fontsize=24)
+            from .teaching.worksheet import resolve,export_regions
+            resolved=resolve(self.catalog,job['question_ids']);job=dict(job,question_ids=resolved['question_ids'])
             questions=[self.catalog.question(qid) for qid in job['question_ids']]
+            seen_contexts=set()
             total=sum(q.get('marks') or 0 for q in questions)
             page.insert_text((42,190),f"{len(questions)} questions / {total:g} marks",fontsize=12)
-            page.insert_textbox(fitz.Rect(42,220,553,285),'教师试用稿：题图与分类尚待逐题复核。请核对后使用。\n保留原题编号；Assignment 编号对应本作业题序。',fontname='china-s',fontsize=11)
+            teaching=all(q.get('metadata',{}).get('teaching') for q in questions)
+            instructions=('保留原题标签；Assignment 编号对应本作业题序。' if teaching else
+                          '教师试用稿：题图与分类尚待逐题复核。请核对后使用。\n保留原题编号；Assignment 编号对应本作业题序。')
+            page.insert_textbox(fitz.Rect(42,220,553,285),instructions,fontname='china-s',fontsize=11)
             if not answer:page.insert_text((42,315),'Name: ____________________    Class: _______________',fontsize=11)
             if job.get('notes'):page.insert_textbox(fitz.Rect(42,350,553,490),job['notes'],fontname='china-s',fontsize=11)
             y=515
             for idx,(qid,q) in enumerate(zip(job['question_ids'],questions),1):
                 path,regions,_,mode=self.material(qid,'answer' if answer else 'question');src=source(path)
+                if mode=='coordinates':regions=export_regions(q,'answer' if answer else 'question',seen_contexts)
                 number=q.get('original_question_number',q.get('number'));variant=str(q['paper'])+str(q['variant']) if 'question_id' in q else str(q['variant'])
                 label=f"Assignment {idx} | {q['year']} {q.get('session','March')} 9701/{variant} Q{number} | {q['marks']} marks"
                 mapping.append({'assignment_number':idx,'question_id':qid,'original_question_number':str(number),'mode':mode})
@@ -142,13 +150,28 @@ class Renderer:
                     if y+65>785:page=new_page(title);y=70
                     page.insert_text((42,y+11),label,fontsize=9);page.insert_text((56,y+39),f'{idx}.  {value}',fontsize=14);y+=65
                     continue
-                for ri,r in enumerate(regions):
-                    sp=normalized_page(src,r['page_index']);clip=fitz.Rect(r['bbox']);angle=self.reading_rotation(qid,'answer' if answer else 'question',r['page_index'],src);view=clip*fitz.Matrix(angle);width=511;height=view.height*width/view.width
+                def dimensions(r):
+                    clip=fitz.Rect(r['bbox'])
+                    angle=self.reading_rotation(qid,'answer' if answer else 'question',r['page_index'],src)
+                    view=clip*fitz.Matrix(angle);width=511;height=view.height*width/view.width
                     if height>680:width*=680/height;height=680
-                    if y+height+45>785:page=new_page(title);y=70
-                    page.insert_text((42,y+11),label+(' (continued)' if ri else ''),fontsize=9,color=(.2,.35,.35));y+=25
+                    return clip,angle,width,height
+                # Keep a shared introduction and its task together whenever the
+                # complete unit fits on a fresh page. A small root must not be
+                # stranded below the cover while its actual question moves on.
+                unit_height=(sum(dimensions(r)[3]+8 for r in regions)+17 if teaching else
+                             sum(dimensions(r)[3]+47 for r in regions)-22)
+                if unit_height<=715 and y+unit_height>785:
+                    page=new_page(title);y=70
+                for ri,r in enumerate(regions):
+                    normalized_page(src,r['page_index']);clip,angle,width,height=dimensions(r)
+                    caption=ri==0 or not teaching
+                    if y+height+(25 if caption else 0)>785 and y>70:
+                        page=new_page(title);y=70;caption=True
+                    if caption:
+                        page.insert_text((42,y+11),label+(' (continued)' if ri else ''),fontsize=9,color=(.2,.35,.35));y+=25
                     page.show_pdf_page(fitz.Rect(42,y,42+width,y+height),src,r['page_index'],clip=clip,rotate=(-angle)%360,keep_proportion=True)
-                    y+=height+22
+                    y+=height+(8 if teaching and ri<len(regions)-1 else 22)
             seen=set()
             for q in questions:
                 if 'question_id' not in q:continue
@@ -169,7 +192,8 @@ class Renderer:
                     page=new_page('Source reference | '+s['filename'],landscape=rotate in [90,270] or clip.width>clip.height)
                     page.show_pdf_page(fitz.Rect(35,65,page.rect.width-35,page.rect.height-45),src,r['page_index'],clip=clip,rotate=rotate)
             for i,page in enumerate(doc):
-                page.insert_text((42,page.rect.height-25),'TEACHER REVIEW DRAFT - Original content: Cambridge / UCLES',fontsize=7,color=(.45,.48,.5))
+                footer='Original content: Cambridge / UCLES' if teaching else 'TEACHER REVIEW DRAFT - Original content: Cambridge / UCLES'
+                page.insert_text((42,page.rect.height-25),footer,fontsize=7,color=(.45,.48,.5))
                 page.insert_text((page.rect.width-85,page.rect.height-25),f'{i+1} / {len(doc)}',fontsize=8)
             out=output_dir/(uuid.uuid4().hex+'_'+kind+'.pdf')
             doc.save(out,garbage=4,deflate=True)

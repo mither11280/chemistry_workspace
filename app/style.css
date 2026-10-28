@@ -23,3 +23,7 @@
 #toast:not([hidden]){display:flex;align-items:center;gap:20px}#toast button{background:transparent;border-color:var(--color-panel);color:var(--color-panel);padding:6px 14px;min-height:36px}#toast button:hover{background:var(--color-panel);color:var(--color-ink)}
 .question-details{margin:12px 0 18px;color:var(--color-muted);font-size:12px}.question-details summary{cursor:pointer;width:fit-content}
 @media(max-width:768px){.job-heading{padding:16px}.title-input{font-size:21px;padding:12px;min-height:54px}.job-heading-label span{font-size:10px}.basket-bar{flex-wrap:wrap}.basket-actions{margin-left:auto}#toast{width:max-content;max-width:calc(100vw - 24px);padding:10px 14px;gap:12px}}
+
+.chapter-group{font-size:10px;font-weight:650;letter-spacing:.02em;color:var(--color-muted);padding:18px 10px 6px}.dependency-note,.pending-reasons{padding:9px 20px;color:var(--color-muted);font-size:12px;border-top:1px solid var(--color-line)}.pending-reasons{color:var(--color-warn);background:var(--color-warn-bg)}@media(max-width:768px){.chapter-group{width:100%;padding:12px 4px 4px}.stats small{display:inline-block}.topics button{white-space:normal}}
+
+.bank-layout.holding-layout{grid-template-columns:minmax(0,1fr)}

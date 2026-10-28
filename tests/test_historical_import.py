@@ -134,7 +134,7 @@ class HistoricalTests(unittest.TestCase):
     def test_public_historical_snapshot_preserves_original_bank(self):
         root=ROOT/'indexes/releases/v0.4-2018-2026';index=read_json(root/'question-index.json');manifest=read_json(root/'source-manifest.json')
         self.assertTrue(validate(index,manifest,ROOT/'schemas'));self.assertEqual(len(index['questions']),2523);self.assertEqual(len(manifest['sources']),231)
-        final={q['question_id']:q for q in index['questions']};original=read_json(ROOT/'indexes/question-index.json')
+        final={q['question_id']:q for q in index['questions']};original=read_json(ROOT/'indexes/releases/v0.4-base-132/question-index.json')
         for q in original['questions']:
             self.assertIn(q['question_id'],final)
             for key in ['question','answer','marks','topics']:self.assertEqual(q[key],final[q['question_id']][key])

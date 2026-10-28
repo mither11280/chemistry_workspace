@@ -48,6 +48,13 @@ class RuntimeTests(unittest.TestCase):
         Catalog(self.home,resources=self.resources);self.paths.mark_ready()
         with sqlite3.connect(db) as c:self.assertEqual(c.execute('SELECT body FROM jobs').fetchone()[0],body)
         self.assertTrue(self.store.resolve('fixture-qp').exists())
+    def test_existing_sources_are_indexed_after_fresh_catalog(self):
+        for p in self.pdfs:self.store.import_file(p,extract=False)
+        self.assertEqual(self.cat.search({'search':'AUTHORED'})['total'],0)
+        self.paths.seed_sources(self.store)
+        self.assertEqual(self.cat.search({'search':'AUTHORED'})['total'],2)
+        with patch.object(self.store,'extract_local_content',wraps=self.store.extract_local_content) as extract:
+            self.paths.seed_sources(self.store);extract.assert_not_called()
     def test_frozen_default_and_explicit_roots(self):
         with patch.dict(os.environ,{},clear=True),patch('sys.frozen',True,create=True):
             self.assertEqual(RuntimePaths.discover().home,Path.home()/'Library/Application Support/ChemistryWorkspace')
