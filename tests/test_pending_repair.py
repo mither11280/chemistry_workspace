@@ -150,6 +150,50 @@ class ExactMSRepairTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'hash mismatch'):self.run_repair()
         self.assertFalse((self.root / 'out').exists())
 
+    def prepare_printed_parent_alias(self):
+        from bank.format import geometry
+        from bank.teaching.parts import ms_parts
+        from bank.teaching.decisions import fingerprint
+        ms = Path(self.paths['fixture-ms'])
+        with fitz.open(ms) as doc:
+            page = doc[1]
+            page.add_redact_annot(fitz.Rect(25, 83, 105, 108))
+            page.apply_redactions()
+            page.insert_text((30, 100), '1(a)')
+            new_path = ms.with_suffix('.new.pdf');doc.save(new_path)
+        new_path.replace(ms)
+        with fitz.open(ms) as doc:
+            self.manifest['sources'][1].update(sha256=sha256(ms), pages=geometry(doc))
+            row = ms_parts(doc)[0][(1, ('a',))]
+        self.sources = {s['source_id']: s for s in self.manifest['sources']}
+        q = self.index['questions'][0];new = copy.deepcopy(q)
+        new['answer']['regions'] = row['regions']
+        approval = self.approvals['repairs'][0]
+        approval.update(before_fingerprint=fingerprint(q, self.sources),
+                        after_fingerprint=fingerprint(new, self.sources), official_answer_label='1(a)')
+        self.decisions[q['question_id']]['fingerprint'] = fingerprint(q, self.sources)
+        self.save()
+
+    def test_explicit_missing_first_roman_alias_preserves_qp_label(self):
+        from bank.format import read_json
+        self.prepare_printed_parent_alias()
+        self.assertEqual(self.run_repair()['remaining_pending'], 0)
+        q = read_json(self.root / 'out/question-index.json')['questions'][0]
+        self.assertEqual(q['original_question_number'], '1(a)(i)')
+        self.assertEqual(q['metadata']['teaching']['official_answer_label'], '1(a)')
+
+    def test_parent_alias_cannot_replace_an_existing_exact_row(self):
+        self.approvals['repairs'][0]['official_answer_label'] = '1(a)';self.save()
+        with self.assertRaisesRegex(ValueError, 'ambiguous official label'):self.run_repair()
+
+    def test_parent_alias_cannot_steal_another_indexed_leaf(self):
+        self.prepare_printed_parent_alias()
+        other = copy.deepcopy(self.index['questions'][0])
+        other['question_id'] = 'authored-parent-leaf';other['original_question_number'] = '1(a)'
+        other['metadata']['teaching']['part_path'] = ['a']
+        self.index['questions'].append(other);self.save()
+        with self.assertRaisesRegex(ValueError, 'owned by another'):self.run_repair()
+
 
 class ScopeExtensionTests(unittest.TestCase):
     save = ExactMSRepairTests.save
@@ -255,6 +299,30 @@ class TeachingRepairTests(unittest.TestCase):
         q['topics'] = ['a2-ch08'];self.save()
         with self.assertRaisesRegex(ValueError, 'Stale teaching'):self.run_teaching()
         self.assertFalse((self.root / 'out').exists())
+
+    def test_aromatic_hybridisation_requires_seven_and_preserves_a2(self):
+        self.approvals['policy_id'] = 'a2-foundation-organic-and-aromatic-hybridisation-2026-10-29'
+        row = self.approvals['questions'][0]
+        row.update(knowledge_tags=['structure.aromatic-hybridisation'], required_chapters=[11]);self.save()
+        with self.assertRaisesRegex(ValueError, 'chapter 7'):self.run_teaching()
+        row['required_chapters'] = [7];self.save()
+        report = self.run_teaching()
+        self.assertEqual(report['changes'][0]['primary_chapter'], 7)
+
+    def test_inorganic_rules_require_explicit_kind_and_correct_chapter(self):
+        self.approvals['policy_id'] = 'a2-inorganic-foundations-2026-10-29'
+        row = self.approvals['questions'][0]
+        row.update(knowledge_tags=['structure.vsepr'], required_chapters=[3]);self.save()
+        with self.assertRaisesRegex(ValueError, 'Inorganic foundation'):self.run_teaching()
+        row.update(knowledge_tags=['calculation.titration'], required_chapters=[3]);self.save()
+        report = self.run_teaching()
+        self.assertEqual(report['changes'][0]['primary_chapter'], 3)
+
+    def test_provisional_nitrogen_placement_is_not_a_blanket_amine_rule(self):
+        self.approvals['policy_id'] = 'a2-nitrogen-environment-organizational-placement-2026-10-29'
+        self.approvals['questions'][0].update(required_chapters=[9], knowledge_tags=['environment.nitrogen-oxides'])
+        self.save()
+        with self.assertRaisesRegex(ValueError, 'limited to the explicitly identified'):self.run_teaching()
 
     def test_official_scoring_alarm_cannot_be_resolved_by_classification(self):
         from apply_teaching_repairs import teaching_fingerprint

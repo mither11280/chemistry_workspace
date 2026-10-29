@@ -22,6 +22,8 @@ RESOLVABLE = {'no_reliable_primary_chapter', 'pure_as_task_without_reliable_a2_t
               'standalone_as_stereochemistry_without_reliable_a2_theme',
               'standalone_as_carbonyl_reduction_without_reliable_a2_theme',
               'standalone_as_optical_activity_without_reliable_a2_theme'}
+RESOLVABLE.add('standalone_as_organic_redox_without_reliable_a2_theme')
+RESOLVABLE.add('standalone_as_redox_without_reliable_a2_theme')
 
 
 def teaching_fingerprint(q):
@@ -47,6 +49,19 @@ def apply(snapshot, paths_file, decisions_file, approvals_file, output, revision
         if qid in seen:raise ValueError('Duplicate classification repair: ' + qid)
         seen.add(qid);q = qs[qid];m = q['metadata']['teaching']
         if q['paper'] != 4 or q['qualification'] != 'A2':raise ValueError('This policy applies only to A2 Paper 4')
+        aromatic = 'structure.aromatic-hybridisation' in row['knowledge_tags']
+        if approvals['policy_id']=='a2-nitrogen-environment-organizational-placement-2026-10-29':
+            if qid!='cie-9701-m19-42-q1-a' or row['required_chapters']!=[9] or row['knowledge_tags']!=['environment.nitrogen-oxides']:
+                raise ValueError('Provisional nitrogen placement is limited to the explicitly identified source task')
+        elif approvals['policy_id']=='a2-inorganic-foundations-2026-10-29':
+            expected = [6] if 'structure.vsepr' in row['knowledge_tags'] else [3]
+            if row['required_chapters']!=expected or (expected==[3] and not {'redox.equation-balancing','calculation.titration'}.intersection(row['knowledge_tags'])):
+                raise ValueError('Inorganic foundation policy requires explicit redox/titration or VSEPR tags')
+        elif aromatic:
+            if approvals['policy_id']!='a2-foundation-organic-and-aromatic-hybridisation-2026-10-29' or row['required_chapters']!=[7]:
+                raise ValueError('Confirmed aromatic hybridisation belongs to chapter 7')
+        elif 11 not in row['required_chapters']:
+            raise ValueError('The confirmed organic foundation policies require chapter 11')
         if fingerprint(q, sources) != row['material_fingerprint'] or decisions[qid]['fingerprint'] != row['material_fingerprint']:
             raise ValueError('Stale material judgment: ' + qid)
         if teaching_fingerprint(q) != row['before_teaching_fingerprint']:

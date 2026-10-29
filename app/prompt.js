@@ -44,10 +44,10 @@ function parseA2Description(text){
   const lower=text.toLowerCase().replace(/\bk\s*(?:_\s*\{?\s*)?stab\s*\}?/g,'kstab'),aliases={
     'a2-ch01':['chemical energetics','group 2','第2族','化学能量','lattice','hydration','solution enthalpy','born','晶格','水合','溶解焓'],
     'a2-ch02':['entropy','gibbs','feasib','熵','吉布斯','自由能','可行性'],
-    'a2-ch03':['electrochem','electrode','nernst','electrolysis','电化学','电极','电解'],
+    'a2-ch03':['electrochem','electrode','nernst','electrolysis','redox','titration','电化学','电极','电解','氧化还原','滴定','配平'],
     'a2-ch04':['equilibr','buffer','pka','solubility product','partition','平衡','缓冲','溶度积','分配'],
     'a2-ch05':['kinetics','rate equation','reaction order','动力学','速率','反应级数'],
-    'a2-ch06':['transition','complex','ligand','kstab','stability constant','稳定常数','过渡','配合物','配体'],
+    'a2-ch06':['transition','complex','ligand','kstab','stability constant','vsepr','electron-pair repulsion','稳定常数','过渡','配合物','配体','分子形状','电子对互斥'],
     'a2-ch07':['benzene','phenol','phenylamine','苯','苯酚','苯胺'],
     'a2-ch08':['acyl chloride','acid chloride','酰氯'],
     'a2-ch09':['amine','amide','胺','酰胺'],
@@ -57,6 +57,10 @@ function parseA2Description(text){
   };
   let topics=Object.keys(aliases).filter(id=>aliases[id].some(t=>lower.includes(t)));
   if(/(?:aldehyde|ketone|carbonyl|醛|酮|羰基).{0,15}(?:reduc|还原)|(?:reduc|还原).{0,15}(?:aldehyde|ketone|carbonyl|醛|酮|羰基)/.test(lower)&&!topics.includes('a2-ch11'))topics.push('a2-ch11');
+  // Basic organic operations use the teacher's chapter-11 fallback only when
+  // no explicit A2 theme has been requested. Aromatic hybridisation counts
+  // remain in chapter 7 through the benzene alias above.
+  if(!topics.length && /nomenclature|hybridisation|hybridization|haloalkane|halogenoalkane|ester|alkene|iodoform|functional.group.test|有机命名|杂化|卤代烃|酯|烯烃|碘仿|官能团检验/.test(lower))topics=['a2-ch11'];
   // The teacher's organic stereochemistry rule does not move coordination
   // stereoisomers out of transition chemistry. Bare reagent names do not
   // establish which functional group is actually reduced.

@@ -54,7 +54,21 @@ def repair(snapshot, paths_file, decisions_file, approvals_file, output, revisio
             for kind, doc in [('question', qdoc), ('answer', mdoc)]:
                 if geometry(doc) != sources[q[kind]['source_id']]['pages']:
                     raise ValueError('Source geometry mismatch: ' + qid)
-            row = ms_parts(mdoc)[0].get(label_path(q['original_question_number']))
+            rows = ms_parts(mdoc)[0]
+            expected = label_path(q['original_question_number'])
+            printed = label_path(approval.get('official_answer_label', q['original_question_number']))
+            if printed != expected:
+                # A separately read printed parent label may stand for its
+                # missing first roman child. Never steal an existing exact
+                # row, another QP leaf, another parent, or an arbitrary typo.
+                if expected in rows or not expected or not printed or printed[0]!=expected[0] or expected[1] != printed[1]+('i',):
+                    raise ValueError('Unsupported or ambiguous official label mapping: ' + qid)
+                if any(other['question_id']!=qid and other['answer']['source_id']==q['answer']['source_id'] and
+                       label_path(other['metadata'].get('teaching',{}).get('official_answer_label',other['original_question_number']))==printed
+                       for other in qs.values()):
+                    raise ValueError('Official row is owned by another question: ' + qid)
+                m['official_answer_label'] = approval['official_answer_label']
+            row = rows.get(printed)
             if not row or row['marks'] != q['marks']:
                 raise ValueError('Exact MS label and marks still do not match: ' + qid)
             q['answer']['regions'] = copy.deepcopy(row['regions'])

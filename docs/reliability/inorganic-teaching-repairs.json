@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0.0",
+  "policy_id": "a2-inorganic-foundations-2026-10-29",
+  "confirmation_basis": "Teacher directly confirmed redox equation balancing and titration stoichiometry in Electrochemistry chapter 3, and VSEPR in Transition elements chapter 6.",
+  "questions": [
+    {
+      "question_id": "cie-9701-s19-41-q1-b",
+      "material_fingerprint": "5dcbe62227c4c451ba5d267b6aa5d56a6de885e42b1ad63ed559883bdf8f3848",
+      "before_teaching_fingerprint": "94cea242d8dc5386517da2580f8023cf3695dd3f40578016882aeeac4c966bbf",
+      "required_chapters": [
+        3
+      ],
+      "knowledge_tags": [
+        "calculation.titration"
+      ],
+      "reason": "Calculate sulfur chloride empirical formula using supplied silver nitrate precipitation titration and dilution. Teacher places titration stoichiometry in chapter 3; this is not labelled a redox titration."
+    },
+    {
+      "question_id": "cie-9701-s19-43-q1-b",
+      "material_fingerprint": "d43538686de709ddc7755ed6f54188df41095dad6c838c62921af4ec22d8c74d",
+      "before_teaching_fingerprint": "50d8f5b43b1aea99207b10280c90dfb9708187ebf9c1d5d4797349c4919079c3",
+      "required_chapters": [
+        3
+      ],
+      "knowledge_tags": [
+        "calculation.titration"
+      ],
+      "reason": "Calculate this variant sulfur chloride empirical formula from silver nitrate titration with its own three-mark official rubric; precipitation need not be a redox reaction."
+    },
+    {
+      "question_id": "cie-9701-s20-42-q2-e",
+      "material_fingerprint": "ad3a3c2a8e55d1e095701fc318e54e5331988630474f45ac6689c0c896e793a4",
+      "before_teaching_fingerprint": "983cfb484508807e576e5c7a174cd884004d2f3a4acefeed7e1efe1e01a964a5",
+      "required_chapters": [
+        3
+      ],
+      "knowledge_tags": [
+        "calculation.titration"
+      ],
+      "reason": "Use the supplied iodate, iodide and thiosulfate equations and dilution to calculate iodate mass; teacher assigns titration stoichiometry to chapter 3."
+    },
+    {
+      "question_id": "cie-9701-m21-42-q3-a",
+      "material_fingerprint": "bdffbd295eefdc902b4394c9de82d4a2b3841f6d39442240cae53a56a244afb4",
+      "before_teaching_fingerprint": "413a9f55c0891404bef24c7a9633248e816dd64309fb246d202b9be76db26daa",
+      "required_chapters": [
+        6
+      ],
+      "knowledge_tags": [
+        "structure.vsepr"
+      ],
+      "reason": "Explain the supplied iodate pyramidal shape using three bonding-pair centres and one lone pair; teacher explicitly assigns VSEPR to chapter 6."
+    },
+    {
+      "question_id": "cie-9701-m21-42-q3-b",
+      "material_fingerprint": "9dc28b31e3a3bc26c1eb852e5beea97986ed504e49fb46f70f5ab4155e1238b5",
+      "before_teaching_fingerprint": "daca3087559fd61b2935f61e0e1ff4a78019567520cc973abe3b58582f88d40a",
+      "required_chapters": [
+        3
+      ],
+      "knowledge_tags": [
+        "redox.equation-balancing"
+      ],
+      "reason": "Write iodine disproportionation with hot sodium hydroxide using the given iodate product; teacher assigns redox equation balancing to chapter 3."
+    },
+    {
+      "question_id": "cie-9701-s21-42-q2-c-ii",
+      "material_fingerprint": "bed4d8259df3f25962ef610ee7f6de23cf8f6ff214af348df2f0bf1ee451c1b7",
+      "before_teaching_fingerprint": "949de0a7ec0f97e9ba1825968dfb0ff854f05f15bd7a235a5da015e20b81eb97",
+      "required_chapters": [
+        3
+      ],
+      "knowledge_tags": [
+        "calculation.titration"
+      ],
+      "reason": "Use all three supplied half-equations to calculate barium ethanedioate purity by back titration; teacher assigns titration stoichiometry to chapter 3."
+    },
+    {
+      "question_id": "cie-9701-m22-42-q1-a-i",
+      "material_fingerprint": "2f472a5ef3030ade4d2352c26a82db5d7091476297706bd5fa7adbc4d6a9a0fc",
+      "before_teaching_fingerprint": "589363d11e09b88ce60a552769b2ec1be53a16e5233b77fe8e496ef130f8d3cb",
+      "required_chapters": [
+        3
+      ],
+      "knowledge_tags": [
+        "redox.equation-balancing"
+      ],
+      "reason": "Identify peroxide as oxidising agent and balance its iodide oxidation equation; this requires redox bookkeeping rather than a transition-complex property."
+    },
+    {
+      "question_id": "cie-9701-s23-41-q5-c",
+      "material_fingerprint": "97085fd683af3c1b454002802545e94a7825b3e374a16934a86120e265188643",
+      "before_teaching_fingerprint": "0461fe07080e0239f53a9479a0cdc1d6695a3c50d990766b86ad45b10e552071",
+      "required_chapters": [
+        3
+      ],
+      "knowledge_tags": [
+        "redox.equation-balancing"
+      ],
+      "reason": "Combine the three explicitly supplied equations into the overall nitrogen dioxide reduction equation. This is equation balancing, not urea synthesis."
+    },
+    {
+      "question_id": "cie-9701-s23-43-q5-c",
+      "material_fingerprint": "3724637cbab0c33f48d3ecbb80381b7854cfef5b5d02e43100da771f972ffdd6",
+      "before_teaching_fingerprint": "35062be03f5b994f267d1499fd114bd8f751d1735b82a4020128a8570dc78efe",
+      "required_chapters": [
+        3
+      ],
+      "knowledge_tags": [
+        "redox.equation-balancing"
+      ],
+      "reason": "Combine this variant three supplied equations into the official overall nitrogen dioxide reduction equation under the teacher confirmed redox rule."
+    },
+    {
+      "question_id": "cie-9701-s23-42-q1-c-i",
+      "material_fingerprint": "126be817a0d5a0ab7f162e776047eb4ba768b5fe0bbc0b3706599ad843290b9a",
+      "before_teaching_fingerprint": "ad583a55e221016aae0d822bf4e55434e1764e3ded367a6348ffd6394c0fa1c1",
+      "required_chapters": [
+        3
+      ],
+      "knowledge_tags": [
+        "redox.equation-balancing"
+      ],
+      "reason": "Combine the supplied sulfite and manganate half-equations into the balanced ionic equation, assigned by the teacher to chapter 3."
+    },
+    {
+      "question_id": "cie-9701-s23-42-q1-c-ii",
+      "material_fingerprint": "fce0c464155de85b1beadab62d72201b0a3d25b5d1797bdb609f8408aebd1792",
+      "before_teaching_fingerprint": "5d41ab78cf2b29a970dad3b8ccbf70f5f5311381bba4e0bf4f4a18cd058d072e",
+      "required_chapters": [
+        3
+      ],
+      "knowledge_tags": [
+        "calculation.titration"
+      ],
+      "reason": "Calculate potassium sulfite purity from the supplied titration; preserve the preceding balanced equation dependency and count both scored leaves once."
+    },
+    {
+      "question_id": "cie-9701-s23-42-q1-d",
+      "material_fingerprint": "e79923629d1767b5d7260d3287ec9cedf01ff37a3031af9fd42bf649990b0eba",
+      "before_teaching_fingerprint": "95afc159a409794a04729f0c5de62c1fc29add83d33c56619ae00f9f2d90d444",
+      "required_chapters": [
+        6
+      ],
+      "knowledge_tags": [
+        "structure.vsepr"
+      ],
+      "reason": "Deduce tetrahedral geometry at the specified sulfur atom in the supplied disulfite structure; teacher explicitly places VSEPR in chapter 6."
+    },
+    {
+      "question_id": "cie-9701-s24-42-q2-b",
+      "material_fingerprint": "5bb35a764ad41c8b9c5571eb63d519a1087f605890d1a283544bd39578737e02",
+      "before_teaching_fingerprint": "6f410350151966df4ba07ca65663e1a2cb49f6d6cefbbb8de3930b7d344a7a94",
+      "required_chapters": [
+        3
+      ],
+      "knowledge_tags": [
+        "calculation.titration"
+      ],
+      "reason": "Calculate nitrite concentration from the supplied manganate and iron back titration and half-equations under the confirmed chapter 3 rule."
+    },
+    {
+      "question_id": "cie-9701-s25-42-q5-a-iii",
+      "material_fingerprint": "c374a73bb1596f418417553bf6e8cd6904bec1240f3e04499ed28dac5148b13e",
+      "before_teaching_fingerprint": "a6fd29258976bb8b6fe620f6a40fdc769b8285b790594e9a33f4e62ce1358346",
+      "required_chapters": [
+        3
+      ],
+      "knowledge_tags": [
+        "redox.equation-balancing"
+      ],
+      "reason": "Balance chloric(I) acid disproportionation into the explicitly stated chloric(V) acid and hydrochloric acid products. This classification does not resolve the missing official MS row."
+    }
+  ]
+}

@@ -1,0 +1,943 @@
+{
+  "schema_version": "1.0.0",
+  "policy_id": "a2-foundation-organic-and-aromatic-hybridisation-2026-10-29",
+  "confirmation_basis": "Direct teacher confirmation: remaining basic organic reactions/tests/nomenclature/structure tasks without a more specific required A2 topic go to chapter 11; a hybridisation count whose object contains a benzene ring stays in chapter 7; all Paper 4 stays A2.",
+  "questions": [
+    {
+      "question_id": "cie-9701-m18-42-q9-a-vi",
+      "material_fingerprint": "aae4768a68b64d91ef1f2bc7085555f9d42c2eb32109a59f281b15a1351bd038",
+      "before_teaching_fingerprint": "dbd48c077b50d99ad651d83858a25c4b728990a7feb997c22f3f48f4db04c538",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.hydrolysis"
+      ],
+      "reason": "Name the specified hot-dilute-acid cleavage as hydrolysis; the supplied chemical transformation suffices without solving a spectrum. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-41-q7-a",
+      "material_fingerprint": "e2dd3731c1a15127fbe2b101865aa3cb11675945912883462be59c3c1fd0d248",
+      "before_teaching_fingerprint": "1e13941dfe5afc90f7babecec113e1944d495d5233efc011d9be46069d7d5baa",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.alcohol-reactions"
+      ],
+      "reason": "Balance the reaction of given propan-1-ol with sodium; no phenol comparison is asked in this leaf. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-41-q7-c",
+      "material_fingerprint": "12348d8b9cd9b9c71abf8e85668ea32451e4f28c788807c1fe2dfe7fb8fcf906",
+      "before_teaching_fingerprint": "5c79905b2edf2076ab11bf8dc25c60124187330126b6c417d1862ff35a379128",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "analysis.chemical-tests"
+      ],
+      "reason": "Distinguish methanoic and propanoic acids with the official Fehling/Tollens tests and observations; no aromatic or instrumental result is needed. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-41-q8-c-i",
+      "material_fingerprint": "20664af98c20108df8cf44fc8413734fdf11e6cf7791f7daae01f75a1fe12ad8",
+      "before_teaching_fingerprint": "043c34acdbecf978a9e4c77df9b85ff006470676f97f0595e364bfa56b31b761",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.oxidative-cleavage"
+      ],
+      "reason": "Draw the larger product of the supplied terpenoid alkene oxidative cleavage. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-41-q8-c-ii",
+      "material_fingerprint": "3acd0ae29860c9c72dc51b85a3eb0250a877ae32b49701a0943c303ab328de6a",
+      "before_teaching_fingerprint": "62d2ddf75937e2e54686408f34c413c3fb2f50cd6f41f74b901b38ea915b0b55",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.oxidative-cleavage"
+      ],
+      "reason": "Identify carbon dioxide and explain its formation by oxidation in the given alkene cleavage. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-41-q8-c-iii",
+      "material_fingerprint": "29f5b6c92d7bc16dceb165a334fa8db91de2189a9207134f0e15b349112d365e",
+      "before_teaching_fingerprint": "bc89556d1222e1200038b6921cc2d4d28787cc574a3bab8ce7e3b808d512e228",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.oxidative-cleavage"
+      ],
+      "reason": "Identify the remaining carbon-containing product of the supplied oxidative cleavage. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-41-q9-a",
+      "material_fingerprint": "c14ba3ec9d3c5d24082fc867de292b88cff55c72a78a9384ed3327fbf8ca5437",
+      "before_teaching_fingerprint": "bd1d8269b1772c1d7de056676c0edc64fef8c27e2012938147be420a58297513",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.molecular-formula"
+      ],
+      "reason": "Count the molecular formula from the complete noradrenaline structure; amine/diazotisation chemistry is not required. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-42-q7-a",
+      "material_fingerprint": "f53a5f8e3493dd88e0262cb7714af78b47d27e16130093299f4b84470dd680d5",
+      "before_teaching_fingerprint": "b4ba2cfd114cb87a44f72c86b4172b5a2a8d930c9528041a07425a5f7fe6f917",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.molecular-formula"
+      ],
+      "reason": "Count the molecular formula from supplied asparagine; neither amide hydrolysis nor amine reactions are asked. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-42-q8-a",
+      "material_fingerprint": "359564260bdda32c5db332b1fbee137eac5a22048a6578e5f6f27fbb819411e1",
+      "before_teaching_fingerprint": "37e881fc09ccc59a1cc1aa59c6aa3801174ce6c888956e687ab99d10a6981185",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.alcohol-classification"
+      ],
+      "reason": "Classify the explicitly drawn calcitriol alcohol groups as primary, secondary or tertiary, independently of later NMR tasks. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-42-q8-e-i",
+      "material_fingerprint": "74d46f5b67fd49043ff6ff7ccab07c711a51cf5558e5e5ef77b4ff41bcdf9f8f",
+      "before_teaching_fingerprint": "b783be88525faf19a97207126066baa6a53c7a60e8863049a336c6c03d7f55c8",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.oxidative-cleavage"
+      ],
+      "reason": "Identify the smaller coproduct of calcitriol oxidative cleavage using the given structure and excluded product X. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-42-q8-e-ii",
+      "material_fingerprint": "31ede2ed038bb53cb8803a46ea8a43de3986f3613f14a929226c6a63b327f747",
+      "before_teaching_fingerprint": "b4aabdca1943034f3d80520a5feccdc637ecbf5add51f6d0588643988c29a664",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.oxidative-cleavage"
+      ],
+      "reason": "Draw the larger coproduct from the supplied calcitriol cleavage; no spectrum is required. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-43-q7-a",
+      "material_fingerprint": "fefe3113ee38d07ac543467577863be1d5bf217681935b21a489ba54fc0f852a",
+      "before_teaching_fingerprint": "5e6017ac5c934e687c847d3ddd9c4dff5183f43350efa981c17c1145d004ed51",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.alcohol-reactions"
+      ],
+      "reason": "Write this variant ordinary propan-1-ol/sodium equation without requiring the separate phenol task. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-43-q7-c",
+      "material_fingerprint": "dd0bad4b0297a92636b61fdfab2eceefbe15011d46d5b523e2747a66c89e185b",
+      "before_teaching_fingerprint": "0fd7c5a5972e81ad49c8e1978bd89bd431564ba8fbc7947bdd5d59068f6894aa",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "analysis.chemical-tests"
+      ],
+      "reason": "Distinguish the two carboxylic acids in this variant with the complete official chemical-test rubric. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-43-q8-c-i",
+      "material_fingerprint": "3422aed12f725ed210f36e39b9541d059c7590fc2a68722cd94e40cf3de91ca9",
+      "before_teaching_fingerprint": "94dd2a7d9a6519ef7f65279504d5f68e65fc2b7f0d35555a807d82b939ec3cba",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.oxidative-cleavage"
+      ],
+      "reason": "Draw this variant larger terpenoid oxidative-cleavage product. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-43-q8-c-ii",
+      "material_fingerprint": "06a1b69b354a5a3ba705ad2bdcea4638b20478656829c123d1e6b6d5f88c22db",
+      "before_teaching_fingerprint": "cfbf4746df990c79a1d200e8d322ee387dfd939c5a5c6b531010c7c1cdda5f0f",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.oxidative-cleavage"
+      ],
+      "reason": "Explain carbon dioxide formation in this variant alkene oxidative cleavage. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-43-q8-c-iii",
+      "material_fingerprint": "e097018aa3641fad8a0f82e0292e22e06e3b1c0d8b780653eef22574cef90e21",
+      "before_teaching_fingerprint": "0427b8641b0a34a1a722c4d597f2258fa12f51957f095101930c59600778bc61",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.oxidative-cleavage"
+      ],
+      "reason": "Identify this variant third oxidative-cleavage product using the complete given substrate. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s18-43-q9-a",
+      "material_fingerprint": "7e892234c490c9753e12623adafc80e4343ac9c5b91e1fd572063086ba2f4e00",
+      "before_teaching_fingerprint": "11dc7bfad61366127182dcf1f49aff316433aeb9ed3f359b2d6175653977a630",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.molecular-formula"
+      ],
+      "reason": "Count this variant noradrenaline molecular formula without invoking amine reaction knowledge. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w18-41-q1-c-i",
+      "material_fingerprint": "f1af5c1679e07c5a995efae20ece09affb90be34ca9a6bf7fab98c3101492387",
+      "before_teaching_fingerprint": "c3fbd560722fd0673eddaf883655d7cf09920f08ca37d4406159548dcfb8eb46",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "mechanism.electrophilic-addition"
+      ],
+      "reason": "Draw HBr electrophilic addition to the explicitly given methylpropene, including the scored intermediate and arrows. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w18-42-q7-a-i",
+      "material_fingerprint": "25dd52e1879ba329fd5302c6ae6bbea4927700baa69c03e5d737be1a35d62864",
+      "before_teaching_fingerprint": "7db8fcce1a23c64b17c2b07276b6a20e44ac4e0b4e94238df5babdedecf74560",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.molecular-formula"
+      ],
+      "reason": "Count the formula of the fully drawn diisocyanate; polymer formation is background rather than the task. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w18-43-q1-c-i",
+      "material_fingerprint": "ecec4c44bbf89ee5d6f5dd0578a2c39528c1d3468f5dff1c0d52c428bd397484",
+      "before_teaching_fingerprint": "2f0ae7acd64ae501b1c2a8848888e5e5c53bbf4df35c4d934a743b65c02a5fb3",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "mechanism.electrophilic-addition"
+      ],
+      "reason": "Draw this variant HBr/methylpropene addition mechanism from its own supplied structure and official rubric. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-m19-42-q6-b-ii",
+      "material_fingerprint": "6dac5bb2fc20fb88c203e1b248ab8b719f8bedcbabc9cc2c921947eb18d7a55f",
+      "before_teaching_fingerprint": "81322476d7b2d84c5258d79e98614aa4cc27db01ca0594b05d094661ecbc2709",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "analysis.chemical-tests"
+      ],
+      "reason": "Use the specifically given DNPH orange precipitate to identify a carbonyl group; ketamine proton acceptance is a separate leaf. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s19-42-q6-c-i",
+      "material_fingerprint": "eddd9e8e738171be6dc2dd03ec2cfc50396ccfd72fb046eb4e84fa2227c2de52",
+      "before_teaching_fingerprint": "8d7c153da4dadfda0a61f144b113f7e9608f4727948efda67e8d27e908f29bcf",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.molecular-formula"
+      ],
+      "reason": "Count mefenamic acid formula from its fully drawn structure; no aromatic-amine transformation is needed. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s19-42-q6-c-iii",
+      "material_fingerprint": "86735384b96d9aa8df791f6ecf83cfbc05d1c65581b6d6a8106a52a22c0613ae",
+      "before_teaching_fingerprint": "680715a735fea1e009ec401131bb62983f343ec015c8ff951f881c27f6c6edff",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "calculation.organic-yield"
+      ],
+      "reason": "Calculate the mass yield from the completely supplied organic equation and formula; no unseen aromatic reaction must be inferred. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w19-41-q4-c-i",
+      "material_fingerprint": "6c3041f84e2aba6b61f177da4a734b7b3c7531934ebe78d4f287e5b3532d4187",
+      "before_teaching_fingerprint": "942a5c9e0a995a40fd2fa6ee9f2f63684c819601d243102f8fd33bf4d12fb43b",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "mechanism.nucleophilic-addition"
+      ],
+      "reason": "Name cyanohydrin formation as nucleophilic addition; the phenyl ring is unchanged background. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w19-41-q4-c-ii",
+      "material_fingerprint": "52f2c754ee5926925359de321fc9a09c0eba4d52b18c7999c3f60f85bcc78f97",
+      "before_teaching_fingerprint": "f26e56c4679eb1c33f163de0afff815ce702200241bc411e545194b78a18aacd",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "mechanism.nucleophilic-addition"
+      ],
+      "reason": "Complete cyanide-catalysed carbonyl addition, retaining its complete official intermediate and catalytic-regeneration scoring. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w19-42-q8-a",
+      "material_fingerprint": "56db63671b853b99be2f21d1bc7ba8012bb3f223a306e1c7c514fa86d5e63bf8",
+      "before_teaching_fingerprint": "c6243f2d7e624810248d059e71d64dd2cd0d02b72830aee8612191315a766e21",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.radical-substitution"
+      ],
+      "reason": "Give bromine and light/heat for the completely specified alkane halogenation step. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w19-43-q4-c-i",
+      "material_fingerprint": "bf3b4c67ddcbb1919cfe1668eb2d515a9edfcae5a69cf411c3187591fdca7831",
+      "before_teaching_fingerprint": "2cef56ef5b72d28e8da4bb1657382046abd0eeadf4837a021f6e4ceff9e9b5db",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "mechanism.nucleophilic-addition"
+      ],
+      "reason": "Name this variant specified HCN/carbonyl addition; aromatic-ring reactions are not tested. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w19-43-q4-c-ii",
+      "material_fingerprint": "345959d15868bd2c184cbbbcf4456c9acda1ae96863199755d84cff655fa9204",
+      "before_teaching_fingerprint": "1de2cdde6bd888bf85e690ec001d2c610818cce9bb2133ffd40a22b3615508c8",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "mechanism.nucleophilic-addition"
+      ],
+      "reason": "Draw this variant complete cyanide-catalysed carbonyl addition mechanism. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-m20-42-q6-a-i",
+      "material_fingerprint": "18251c0b664631dbc2d25ec6b3c479b29c35bb7d398c9a10ea8107ec7c223cf4",
+      "before_teaching_fingerprint": "5e89bbfd1acc9e49608e4e3658d238af6f56475378136b9102a637013f4e2047",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.carboxylic-acid-reduction"
+      ],
+      "reason": "Balance the fully specified carboxylic-acid-to-alcohol reduction with [H]; the amino group is unchanged. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-m20-42-q6-a-iii",
+      "material_fingerprint": "78a4b0713e48729dcd0398e312656f831edc378ee1a452468eef644782565fb6",
+      "before_teaching_fingerprint": "23468e1a8207cbd9a7744db197a09f252a9d0b28946887c7fabe7da86efa5869",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "mechanism.nucleophilic-substitution"
+      ],
+      "reason": "Name substitution of the displayed halo group by hydroxide; no amine transformation or missing route is required. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s20-41-q5-c-i",
+      "material_fingerprint": "35e025cd336b66fd01bb3382f3042bcd1bd3bb281a59ddd538b74bae8a9d3e4e",
+      "before_teaching_fingerprint": "b35b3d005a8b0401a900226e65c01634255fbeb78b70b32faaa750b807fd59e6",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.structural-isomerism"
+      ],
+      "reason": "Enumerate the given-formula aliphatic carbocations; the following Friedel-Crafts application is a separate task. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s20-41-q6-c",
+      "material_fingerprint": "6640a6bd5818e268779cdb5723da074439dab8e4d2a76209702e00075333e63a",
+      "before_teaching_fingerprint": "7d66b8892c0fdf3c973e3eac95500c52edb7ed81af537e8e0c922b6a56c21549",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "analysis.chemical-tests"
+      ],
+      "reason": "Complete the qualitative organic-acid test table using the official chemical reagents/observations, without spectral interpretation. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s20-42-q4-b",
+      "material_fingerprint": "8850e8bfdfdcce129ebc047c3826b91f8730c5742b4d38b725039381e76eec27",
+      "before_teaching_fingerprint": "1442f3aa4a216b928f6af56ff8ac1331902cca626606329700cb2543e31ae0ad",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "calculation.organic-equations"
+      ],
+      "reason": "Balance oxidation using the supplied naphthalene and all product formulas; no unknown aromatic product or aromatic mechanism is inferred. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s20-43-q5-c-i",
+      "material_fingerprint": "ca4ba4818349753d1057387f23565b2414024f90536b1334842b58bdd7f0543c",
+      "before_teaching_fingerprint": "963f0d371f37d0e371f1a59d8dead17792fd403dc36bc016c0a3781c746a1bf8",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.structural-isomerism"
+      ],
+      "reason": "Enumerate this variant aliphatic carbocation structures before the separate aromatic application. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s20-43-q6-c",
+      "material_fingerprint": "6d8455f7a918ba25dfac31c2943eee7a3c27fda0b1feacba77eed12115a8566d",
+      "before_teaching_fingerprint": "98b48e66c712677b3f7060a35689ef17e32183bb891cc45c649d5166fd349591",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "analysis.chemical-tests"
+      ],
+      "reason": "Complete this variant chemical-test table without importing the later NMR task requirements. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w20-41-q9-c",
+      "material_fingerprint": "00f745fee332ecfeb9f2323c4fcad74c6f8819662a17f61bd7fce6b1a15c99a3",
+      "before_teaching_fingerprint": "cef503bdec52f5ed95e65c3a0d5a4cb360229e3442b66e5af7ed6bc4c91b9a5e",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.hydrolysis"
+      ],
+      "reason": "Identify the ester group from the explicitly supplied hot-alkali hydrolysis to ethanol; the displayed spectrum need not be solved. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w20-42-q6-b-i",
+      "material_fingerprint": "088a9e8882c4f263d386ed42231ff2b383a96db5c12c38837ef8158ac5bf47f1",
+      "before_teaching_fingerprint": "6fecd1a9cc09b4ae508ed85c67f7837a377484cf08b35cb4d883e4bc15f1c47d",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "analysis.chemical-tests"
+      ],
+      "reason": "Select the given carboxylic acid reacting with Fehling reagent; this is a chemical-test task. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w20-42-q6-b-ii",
+      "material_fingerprint": "fd487cb92baa153d2b9f71fd61fb72489826d8ea31f4461aecf1fc231fc330cb",
+      "before_teaching_fingerprint": "e84f51dc89a3b44710974e87b0657937b19877c43a96a42f550c0349195912f3",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.carboxylic-acid-oxidation"
+      ],
+      "reason": "Select given carboxylic acids oxidised by warm acidified manganate, independent of adjacent amide synthesis. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w20-43-q9-c",
+      "material_fingerprint": "39fe8d70678a6ae4a81a5970ab06137cef65a8e59744e7954a54bb19b01f8c31",
+      "before_teaching_fingerprint": "f0423698794c27f4af317fbd8d501194d15985eb9eda12e3ffcbc1e762929a93",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.hydrolysis"
+      ],
+      "reason": "Identify this variant ester from the stated hydrolysis products independently of its NMR spectrum. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-m21-42-q6-a",
+      "material_fingerprint": "a18fc5c0b94b7ae978be938d92f1a3feaba0672ebdcfe12c5e74320c3ae9381c",
+      "before_teaching_fingerprint": "3074240e279e7073266ff917b8dd60d5cfffa6c0c2d23ef4135d53a54a9f9a05",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.oxidative-cleavage"
+      ],
+      "reason": "Identify products of the given fumaric-acid oxidative cleavage using hot acidified manganate. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-m21-42-q7-b-i",
+      "material_fingerprint": "85d79ca0d9767f4806007b1baaad8ea7be71b4a204c2c10b7b64e3be4bd593d0",
+      "before_teaching_fingerprint": "2389964af96386e9947b9f25246f764ef257adf789aba8de3b3d9e6ca50e19ad",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.carboxylic-acid-reactions"
+      ],
+      "reason": "Write carboxyl-group neutralisation by NaOH for the supplied proline; no amine protonation inference is asked. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-m21-42-q7-c-i",
+      "material_fingerprint": "871a4b4935f82dac450ee776e0468802efe7edf97028967ddc808b9a9cda8208",
+      "before_teaching_fingerprint": "2b28f1176ba58dee7a4bdd1a59eadf5795171427d4c21ab10f0ce21184df6eba",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.functional-groups"
+      ],
+      "reason": "Identify ester, alkene and nitrile groups in the fully supplied starting structures; no amine product is required. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-m21-42-q7-c-ii",
+      "material_fingerprint": "e8be117e4b30717046c864dea1e070d5100017f6d65f12ac5fbf5211cc9c3cf0",
+      "before_teaching_fingerprint": "a4f877876a16d5dd72a60d0d6c3fb7783446f9cf65e44ca0d6d5a475aa5012b8",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.addition"
+      ],
+      "reason": "Identify the completely displayed initial alkene transformation as addition; no missing synthetic intermediate must be solved. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-m21-42-q7-c-v",
+      "material_fingerprint": "6b1bd5a67dd863387ddd59ec8cae3b43e44d71455826474b025efd7c00432751",
+      "before_teaching_fingerprint": "aaa346883b2d97184e988b38f4654b0c1d8a3ed0ebe61b0af3a6857dc4de4d88",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.hydrolysis"
+      ],
+      "reason": "Identify ethanol as the coproduct of the explicitly given ester-cleavage transformation. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s21-41-q6-b-i",
+      "material_fingerprint": "5531cc9cf71fc248046899e1ff07384f9a4d8ff530778101e6f5f160524556ca",
+      "before_teaching_fingerprint": "251bcaa50f20f7ee0eb73526f71337941eab0297c987514d6dd78b85911b4d2f",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "analysis.chemical-tests"
+      ],
+      "reason": "Complete the two chemical tests distinguishing the supplied ordinary organic acids independently of later NMR spectra. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s21-43-q6-b-i",
+      "material_fingerprint": "93d5d9705feb2a0110525cd8da5442088aeaab5a3fff2394076ef7d64ab0bede",
+      "before_teaching_fingerprint": "63b7a6e84c9c772f3901e88f9ba4b9cff025c747765bbcf37a0fd4f9da46104a",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "analysis.chemical-tests"
+      ],
+      "reason": "Complete this variant acid chemical-test table with its own official marking row. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w21-42-q7-a",
+      "material_fingerprint": "818dea2fb6ed65af3170697ab8465b6f479c2c87fec783c3cc888f501287100d",
+      "before_teaching_fingerprint": "a2af065d53c968b8b7929e9df3e6550b0b1a3188b65c433ddc9ce7fa438d8756",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.empirical-formula"
+      ],
+      "reason": "Count and simplify atoms in the fully supplied molecular structure; no aromatic reaction or aromatic bonding is needed. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-m22-42-q4-c-i",
+      "material_fingerprint": "37cf48bfa8bf01f7ac315946b6767273d23f3170be475badad7b6c007cae6a53",
+      "before_teaching_fingerprint": "07b24cc35167973581297fe6cffc4600e624622e124a873a0f6e5a64d368560f",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.molecular-formula"
+      ],
+      "reason": "Count the formula of the explicitly drawn alcohol coproduct L; no phenol reaction needs to be inferred. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s22-41-q7-a-ii",
+      "material_fingerprint": "07d5cbc68172ee56c194d89deebaa6957cc9798c84afeeb703ba5d1849503545",
+      "before_teaching_fingerprint": "c23b6887fecaf2733f87c111acdd3e7376a6fe9113e019fba1e52dd3f60c8073",
+      "required_chapters": [
+        7
+      ],
+      "knowledge_tags": [
+        "structure.aromatic-hybridisation"
+      ],
+      "reason": "Count hybridised carbons in supplied procaine. The teacher explicitly keeps all hybridisation-count tasks containing a benzene ring in chapter 7; its amine groups are not separately reacting. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s22-42-q8-b",
+      "material_fingerprint": "a2820035a8330da599b39a74b32109e612eec86db8d3a8faeb4592e292787051",
+      "before_teaching_fingerprint": "1a1dc4bec035e7cf5bfaeab1863c67282862a4f6a2eaff1ffe4ded3264cb1946",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.carboxylic-acid-oxidation"
+      ],
+      "reason": "State the ethanedioic-acid oxidation, observation and balanced equation; no electrode potential or transition-complex knowledge is asked. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s22-43-q7-a-ii",
+      "material_fingerprint": "b16d8bbddebe381b3261510a048804e8e844a2da13e21fd90dff93b8d7d865b5",
+      "before_teaching_fingerprint": "6b4a0673fe4cc3777ff1415788cdbb07397ab9dd242e003542ac6913e9402867",
+      "required_chapters": [
+        7
+      ],
+      "knowledge_tags": [
+        "structure.aromatic-hybridisation"
+      ],
+      "reason": "Count hybridised carbons in this variant supplied procaine; the teacher keeps a benzene-containing count in chapter 7. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s23-42-q8-b-i",
+      "material_fingerprint": "a2d1b9fca51127a8af0f93bb785f9a4a3b2a5b480997a3d14cb7e29e6233e448",
+      "before_teaching_fingerprint": "d7d0821338a11b4be29833077ca70dbe319d306bd7b70f1e619e1c2b6b3c3d4e",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.organic-nomenclature"
+      ],
+      "reason": "Name the supplied aliphatic chloroester as ethyl 3-chloropropanoate without solving the background route. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w23-41-q7-a",
+      "material_fingerprint": "5db810d57823c3c0c1029cfbe163101ee5cc0f5b0a2da891b350e2c1ab452882",
+      "before_teaching_fingerprint": "a74d2ac161fb93af2a52d4b7789d81b3a6535f2d388831821d5241f0c94ea4ca",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.molecular-formula"
+      ],
+      "reason": "Count the complete displayed azo-dye formula; diazotisation and coupling transformations are not required by this leaf. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w23-41-q8-d-i",
+      "material_fingerprint": "4458a61823cbd0efbb7fe78dfcb0b047cc7d5a2beb8c64182adef50857cfec6c",
+      "before_teaching_fingerprint": "6a7db691bd781d91f08f76e05b2e3f79c5a470c37015839776c88d7acea91e8b",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.oxidative-cleavage"
+      ],
+      "reason": "Choose reagents/conditions for the explicitly specified ordinary alkene-to-acid oxidative cleavage. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w23-43-q7-a",
+      "material_fingerprint": "3cd0ecc95f699e6beff1e945f0c16b49b07dd10c8472cff923f8149958cd4a6f",
+      "before_teaching_fingerprint": "63440b80097e64aa568acb6c4ac1893b85840d00c56c542ab5c9e1a17826a33b",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.molecular-formula"
+      ],
+      "reason": "Count this variant complete azo-dye formula without performing aromatic synthesis. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w23-43-q8-d-i",
+      "material_fingerprint": "b59cf68271bae829ab95b435eef1c1861fdaa5b94722f3fc566e61e8591d9ef9",
+      "before_teaching_fingerprint": "6fa81af27be2c822fafe0dfe3d02488351c20aa8bf0516a2685688d7a91d195a",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.oxidative-cleavage"
+      ],
+      "reason": "Choose this variant ordinary alkene oxidative-cleavage reagents from the complete given endpoints. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-m24-42-q5-a-iv",
+      "material_fingerprint": "e5aedd075379c1a85eb022d3d53d96b5e1f1b00ec36ea55df0a89e756098bdc2",
+      "before_teaching_fingerprint": "480bdf88b17fc8bf5eabdca040af59a299ab596326da4d094b94bad5240b9689",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.carbonyl-and-nitrile-reactions"
+      ],
+      "reason": "Choose cyanohydrin-formation and nitrile-hydrolysis reagents for the fully specified steps, retaining both scored reagent lines. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-m24-42-q5-a-v",
+      "material_fingerprint": "4691bc55bb8e10f9d5d98e5949bffa2130cd6b619434d6c622059c2b614185dd",
+      "before_teaching_fingerprint": "3d3295421837627bd1dcb3c3e2695af8fb664cb96ba34fc2885ce06526a0bc01",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.esterification"
+      ],
+      "reason": "Name the fully specified ordinary esterification step; retain official accepted condensation/addition-elimination wording. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-m24-42-q5-a-vi",
+      "material_fingerprint": "b685d68a3bc69e0681d51d8f42d310eb1d64da2218c24173cde5d1fe00064b35",
+      "before_teaching_fingerprint": "e07e66938d3ddb9f731eb5b54be092c0b2f6965aef9398798d7ceb1a4b902f2f",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.ester-hydrolysis"
+      ],
+      "reason": "Explain ester hydrolysis by strong hydroxide as the undesired side reaction; the supplied amine alkylation is not itself being solved. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s24-41-q7-a",
+      "material_fingerprint": "d2d2f273c76bf08929df9d36c0d47d0f0230b0f44af8109c527e13a750f02fd7",
+      "before_teaching_fingerprint": "a097c404fb7836a44f608f1ac4f542c53bb8220aae8d95bede5787f5c700472b",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.organic-nomenclature"
+      ],
+      "reason": "Name the supplied aliphatic ester A independently of the later chromatographic/NMR comparisons. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s24-42-q9-c-i",
+      "material_fingerprint": "42201dda13e88b21601420ba09530bdac130bc6f2c8a04f11b9f538720bef5f9",
+      "before_teaching_fingerprint": "aa092d042a865e5e6610c3780dcc4be1aa97802a3abcdf98a8b30a38820f9fb5",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "analysis.chemical-tests"
+      ],
+      "reason": "Identify the yellow iodoform precipitate from the given alkaline iodine reaction without interpreting the separate NMR spectrum. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s24-43-q7-a",
+      "material_fingerprint": "d4c907fb548142f46a3ebc8339152c33a96bb74467d08ee6689fbbc7848207cf",
+      "before_teaching_fingerprint": "2d7c83f9875b5d74a648ea22e99722c9ee158fd1bf9cc00b40079a2f7cc427bb",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.organic-nomenclature"
+      ],
+      "reason": "Name this variant complete aliphatic ester structure; no spectrum or chromatogram is required. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w24-42-q6-b",
+      "material_fingerprint": "b1191f26e8616eecb8ae0d7417e6dbc37bb1868b3ded5e36d2cbd43154c89ebd",
+      "before_teaching_fingerprint": "27e2c87f91e9f912e7468849651ad0cf37fd682f44f7b6e0cb0fc47837f03566",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.carboxylic-acid-oxidation"
+      ],
+      "reason": "Identify oxidising reagents for the specified ordinary ethanedioic-acid oxidation; no acyl chloride reaction is asked. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w24-42-q7-f-i",
+      "material_fingerprint": "205e90a9a9c7634cbd3f5b7947d6052a9b173f9de1adcce608e4ebb0d6785f6e",
+      "before_teaching_fingerprint": "f12e40d851aca5f507ae3564939ff96e79509cc7b55f17339f8e8cbec74ea02b",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "mechanism.nucleophilic-substitution"
+      ],
+      "reason": "Identify chloroethane hydroxide substitution and ethanol; the separate unreactivity of chlorobenzene is not this leaf. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-m25-42-q5-a",
+      "material_fingerprint": "2b5774e8dc2c0d384448569fc22b1c3665be917d654b268378ee02e92590e3c2",
+      "before_teaching_fingerprint": "8705ba2c798cc47017f33c560c78c77b8e29e6eb40bcdf99be55e301e429bc8c",
+      "required_chapters": [
+        7
+      ],
+      "knowledge_tags": [
+        "structure.aromatic-hybridisation"
+      ],
+      "reason": "Count sp2/sp3 carbons in the supplied cumene structure; the teacher explicitly keeps benzene-containing hybridisation counts in chapter 7. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-m25-42-q6-a-ii",
+      "material_fingerprint": "db9e5b86685ec1417b2cebafae4cfedd6d95ec5f5cc9588034a9fde651c9fde5",
+      "before_teaching_fingerprint": "e97594eff299a54e65a67a4bb8463ec21a8cea8d75e7e0efc0b25ea097fe336d",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.alkene-oxidation"
+      ],
+      "reason": "Choose cold dilute acidified manganate for the supplied maleic-acid to tartaric-acid addition; no polymerisation is asked. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s25-41-q10-a",
+      "material_fingerprint": "89cda18b9d1cfac70418985217684380cf7e6060c0e7930a7d94e62a4b04e867",
+      "before_teaching_fingerprint": "82d83c10bd5422d49223abd920876cfb8f05589378b5e2ffcc4d519811e2fd4a",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.displayed-formula"
+      ],
+      "reason": "Draw the complete displayed ethanedioic-acid formula, without an A2-specific derivative reaction. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s25-41-q10-b",
+      "material_fingerprint": "ab12eb114c4bc5cf08213bb9de67c0053f804535becf31342968179574aa26a4",
+      "before_teaching_fingerprint": "8322b85c67660a541197dd3fd3fbd507ab00997452820a327ea6fbcdca4d2aeb",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "analysis.chemical-tests"
+      ],
+      "reason": "Distinguish the three supplied ordinary carboxylic acids using the complete official two-test and observation table. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s25-43-q10-a",
+      "material_fingerprint": "bd6fccfcff4ba543632d235021d82846fcff20a90d2fc88285c2439edcd41dce",
+      "before_teaching_fingerprint": "71edb569c9fe94bad9a742d192f6831d4cf43b116292bea019dd76c8dd35aed7",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.displayed-formula"
+      ],
+      "reason": "Draw this variant ethanedioic-acid displayed formula. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s25-43-q10-b",
+      "material_fingerprint": "36dd9f34481cd8a5ff269bd17d9be42a9d2b7186e8b19079a352af2eda6ab19f",
+      "before_teaching_fingerprint": "fd48d264bb1a31289a7746da3cf9d97a9745a7486b7d37a17ea8b63937abd20b",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "analysis.chemical-tests"
+      ],
+      "reason": "Distinguish this variant supplied acid trio by the official chemical-test table, without an instrumental method. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-m26-42-q3-d",
+      "material_fingerprint": "a3093c38dcd931edae40db285227dc3fb92aced58615bd514084f1a2e701720f",
+      "before_teaching_fingerprint": "abfe8a863e36ff8068b21931ca3b7afac731b4e8f491ff61a1708ea26e27da9b",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.alcohol-oxidation"
+      ],
+      "reason": "Choose reagents for the displayed primary-alcohol-to-acid oxidation; retain all physical-source completeness gates. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s26-41-q7-b-i",
+      "material_fingerprint": "9be1574d7f9d3938c2382806c838991e65fff450cd54a000ad0daeea6c4879e4",
+      "before_teaching_fingerprint": "b161ab8229856b59951a8501bbd7009ab8a8d0d884963a085fdc87c58e3d1204",
+      "required_chapters": [
+        7
+      ],
+      "knowledge_tags": [
+        "structure.aromatic-hybridisation"
+      ],
+      "reason": "Count hybridisations in propanone and the supplied benzene-containing phenol product G; the teacher explicitly retains this count in chapter 7. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s26-41-q7-b-iii",
+      "material_fingerprint": "baf69cd46ce2947512d7a361f4ad31d2506cef255e37c120b8d5b8f10dc3e3b2",
+      "before_teaching_fingerprint": "56680ce9e780813f796e801c538c3ca071e42d1bdce5d8308768523065dcaf39",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "mechanism.carbonyl-protonation"
+      ],
+      "reason": "Complete only the given propanone carbonyl protonation arrows/dipole; the subsequent phenol substitution is supplied context rather than a required solved step. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s26-43-q7-b-i",
+      "material_fingerprint": "4de4de68217123143716cb4935dc2398cadf224ae397c3a3dae060f121c4f80f",
+      "before_teaching_fingerprint": "5a76676f9aafc684f6c3d3235ee3bb419f64b692b600a5df03289fe70687a339",
+      "required_chapters": [
+        7
+      ],
+      "knowledge_tags": [
+        "structure.aromatic-hybridisation"
+      ],
+      "reason": "Count this variant propanone/benzene-containing G hybridisations under the teacher-confirmed chapter 7 exception. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-s26-43-q7-b-iii",
+      "material_fingerprint": "11b98b805ed80328a672e8a5b8894cb2c7dca6b4d9fc21b4ea409b40afcce760",
+      "before_teaching_fingerprint": "251c4a301e2cf491a5d4197c9c17cee5b927dd149436b0257e1ae940d334d019",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "mechanism.carbonyl-protonation"
+      ],
+      "reason": "Complete this variant isolated supplied carbonyl-protonation stage without importing the later aromatic attack. Apply the teacher-confirmed fallback for basic organic tasks without a more specific required A2 theme, and the explicit aromatic-hybridisation exception. This judgment changes no source, scoring or coordinates and clears no material/official defect."
+    },
+    {
+      "question_id": "cie-9701-w18-41-q1-c-ii",
+      "material_fingerprint": "35ce5f1e7232576b5eb1078b8dc73a73a279c7fcb2d912dfcd82f44d34b02fed",
+      "before_teaching_fingerprint": "c5cd7334689f337c26f7c775d5ca6c0ff56b24423b89b4a22acfebe4e83ce74b",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "mechanism.carbocation-stability"
+      ],
+      "reason": "Explain the tertiary-carbocation major product of the supplied methylpropene/HBr addition. The teacher-confirmed basic-organic rule places this independent task in chapter 11; retain exact official material, marks, source identity and all non-classification gates."
+    },
+    {
+      "question_id": "cie-9701-w18-43-q1-c-ii",
+      "material_fingerprint": "793e47c77555fe0a650ad7e1f7f433804eb164cebf6701e014e220e0d1f28977",
+      "before_teaching_fingerprint": "875b33b6a6f0b84dc5823e6274598abe384b05b79a1b300af6344499427db0db",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "mechanism.carbocation-stability"
+      ],
+      "reason": "Explain this variant tertiary-carbocation major product from its own complete supplied addition. The teacher-confirmed basic-organic rule places this independent task in chapter 11; retain exact official material, marks, source identity and all non-classification gates."
+    },
+    {
+      "question_id": "cie-9701-w19-42-q8-b",
+      "material_fingerprint": "1511a8654904e9a1163dc5f04c8d867646b06045a9cbd5a6400511f427901964",
+      "before_teaching_fingerprint": "f6d5323227b7194be947d7983d8e15d8138bbcae8d5a9c870c630eb528913c6e",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "structure.structural-isomerism"
+      ],
+      "reason": "Name 1,1-dibromoethane as the ordinary structural isomer of the explicitly drawn 1,2-dibromoethane, without completing later route steps. The teacher-confirmed basic-organic rule places this independent task in chapter 11; retain exact official material, marks, source identity and all non-classification gates."
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "previous_revision": "2026-10-29.teaching-as19-a2-12.1",
+  "revision": "2026-10-29.reliability.4",
+  "environment": "Development Python HTTP backend; isolated profile; no real teacher data.",
+  "source_files": 352,
+  "recovered": 47,
+  "independent_human_review": false,
+  "package": {
+    "path": "reliability-index.qbank",
+    "sha256": "38a319287383331d9375fc131beed0e7ee765a5ca74c2599b76c2124cca15aa2",
+    "bytes": 1335833,
+    "revision": "2026-10-29.reliability.4"
+  },
+  "previous_ready": 7666,
+  "install_seconds": 45.0964,
+  "ready": 7713,
+  "pending": 285,
+  "preview_regions": 159,
+  "cold_preview_seconds": 4.0636,
+  "warm_preview_seconds": 0.2113,
+  "exports": [
+    {
+      "sample": "twenty-repaired",
+      "kind": "questions",
+      "selected_units": 20,
+      "resolved_units": 21,
+      "marks": 32,
+      "pages": 11,
+      "seconds": 0.4252,
+      "bytes": 2182581,
+      "sha256": "806bd00fb7fefd2f3a3ef6aeeb69e63256b35684d46ae6eb15d24a6d1ed51eb2",
+      "filename": "twenty-repaired-questions.pdf"
+    },
+    {
+      "sample": "twenty-repaired",
+      "kind": "answers",
+      "selected_units": 20,
+      "resolved_units": 21,
+      "marks": 32,
+      "pages": 28,
+      "seconds": 0.4076,
+      "bytes": 995814,
+      "sha256": "084d81ae7b107b565f0f854804541606ed7de056e99286382a9feeb85c252f91",
+      "filename": "twenty-repaired-answers.pdf"
+    },
+    {
+      "sample": "remaining-repaired",
+      "kind": "questions",
+      "selected_units": 27,
+      "resolved_units": 29,
+      "marks": 51,
+      "pages": 50,
+      "seconds": 1.0394,
+      "bytes": 3655121,
+      "sha256": "a7922cc290eb651dbce5243ceb21fe7062c0474ef8afa378df7cec23caa9b9b7",
+      "filename": "remaining-repaired-questions.pdf"
+    },
+    {
+      "sample": "remaining-repaired",
+      "kind": "answers",
+      "selected_units": 27,
+      "resolved_units": 29,
+      "marks": 51,
+      "pages": 72,
+      "seconds": 1.0906,
+      "bytes": 2300355,
+      "sha256": "577300d4f41ea555e7cf9c200f0aee56650cba9837ded681d572b81eca545385",
+      "filename": "remaining-repaired-answers.pdf"
+    }
+  ],
+  "old_share_draft_notes_order_preserved": true,
+  "personal_and_calibration_byte_identical": true,
+  "status": "passed",
+  "rollback_and_failed_rebuild_recovery": true,
+  "repeat_install": true,
+  "all_export_pages_rendered": true,
+  "rendered_pages_independently_human_reviewed": false
+}

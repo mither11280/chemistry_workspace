@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "repairs": [
+    {
+      "question_id": "cie-9701-w24-21-q1-c-i",
+      "before_fingerprint": "b7f5185208b90aa71614addd5a25d672bd4f2357f8673fa76e3aa6deb15d2d79",
+      "after_fingerprint": "1d053616bd23137abc6ea8b7aeff4946a11605d9208a5fc8b085e096c28947b1",
+      "official_answer_label": "1(c)",
+      "reason": "Read the QP 1(c)(i) definition of relative isotopic mass and the unique printed official MS 1(c) row giving the two marking components, followed by the separate 1(c)(ii) weighted-mass calculation. The MS omits the first roman suffix; no standalone QP 1(c) exists. Preserve both printed source and original QP label, disclose the exact mapping, and retain its two marks without altering the rubric."
+    },
+    {
+      "question_id": "cie-9701-w24-23-q1-c-i",
+      "before_fingerprint": "86422beb8560d7e18adcb117408056bbf0ba41dc5e6b961edbabe879957d8cdb",
+      "after_fingerprint": "e0cce01a8b8b30e04c7a2ecf6e2e2d27d471daf3e5224ef6a52ff2ea9b200495",
+      "official_answer_label": "1(c)",
+      "reason": "Read the QP 1(c)(i) definition of relative isotopic mass and the unique printed official MS 1(c) row giving the two marking components, followed by the separate 1(c)(ii) weighted-mass calculation. The MS omits the first roman suffix; no standalone QP 1(c) exists. Preserve both printed source and original QP label, disclose the exact mapping, and retain its two marks without altering the rubric."
+    }
+  ]
+}

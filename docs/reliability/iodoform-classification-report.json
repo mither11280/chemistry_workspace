@@ -1,0 +1,39 @@
+{
+  "previous_revision": "2026-10-29.reliability.7",
+  "revision": "2026-10-29.reliability.8",
+  "policy_id": "a2-foundation-organic-and-aromatic-hybridisation-2026-10-29",
+  "directly_reclassified": 2,
+  "newly_ready": [
+    "cie-9701-w25-42-q7-b-i",
+    "cie-9701-w25-42-q7-b-ii"
+  ],
+  "newly_pending": [],
+  "dependent_chapter_changes": [],
+  "remaining_pending": 242,
+  "changes": [
+    {
+      "question_id": "cie-9701-w25-42-q7-b-i",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "standalone_as_foundation_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-w25-42-q7-b-ii",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "standalone_as_foundation_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    }
+  ],
+  "coordinates_and_stable_identities_unchanged": true,
+  "independent_human_review": false
+}

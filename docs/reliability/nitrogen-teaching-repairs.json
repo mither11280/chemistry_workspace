@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0.0",
+  "policy_id": "a2-nitrogen-environment-organizational-placement-2026-10-29",
+  "confirmation_basis": "Teacher provisionally requested chapter 9 as an organizational location and explicitly expressed uncertainty; this is not a claim that amine or amide chemistry is required.",
+  "questions": [
+    {
+      "question_id": "cie-9701-m19-42-q1-a",
+      "material_fingerprint": "bfcb8bd1994dc5fdf25b27cfa0fed63d2acf45c87572152152de7d7dc0ed1ae4",
+      "before_teaching_fingerprint": "d6df86dc8fe1563cf8d93df6b4e24d8a0b3637f6408ed42de7cf64e17fd138a2",
+      "required_chapters": [
+        9
+      ],
+      "knowledge_tags": [
+        "environment.nitrogen-oxides"
+      ],
+      "reason": "Read the one-mark task and official rubric: state a natural and human-made source of nitrogen oxides. Place this specific task provisionally in chapter 9 at the teacher request as an organizational exception, not an amine/amide knowledge dependency; actual knowledge tag remains nitrogen oxides."
+    }
+  ]
+}

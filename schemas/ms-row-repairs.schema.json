@@ -16,7 +16,8 @@
           "question_id": {"type": "string", "minLength": 1},
           "before_fingerprint": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
           "after_fingerprint": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
-          "reason": {"type": "string", "minLength": 20}
+          "reason": {"type": "string", "minLength": 20},
+          "official_answer_label": {"type": "string", "pattern": "^\\d+\\([a-z]\\)(?:\\([ivx]+\\))?$"}
         }
       }
     }

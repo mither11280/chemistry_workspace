@@ -14,7 +14,12 @@
       "const": "1.0.0"
     },
     "policy_id": {
-      "const": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
+      "enum": [
+        "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29",
+        "a2-foundation-organic-and-aromatic-hybridisation-2026-10-29",
+        "a2-inorganic-foundations-2026-10-29",
+        "a2-nitrogen-environment-organizational-placement-2026-10-29"
+      ]
     },
     "confirmation_basis": {
       "type": "string",
@@ -56,7 +61,13 @@
               "maximum": 12
             },
             "contains": {
-              "const": 11
+              "enum": [
+                3,
+                6,
+                7,
+                9,
+                11
+              ]
             }
           },
           "knowledge_tags": {

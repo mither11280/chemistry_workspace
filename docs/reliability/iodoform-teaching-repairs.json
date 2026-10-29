@@ -1,0 +1,33 @@
+{
+  "schema_version": "1.0.0",
+  "policy_id": "a2-foundation-organic-and-aromatic-hybridisation-2026-10-29",
+  "confirmation_basis": "Teacher confirmed all remaining basic organic tests without a more specific A2 requirement belong to chapter 11, retaining method tags.",
+  "questions": [
+    {
+      "question_id": "cie-9701-w25-42-q7-b-i",
+      "material_fingerprint": "1a2aa7ff88ac290cadbd5eb9f0daaf667cbcdceaf8236922c651205042ba48b7",
+      "before_teaching_fingerprint": "a8ddbbfa4b61b607cf66325c8e648f3abc1f2aa18b00352b95109b90440302b7",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "analysis.chemical-tests",
+        "organic.iodoform"
+      ],
+      "reason": "Read the fully supplied seven carbonyl-isomer structures and official rubric: identify methyl ketones giving iodoform, then give yellow solid and acid/iodoform products. Teacher places basic organic chemical tests in chapter 11. Preserve the preceding identification dependency."
+    },
+    {
+      "question_id": "cie-9701-w25-42-q7-b-ii",
+      "material_fingerprint": "c6a7b714a22a8c1ad5772732d01309c51138b7c4b53d9c86c7721c2d275c9fdc",
+      "before_teaching_fingerprint": "0c452cb34e0680d783d6d3cc3c1035e6e60518323345e44ac68ed0a06f605e91",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "analysis.chemical-tests",
+        "organic.iodoform"
+      ],
+      "reason": "Read the fully supplied seven carbonyl-isomer structures and official rubric: identify methyl ketones giving iodoform, then give yellow solid and acid/iodoform products. Teacher places basic organic chemical tests in chapter 11. Preserve the preceding identification dependency."
+    }
+  ]
+}

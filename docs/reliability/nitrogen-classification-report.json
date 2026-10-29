@@ -1,0 +1,27 @@
+{
+  "previous_revision": "2026-10-29.reliability.8",
+  "revision": "2026-10-29.reliability.9",
+  "policy_id": "a2-nitrogen-environment-organizational-placement-2026-10-29",
+  "directly_reclassified": 1,
+  "newly_ready": [
+    "cie-9701-m19-42-q1-a"
+  ],
+  "newly_pending": [],
+  "dependent_chapter_changes": [],
+  "remaining_pending": 241,
+  "changes": [
+    {
+      "question_id": "cie-9701-m19-42-q1-a",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "pure_as_task_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 9,
+      "remaining_issues": []
+    }
+  ],
+  "coordinates_and_stable_identities_unchanged": true,
+  "independent_human_review": false
+}

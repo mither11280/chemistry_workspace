@@ -37,6 +37,11 @@ class PromptTests(unittest.TestCase):
         self.assertEqual(self.parse('999 questions')['count'], 200)
 
     def test_a2_scope_and_special_topics(self):
+        self.assertEqual(self.parse('A2 redox equation balancing')['topics'], ['a2-ch03'])
+        self.assertEqual(self.parse('A2 滴定计量')['topics'], ['a2-ch03'])
+        self.assertEqual(self.parse('A2 VSEPR 分子形状')['topics'], ['a2-ch06'])
+        self.assertEqual(self.parse('A2 benzene hybridisation count')['topics'], ['a2-ch07'])
+        self.assertEqual(self.parse('A2 有机命名和碘仿检验')['topics'], ['a2-ch11'])
         self.assertEqual(self.parse('Paper 4 第12章 NMR 6个小问')['topics'], ['a2-ch12'])
         self.assertEqual(self.parse('A2 苯胺')['topics'], ['a2-ch07'])
         self.assertEqual(self.parse('A2 脂肪胺和苯胺')['topics'], ['a2-ch07','a2-ch09'])

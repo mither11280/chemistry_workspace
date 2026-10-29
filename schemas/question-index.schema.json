@@ -357,7 +357,7 @@
                   "official_answer_label": {
                     "type": "string",
                     "pattern": "^\\d+\\([a-z]\\)(?:\\([ivx]+\\))?$",
-                    "description": "Printed official MS label when an unlabelled single-task QP is indexed under its original whole-number label."
+                    "description": "Exact printed official MS label for an explicitly source-verified discrepancy. Original QP label is preserved; no fuzzy or automatic remapping."
                   }
                 },
                 "required": [
