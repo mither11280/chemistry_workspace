@@ -93,7 +93,35 @@
             "minItems": 1
           },
           "metadata": {
-            "type": "object"
+            "type": "object",
+            "properties": {
+              "required_external_documents": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "source_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "title": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "delivery": {
+                      "const": "separate-reusable-reference"
+                    }
+                  },
+                  "required": [
+                    "source_id",
+                    "title",
+                    "delivery"
+                  ],
+                  "additionalProperties": false
+                },
+                "uniqueItems": true
+              }
+            }
           }
         },
         "required": [

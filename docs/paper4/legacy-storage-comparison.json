@@ -1,0 +1,114 @@
+{
+  "scope": "Same actual legacy original questions; full source PDFs + corresponding child units. App/runtime and export files excluded from storage.",
+  "legacy_original_questions": 132,
+  "new_selection_units": 233,
+  "new_ready_units": 229,
+  "source_pdfs": 12,
+  "legacy_pdf_and_metadata_bytes": 22454534,
+  "new_source_pdf_bytes": 6754292,
+  "new_json_bytes": 1136360,
+  "new_sqlite_bytes": 1536000,
+  "new_without_cache_bytes": 9426652,
+  "webp_preview_files": 20,
+  "webp_cache_bytes": 337126,
+  "new_with_cache_bytes": 9763778,
+  "legacy_metadata_scan_seconds": 0.0489,
+  "new_first_catalog_and_text_index_seconds": 0.8623,
+  "sql_filter_average_seconds": 0.001155,
+  "cold_preview_average_seconds": 0.029835,
+  "cached_preview_average_seconds": 0.000958,
+  "same_20_p1_ids": [
+    "cie-9701-m24-12-q1",
+    "cie-9701-m24-12-q10",
+    "cie-9701-m24-12-q11",
+    "cie-9701-m24-12-q12",
+    "cie-9701-m24-12-q13",
+    "cie-9701-m24-12-q14",
+    "cie-9701-m24-12-q15",
+    "cie-9701-m24-12-q16",
+    "cie-9701-m24-12-q17",
+    "cie-9701-m24-12-q18",
+    "cie-9701-m24-12-q19",
+    "cie-9701-m24-12-q2",
+    "cie-9701-m24-12-q20",
+    "cie-9701-m24-12-q21",
+    "cie-9701-m24-12-q22",
+    "cie-9701-m24-12-q23",
+    "cie-9701-m24-12-q24",
+    "cie-9701-m24-12-q25",
+    "cie-9701-m24-12-q26",
+    "cie-9701-m24-12-q27"
+  ],
+  "legacy_20_p1": {
+    "questions": {
+      "seconds": 0.3071,
+      "bytes": 290923,
+      "pages": 15,
+      "image_objects": 0
+    },
+    "answers": {
+      "seconds": 0.1828,
+      "bytes": 83204,
+      "pages": 3,
+      "image_objects": 0
+    }
+  },
+  "coordinates_20_p1": {
+    "questions": {
+      "seconds": 0.1946,
+      "bytes": 313905,
+      "pages": 11,
+      "image_objects": 0
+    },
+    "answers": {
+      "seconds": 0.0774,
+      "bytes": 11034,
+      "pages": 3,
+      "image_objects": 0
+    }
+  },
+  "mixed_20_units_ids": [
+    "cie-9701-m24-12-q1",
+    "cie-9701-m24-12-q10",
+    "cie-9701-m24-12-q11",
+    "cie-9701-m24-12-q12",
+    "cie-9701-m24-12-q13",
+    "cie-9701-m24-12-q14",
+    "cie-9701-m24-12-q15",
+    "cie-9701-m24-12-q16",
+    "cie-9701-m24-12-q17",
+    "cie-9701-m24-12-q18",
+    "cie-9701-m24-22-q1-a",
+    "cie-9701-m24-22-q1-b-i",
+    "cie-9701-m24-22-q1-b-ii",
+    "cie-9701-m24-22-q1-c-i",
+    "cie-9701-m24-22-q1-c-ii",
+    "cie-9701-m24-22-q1-d-i",
+    "cie-9701-m24-22-q1-d-ii",
+    "cie-9701-m24-22-q1-d-iii",
+    "cie-9701-m24-22-q1-d-iv",
+    "cie-9701-m24-22-q1-e"
+  ],
+  "coordinates_20_mixed": {
+    "questions": {
+      "seconds": 0.2246,
+      "bytes": 393164,
+      "pages": 12,
+      "image_objects": 0
+    },
+    "answers": {
+      "seconds": 0.131,
+      "bytes": 174809,
+      "pages": 6,
+      "image_objects": 2
+    }
+  },
+  "limits": [
+    "Metadata scan and first SQLite/FTS construction are different operations, not old/new whole-App launch timings.",
+    "P2 counts differ because the same original big questions are now split into scored children.",
+    "Only this actual legacy sample has a paired storage comparison; no extrapolated full-corpus legacy size.",
+    "The coordinate export retains source-reference appendices; legacy triplets do not provide them, so these page counts are not identical-layout exports.",
+    "Cold preview means an absent WebP cache, not an empty operating-system disk cache.",
+    "Existing bitmap objects in original Mark Schemes are preserved; the exporter does not rasterise vector pages."
+  ]
+}

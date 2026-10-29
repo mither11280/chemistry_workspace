@@ -100,7 +100,7 @@ def sign_bundle(app,identity,internal):
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--version',default='0.5.0')
+    parser.add_argument('--version',default='0.5.1')
     parser.add_argument('--exam-source-dir',type=Path,default=ROOT/'sources')
     parser.add_argument('--output',type=Path,default=ROOT/'dist')
     parser.add_argument('--sign-identity',default=os.environ.get('CODESIGN_IDENTITY'))

@@ -3,13 +3,20 @@
   "$id": "https://chemistry-workspace.local/schemas/teaching-context-overrides.schema.json",
   "title": "Explicit source-introduction corrections for teaching-bank production",
   "type": "object",
-  "required": ["schema_version", "questions"],
+  "required": [
+    "schema_version",
+    "questions"
+  ],
   "additionalProperties": false,
   "properties": {
-    "schema_version": {"const": "1.0.0"},
+    "schema_version": {
+      "const": "1.0.0"
+    },
     "questions": {
       "type": "object",
-      "propertyNames": {"pattern": "^[A-Za-z0-9._:-]+$"},
+      "propertyNames": {
+        "pattern": "^[A-Za-z0-9._:-]+$"
+      },
       "additionalProperties": {
         "type": "array",
         "minItems": 1,
@@ -17,11 +24,50 @@
         "items": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["from_question_id", "context_key", "reason"],
+          "required": [
+            "from_question_id",
+            "context_key",
+            "reason"
+          ],
           "properties": {
-            "from_question_id": {"type": "string", "pattern": "^[A-Za-z0-9._:-]+$"},
-            "context_key": {"type": "string", "minLength": 1},
-            "reason": {"type": "string", "minLength": 1}
+            "from_question_id": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9._:-]+$"
+            },
+            "context_key": {
+              "type": "string",
+              "minLength": 1
+            },
+            "reason": {
+              "type": "string",
+              "minLength": 1
+            },
+            "regions": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "page_index",
+                  "bbox"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "page_index": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "bbox": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    },
+                    "minItems": 4,
+                    "maxItems": 4
+                  }
+                }
+              }
+            }
           }
         }
       }

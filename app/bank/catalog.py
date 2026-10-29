@@ -14,7 +14,10 @@ class Catalog:
         self.index_path=self.resource_root/'indexes/question-index.json'
         self.manifest_path=self.resource_root/'indexes/source-manifest.json'
         self.initialize()
-        self.rebuild()
+        from .teaching.extension import prepare,finish,fail
+        backup=prepare(self)
+        try:self.rebuild();finish(self,backup)
+        except Exception:fail(self,backup);raise
 
     def connect(self):
         c=sqlite3.connect(self.path,timeout=30);c.row_factory=sqlite3.Row
@@ -128,6 +131,9 @@ class Catalog:
         from .teaching.taxonomy import BANK_ID
         if self.index['bank_id']==BANK_ID:
             where.append("json_extract(q.payload,'$.metadata.teaching.status')=?");args.append('pending' if filters.get('collection')=='pending' else 'ready')
+        if filters.get('course'):
+            if filters['course'] not in ['AS','A2']:raise DataError('未知课程范围')
+            where.append('q.paper=4' if filters['course']=='A2' else 'q.paper IN (1,2)')
         for key in ['year','paper','type']:
             if filters.get(key) not in [None,'',0,'0']:
                 where.append('q.'+key+'=?');args.append(str(filters[key]) if key=='type' else int(filters[key]))

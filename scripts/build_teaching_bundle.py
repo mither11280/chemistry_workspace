@@ -21,20 +21,24 @@ def main():
     p.add_argument('--authorization',type=Path,required=True,help='Explicit redistribution grant and SHA-256 allowlist')
     p.add_argument('--output',type=Path,required=True)
     p.add_argument('--revision',help='Defaults to the public index revision plus .assets.1')
+    p.add_argument('--previous-manifest',type=Path,help='Optional: include only source hashes absent from this previous full installation; still carries the complete new index')
     a=p.parse_args();start=time.perf_counter()
     base=read_json(a.snapshot/'question-index.json');manifest=read_json(a.snapshot/'source-manifest.json')
     if base['bank_id']!=BANK_ID:raise ValueError('Install/build the new teaching generation before its asset bundle')
     if any('value' in q['answer'] for q in base['questions']):raise ValueError('Public teaching index must not embed official MCQ answers')
     files=read_json(a.sources);missing=[s['source_id'] for s in manifest['sources'] if s['source_id'] not in files]
     if missing:raise ValueError('Full bundle is missing registered sources: '+', '.join(missing))
+    if a.previous_manifest:
+        previous={s['source_id']:s['sha256'] for s in read_json(a.previous_manifest)['sources']}
+        files={s['source_id']:files[s['source_id']] for s in manifest['sources'] if previous.get(s['source_id'])!=s['sha256']}
     index=copy.deepcopy(base);index['revision']=a.revision or base['revision']+'.assets.1'
     result=build_package(a.output,index,manifest,base,manifest,ROOT/'schemas',
-                         '19章完整离线题库资料包：安装已登记的原卷与评分标准。保持当前教学代际及稳定题目ID。',
-                         source_files=files,authorization=read_json(a.authorization),minimum_app_version='0.5.0')
+                         '完整离线题库资料包：安装已登记的原卷与评分标准。保持当前教学代际及稳定题目ID。',
+                         source_files=files,authorization=read_json(a.authorization),minimum_app_version='0.5.1' if any(q['paper']==4 for q in index['questions']) else '0.5.0')
     result['path']=a.output.name
     result.update(bank_id=BANK_ID,base_revision=base['revision'],questions=len(index['questions']),
                   ready=sum(q['metadata']['teaching']['status']=='ready' for q in index['questions']),
-                  source_files=len(manifest['sources']),seconds=round(time.perf_counter()-start,3))
+                  source_files=len(files),registered_sources=len(manifest['sources']),delta=bool(a.previous_manifest),seconds=round(time.perf_counter()-start,3))
     write_json(a.output.with_suffix('.report.json'),result)
     print(json.dumps(result,ensure_ascii=False,indent=2))
 

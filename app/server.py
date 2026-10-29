@@ -61,7 +61,12 @@ def source_hashes(job):
         if 'question_id' in q:
             for kind in ['question','answer']:
                 s=CATALOG.source(q[kind]['source_id'])
-                if s['filename'] in hashes and hashes[s['filename']]!=s['sha256']:raise DataError('CIE1 不支持同名异版来源混合，请为修订来源使用独立文件名')
+                if s['filename'] in hashes and hashes[s['filename']]!=s['sha256']:raise DataError('同名原卷存在不同版本，请为修订版登记独立文件名')
+                hashes[s['filename']]=s['sha256']
+            qp=CATALOG.source(q['question']['source_id'])
+            for reference in qp['metadata'].get('required_external_documents',[]):
+                s=CATALOG.source(reference['source_id'])
+                if s['filename'] in hashes and hashes[s['filename']]!=s['sha256']:raise DataError('参考数据文件版本冲突')
                 hashes[s['filename']]=s['sha256']
         else:
             # Existing legacy CIE1 codes continue using original filenames/hashes if recorded.
@@ -97,6 +102,7 @@ def compat(q):
     value=dict(q,id=q['question_id'],number=q['original_question_number'],variant=str(q['paper'])+str(q['variant']),text='',summary='',
         qp=CATALOG.source(q['question']['source_id'])['filename'],ms=CATALOG.source(q['answer']['source_id'])['filename'],
         question_regions=q['question']['regions'],answer_regions=q['answer']['regions'],availability=RENDERER.availability(q['question_id']))
+    value['required_documents']=CATALOG.source(q['question']['source_id'])['metadata'].get('required_external_documents',[])
     return value
 
 def bank_info():
@@ -107,7 +113,9 @@ def bank_info():
     teaching=CATALOG.index['bank_id']=='cie-9701-as-teaching19-v1'
     pending=CATALOG.search({'collection':'pending'},limit=1)['total'] if teaching else 0
     if teaching:total=CATALOG.search(limit=1)['total']
-    return {'teaching':teaching,'pending':pending,'bank_id':CATALOG.index['bank_id'],'revision':CATALOG.index['revision'],'total':total,
+    courses={course:{'total':CATALOG.search({'course':course},limit=1)['total'],'pending':CATALOG.search({'course':course,'collection':'pending'},limit=1)['total']} for course in ['AS','A2']} if teaching else {}
+    references=[{'source_id':s['source_id'],'title':s['metadata'].get('title',s['filename']),'status':SOURCES.status(s['source_id'])} for s in CATALOG.manifest['sources'] if s['metadata'].get('role')=='data-booklet']
+    return {'teaching':teaching,'pending':pending,'courses':courses,'reference_documents':references,'upgrade_notice':CATALOG.upgrade_notice,'bank_id':CATALOG.index['bank_id'],'revision':CATALOG.index['revision'],'total':total,
             'topics':[dict(t,count=counts.get(t['id'],0)) for t in CATALOG.index['topics']],'years':years,'app_version':PATHS.build['version'],'maintainer':os.environ.get('QUESTION_BANK_MAINTAINER')=='1'}
 
 def make_pdf(job,kind):return RENDERER.export(validate_job(job),kind,EXPORTS)

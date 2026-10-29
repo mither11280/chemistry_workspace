@@ -1,0 +1,3175 @@
+{
+  "recorded_on": "2026-10-29",
+  "statement": "Maintainer explicitly authorized redistribution of all listed CIE 9701 sources, including 2018-2026 Paper 4 QP/MS, published cancelled-season practice material and the 2016-use Data Booklet. Cambridge data remain separately copyrighted.",
+  "evidence_type": "direct maintainer confirmations in development task",
+  "sources": [
+    {
+      "source_id": "cie-9701-syllabus-2025-2027",
+      "filename": "9701-syllabus-2025-2027.pdf",
+      "sha256": "411ce9737ebdf811d0540f0a9a1d45150cff5c7ccdcd1af6f80bd1fe8b99a648",
+      "bytes": 1858929,
+      "pages": 98,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-m-12-qp",
+      "filename": "9701_m24_qp_12.pdf",
+      "sha256": "9cc5f85359c3dd1e3ba0ebe6773536fdf311ee1baf0a01eeca5d028fd859b33d",
+      "bytes": 435934,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-m-12-ms",
+      "filename": "9701_m24_ms_12.pdf",
+      "sha256": "570eb19bceae0e4eda35df1c0878b5033cd7d321df97680ac7feafd49b2dda64",
+      "bytes": 131738,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-m-22-qp",
+      "filename": "9701_m24_qp_22.pdf",
+      "sha256": "a801acf9f6dbe66fa3f70f9b9af0978f6c65968af9a240962abb943d69a5b02d",
+      "bytes": 2341583,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-m-22-ms",
+      "filename": "9701_m24_ms_22.pdf",
+      "sha256": "e9ec58826e43b00e2ba1f7bcab53c8a11ea6abd4003ca7892c48bd935e47b032",
+      "bytes": 311416,
+      "pages": 10,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-m-12-qp",
+      "filename": "9701_m25_qp_12.pdf",
+      "sha256": "3d9bcd4118de9bc4b60726f8da0ea5bdfe4b9277dd3430db698a354bbe02a4ed",
+      "bytes": 610254,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-m-12-ms",
+      "filename": "9701_m25_ms_12.pdf",
+      "sha256": "66d630d79803daa9e4fed12a768b2ab8068229750293611af2426ec3c6f19286",
+      "bytes": 131611,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-m-22-qp",
+      "filename": "9701_m25_qp_22.pdf",
+      "sha256": "20efa6e6739ba7d2e02880f0e3884b10568f999959c367c38f0b36f934011586",
+      "bytes": 121074,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-m-22-ms",
+      "filename": "9701_m25_ms_22.pdf",
+      "sha256": "564c12047f6680d8038aac4549b37e8a281de2cc544df10c01b2d2619224deb5",
+      "bytes": 228242,
+      "pages": 9,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-m-12-qp",
+      "filename": "9701_m26_qp_12.pdf",
+      "sha256": "875b2da06e1392c3020af08606e1bc4c99dc4c5a7bded236cb58ea9d6d49ed4f",
+      "bytes": 1022786,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-m-12-ms",
+      "filename": "9701_m26_ms_12.pdf",
+      "sha256": "98d73edf431b6baa7738b609c115c0738ee0ec2abd7e82afc539e109d24607f8",
+      "bytes": 346304,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-m-22-qp",
+      "filename": "9701_m26_qp_22.pdf",
+      "sha256": "3c4fa9b12f51e4054ee2e43aab076692020334604c99bffa1e8419d8ecb96cc5",
+      "bytes": 126929,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-m-22-ms",
+      "filename": "9701_m26_ms_22.pdf",
+      "sha256": "faf26ab1642c19adc6cda406b0e838af5ec1da24b5dbe54c0356923cf881ae11",
+      "bytes": 946421,
+      "pages": 11,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-m-12-qp",
+      "filename": "9701_m23_qp_12.pdf",
+      "sha256": "c65407ccd9fad843f6b584e8e2fbbaf00a05017036c53a1842f4a04dcfe2fdca",
+      "bytes": 1481053,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-m-12-ms",
+      "filename": "9701_m23_ms_12.pdf",
+      "sha256": "d3337cff1a24d01f3d126ec901e631739c4bc0be2b9c0508a43e5c408b59dbf8",
+      "bytes": 111850,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-m-22-qp",
+      "filename": "9701_m23_qp_22.pdf",
+      "sha256": "36a8c1afb7e3a75a2ac6469d20f8275c01ec01988158211ecc03ebeaf8c8242f",
+      "bytes": 1006557,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-m-22-ms",
+      "filename": "9701_m23_ms_22.pdf",
+      "sha256": "c35ec5130b80874ab1f4058c2615c7e31a7f0cc0b7b5a8fc49723490665f0bd8",
+      "bytes": 279678,
+      "pages": 10,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-13-qp",
+      "filename": "9701_w24_qp_13.pdf",
+      "sha256": "9fcf7a539b7b69e1ba8871a46e99433e8e06fbff206ca110b62f1dbed482218d",
+      "bytes": 377611,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-13-ms",
+      "filename": "9701_w24_ms_13.pdf",
+      "sha256": "d1f52ab34b39893872671c37cfd44439285fdc936ff048188b44bbacd99838cd",
+      "bytes": 132525,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-23-qp",
+      "filename": "9701_w24_qp_23.pdf",
+      "sha256": "417b0942b6d3e2d3698903041ba7fe44620ff6500db0b0031e396c63ea6cd15e",
+      "bytes": 132140,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-23-ms",
+      "filename": "9701_w24_ms_23.pdf",
+      "sha256": "24055a05c538d57fcb273c691918cb509f7007e8f87f38c0915ed481c6802609",
+      "bytes": 266898,
+      "pages": 11,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-11-qp",
+      "filename": "9701_s25_qp_11.pdf",
+      "sha256": "4b7a1d9c75c75431bf65df4c99b2fb44a28b84e4ab40216a69d123fac76d83f7",
+      "bytes": 456001,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-11-ms",
+      "filename": "9701_s25_ms_11.pdf",
+      "sha256": "eb3d3adf94f3fd4055362ec5c964505a8e4cced55c275cb51d3e5112e66765fd",
+      "bytes": 167935,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-21-qp",
+      "filename": "9701_s25_qp_21.pdf",
+      "sha256": "273065fdfe3d614fc273585e147b1604e047533bd1227eb1995b5147d9e0342a",
+      "bytes": 128356,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-21-ms",
+      "filename": "9701_s25_ms_21.pdf",
+      "sha256": "3a732f6cce8760c8a3029fda7f1b31bf5c84c77391a9ae1358f1523cc10dfae7",
+      "bytes": 387961,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-m-12-qp",
+      "filename": "9701_m22_qp_12.pdf",
+      "sha256": "af92b7f7bb87899c309f9a688ddb9acf23f397f4d6fd137b3df4eda057722919",
+      "bytes": 421771,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-m-12-ms",
+      "filename": "9701_m22_ms_12.pdf",
+      "sha256": "22b7f348bbe290af658439e1e017b40945139e24aaeb095723c39fdf29f9915f",
+      "bytes": 163607,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-m-22-qp",
+      "filename": "9701_m22_qp_22.pdf",
+      "sha256": "98842a64a3d0d649ebba9428f6f6a8f81ad62179c660a0f4e7992c0bf74fb8ee",
+      "bytes": 1392202,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-m-22-ms",
+      "filename": "9701_m22_ms_22.pdf",
+      "sha256": "b8467f254a1246d6c0e897d9419d4937c4be2f713bc9e973d45fa5cb8bce8581",
+      "bytes": 292084,
+      "pages": 9,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-11-qp",
+      "filename": "9701_s22_qp_11.pdf",
+      "sha256": "a3eb37b5481a2f14546ddd131a8c289c722eae29671a8431e739959a6efc4551",
+      "bytes": 432389,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-11-ms",
+      "filename": "9701_s22_ms_11.pdf",
+      "sha256": "c1bed1a42c72bf85a51f80930aaa2594957dd868235282a8755b38ef81817dc2",
+      "bytes": 163341,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-12-qp",
+      "filename": "9701_s22_qp_12.pdf",
+      "sha256": "6cf5aaa9d2bcd5528c200286e1355ed44834dbf5bfeab3f690372c2239aeabbf",
+      "bytes": 390991,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-12-ms",
+      "filename": "9701_s22_ms_12.pdf",
+      "sha256": "0809177dc42c270ffa81fc0711576e35359488b86d397b72fb284e0cd0e67f13",
+      "bytes": 163364,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-13-qp",
+      "filename": "9701_s22_qp_13.pdf",
+      "sha256": "c3ec03524f2763afb0e6e676fde643688965ce86b4b97a0df32779501e717203",
+      "bytes": 464955,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-13-ms",
+      "filename": "9701_s22_ms_13.pdf",
+      "sha256": "c0c73acf79e26bbc864a6ea8cfc623f653c5881c2da934165258db4ecf04eb9d",
+      "bytes": 163378,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-21-qp",
+      "filename": "9701_s22_qp_21.pdf",
+      "sha256": "7468b0b79d9c522a4264ef901fdc94760ea4fbb89e82957154420ba5fc18525c",
+      "bytes": 1534255,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-21-ms",
+      "filename": "9701_s22_ms_21.pdf",
+      "sha256": "513fc7d453c381a70b9f0fb8615e3ba23dbd8b300390b3ee6b06c4721becbcf1",
+      "bytes": 331554,
+      "pages": 10,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-22-qp",
+      "filename": "9701_s22_qp_22.pdf",
+      "sha256": "b448d04ca4638853cc80f63e6d594cc185004f0ff66abece3ff6376d90613193",
+      "bytes": 1374045,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-22-ms",
+      "filename": "9701_s22_ms_22.pdf",
+      "sha256": "e746ec9c8f426f3a28ef1e5c1b4be73251465b366d13d746d07377174edb73be",
+      "bytes": 366108,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-23-qp",
+      "filename": "9701_s22_qp_23.pdf",
+      "sha256": "c254bf509ef79d06590a7a74047e0cb10c7385876e9aec51d9e420ffd78406b4",
+      "bytes": 1356385,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-23-ms",
+      "filename": "9701_s22_ms_23.pdf",
+      "sha256": "41bef3b38e03021e893b643e03469e5205eb637b292a97bf95a3f1355ad692b8",
+      "bytes": 305935,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-11-qp",
+      "filename": "9701_w22_qp_11.pdf",
+      "sha256": "8599983ed84f17f7b381ed36642f405f6c1bf83c6d2a2659bbb78f81d2ca5db4",
+      "bytes": 406161,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-11-ms",
+      "filename": "9701_w22_ms_11.pdf",
+      "sha256": "5ae340b0c8b4091bf12d24b11dc3d587210efc09010402e5910179e31a4aac84",
+      "bytes": 128948,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-12-qp",
+      "filename": "9701_w22_qp_12.pdf",
+      "sha256": "ca416318399f7126c8d972f9aa4da0b72adf186afc999c7a829f28c6b7421495",
+      "bytes": 426313,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-12-ms",
+      "filename": "9701_w22_ms_12.pdf",
+      "sha256": "85ebdfb94f9cdb94cf787c05a4700651dbe4e7d237559b1d762ff20de8435582",
+      "bytes": 128955,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-13-qp",
+      "filename": "9701_w22_qp_13.pdf",
+      "sha256": "68789fc9170529fda455056f5a2d7671627f5d777a21b92ee176ae892cbd9274",
+      "bytes": 420876,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-13-ms",
+      "filename": "9701_w22_ms_13.pdf",
+      "sha256": "2aaa90892f6ef926f2f76f0717db2470107c9ce2bfe336ab4dae24c60c9d2cc6",
+      "bytes": 128953,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-21-qp",
+      "filename": "9701_w22_qp_21.pdf",
+      "sha256": "fa400e17166b7e63a3288533b11b52195247b8205f9385f0bd962f9ae4521da0",
+      "bytes": 1212901,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-21-ms",
+      "filename": "9701_w22_ms_21.pdf",
+      "sha256": "faecbe0283556eee633f27007e2b40c807464eb52d49d9899613619855fbe441",
+      "bytes": 386076,
+      "pages": 11,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-22-qp",
+      "filename": "9701_w22_qp_22.pdf",
+      "sha256": "ab053120a1017025f0d45a0765a226d8fcde295b758ba24ee1caf916b110c290",
+      "bytes": 1390189,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-22-ms",
+      "filename": "9701_w22_ms_22.pdf",
+      "sha256": "523c43c6a4305e87f731647c5119278725cdd767ecb65679836491266b232b82",
+      "bytes": 355379,
+      "pages": 13,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-23-qp",
+      "filename": "9701_w22_qp_23.pdf",
+      "sha256": "7113e411158608fdfb42885166bd0ff5d15f095c6bdb76b5338f4431a9f542f8",
+      "bytes": 1215277,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-23-ms",
+      "filename": "9701_w22_ms_23.pdf",
+      "sha256": "735edc290d19a57de5629de2cec135cdcd650f2638dafea7378e527b93eccb5d",
+      "bytes": 386033,
+      "pages": 11,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-11-qp",
+      "filename": "9701_s23_qp_11.pdf",
+      "sha256": "e89a6dd6ce1339592117e092db14574160c31209ec211e0d10db394f57a0adee",
+      "bytes": 1012892,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-11-ms",
+      "filename": "9701_s23_ms_11.pdf",
+      "sha256": "b781e8a8134f54b4da30fb1dbf4171ec325f5bb8c7af18d83c8f427472a7d47c",
+      "bytes": 147837,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-12-qp",
+      "filename": "9701_s23_qp_12.pdf",
+      "sha256": "58be1b64754696724a302c97b6c6806ccdf6b05c75cb30b50d05a58cee02a5ae",
+      "bytes": 961354,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-12-ms",
+      "filename": "9701_s23_ms_12.pdf",
+      "sha256": "5cf6a1fce8b6b68293401d4f0da557fddea3889f7464d8fed735f70325d37d5f",
+      "bytes": 147745,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-13-qp",
+      "filename": "9701_s23_qp_13.pdf",
+      "sha256": "6b1d50f52f03e08cbaa7c825c61efac8df5d6c619275e6679590a4d099816f14",
+      "bytes": 810829,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-13-ms",
+      "filename": "9701_s23_ms_13.pdf",
+      "sha256": "6326b1b09c505b9f5607e07c1035e509f2d249304e7537a79cbe9050af3dcab7",
+      "bytes": 147831,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-22-qp",
+      "filename": "9701_s23_qp_22.pdf",
+      "sha256": "c1a1c180a1718523abd06f9162af5935e68f0ab790a0d247bf49f2f351786a6d",
+      "bytes": 962327,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-22-ms",
+      "filename": "9701_s23_ms_22.pdf",
+      "sha256": "c14423f34303104a8df14c2cc15b8073c1c9d1291786748a031c180e7c3d5d0e",
+      "bytes": 342867,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-23-qp",
+      "filename": "9701_s23_qp_23.pdf",
+      "sha256": "76b191bb70e0eb7af9006fc96675c1608f1806a6895455b142fb293485d0a21d",
+      "bytes": 930834,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-23-ms",
+      "filename": "9701_s23_ms_23.pdf",
+      "sha256": "8fca229264236efa4cb2c92342a11e483e2c5617eed77922341d854c7fe63c28",
+      "bytes": 337388,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-11-qp",
+      "filename": "9701_w23_qp_11.pdf",
+      "sha256": "e58e1b15d9f138e305f270be4d7d5f583ee83a77141091c4b8b2959a087fa57e",
+      "bytes": 970571,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-11-ms",
+      "filename": "9701_w23_ms_11.pdf",
+      "sha256": "028d4773429bd623c634b866d84b6c093ac705eac2089b558e71966a58dd5a9b",
+      "bytes": 128173,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-12-qp",
+      "filename": "9701_w23_qp_12.pdf",
+      "sha256": "3306b5138ac17d6986df3be5a02f8af4de2e8e67eab5c4ff3b63ec6580af2e4b",
+      "bytes": 1372640,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-12-ms",
+      "filename": "9701_w23_ms_12.pdf",
+      "sha256": "27aa604020b39ae160685d8422b006ab6d0612f596e1228b9c0182d0e1cea57b",
+      "bytes": 128159,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-13-qp",
+      "filename": "9701_w23_qp_13.pdf",
+      "sha256": "44c3d03a89a056e65e07953b19da2925fb01adb1d4e00af83e1f24c47f10e418",
+      "bytes": 1426696,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-13-ms",
+      "filename": "9701_w23_ms_13.pdf",
+      "sha256": "cbfdec574f96e07aad288809cb00a3fcdcd8ca6f6367aad2d216e0532ea65b0a",
+      "bytes": 128163,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-22-qp",
+      "filename": "9701_w23_qp_22.pdf",
+      "sha256": "8696ca0cfe71e48f70b783502eb0a804b9241b73a7055742e9a2048af32ff0af",
+      "bytes": 986159,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-22-ms",
+      "filename": "9701_w23_ms_22.pdf",
+      "sha256": "83b1c8301fac914309d7165955012f45c7b61f1bfdd577630517c97bbc4fe8dd",
+      "bytes": 203175,
+      "pages": 9,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-23-qp",
+      "filename": "9701_w23_qp_23.pdf",
+      "sha256": "c4faaf1be707ea107450197f2edec2037e1487569578580f8c6da8867fa2c60c",
+      "bytes": 1155216,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-23-ms",
+      "filename": "9701_w23_ms_23.pdf",
+      "sha256": "7593394c298c632cead2b4035d64b8b35191b6334bb30cd874dac7bd5507b30c",
+      "bytes": 442506,
+      "pages": 15,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-11-qp",
+      "filename": "9701_s24_qp_11.pdf",
+      "sha256": "eb17d7aebceb5b1fc0a388ecf74ca77620545e59c4454cc38ad2e785f7e94f48",
+      "bytes": 420638,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-11-ms",
+      "filename": "9701_s24_ms_11.pdf",
+      "sha256": "03cd159c24464f12e7f4904caf41cf522bad346462a1d7acbee86f85b25ebf06",
+      "bytes": 96503,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-12-qp",
+      "filename": "9701_s24_qp_12.pdf",
+      "sha256": "3ce0234d2b806d106dc4cb6425303785b394f4a9f94d240a52885bc4def2afd8",
+      "bytes": 395473,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-12-ms",
+      "filename": "9701_s24_ms_12.pdf",
+      "sha256": "3ecc773c5809315bd9c2ffb767918a445c7442f1b2df5ae54f4960dd68ee4e03",
+      "bytes": 96581,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-13-qp",
+      "filename": "9701_s24_qp_13.pdf",
+      "sha256": "99be9c7fe0e900463fc66ab0d29ca6f4805984ee88d5005e9eb4918dcedebd7c",
+      "bytes": 365967,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-13-ms",
+      "filename": "9701_s24_ms_13.pdf",
+      "sha256": "94f69ce9c1983fe0d30764e231818737c5cb792d6609e1ce8afdf70b5aeb0bca",
+      "bytes": 96553,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-21-qp",
+      "filename": "9701_s24_qp_21.pdf",
+      "sha256": "bd6b3ed374e5d666616b7733fea2f26486e21764cf568258356c7108d864e7d7",
+      "bytes": 2692062,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-21-ms",
+      "filename": "9701_s24_ms_21.pdf",
+      "sha256": "006f032b534b6c1102a585436e90516fc3f70d4a450970b0fa39f1ceb4387956",
+      "bytes": 267358,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-22-qp",
+      "filename": "9701_s24_qp_22.pdf",
+      "sha256": "02463479abb9dd19ef2bbc8297bf832f083bc6a52b95977119c3a7260d69580c",
+      "bytes": 205378,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-22-ms",
+      "filename": "9701_s24_ms_22.pdf",
+      "sha256": "3d4fb98644a25b4baa4c8b054d497cacf56f8ed7e38dcab8c91283deaf1814f2",
+      "bytes": 325594,
+      "pages": 13,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-23-qp",
+      "filename": "9701_s24_qp_23.pdf",
+      "sha256": "689d4cbed3e26102e572192abf6c960917e8345adaf03699da3ebff2ef260894",
+      "bytes": 1082772,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-23-ms",
+      "filename": "9701_s24_ms_23.pdf",
+      "sha256": "4c7dfbdda9541b5fe225accbabb53a45207e1e1597708935f3a36b59a93a3a8a",
+      "bytes": 263244,
+      "pages": 11,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-11-qp",
+      "filename": "9701_w24_qp_11.pdf",
+      "sha256": "118f03b28e562393987f9f232b5bea1f790d1e988395eaaf6c18eec8d48b99f9",
+      "bytes": 377438,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-11-ms",
+      "filename": "9701_w24_ms_11.pdf",
+      "sha256": "7f731f063888fb4a660757fe813d2fccad4da1014dd3c9f2db7f921578774672",
+      "bytes": 132517,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-12-qp",
+      "filename": "9701_w24_qp_12.pdf",
+      "sha256": "ccec18020dd5336daa84c97d6acd803c84cff1a5632e401076e6690025795116",
+      "bytes": 360371,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-12-ms",
+      "filename": "9701_w24_ms_12.pdf",
+      "sha256": "3a36dacd94fe58b6820c991beb87a3dbfbd48628db9dd0eeab451a33ac9dc5d1",
+      "bytes": 132538,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-21-qp",
+      "filename": "9701_w24_qp_21.pdf",
+      "sha256": "709e7375d8d096b9c3368adbd790036a436d7a6d0e9143491d4904db5c2e1f35",
+      "bytes": 132068,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-21-ms",
+      "filename": "9701_w24_ms_21.pdf",
+      "sha256": "8db162a9d29c108100d84337c9052b2708103b297d1b6ce89f00cf10c368e158",
+      "bytes": 266887,
+      "pages": 11,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-22-qp",
+      "filename": "9701_w24_qp_22.pdf",
+      "sha256": "ed8ced8c5500fb651fda9c1341bd86f6a6c1917ead85d5efed90a4a4ac1b05b9",
+      "bytes": 135518,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-22-ms",
+      "filename": "9701_w24_ms_22.pdf",
+      "sha256": "69135c5b4ab5bafc2562048d19e2c21a9db3e4a3e9698fe3a4df320fae0ed119",
+      "bytes": 300329,
+      "pages": 11,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-12-qp",
+      "filename": "9701_s25_qp_12.pdf",
+      "sha256": "2339574fdacf18bb1ffb5e1ae0eb1a3457ac2be27d85f6d499f1fd60ffe3aa5d",
+      "bytes": 411557,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-12-ms",
+      "filename": "9701_s25_ms_12.pdf",
+      "sha256": "00fed045a934cf30f6bad5acd8e22f27a09c37255028989cc894e8276352f712",
+      "bytes": 167935,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-13-qp",
+      "filename": "9701_s25_qp_13.pdf",
+      "sha256": "42bf2fae589434296058dd49976f09e6db6cb41061bd8f528d396c9bc25474ed",
+      "bytes": 570456,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-13-ms",
+      "filename": "9701_s25_ms_13.pdf",
+      "sha256": "14ed72cced0c1b6e8f6a19e2a6c9ad9e8d66bda511711fb91b09970ba9447e37",
+      "bytes": 167939,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-22-qp",
+      "filename": "9701_s25_qp_22.pdf",
+      "sha256": "dea8f17527e2bd62bcca8be4c885f0bb4fe136ee4b7c3f7049129efc6d73ddd5",
+      "bytes": 127221,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-22-ms",
+      "filename": "9701_s25_ms_22.pdf",
+      "sha256": "722e570432cdc8cc495c02d68d7d3f1c20129ca75ff5c347847d744fe72cf02d",
+      "bytes": 390910,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-23-qp",
+      "filename": "9701_s25_qp_23.pdf",
+      "sha256": "c74dfdbc7e91111fbf78a08de6d13cc7f9f966a1a2c597d4bb75369dcd9042c8",
+      "bytes": 136651,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-23-ms",
+      "filename": "9701_s25_ms_23.pdf",
+      "sha256": "160f4dd825c31c36a95cd506f2f8b75d77ac3a8d1a9de6c86f5fca1cb45209f1",
+      "bytes": 377997,
+      "pages": 11,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-11-qp",
+      "filename": "9701_w25_qp_11.pdf",
+      "sha256": "e4591c27dcbee6091f84140207ec16085c5ea8ef47878bd55bc71911b8d3259c",
+      "bytes": 373490,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-11-ms",
+      "filename": "9701_w25_ms_11.pdf",
+      "sha256": "6f739a159494ac11443230d4b5808e11cdfc1a92b856c8a76197a90dd3b9ba0e",
+      "bytes": 170787,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-12-qp",
+      "filename": "9701_w25_qp_12.pdf",
+      "sha256": "118f739385e817f071aa872df174d0db6bbc7643f26643c88e5887e58806d7c1",
+      "bytes": 391898,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-12-ms",
+      "filename": "9701_w25_ms_12.pdf",
+      "sha256": "5a02bc50fe099a6a4fa3b20591030d558f98fe304aab10aca202bc0f701e5711",
+      "bytes": 170783,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-13-qp",
+      "filename": "9701_w25_qp_13.pdf",
+      "sha256": "08e1c8d351d738c049c1f245557f05ea5c150474f9d8903a9cee70b1f525f2fc",
+      "bytes": 373647,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-13-ms",
+      "filename": "9701_w25_ms_13.pdf",
+      "sha256": "75c88be82a630199cfea6f4ecd5975d826caa88f34acf6b5f4311addbafb4db4",
+      "bytes": 170792,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-21-qp",
+      "filename": "9701_w25_qp_21.pdf",
+      "sha256": "006afc9558562f9f969226387de474bf945d2dbbda3c263fac1daff82ef9a9d0",
+      "bytes": 475507,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-21-ms",
+      "filename": "9701_w25_ms_21.pdf",
+      "sha256": "5e58d31b5086f9b5dc948e074a0adbe155f05c34bc48858015a6eb4c262b0059",
+      "bytes": 352811,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-22-qp",
+      "filename": "9701_w25_qp_22.pdf",
+      "sha256": "ef853c40beacdd8bb12bd59eca7015d08d837100c200866d00cb5bd2acc785c9",
+      "bytes": 129911,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-22-ms",
+      "filename": "9701_w25_ms_22.pdf",
+      "sha256": "33a46dad780ffd1de069a89bf6b89ca78a38ac5b5236f03d3f56ae3916d288d3",
+      "bytes": 326458,
+      "pages": 10,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-23-qp",
+      "filename": "9701_w25_qp_23.pdf",
+      "sha256": "fe5d8bf5c357334f15ce488fe9756d0d9cce1641988297dc17f9953769223e45",
+      "bytes": 129425,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-23-ms",
+      "filename": "9701_w25_ms_23.pdf",
+      "sha256": "cc9b6e2f82fa94b40539b6f390a8797c758c41ca0bfa7ae1013b536ec91971ba",
+      "bytes": 352824,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-s-21-qp",
+      "filename": "9701_s26_qp_21.pdf",
+      "sha256": "e55d8e7e3bfa17b10987a64bfeca5d576c2a9e2db2fc6e11af8afbb86fde84c3",
+      "bytes": 122047,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-s-21-ms",
+      "filename": "9701_s26_ms_21.pdf",
+      "sha256": "2a59515572c7e62cf76dfa2f9459f2021eb92f653573f134dab76efb3713d25b",
+      "bytes": 662747,
+      "pages": 23,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-s-22-qp",
+      "filename": "9701_s26_qp_22.pdf",
+      "sha256": "c23110bc2d06787d1b77fc4265a35ab60c118b7aeaf4ca957a7b0de5e0d4e843",
+      "bytes": 122834,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-s-22-ms",
+      "filename": "9701_s26_ms_22.pdf",
+      "sha256": "124ffcf82d70ad5541fdc06354b0c5ebb9b2651a9a2979da5ebc9f4c999c88d2",
+      "bytes": 602621,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-s-23-qp",
+      "filename": "9701_s26_qp_23.pdf",
+      "sha256": "84e5b6a627c18ab251b627084757777709994dbe724da0f3cea422c31011bd62",
+      "bytes": 123807,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-s-23-ms",
+      "filename": "9701_s26_ms_23.pdf",
+      "sha256": "f6942940bd933992ae88766ba454ddabf93f3522fbf19fc93c5bacd4ed1474a8",
+      "bytes": 561647,
+      "pages": 19,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-m-12-qp",
+      "filename": "9701_m18_qp_12.pdf",
+      "sha256": "b792ea237eeadf327da2f5a8e917a74ba24ebf2ccb3b5d211a810d388172e6d9",
+      "bytes": 255008,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-m-12-ms",
+      "filename": "9701_m18_ms_12.pdf",
+      "sha256": "df685a4461da2d6adfdb06e43c57c0c0e767f6e984d55c2169de07d7dbad2aea",
+      "bytes": 99843,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-m-22-qp",
+      "filename": "9701_m18_qp_22.pdf",
+      "sha256": "d3fce7cc1acb6727b1117fcaaa922970cafdbfcd2887952307b624313e6900f4",
+      "bytes": 1206020,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-m-22-ms",
+      "filename": "9701_m18_ms_22.pdf",
+      "sha256": "27df514c33f725e0f0b55b53c834ac337740239ca527d8c862ec762fc76220d9",
+      "bytes": 192582,
+      "pages": 7,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-11-qp",
+      "filename": "9701_s18_qp_11.pdf",
+      "sha256": "3d6270e7a9e30f009f26e190b613915703c0104a8d00cb75e6a2fc29149e4853",
+      "bytes": 198280,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-11-ms",
+      "filename": "9701_s18_ms_11.pdf",
+      "sha256": "b122f36ec1867c34e5394cf5533608719b8383ef58ba2dd9e8fc50ddb56ab4c8",
+      "bytes": 54063,
+      "pages": 4,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-12-qp",
+      "filename": "9701_s18_qp_12.pdf",
+      "sha256": "c0e647b367d015b208344b8a414bc41cb317109e727c7759a0bca7ae6c8e8739",
+      "bytes": 184290,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-12-ms",
+      "filename": "9701_s18_ms_12.pdf",
+      "sha256": "5276623e7a283954cd51191ba92af223472b333e4ae6a43bd9f6ab29672cdf07",
+      "bytes": 53416,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-13-qp",
+      "filename": "9701_s18_qp_13.pdf",
+      "sha256": "2cae96bad8a5d43daa4189e83d88aa64bc9c928e554858aa78b1f0beffa2d073",
+      "bytes": 177713,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-13-ms",
+      "filename": "9701_s18_ms_13.pdf",
+      "sha256": "bd3ebd2e825af82686e10f80ea7ac41df1ad57c2e9d202a3c59abdcba82f97ae",
+      "bytes": 53403,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-21-qp",
+      "filename": "9701_s18_qp_21.pdf",
+      "sha256": "e8d793cbde2df4d659b0f5053fc193027fefe5ae3ddfe38b3159443c2c302b2c",
+      "bytes": 534246,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-21-ms",
+      "filename": "9701_s18_ms_21.pdf",
+      "sha256": "cae25b608b6c2c2f1a45e8adc03da43a0d2b0456fb3722587ddb2cb772ff8c0a",
+      "bytes": 132551,
+      "pages": 9,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-22-qp",
+      "filename": "9701_s18_qp_22.pdf",
+      "sha256": "81f9515b0932c0a3675f99903bc7cd902e0cdb9635b2785270104be676e0b4c3",
+      "bytes": 527582,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-22-ms",
+      "filename": "9701_s18_ms_22.pdf",
+      "sha256": "2173e8fbf72fe1e1015a822c87b31002864947dabadc6dda90f318fe63369f4c",
+      "bytes": 106756,
+      "pages": 10,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-23-qp",
+      "filename": "9701_s18_qp_23.pdf",
+      "sha256": "1adf6c6105fdcaa0c3f5424f40859f72e06c195aa4468cde043b8190687b23d1",
+      "bytes": 522703,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-23-ms",
+      "filename": "9701_s18_ms_23.pdf",
+      "sha256": "2768b02363380351d0e49a1fb5d2cb2c1b2d0ded7274a2f0e370b2d2c442d559",
+      "bytes": 135180,
+      "pages": 10,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-11-qp",
+      "filename": "9701_w18_qp_11.pdf",
+      "sha256": "c2334ee1c412d24933b2f6ae3183674ef1ee00e6602a2ff960d7648c4a5d96c9",
+      "bytes": 414547,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-11-ms",
+      "filename": "9701_w18_ms_11.pdf",
+      "sha256": "a51626c193b79f3c37c060cdbdd3f7d09dfed2bdf80f802521878ba44193b118",
+      "bytes": 100495,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-12-qp",
+      "filename": "9701_w18_qp_12.pdf",
+      "sha256": "18ea881f67f1767cd6b839283a29c2aa9a4b4a94f37161c8a04c8ec55f6244c1",
+      "bytes": 277555,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-12-ms",
+      "filename": "9701_w18_ms_12.pdf",
+      "sha256": "97468c3d2344d2cc5c511649177f1089d789c37587ca6dc3d56e9065806b004f",
+      "bytes": 100481,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-13-qp",
+      "filename": "9701_w18_qp_13.pdf",
+      "sha256": "7b913df572a141d702f88b033863a0a7c5a7a30bb010f12b806b9461f0455286",
+      "bytes": 414747,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-13-ms",
+      "filename": "9701_w18_ms_13.pdf",
+      "sha256": "7579bcac25394e70221e02073a3aed92027d9a5b684d04269d775a792944f1fe",
+      "bytes": 100476,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-21-qp",
+      "filename": "9701_w18_qp_21.pdf",
+      "sha256": "3b0f535119b77a78e5eca7209d6c2b8f9e54e241715173e4d070810c0740aeb3",
+      "bytes": 987829,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-21-ms",
+      "filename": "9701_w18_ms_21.pdf",
+      "sha256": "0ded03c233fed8d882f39c64d5922edb851ae485065493b912464b0e8e6065b4",
+      "bytes": 224214,
+      "pages": 9,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-22-qp",
+      "filename": "9701_w18_qp_22.pdf",
+      "sha256": "7a023febf440f3185f09d85b6371d921a03aa4138d1be5cd8a9ffff2a79eea56",
+      "bytes": 1223704,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-22-ms",
+      "filename": "9701_w18_ms_22.pdf",
+      "sha256": "5055656b51f629ff6d65ef50dec15afd0a54c62bab0e462159c21a41ca8f4115",
+      "bytes": 221183,
+      "pages": 10,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-23-qp",
+      "filename": "9701_w18_qp_23.pdf",
+      "sha256": "af2fdbf303607367afa7929e98b9d2f688975ebff6b2c023ac084f11626223ef",
+      "bytes": 987921,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-23-ms",
+      "filename": "9701_w18_ms_23.pdf",
+      "sha256": "00241b33af1ec03606331f7788a9dd591b2905cb69114cf59fa3de7fd1a0662c",
+      "bytes": 225054,
+      "pages": 9,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-m-12-qp",
+      "filename": "9701_m19_qp_12.pdf",
+      "sha256": "1f46fa842e97d3aea9efa915e88b674ca75056abd42dcdb14cd3b357e37a7d02",
+      "bytes": 333437,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-m-12-ms",
+      "filename": "9701_m19_ms_12.pdf",
+      "sha256": "56d54bced8cf0a58e3f893b89f672145b428bf32f003a441ad104801b5e9d8f2",
+      "bytes": 98798,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-m-22-qp",
+      "filename": "9701_m19_qp_22.pdf",
+      "sha256": "c4a3da0a9d0528089aab87613fab2dad60653b6be988d399132ea041fccf74db",
+      "bytes": 1575690,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-m-22-ms",
+      "filename": "9701_m19_ms_22.pdf",
+      "sha256": "6cf7b14cc68723dc5ad226980dab989d37cb56c9432949e5bee87a7ed83db953",
+      "bytes": 215899,
+      "pages": 9,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-11-qp",
+      "filename": "9701_s19_qp_11.pdf",
+      "sha256": "a8e25aa348ae5de62816520d3b13ff127949a370e43f52ba55c5203a10fb3ae8",
+      "bytes": 325015,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-11-ms",
+      "filename": "9701_s19_ms_11.pdf",
+      "sha256": "5cea38422562bbb646ffd078ecbfda126481075169720782cf8bb6caa71f60af",
+      "bytes": 99389,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-12-qp",
+      "filename": "9701_s19_qp_12.pdf",
+      "sha256": "c32e5aa83bf83c1b5038d318cb2d0714ac0a5641ed9cc05146650e5038f493b1",
+      "bytes": 324158,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-12-ms",
+      "filename": "9701_s19_ms_12.pdf",
+      "sha256": "208e00e7ee1a24eaebf03d3273735bedb28c06254cb87519832738946413e30e",
+      "bytes": 99373,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-13-qp",
+      "filename": "9701_s19_qp_13.pdf",
+      "sha256": "15f63b9b6444c996dcfd70ce7b7140bb08f9e687dcc40c5405e62f791fa8cd7c",
+      "bytes": 340792,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-13-ms",
+      "filename": "9701_s19_ms_13.pdf",
+      "sha256": "8b1f31ca6afbee98dceb8e7cd2f4e42036a254ad45633f71e6819d4f53762c1f",
+      "bytes": 99390,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-21-qp",
+      "filename": "9701_s19_qp_21.pdf",
+      "sha256": "c92796321e5ea8c147daed549cf3c3a9f553671d7526d76963b719989448dd3b",
+      "bytes": 1058351,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-21-ms",
+      "filename": "9701_s19_ms_21.pdf",
+      "sha256": "557ddcbfd0df544ecdbcd53f6841591e550155ca431a064ede8885f031b145a0",
+      "bytes": 208628,
+      "pages": 9,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-22-qp",
+      "filename": "9701_s19_qp_22.pdf",
+      "sha256": "cc49218fcf765acb5c526754b5a85c3c86ab7f3840a5b137ccd52b4f1d888934",
+      "bytes": 1135955,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-22-ms",
+      "filename": "9701_s19_ms_22.pdf",
+      "sha256": "a424c673db3f0b1713e9d0101f4a050b3b5ba8407f22c22ea2f258bdcd35b43c",
+      "bytes": 249626,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-23-qp",
+      "filename": "9701_s19_qp_23.pdf",
+      "sha256": "7cf7ef4d1253be61120f94799a41e9f346e054ed5e94defb30d60dbfb2bab95d",
+      "bytes": 1091886,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-23-ms",
+      "filename": "9701_s19_ms_23.pdf",
+      "sha256": "da1b9eeec92e32a7f90eb26e60381a9ab7f09cde9f7fdb44a5f5d8f9b3782dd7",
+      "bytes": 194710,
+      "pages": 9,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-11-qp",
+      "filename": "9701_w19_qp_11.pdf",
+      "sha256": "7e5ea58a7f3dece013fef824b37d06988edfc4bb113855686c0455ae93683b03",
+      "bytes": 349731,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-11-ms",
+      "filename": "9701_w19_ms_11.pdf",
+      "sha256": "d428277b4232a2647df51f39879f8d101195178edee458df774d30bb30c3cfc2",
+      "bytes": 99626,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-12-qp",
+      "filename": "9701_w19_qp_12.pdf",
+      "sha256": "e98edc07b45c0540e485d4e74ec0b0992460b4ae152413246662481dab6d2035",
+      "bytes": 329941,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-12-ms",
+      "filename": "9701_w19_ms_12.pdf",
+      "sha256": "7b1053f2eb8c1ff8f916fc8baf76eadd5f91284447938a116c5d5c89e9f3d485",
+      "bytes": 99583,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-13-qp",
+      "filename": "9701_w19_qp_13.pdf",
+      "sha256": "65c36b715982c4332626b89ee0deb1cfb94b67e07667c6c37c6bfaeb8475888b",
+      "bytes": 386546,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-13-ms",
+      "filename": "9701_w19_ms_13.pdf",
+      "sha256": "607c6467cf2ac78acbc9d6b9162ad02e4fa7185c9cc5d807bddcdf976efc7c6e",
+      "bytes": 99706,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-21-qp",
+      "filename": "9701_w19_qp_21.pdf",
+      "sha256": "5351a8844e88970a59b9dfe2c3aeffc02fb7400d4da86321e192c7dd86d1ed04",
+      "bytes": 1090346,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-21-ms",
+      "filename": "9701_w19_ms_21.pdf",
+      "sha256": "087e744ae444bc3ada49115fb05aa85917e8c20cec764bd3fc6308c13ab2b2db",
+      "bytes": 229400,
+      "pages": 9,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-22-qp",
+      "filename": "9701_w19_qp_22.pdf",
+      "sha256": "9f565167380a5825c5b5eebf2464b2cab0c2a49a90503a8c6871b325f3473e6d",
+      "bytes": 1384429,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-22-ms",
+      "filename": "9701_w19_ms_22.pdf",
+      "sha256": "537b0730c4f7b3c6c1cca9d5b5a94814cf0f91d4e21ab20dba74ecd73fe735ae",
+      "bytes": 225810,
+      "pages": 10,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-23-qp",
+      "filename": "9701_w19_qp_23.pdf",
+      "sha256": "5ef61a3370defa4f2d97a56ab658dc4505848f3b5b99aa5b5b8b86dc6de65492",
+      "bytes": 1092018,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-23-ms",
+      "filename": "9701_w19_ms_23.pdf",
+      "sha256": "e7cc216a2350615ab5670cdc0ca24bc6d1cc8c958e9a3481d2cee021f34eb078",
+      "bytes": 229395,
+      "pages": 9,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-m-12-qp",
+      "filename": "9701_m20_qp_12.pdf",
+      "sha256": "da393e4195a4c8df56ca25084bf90cdfd2364779138a1b43008fb3c31eb3be35",
+      "bytes": 376110,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-m-12-ms",
+      "filename": "9701_m20_ms_12.pdf",
+      "sha256": "fb3d46e81ad222f828371de2f3d155f2bd5d0f221326df5888b197db8b86ce54",
+      "bytes": 143587,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-m-22-qp",
+      "filename": "9701_m20_qp_22.pdf",
+      "sha256": "248559f7bfd2ce2cf9a49a36d1df87a8ae95536f70dc3f9182f76ff880759fe5",
+      "bytes": 898602,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-m-22-ms",
+      "filename": "9701_m20_ms_22.pdf",
+      "sha256": "390b0826e5d0c3daa754c0ede1ee9ca047ef3a551250a33c2e9b2274c655fad4",
+      "bytes": 252502,
+      "pages": 10,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-11-qp",
+      "filename": "9701_s20_qp_11.pdf",
+      "sha256": "b3623bc3c409fd77a662ea0f8864a52299266ce43163055aab2e5b147c0ad1c6",
+      "bytes": 291138,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-11-ms",
+      "filename": "9701_s20_ms_11.pdf",
+      "sha256": "f0c95fae35d7735ebcc8be1ee74f64e77593c4b2661152f9f3c9c65ec316931b",
+      "bytes": 132898,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-12-qp",
+      "filename": "9701_s20_qp_12.pdf",
+      "sha256": "dd5bf4de1b4b6d1ef4011fe1c1dd2a115a90d241fd0733465ff9b1890b920130",
+      "bytes": 351460,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-12-ms",
+      "filename": "9701_s20_ms_12.pdf",
+      "sha256": "092fde4781fa2d70674b3130f58cbdaa53a3f88d2a36ae4d683223e14cf7760f",
+      "bytes": 132890,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-13-qp",
+      "filename": "9701_s20_qp_13.pdf",
+      "sha256": "d57838f067e29e1d6b7080c77c628fcaa99095f9034bbd94c71403b15fe8a9dd",
+      "bytes": 355162,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-13-ms",
+      "filename": "9701_s20_ms_13.pdf",
+      "sha256": "28e9a21a7cf9f3afa0b1fdf2659d894d66a378597a41ada52819695bd7e637d2",
+      "bytes": 132901,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-21-qp",
+      "filename": "9701_s20_qp_21.pdf",
+      "sha256": "14402e20d6ce16065c296b01bc050c9254085642feb92c33d2efcf1354c365f3",
+      "bytes": 927658,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-21-ms",
+      "filename": "9701_s20_ms_21.pdf",
+      "sha256": "41d3d173362e416749af92f23e8e354a6c763eff316c73f54304ff1ff135c838",
+      "bytes": 241111,
+      "pages": 10,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-22-qp",
+      "filename": "9701_s20_qp_22.pdf",
+      "sha256": "630b2d0c535a722c20dd7198a1c10d2811164ae01d5764b0deed2d451e8407ea",
+      "bytes": 1060536,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-22-ms",
+      "filename": "9701_s20_ms_22.pdf",
+      "sha256": "24ca994beac8603e406cc9600c06de5a40b258a38396e3db4158c338adb7d184",
+      "bytes": 270196,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-23-qp",
+      "filename": "9701_s20_qp_23.pdf",
+      "sha256": "3e5bb040a83933f84230e8593c2dfbd5c8897887a70a2fa5a64810f6fa6605a2",
+      "bytes": 1021767,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-23-ms",
+      "filename": "9701_s20_ms_23.pdf",
+      "sha256": "c34c29d46d4488f563e9e2c4d550a71e0c6edc111f24d31e386d1f732cda7387",
+      "bytes": 242215,
+      "pages": 11,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-11-qp",
+      "filename": "9701_w20_qp_11.pdf",
+      "sha256": "eda14e668c67668f74195bdab491151346ac3e172a923b26bf23422c559d62b9",
+      "bytes": 408952,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-11-ms",
+      "filename": "9701_w20_ms_11.pdf",
+      "sha256": "6f30ae92c0e95edcd07590d337205f06a922751d0a51646ce9377f283dbedc1d",
+      "bytes": 156811,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-12-qp",
+      "filename": "9701_w20_qp_12.pdf",
+      "sha256": "f7991fa427108731591576546a1682889bbc91e1f651ba8be4058fd2ae5d967a",
+      "bytes": 333132,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-12-ms",
+      "filename": "9701_w20_ms_12.pdf",
+      "sha256": "d7ec90f1278ee1dcc5ba3ef6ca214c875952b14fa871c77a34909f1582b06766",
+      "bytes": 145288,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-13-qp",
+      "filename": "9701_w20_qp_13.pdf",
+      "sha256": "6cd47336c7a9483d6acf1011f7f93ffd829606b45962e1d14996c45896446c3a",
+      "bytes": 399725,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-13-ms",
+      "filename": "9701_w20_ms_13.pdf",
+      "sha256": "426c81ab9bfa4c71d9b2533d0b24097617b8973ccd0709837f85e4e62e5ad34a",
+      "bytes": 145307,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-21-qp",
+      "filename": "9701_w20_qp_21.pdf",
+      "sha256": "7b287ebccef7d0ca6a8f1690330b0ca610c6c564382a5374849f7bc7ac436268",
+      "bytes": 1073860,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-21-ms",
+      "filename": "9701_w20_ms_21.pdf",
+      "sha256": "05c6932726cef43962bd2ff0477f8a8216c7cb554d577a6dff123c44dac48d9d",
+      "bytes": 290819,
+      "pages": 11,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-22-qp",
+      "filename": "9701_w20_qp_22.pdf",
+      "sha256": "4c224519910c0384a85e1eadcfd898643a1074fac938696fc9003e29bed40e5e",
+      "bytes": 1651821,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-22-ms",
+      "filename": "9701_w20_ms_22.pdf",
+      "sha256": "4a8a26118e9b28d24e5539d7dbfd68b278c0bc1bda2a22bb5946de16223742eb",
+      "bytes": 264461,
+      "pages": 11,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-23-qp",
+      "filename": "9701_w20_qp_23.pdf",
+      "sha256": "93169a318ff6f753dac63a1737383711b693d56c4f7dbfe470d2ac627745a587",
+      "bytes": 1455573,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-23-ms",
+      "filename": "9701_w20_ms_23.pdf",
+      "sha256": "54702580b32f0b71f34f509adf8c71ca911ab09290486270e175bdc8c62f13e4",
+      "bytes": 290825,
+      "pages": 11,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-m-12-qp",
+      "filename": "9701_m21_qp_12.pdf",
+      "sha256": "e047c894eef27edcfa49d8a4f36be824f7146b18baba3e5afe8b55d0319e67a9",
+      "bytes": 376599,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-m-12-ms",
+      "filename": "9701_m21_ms_12.pdf",
+      "sha256": "a1b4a6328bb4806e2dbc42a634731d9ef58e714ef89c5d745c665eee53259d58",
+      "bytes": 162531,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-m-22-qp",
+      "filename": "9701_m21_qp_22.pdf",
+      "sha256": "e97c8a8cca5738aab3538c3c696eac1a8fa02f98ab1aa26ee279d3d86db796ae",
+      "bytes": 1389352,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-m-22-ms",
+      "filename": "9701_m21_ms_22.pdf",
+      "sha256": "90bd79c242a8e92e6243d98d922389b87bf22e1072de55209271656b304aaac0",
+      "bytes": 300242,
+      "pages": 9,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-11-qp",
+      "filename": "9701_s21_qp_11.pdf",
+      "sha256": "96a66894e636d80c96fb2ad67e6c2f6af46c7d13d7de42733dc76df7d0e054dd",
+      "bytes": 398336,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-11-ms",
+      "filename": "9701_s21_ms_11.pdf",
+      "sha256": "df0085dbdad0ecee7e5a644ee87f00c659bd7a290737f7533f2ffc6c61aee17d",
+      "bytes": 163480,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-12-qp",
+      "filename": "9701_s21_qp_12.pdf",
+      "sha256": "12776df2a7b1aa4e7949d9edff84fc5d05dc997aab7437a8c25b4aeb2a7214ea",
+      "bytes": 423387,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-12-ms",
+      "filename": "9701_s21_ms_12.pdf",
+      "sha256": "66ad0192313fe7b82dcd9d0f4d014a0b77ca988b2482babad11736f48a398cdd",
+      "bytes": 163477,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-13-qp",
+      "filename": "9701_s21_qp_13.pdf",
+      "sha256": "33fad5e2abdf7f588cd4a42c95d394f4fb9f9650eb66ca76702288ec15907723",
+      "bytes": 353615,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-13-ms",
+      "filename": "9701_s21_ms_13.pdf",
+      "sha256": "2a5f925b289dddc4c140308101c80056ae318bd6da31ca2434eb5b245ac28b5c",
+      "bytes": 163479,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-21-qp",
+      "filename": "9701_s21_qp_21.pdf",
+      "sha256": "8403e152d5664fe223cc31bd98ac73aeb3556bd322e2142d9e9e86aecfecab23",
+      "bytes": 635532,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-21-ms",
+      "filename": "9701_s21_ms_21.pdf",
+      "sha256": "c0660b6d56a856c07b8c896b002aecee25f77143519ec8bbf7fca1fb38f3e3cd",
+      "bytes": 336321,
+      "pages": 10,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-22-qp",
+      "filename": "9701_s21_qp_22.pdf",
+      "sha256": "e0beee19067773793525cce6304f38ba0af441b154770b74a29862fd3b3dbe90",
+      "bytes": 716397,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-22-ms",
+      "filename": "9701_s21_ms_22.pdf",
+      "sha256": "6195efbe5e2d94ca503398b55dde9a3e8eecf79349481580b62dc33d55e4e6a3",
+      "bytes": 292228,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-23-qp",
+      "filename": "9701_s21_qp_23.pdf",
+      "sha256": "de3bb8b0ff8b460cc22388eb29ad696b7d89df2b6667ead9fa48ca379eb95ae7",
+      "bytes": 729541,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-23-ms",
+      "filename": "9701_s21_ms_23.pdf",
+      "sha256": "f5b4ddd6010a8d010193606eedd8e11c67f7247fd70d6647388851298579243b",
+      "bytes": 288075,
+      "pages": 9,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-11-qp",
+      "filename": "9701_w21_qp_11.pdf",
+      "sha256": "5fa905788360cd6dd5b58b423c7ea9f0fd313cc7591b95d6cfd8ea30d2922064",
+      "bytes": 356537,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-11-ms",
+      "filename": "9701_w21_ms_11.pdf",
+      "sha256": "d0f52653e0277fb94b45bcab79391f883a30c574297f1a88c11fd4124f7540c5",
+      "bytes": 163509,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-12-qp",
+      "filename": "9701_w21_qp_12.pdf",
+      "sha256": "e2de2b1f755e52b9f25e80363a1c7b34a3ac9cb3b2c049c47ee57489d071b383",
+      "bytes": 326083,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-12-ms",
+      "filename": "9701_w21_ms_12.pdf",
+      "sha256": "07c82103a745742e65467b4584d864241f5cf1c04fc2c511e918983faff542eb",
+      "bytes": 163501,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-13-qp",
+      "filename": "9701_w21_qp_13.pdf",
+      "sha256": "a01c1b7dc89e67218841f68ee7350c93429bb90a0075e7fe8c5592eaf2ed52fe",
+      "bytes": 356565,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-13-ms",
+      "filename": "9701_w21_ms_13.pdf",
+      "sha256": "a209d63b537d8d86c129ce06181825b00e49e6bc7f2651f80e3eb60946082a86",
+      "bytes": 163511,
+      "pages": 3,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-21-qp",
+      "filename": "9701_w21_qp_21.pdf",
+      "sha256": "a5daaa79950870848fbcbeff1ca51613c0126f11fef9851ebf6ae0ce596c6209",
+      "bytes": 1503005,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-21-ms",
+      "filename": "9701_w21_ms_21.pdf",
+      "sha256": "ffbcd32ff1a0b3b3a2c13b0a8adb68b57d5d405f6bf6f33d95a3997a1592ace4",
+      "bytes": 281598,
+      "pages": 10,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-22-qp",
+      "filename": "9701_w21_qp_22.pdf",
+      "sha256": "69e73c0843ae5f54de89a2d30527ef6b07ce307b1b27fb676dcfdaeccd97b792",
+      "bytes": 1189646,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-22-ms",
+      "filename": "9701_w21_ms_22.pdf",
+      "sha256": "984d707d7de9a66d868b7769d9ff39e72d12f738ff5417a44710949cbed6d617",
+      "bytes": 360252,
+      "pages": 11,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-23-qp",
+      "filename": "9701_w21_qp_23.pdf",
+      "sha256": "d27d88904ab5fac3df83b4e5edbc3be3d596114e1a95e8cd8799225c31219b4d",
+      "bytes": 1506281,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-23-ms",
+      "filename": "9701_w21_ms_23.pdf",
+      "sha256": "c47489f2c64bf589e822e8f4ca780737f7010b0757c9535fadd4e56e27e7cc5c",
+      "bytes": 281666,
+      "pages": 10,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-m-42-qp",
+      "filename": "9701_m18_qp_42.pdf",
+      "sha256": "43c050696b7bc5719d3ffbb6e9ee595fd652c8af370321a848a4a80df1bc53ad",
+      "bytes": 1719974,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-m-42-ms",
+      "filename": "9701_m18_ms_42.pdf",
+      "sha256": "60e4623585f6dfe6960b0a122e98142f17b9268abe7a91f2f2f738bf809f71e8",
+      "bytes": 259388,
+      "pages": 10,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-41-qp",
+      "filename": "9701_s18_qp_41.pdf",
+      "sha256": "6915a9915d9fa2ede10843254dd08520ddfaa93d01ee862dc06106321d8445bd",
+      "bytes": 574495,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-41-ms",
+      "filename": "9701_s18_ms_41.pdf",
+      "sha256": "e9d9bd0710f669292f42ea79ed1ca3d6b60519fc2799cf7788084f2fe4de40c0",
+      "bytes": 251662,
+      "pages": 13,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-42-qp",
+      "filename": "9701_s18_qp_42.pdf",
+      "sha256": "6e37517a21ff1fba1e274572df4136ae1e7bbed090fec12e403b9eb1ec12509b",
+      "bytes": 552006,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-42-ms",
+      "filename": "9701_s18_ms_42.pdf",
+      "sha256": "dd2d2261ef5beb1d417083bdbb6c27c0eebd0c537d9a4d841e49cb6a2a8ee398",
+      "bytes": 200171,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-43-qp",
+      "filename": "9701_s18_qp_43.pdf",
+      "sha256": "350e801c893e9d43707da677788665c106f0e495009794a8b87991c5289a8f88",
+      "bytes": 574404,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-s-43-ms",
+      "filename": "9701_s18_ms_43.pdf",
+      "sha256": "b0f3d5ced47d2e7c063733ba2d69b329ff1732fee727174c28441d9d7a45a605",
+      "bytes": 251660,
+      "pages": 13,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-41-qp",
+      "filename": "9701_w18_qp_41.pdf",
+      "sha256": "9e11442173e3228f98511874e5b8769838b604c6bb97349cc5de29465926859a",
+      "bytes": 1478487,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-41-ms",
+      "filename": "9701_w18_ms_41.pdf",
+      "sha256": "40c994a0c22fca413d39bd9a8e79a0ed38a09b83f8b612e3c14ddad548632d31",
+      "bytes": 266093,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-42-qp",
+      "filename": "9701_w18_qp_42.pdf",
+      "sha256": "f9cde53babcbd8d7fc56ebfbc036f8e0100025d38959770063a3b26ab5162ffb",
+      "bytes": 2052320,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-42-ms",
+      "filename": "9701_w18_ms_42.pdf",
+      "sha256": "874809d75a61db7e08ce6c8da92e150f96bdc3cfa1328ba18148c17e80dd6e91",
+      "bytes": 246202,
+      "pages": 13,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-43-qp",
+      "filename": "9701_w18_qp_43.pdf",
+      "sha256": "7559d792f32a41050ecdd2b0bb991a5b7894d62cbd593e299567effc12bb98e9",
+      "bytes": 1479779,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2018-w-43-ms",
+      "filename": "9701_w18_ms_43.pdf",
+      "sha256": "cb39fd17de9fb77d5ac3ea3c700cc0c0a27c1f0eb3a9e33a1dc7b1b69db8e050",
+      "bytes": 266124,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-m-42-qp",
+      "filename": "9701_m19_qp_42.pdf",
+      "sha256": "ea6b40ec6e077c1edcc0b02bfca04366cf95d434d49308e6bebeac58f9bb1d56",
+      "bytes": 1951532,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-m-42-ms",
+      "filename": "9701_m19_ms_42.pdf",
+      "sha256": "e18a6b16c2f297c45fb2760cab7b84b9aa2f3d75b7f8150b56094bb0e42b56ee",
+      "bytes": 318299,
+      "pages": 11,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-41-qp",
+      "filename": "9701_s19_qp_41.pdf",
+      "sha256": "98a2efb69d3f47e66e53bba0dd8c0ec53dd873b8b7af977078a0dbdb155ff4ef",
+      "bytes": 2142811,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-41-ms",
+      "filename": "9701_s19_ms_41.pdf",
+      "sha256": "4c9de14d8b2da34b3f5ac6b03a22489c46f363c3fc4429a554fe37f422762766",
+      "bytes": 293983,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-42-qp",
+      "filename": "9701_s19_qp_42.pdf",
+      "sha256": "562c02360f5508175dd9828a3846bee9faa048640d710862078b6ce4a53743aa",
+      "bytes": 2100021,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-42-ms",
+      "filename": "9701_s19_ms_42.pdf",
+      "sha256": "aa83cb055c2afa0f58a6c63da184e01b00205c57e758a9e392ff817f518fe8ea",
+      "bytes": 271510,
+      "pages": 13,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-43-qp",
+      "filename": "9701_s19_qp_43.pdf",
+      "sha256": "12420a83a5818fa428968e9128a2f7bb3069a26e12d86c928d4afc07eec9f950",
+      "bytes": 2144284,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-s-43-ms",
+      "filename": "9701_s19_ms_43.pdf",
+      "sha256": "84d174503a15f6c6ca4d03ad9e0ecda2e5c79352571355af3dfcd84a8ac09dd0",
+      "bytes": 294001,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-41-qp",
+      "filename": "9701_w19_qp_41.pdf",
+      "sha256": "a4847c5f53a7ccd9a8bdef1f0842d0a50e51333f700747debd0c63fe66d6bfdc",
+      "bytes": 1251347,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-41-ms",
+      "filename": "9701_w19_ms_41.pdf",
+      "sha256": "33a00bde482aaebabe1f5da2c6e3d66bd8e044d0f7183acc26fa9a86ad0196f5",
+      "bytes": 260978,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-42-qp",
+      "filename": "9701_w19_qp_42.pdf",
+      "sha256": "b530a276f8d1c68400f6a31bceb1df97d9bfdc08f5a466ce0295792ab32c329f",
+      "bytes": 1328455,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-42-ms",
+      "filename": "9701_w19_ms_42.pdf",
+      "sha256": "eee7103b2a442e52b38c2357cd00090d20473fd9eea7f3629df88e7cd8168851",
+      "bytes": 285094,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-43-qp",
+      "filename": "9701_w19_qp_43.pdf",
+      "sha256": "7a2a8cac1ddcdb80f27f96b5b00fbf30e08da4fc24fa3e828e136f845389d332",
+      "bytes": 1252844,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2019-w-43-ms",
+      "filename": "9701_w19_ms_43.pdf",
+      "sha256": "7bbadbfca8c1a1723a0bda63c0c200c6bd38988df0aaf3cbe6676434d7781db8",
+      "bytes": 260982,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-m-42-qp",
+      "filename": "9701_m20_qp_42.pdf",
+      "sha256": "9c0be8e0bc320722efb5e77140fb7b4a7a9bbf3870da258b94f68c2fd8804d01",
+      "bytes": 1354296,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-m-42-ms",
+      "filename": "9701_m20_ms_42.pdf",
+      "sha256": "38f623c00a13d44ed3fd4d920594c2167b5364798c239077e1e46b88d3c36c7c",
+      "bytes": 306963,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-41-qp",
+      "filename": "9701_s20_qp_41.pdf",
+      "sha256": "74a5396204621544aebab4d16a1e2261f438e779934377b2556dcdd40071d841",
+      "bytes": 1436555,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-41-ms",
+      "filename": "9701_s20_ms_41.pdf",
+      "sha256": "453ed4336fa74036471763737a675ecf893dcb15daae1a46f798c432c863e3db",
+      "bytes": 300508,
+      "pages": 15,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-42-qp",
+      "filename": "9701_s20_qp_42.pdf",
+      "sha256": "bb99560aaf0744ceec82031dc0cb0370240092877a9b18f5baaf06fed0a01d3c",
+      "bytes": 1905430,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-42-ms",
+      "filename": "9701_s20_ms_42.pdf",
+      "sha256": "ec16d71176cb41ac733a58ce599aec0f8e229b263bd988c63e036e3fa4212e4f",
+      "bytes": 262694,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-43-qp",
+      "filename": "9701_s20_qp_43.pdf",
+      "sha256": "aa59513db00ce02c2878457fee5ff77081e2cf471b133ed68ed72fab18068714",
+      "bytes": 1282132,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-s-43-ms",
+      "filename": "9701_s20_ms_43.pdf",
+      "sha256": "7804b600e64b320fb612806fefc53baec1ac5f8abaffa5f5c4f344a1799101ef",
+      "bytes": 304616,
+      "pages": 15,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-41-qp",
+      "filename": "9701_w20_qp_41.pdf",
+      "sha256": "53af6aa7a6d344c96fb30fe26cff64b72c07feec68887609c37dc2ae78810b44",
+      "bytes": 1264737,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-41-ms",
+      "filename": "9701_w20_ms_41.pdf",
+      "sha256": "00c983544074a877450e2ea4be8175b244d843d39acffbb5f5076dc6b22820a6",
+      "bytes": 320170,
+      "pages": 15,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-42-qp",
+      "filename": "9701_w20_qp_42.pdf",
+      "sha256": "5b8497dea274da00dda3a72c7877c933b7abd71527654b4f16172b6920dbe9a3",
+      "bytes": 1497146,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-42-ms",
+      "filename": "9701_w20_ms_42.pdf",
+      "sha256": "79e03181326de3045eb988da95ddb4a58f9ec8e981fa9bcb47157f3eb6fc2720",
+      "bytes": 299414,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-43-qp",
+      "filename": "9701_w20_qp_43.pdf",
+      "sha256": "c18d467d9813b92d1d895b7759b7527b40ebc863eaf0ea508fa362a6e899e972",
+      "bytes": 1268258,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2020-w-43-ms",
+      "filename": "9701_w20_ms_43.pdf",
+      "sha256": "7d43a823d8befa93d389a0a0be2d366268fb9e9d4f6dbee354ca31969a9cb253",
+      "bytes": 320140,
+      "pages": 15,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-m-42-qp",
+      "filename": "9701_m21_qp_42.pdf",
+      "sha256": "e36d9db84c30b65cf2124d774f6939049a94e093242bc78f7b8a7481a407059e",
+      "bytes": 2372828,
+      "pages": 28,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-m-42-ms",
+      "filename": "9701_m21_ms_42.pdf",
+      "sha256": "6764fbce514cfca3d28d143ad12adf570cee43ba08361d790a9e11f72eeebcc6",
+      "bytes": 377479,
+      "pages": 13,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-41-qp",
+      "filename": "9701_s21_qp_41.pdf",
+      "sha256": "b91c146c5e3cb211f596adcae85f00b218f44082b8697ded74a575663a17c546",
+      "bytes": 1268966,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-41-ms",
+      "filename": "9701_s21_ms_41.pdf",
+      "sha256": "8d58b320ef948cd2b1bfe350a127aa4f33b10d6fd6b1b20029af36955b638b38",
+      "bytes": 388700,
+      "pages": 17,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-42-qp",
+      "filename": "9701_s21_qp_42.pdf",
+      "sha256": "61dbdace893f5adbeedd8e54a1c094d42866fb457d6635418a97e2376eee8692",
+      "bytes": 1580711,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-42-ms",
+      "filename": "9701_s21_ms_42.pdf",
+      "sha256": "e87c4b02a1174a7639e80a7890586a97474d7eb65cdd2f3c34631ff6236dc6e6",
+      "bytes": 402091,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-43-qp",
+      "filename": "9701_s21_qp_43.pdf",
+      "sha256": "4f40e7114c808736533fcaf53f0819a4f78bdd5daf94ac5a1326b1f0e60285ae",
+      "bytes": 1657861,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-s-43-ms",
+      "filename": "9701_s21_ms_43.pdf",
+      "sha256": "07c4693d5f045c9eb808d60168d02ef3f8ce8a6ee958247e6728546b66480de7",
+      "bytes": 388716,
+      "pages": 17,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-41-qp",
+      "filename": "9701_w21_qp_41.pdf",
+      "sha256": "47e04d7e1879180ea315ba6834f103447238be3571f05baaf1a9f66db69d4db6",
+      "bytes": 1385377,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-41-ms",
+      "filename": "9701_w21_ms_41.pdf",
+      "sha256": "26aecc5289422799a7471ffdc7c1118a40ea94591ce92b95faa612ee90ef35f1",
+      "bytes": 334715,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-42-qp",
+      "filename": "9701_w21_qp_42.pdf",
+      "sha256": "1d4067ae6b50a7600e393b1ccabea12d1dc207d6ace5fdd7c1331baa42dec647",
+      "bytes": 1577315,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-42-ms",
+      "filename": "9701_w21_ms_42.pdf",
+      "sha256": "ed4e6391bd522908f1e017d78c265b0e9e72fab56be4ba05a5fd539a2058a333",
+      "bytes": 323072,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-43-qp",
+      "filename": "9701_w21_qp_43.pdf",
+      "sha256": "fb322cbffb575b66b64946b7f284e3916055e3bbb51e4be3c81961777285890b",
+      "bytes": 1388086,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2021-w-43-ms",
+      "filename": "9701_w21_ms_43.pdf",
+      "sha256": "5a13615a75e5b8d14df63839e5f44d102b1be77413dbb209b4ac7c3d4cfa9e93",
+      "bytes": 334721,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-m-42-qp",
+      "filename": "9701_m22_qp_42.pdf",
+      "sha256": "c8a6de592ff8fd51a2af3ccbe762dbb5b5b94808bcf723d4149e7d40f88972a9",
+      "bytes": 1835005,
+      "pages": 28,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-m-42-ms",
+      "filename": "9701_m22_ms_42.pdf",
+      "sha256": "46630bc08f6df1eb573d9d527094e95fff37d351736f40775ba488959a261f20",
+      "bytes": 395709,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-41-qp",
+      "filename": "9701_s22_qp_41.pdf",
+      "sha256": "bbbde1e021f5768fea0bd1dc11822a425725d99874adb465ba1f711e8e80b98a",
+      "bytes": 2492706,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-41-ms",
+      "filename": "9701_s22_ms_41.pdf",
+      "sha256": "05d01fa394d47ed2126750b8fb8d803024493c03614260fb0210786ee9d45d9e",
+      "bytes": 370560,
+      "pages": 15,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-42-qp",
+      "filename": "9701_s22_qp_42.pdf",
+      "sha256": "dbf10423402d65fc97a43f76aa27fa05b628cd2fb62082a0cfcdac5dee52be5f",
+      "bytes": 2206608,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-42-ms",
+      "filename": "9701_s22_ms_42.pdf",
+      "sha256": "f89d90e53f391e5bae0d35aace5ec959e6d1675f56690c706485927fb1f7c9ea",
+      "bytes": 367699,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-43-qp",
+      "filename": "9701_s22_qp_43.pdf",
+      "sha256": "11071b2ccfc5ba9d655a19ff4100c5b252f7b7fa2d12b1804c85025a98aa5595",
+      "bytes": 2494521,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-s-43-ms",
+      "filename": "9701_s22_ms_43.pdf",
+      "sha256": "cb2c22caf83c1888bb5552bdddec4453eeb291be2834afe0d19a1d29ef4499c6",
+      "bytes": 370556,
+      "pages": 15,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-41-qp",
+      "filename": "9701_w22_qp_41.pdf",
+      "sha256": "c07d1cad55b7c603c42b0618f750d4f732b62f5c3240a28caa3eabd56544d1a1",
+      "bytes": 2247135,
+      "pages": 28,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-41-ms",
+      "filename": "9701_w22_ms_41.pdf",
+      "sha256": "aa476dcec827c669138eabdec9793379cc417e8068722fe106d130d06db27d18",
+      "bytes": 403424,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-42-qp",
+      "filename": "9701_w22_qp_42.pdf",
+      "sha256": "f8d6825c6c6d90976821759ad9c3b9a6aef68f2f828ff4834d6613dc78427018",
+      "bytes": 2153954,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-42-ms",
+      "filename": "9701_w22_ms_42.pdf",
+      "sha256": "186621adfcafe521d9c2b83a92d3926ec4167718d5877dc714f9dea094ff179c",
+      "bytes": 218815,
+      "pages": 11,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-43-qp",
+      "filename": "9701_w22_qp_43.pdf",
+      "sha256": "9fbb3ea39c6baf8e7da5a526cb41d596a2ca0e0dc77e71e2024040445d3d41f1",
+      "bytes": 2249653,
+      "pages": 28,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2022-w-43-ms",
+      "filename": "9701_w22_ms_43.pdf",
+      "sha256": "76598772cb8144476378e6df0d3e5cf03d278cbd73f88b7d4fc72af27403b4c8",
+      "bytes": 403445,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-m-42-qp",
+      "filename": "9701_m23_qp_42.pdf",
+      "sha256": "15896469f14e214daebc8d99a0d05867a7ddc14918d31be4763be1aa79b541fd",
+      "bytes": 1209000,
+      "pages": 28,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-m-42-ms",
+      "filename": "9701_m23_ms_42.pdf",
+      "sha256": "2b07507227895fb3906abedd8aa2cd5e5b5e24dd62e63a074fe4f5248a4f1e40",
+      "bytes": 439008,
+      "pages": 17,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-41-qp",
+      "filename": "9701_s23_qp_41.pdf",
+      "sha256": "138dbf04dc56ce6c0ad7c55373d4c257514bc7e93afd7fd3079c9c1c5c6e7389",
+      "bytes": 1153422,
+      "pages": 28,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-41-ms",
+      "filename": "9701_s23_ms_41.pdf",
+      "sha256": "372c215ef77c26ad5c5881c5297f2e72ab30c509a6689c2c06a9c3beefed2ea5",
+      "bytes": 379642,
+      "pages": 17,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-42-qp",
+      "filename": "9701_s23_qp_42.pdf",
+      "sha256": "36e424303474d18106563f94ec51dd247fc1dbb7427f2f44e3fde072ae39cc42",
+      "bytes": 1137594,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-42-ms",
+      "filename": "9701_s23_ms_42.pdf",
+      "sha256": "3c0815bd1adbdeedb80d45d541a91896d4cc39652d3910a342414ce3d8385a57",
+      "bytes": 362486,
+      "pages": 19,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-43-qp",
+      "filename": "9701_s23_qp_43.pdf",
+      "sha256": "445bdce046e7756bf217de68394f1efdaa5503796a034dcde920c74fdc54b9c3",
+      "bytes": 684484,
+      "pages": 28,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-s-43-ms",
+      "filename": "9701_s23_ms_43.pdf",
+      "sha256": "93f01c3a645b9d49f2c9dd9bb43376339ad43ed15efcd8737e14c624639d3656",
+      "bytes": 379646,
+      "pages": 17,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-41-qp",
+      "filename": "9701_w23_qp_41.pdf",
+      "sha256": "27545a972ebbec3cdd4c9222886facc10a2992659a9f993886113b99a2a2cc05",
+      "bytes": 987906,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-41-ms",
+      "filename": "9701_w23_ms_41.pdf",
+      "sha256": "dee5e47820a79c4770337fd49af7a8ab6117453c5d93784d82d754a08d71052f",
+      "bytes": 418986,
+      "pages": 18,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-42-qp",
+      "filename": "9701_w23_qp_42.pdf",
+      "sha256": "59e9a3fefa0f1dfc245c774e09bc6088bae33b274f5a9ae3b522b6f759e908c6",
+      "bytes": 1116535,
+      "pages": 28,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-42-ms",
+      "filename": "9701_w23_ms_42.pdf",
+      "sha256": "48d7ec1af91092d34c400a0095154298d5252ccff9b742ace8a4b08d05d80754",
+      "bytes": 390272,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-43-qp",
+      "filename": "9701_w23_qp_43.pdf",
+      "sha256": "88a0d1cd9b3606267ceecc826a57d3188873e1ef28727baea6c59feed093f07a",
+      "bytes": 661865,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2023-w-43-ms",
+      "filename": "9701_w23_ms_43.pdf",
+      "sha256": "1ac810402d6722b9dc5005febdb2a45f6a8e32ce311a03009053189cb13c41f6",
+      "bytes": 419008,
+      "pages": 18,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-m-42-qp",
+      "filename": "9701_m24_qp_42.pdf",
+      "sha256": "da5bb7226f810bc9f6c56b5b6ef2a542e1d3f08ffe4225f63126af0aafde0181",
+      "bytes": 1363210,
+      "pages": 28,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-m-42-ms",
+      "filename": "9701_m24_ms_42.pdf",
+      "sha256": "5ec362f2898f3d0c214aa2a69ad5c22042392297374005332e79314981149c7b",
+      "bytes": 387809,
+      "pages": 13,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-41-qp",
+      "filename": "9701_s24_qp_41.pdf",
+      "sha256": "da854e90c9c7b07610f6b4ac4f4a52a5f0fef38468e3b719f7428b3d0906eefa",
+      "bytes": 1270392,
+      "pages": 28,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-41-ms",
+      "filename": "9701_s24_ms_41.pdf",
+      "sha256": "7a68e1620e3452c2f5badf20425c1d61ee763f861adb750a2ed9a06b1b6270c5",
+      "bytes": 285408,
+      "pages": 18,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-42-qp",
+      "filename": "9701_s24_qp_42.pdf",
+      "sha256": "f3ad24f8f5151877f63816dc64609a5f41a8336d24ddfbef8ac2388046757622",
+      "bytes": 227823,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-42-ms",
+      "filename": "9701_s24_ms_42.pdf",
+      "sha256": "8da72df7ba7c807875de36c19210fc47d8b750ec1262413de9e4a197a367dbac",
+      "bytes": 301099,
+      "pages": 15,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-43-qp",
+      "filename": "9701_s24_qp_43.pdf",
+      "sha256": "a9ba9573f9f9e307b811734ca8913204eb028d63905c38d095f84e4541a0b6c9",
+      "bytes": 466589,
+      "pages": 25,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-s-43-ms",
+      "filename": "9701_s24_ms_43.pdf",
+      "sha256": "c074461a9769acbc6178884f1ea424cf8bac9339173d921f57cf2fc08401660e",
+      "bytes": 285418,
+      "pages": 18,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-41-qp",
+      "filename": "9701_w24_qp_41.pdf",
+      "sha256": "e89420c487fb6cd2a3f5dcccfb4ef0d0fa7e8b814e3e0216f6a8c416fa0b41ce",
+      "bytes": 143565,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-41-ms",
+      "filename": "9701_w24_ms_41.pdf",
+      "sha256": "6344a47faa7b432d298470fa5f42173f3025c73331abdd8df24d713d0230718a",
+      "bytes": 419864,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-42-qp",
+      "filename": "9701_w24_qp_42.pdf",
+      "sha256": "0125a7f3492786218a57d9a6c1e6aa79f3747b03669053df1a669f9e7964145a",
+      "bytes": 140746,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-42-ms",
+      "filename": "9701_w24_ms_42.pdf",
+      "sha256": "1e2b043eb454b6156f2633c3b330fd190f560491d622503b2082aa0d3a1cc3e3",
+      "bytes": 371781,
+      "pages": 12,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-43-qp",
+      "filename": "9701_w24_qp_43.pdf",
+      "sha256": "b006bc1a911a65f639f69808a3af46e59bb4b20f52c2720a797ee921f27072fa",
+      "bytes": 143289,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2024-w-43-ms",
+      "filename": "9701_w24_ms_43.pdf",
+      "sha256": "3ace1c9aefd32af11580c5039856ac6870e5e46558da1963d2b5adf949799dcc",
+      "bytes": 419885,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-m-42-qp",
+      "filename": "9701_m25_qp_42.pdf",
+      "sha256": "8f274493ff1c2901d46922ce1bee9faa19b354cba42c6ef85484c66972893c1e",
+      "bytes": 164010,
+      "pages": 28,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-m-42-ms",
+      "filename": "9701_m25_ms_42.pdf",
+      "sha256": "d6c5f884d89fad016825cbb59e2275ffa230f834ddd6ac660c13549af20ec77a",
+      "bytes": 426146,
+      "pages": 14,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-41-qp",
+      "filename": "9701_s25_qp_41.pdf",
+      "sha256": "5e8abf5471043df3d98db730aaf496786ba7c2f856a6640930dfcbd92a8c7f3a",
+      "bytes": 141680,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-41-ms",
+      "filename": "9701_s25_ms_41.pdf",
+      "sha256": "3af76636a208d13e0596dda83c58b483419a61385ffc570a747c35412c30d4e1",
+      "bytes": 440519,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-42-qp",
+      "filename": "9701_s25_qp_42.pdf",
+      "sha256": "5ea781c5122309aa6ad26cdf1626f2afae91e3101685ac05053a91f409e85b42",
+      "bytes": 155063,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-42-ms",
+      "filename": "9701_s25_ms_42.pdf",
+      "sha256": "3147278f8424c52fb188571be2de654dbba0fa044b39003d0d7245bb7b88fa14",
+      "bytes": 493725,
+      "pages": 17,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-43-qp",
+      "filename": "9701_s25_qp_43.pdf",
+      "sha256": "02b67e7783ad80895c5b313368a4420a9ef52ea98e81379f306ecca95cac7c60",
+      "bytes": 142116,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-s-43-ms",
+      "filename": "9701_s25_ms_43.pdf",
+      "sha256": "e3d5b2eed6fac4454938ccca26e56ab086f930fb7922a1d7f39495eda38746ba",
+      "bytes": 440527,
+      "pages": 16,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-41-qp",
+      "filename": "9701_w25_qp_41.pdf",
+      "sha256": "8caa0c9bd28e5058a0618e2021a06451ae9234976e818c9c22d9490aa1f25a24",
+      "bytes": 157156,
+      "pages": 28,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-41-ms",
+      "filename": "9701_w25_ms_41.pdf",
+      "sha256": "646805d6a4098f362332556c1783ab32474aab62f81e7e3a02a19ab5e4b16582",
+      "bytes": 436823,
+      "pages": 19,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-42-qp",
+      "filename": "9701_w25_qp_42.pdf",
+      "sha256": "0ae767bca2ed1b7f020dbc2db4070f3ed795d5b80f6c1481d8dd7a84bdbb95b8",
+      "bytes": 143899,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-42-ms",
+      "filename": "9701_w25_ms_42.pdf",
+      "sha256": "08185f7b06c3058aa40784df11f97bd8931ad875a4a8fd6a11fab97832805bac",
+      "bytes": 469440,
+      "pages": 15,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-43-qp",
+      "filename": "9701_w25_qp_43.pdf",
+      "sha256": "dee01345b6fa6b6134e7c658d5958f5d94a78060a0d13dc692ec235d38ec2d9c",
+      "bytes": 156794,
+      "pages": 28,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2025-w-43-ms",
+      "filename": "9701_w25_ms_43.pdf",
+      "sha256": "97277e8ba09adf2dbaf5b9e10c6c4fb63a2d3f5a7cc4f151e6a2dfb3f4f2f482",
+      "bytes": 436832,
+      "pages": 19,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-m-42-qp",
+      "filename": "9701_m26_qp_42.pdf",
+      "sha256": "c99f422866e976bf9912e95b6742eefec48597b3038b59427f4405ff1d8b4ff6",
+      "bytes": 185835,
+      "pages": 23,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-m-42-ms",
+      "filename": "9701_m26_ms_42.pdf",
+      "sha256": "547637873131736510927633348f0e2a3281461be1fdcac860e613eeb683c227",
+      "bytes": 1425467,
+      "pages": 18,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-s-41-qp",
+      "filename": "9701_s26_qp_41.pdf",
+      "sha256": "1e4a66e61dfc8358f290a0b6fc216a205ecd09ee312921c5dd7d87b618370857",
+      "bytes": 1425046,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-s-41-ms",
+      "filename": "9701_s26_ms_41.pdf",
+      "sha256": "89172ea892d38de11cc620dad170ec9d686c59c7a6e4e542bc5f86d2cbb2f849",
+      "bytes": 671014,
+      "pages": 21,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-s-42-qp",
+      "filename": "9701_s26_qp_42.pdf",
+      "sha256": "8b5803707b948eec606994912e9b5d449671d6116e592024f040b83d9d17cff9",
+      "bytes": 155951,
+      "pages": 28,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-s-42-ms",
+      "filename": "9701_s26_ms_42.pdf",
+      "sha256": "f174daf88497e92ede02e696a5c96a27106f242740e45871451ee9e4fc580106",
+      "bytes": 621518,
+      "pages": 25,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-s-43-qp",
+      "filename": "9701_s26_qp_43.pdf",
+      "sha256": "0ab29181884f1dffad2e701b42b0ffb5a98419de918e29d4a02f5100a3ca7e75",
+      "bytes": 144886,
+      "pages": 24,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-2026-s-43-ms",
+      "filename": "9701_s26_ms_43.pdf",
+      "sha256": "9d99f7afaf0fe19071caa8d40d31af3705defbde1c00c85d4bf7e2062aee65ad",
+      "bytes": 679427,
+      "pages": 21,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    },
+    {
+      "source_id": "cie-9701-data-booklet-2016",
+      "filename": "9701-data-booklet-2016.pdf",
+      "sha256": "8b078339f75b00afc8d7ad081b3868915f20f8739e9899c42cdd58dea7e5a471",
+      "bytes": 845365,
+      "pages": 20,
+      "authorization_basis": "Maintainer confirmations in this task; AS scope previously recorded, all 2018-2026 P4 QP/MS and the 2016 Data Booklet expressly covered.",
+      "software_license_does_not_relicense_exam_data": true
+    }
+  ]
+}

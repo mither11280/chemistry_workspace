@@ -17,7 +17,7 @@ import fitz
 from .format import DataError,read_json,write_json,validate,validate_schema,relative_path,safe_path,sha256,geometry
 
 MAX_BYTES=512*1024*1024
-READER_VERSION=(0,5,0)
+READER_VERSION=(0,5,1)
 
 def encoded(value):return (json.dumps(value,ensure_ascii=False,sort_keys=True,indent=2)+'\n').encode()
 def digest(data):return hashlib.sha256(data).hexdigest()
@@ -111,6 +111,26 @@ def install_package(catalog,path,expected_sha256=None):
     info,index,manifest,payload=inspect_package(path,catalog.resource_root/'schemas')
     old,old_manifest=catalog.public_contract()
     old_effective,old_effective_manifest=catalog.read_contract()
+    # The v0.5.1 full and delta assets intentionally describe the same target.
+    # A teacher may add the full bundle after a delta install, or reinstall it.
+    # Permit that only for byte-equivalent public contracts, never a revision
+    # collision or a different custom bank. Sources are still hash checked.
+    same_assets=(info['minimum_app_version']=='0.5.1' and any(q['paper']==4 for q in index['questions']) and index==old and manifest==old_manifest)
+    if same_assets:
+        imported=0
+        for name,data in payload.items():
+            if not name.startswith('sources/'):continue
+            out=safe_path(catalog.root,name)
+            if out.exists():
+                if sha256(out)!=digest(data):raise DataError('禁止覆盖不同内容的原卷')
+                continue
+            out.parent.mkdir(parents=True,exist_ok=True)
+            fd,temp=tempfile.mkstemp(dir=out.parent)
+            try:
+                with os.fdopen(fd,'wb') as stream:stream.write(data)
+                os.replace(temp,out);imported+=1
+            finally:Path(temp).unlink(missing_ok=True)
+        return {'revision':old['revision'],'questions':len(old['questions']),'package_sha256':package_hash,'already_installed':imported==0,'added_source_files':imported}
     if info['base_revision']!=old['revision']:raise DataError('基础题库版本不匹配，请使用对应的更新包')
     compatible(old,old_manifest,index,manifest)
     if index['revision']==old['revision']:raise DataError('相同 revision 不允许重新定义内容')

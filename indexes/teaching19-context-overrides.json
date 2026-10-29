@@ -147,6 +147,1882 @@
         "context_key": "1(c)",
         "reason": "The balanced sulfur dioxide oxidation equilibrium used by part d is printed in the unscored introduction to part c."
       }
+    ],
+    "cie-9701-m25-42-q2-c-i": [
+      {
+        "from_question_id": "cie-9701-m25-42-q2-b",
+        "context_key": "2(b):B-definition",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              25,
+              60.823,
+              575.276,
+              197
+            ]
+          }
+        ],
+        "reason": "The unscored introductory Fig.2.3 defines B; c(i) needs this structure but not the kinetics mechanism-selection answer in b."
+      }
+    ],
+    "cie-9701-m18-42-q7-e": [
+      {
+        "from_question_id": "cie-9701-m18-42-q7-d-i",
+        "context_key": "7(d)",
+        "reason": "Kevlar properties require the aromatic diacid and diamine monomer structures; reuse the unscored introduction, not the preceding reagent answers."
+      }
+    ],
+    "cie-9701-s18-41-q2-e": [
+      {
+        "from_question_id": "cie-9701-s18-41-q2-c",
+        "context_key": "2:lead-after:b",
+        "reason": "The explicitly supplied rate equation is needed to read orders and compare the mechanism; reuse the unscored data, not the rate-constant answer."
+      }
+    ],
+    "cie-9701-s18-41-q2-f-i": [
+      {
+        "from_question_id": "cie-9701-s18-41-q2-c",
+        "context_key": "2:lead-after:b",
+        "reason": "The explicitly supplied rate equation is needed to read orders and compare the mechanism; reuse the unscored data, not the rate-constant answer."
+      }
+    ],
+    "cie-9701-s18-41-q2-f-ii": [
+      {
+        "from_question_id": "cie-9701-s18-41-q2-c",
+        "context_key": "2:lead-after:b",
+        "reason": "The explicitly supplied rate equation is needed to read orders and compare the mechanism; reuse the unscored data, not the rate-constant answer."
+      }
+    ],
+    "cie-9701-s18-41-q6-b-i": [
+      {
+        "from_question_id": "cie-9701-s18-41-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "The unscored reaction drawing defines the cumene skeleton needed by the later substitution/oxidation task."
+      }
+    ],
+    "cie-9701-s18-41-q6-b-ii": [
+      {
+        "from_question_id": "cie-9701-s18-41-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "The unscored reaction drawing defines the cumene skeleton needed by the later substitution/oxidation task."
+      }
+    ],
+    "cie-9701-s18-41-q6-b-iii": [
+      {
+        "from_question_id": "cie-9701-s18-41-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "The unscored reaction drawing defines the cumene skeleton needed by the later substitution/oxidation task."
+      }
+    ],
+    "cie-9701-s18-41-q6-b-iv": [
+      {
+        "from_question_id": "cie-9701-s18-41-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "The unscored reaction drawing defines the cumene skeleton needed by the later substitution/oxidation task."
+      }
+    ],
+    "cie-9701-s18-41-q6-c": [
+      {
+        "from_question_id": "cie-9701-s18-41-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "The unscored reaction drawing defines the cumene skeleton needed by the later substitution/oxidation task."
+      }
+    ],
+    "cie-9701-s18-42-q1-c-ii": [
+      {
+        "from_question_id": "cie-9701-s18-42-q1-c-i",
+        "context_key": "1(c):reaction-entropy-data",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              25,
+              56.173,
+              575.276,
+              160.89
+            ]
+          }
+        ],
+        "reason": "Reaction 1 and its supplied entropy data occur inside the preceding flat task; reuse only the unscored prefix, excluding the entropy calculation and answer space."
+      }
+    ],
+    "cie-9701-s18-42-q1-d": [
+      {
+        "from_question_id": "cie-9701-s18-42-q1-c-i",
+        "context_key": "1(c):reaction-entropy-data",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              25,
+              56.173,
+              575.276,
+              160.89
+            ]
+          }
+        ],
+        "reason": "Reaction 1 and its supplied entropy data occur inside the preceding flat task; reuse only the unscored prefix, excluding the entropy calculation and answer space."
+      }
+    ],
+    "cie-9701-s18-42-q8-e-i": [
+      {
+        "from_question_id": "cie-9701-s18-42-q8-d-i",
+        "context_key": "8(d)",
+        "reason": "The later cleavage task explicitly excludes the product X shown in (d); include that unscored structure without the preceding NMR answers."
+      }
+    ],
+    "cie-9701-s18-42-q8-e-ii": [
+      {
+        "from_question_id": "cie-9701-s18-42-q8-d-i",
+        "context_key": "8(d)",
+        "reason": "The later cleavage task explicitly excludes the product X shown in (d); include that unscored structure without the preceding NMR answers."
+      }
+    ],
+    "cie-9701-w18-42-q5-g": [
+      {
+        "from_question_id": "cie-9701-w18-42-q5-f-i",
+        "context_key": "5(f)",
+        "reason": "The carbon NMR question needs W and the synthetic route defining Z; include the unscored route as well as the scored Z prerequisite."
+      }
+    ],
+    "cie-9701-w18-42-q6-c": [
+      {
+        "from_question_id": "cie-9701-w18-42-q6-b-i",
+        "context_key": "6(b)",
+        "reason": "The polymer task uses monomer R, whose structure is defined only in this unscored introduction; no synthesis answers are required."
+      }
+    ],
+    "cie-9701-w18-42-q8-c-ii": [
+      {
+        "from_question_id": "cie-9701-w18-42-q8-c-i",
+        "context_key": "8(c):hydrazine-equation",
+        "regions": [
+          {
+            "page_index": 20,
+            "bbox": [
+              25,
+              278.46,
+              575.276,
+              332.286
+            ]
+          }
+        ],
+        "reason": "The unscored hydrazine reaction equation follows the preceding definition score; later thermodynamic calculations require the equation but not that definition answer."
+      }
+    ],
+    "cie-9701-w18-42-q8-c-iii": [
+      {
+        "from_question_id": "cie-9701-w18-42-q8-c-i",
+        "context_key": "8(c):hydrazine-equation",
+        "regions": [
+          {
+            "page_index": 20,
+            "bbox": [
+              25,
+              278.46,
+              575.276,
+              332.286
+            ]
+          }
+        ],
+        "reason": "The unscored hydrazine reaction equation follows the preceding definition score; later thermodynamic calculations require the equation but not that definition answer."
+      }
+    ],
+    "cie-9701-w18-42-q8-c-iv": [
+      {
+        "from_question_id": "cie-9701-w18-42-q8-c-i",
+        "context_key": "8(c):hydrazine-equation",
+        "regions": [
+          {
+            "page_index": 20,
+            "bbox": [
+              25,
+              278.46,
+              575.276,
+              332.286
+            ]
+          }
+        ],
+        "reason": "The unscored hydrazine reaction equation follows the preceding definition score; later thermodynamic calculations require the equation but not that definition answer."
+      }
+    ],
+    "cie-9701-w18-42-q8-c-v": [
+      {
+        "from_question_id": "cie-9701-w18-42-q8-c-i",
+        "context_key": "8(c):hydrazine-equation",
+        "regions": [
+          {
+            "page_index": 20,
+            "bbox": [
+              25,
+              278.46,
+              575.276,
+              332.286
+            ]
+          }
+        ],
+        "reason": "The unscored hydrazine reaction equation follows the preceding definition score; later thermodynamic calculations require the equation but not that definition answer."
+      }
+    ],
+    "cie-9701-s18-43-q2-e": [
+      {
+        "from_question_id": "cie-9701-s18-43-q2-c",
+        "context_key": "2:lead-after:b",
+        "reason": "The explicitly supplied rate equation is needed to read orders and compare the mechanism; reuse the unscored data, not the rate-constant answer."
+      }
+    ],
+    "cie-9701-s18-43-q2-f-i": [
+      {
+        "from_question_id": "cie-9701-s18-43-q2-c",
+        "context_key": "2:lead-after:b",
+        "reason": "The explicitly supplied rate equation is needed to read orders and compare the mechanism; reuse the unscored data, not the rate-constant answer."
+      }
+    ],
+    "cie-9701-s18-43-q2-f-ii": [
+      {
+        "from_question_id": "cie-9701-s18-43-q2-c",
+        "context_key": "2:lead-after:b",
+        "reason": "The explicitly supplied rate equation is needed to read orders and compare the mechanism; reuse the unscored data, not the rate-constant answer."
+      }
+    ],
+    "cie-9701-s18-43-q6-b-i": [
+      {
+        "from_question_id": "cie-9701-s18-43-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "The unscored reaction drawing defines the cumene skeleton needed by the later substitution/oxidation task."
+      }
+    ],
+    "cie-9701-s18-43-q6-b-ii": [
+      {
+        "from_question_id": "cie-9701-s18-43-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "The unscored reaction drawing defines the cumene skeleton needed by the later substitution/oxidation task."
+      }
+    ],
+    "cie-9701-s18-43-q6-b-iii": [
+      {
+        "from_question_id": "cie-9701-s18-43-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "The unscored reaction drawing defines the cumene skeleton needed by the later substitution/oxidation task."
+      }
+    ],
+    "cie-9701-s18-43-q6-b-iv": [
+      {
+        "from_question_id": "cie-9701-s18-43-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "The unscored reaction drawing defines the cumene skeleton needed by the later substitution/oxidation task."
+      }
+    ],
+    "cie-9701-s18-43-q6-c": [
+      {
+        "from_question_id": "cie-9701-s18-43-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "The unscored reaction drawing defines the cumene skeleton needed by the later substitution/oxidation task."
+      }
+    ],
+    "cie-9701-m19-42-q2-b-i": [
+      {
+        "from_question_id": "cie-9701-m19-42-q2-a-i",
+        "context_key": "2(a)",
+        "reason": "The magnesium hydroxide solubility required for Ksp is printed only in the unscored table in (a)."
+      }
+    ],
+    "cie-9701-m19-42-q6-b-ii": [
+      {
+        "from_question_id": "cie-9701-m19-42-q6-b-i",
+        "context_key": "6(b):DNPH-observation",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              25,
+              299,
+              575.276,
+              329.185
+            ]
+          }
+        ],
+        "reason": "The unscored DNPH observation follows the preceding scored acid-base task; retain only that observation for functional-group inference."
+      }
+    ],
+    "cie-9701-m19-42-q6-b-vi": [
+      {
+        "from_question_id": "cie-9701-m19-42-q6-b-i",
+        "context_key": "6(b):DNPH-observation",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              25,
+              299,
+              575.276,
+              329.185
+            ]
+          }
+        ],
+        "reason": "The unscored DNPH observation follows the preceding scored acid-base task; retain only that observation for functional-group inference."
+      }
+    ],
+    "cie-9701-m19-42-q7-b-i": [
+      {
+        "from_question_id": "cie-9701-m19-42-q7-a-ii",
+        "context_key": "7:Q-synthesis-route",
+        "regions": [
+          {
+            "page_index": 17,
+            "bbox": [
+              25,
+              244.2,
+              575.276,
+              798.806
+            ]
+          }
+        ],
+        "reason": "The complete unscored route to Q is printed after the preceding reagent score and defines compounds/step numbers for (b); include the route without the earlier scored answer."
+      }
+    ],
+    "cie-9701-m19-42-q7-b-ii": [
+      {
+        "from_question_id": "cie-9701-m19-42-q7-a-ii",
+        "context_key": "7:Q-synthesis-route",
+        "regions": [
+          {
+            "page_index": 17,
+            "bbox": [
+              25,
+              244.2,
+              575.276,
+              798.806
+            ]
+          }
+        ],
+        "reason": "The complete unscored route to Q is printed after the preceding reagent score and defines compounds/step numbers for (b); include the route without the earlier scored answer."
+      }
+    ],
+    "cie-9701-m19-42-q7-b-iii": [
+      {
+        "from_question_id": "cie-9701-m19-42-q7-a-ii",
+        "context_key": "7:Q-synthesis-route",
+        "regions": [
+          {
+            "page_index": 17,
+            "bbox": [
+              25,
+              244.2,
+              575.276,
+              798.806
+            ]
+          }
+        ],
+        "reason": "The complete unscored route to Q is printed after the preceding reagent score and defines compounds/step numbers for (b); include the route without the earlier scored answer."
+      }
+    ],
+    "cie-9701-m19-42-q7-b-iv": [
+      {
+        "from_question_id": "cie-9701-m19-42-q7-a-ii",
+        "context_key": "7:Q-synthesis-route",
+        "regions": [
+          {
+            "page_index": 17,
+            "bbox": [
+              25,
+              244.2,
+              575.276,
+              798.806
+            ]
+          }
+        ],
+        "reason": "The complete unscored route to Q is printed after the preceding reagent score and defines compounds/step numbers for (b); include the route without the earlier scored answer."
+      }
+    ],
+    "cie-9701-s19-41-q4-d-ii": [
+      {
+        "from_question_id": "cie-9701-s19-41-q4-c-ii",
+        "context_key": "4:lead-after:c-i",
+        "reason": "The temperature question refers to equilibrium 1 and its enthalpy printed in the unscored lead-in before (c)(ii); keep that defining data without the isomer drawings."
+      }
+    ],
+    "cie-9701-s19-43-q4-d-ii": [
+      {
+        "from_question_id": "cie-9701-s19-43-q4-c-ii",
+        "context_key": "4:lead-after:c-i",
+        "reason": "The temperature question refers to equilibrium 1 and its enthalpy printed in the unscored lead-in before (c)(ii); keep that defining data without the isomer drawings."
+      }
+    ],
+    "cie-9701-w19-41-q5-a-iii": [
+      {
+        "from_question_id": "cie-9701-w19-41-q5-a-ii",
+        "context_key": "5(a):given-solubility",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              25,
+              186.172,
+              575.276,
+              210
+            ]
+          }
+        ],
+        "reason": "The minimum-volume calculation needs the supplied solubility printed before the previous Ksp instruction, not the Ksp answer."
+      }
+    ],
+    "cie-9701-w19-43-q5-a-iii": [
+      {
+        "from_question_id": "cie-9701-w19-43-q5-a-ii",
+        "context_key": "5(a):given-solubility",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              25,
+              186.172,
+              575.276,
+              210
+            ]
+          }
+        ],
+        "reason": "The minimum-volume calculation needs the supplied solubility printed before the previous Ksp instruction, not the Ksp answer."
+      }
+    ],
+    "cie-9701-m20-42-q6-c-iv": [
+      {
+        "from_question_id": "cie-9701-m20-42-q6-c-iii",
+        "context_key": "6(c):Z-equilibrium",
+        "regions": [
+          {
+            "page_index": 21,
+            "bbox": [
+              25,
+              52.98,
+              575.28,
+              128.3
+            ]
+          }
+        ],
+        "reason": "The stability interpretation needs the unscored equilibrium defining Z, printed before the preceding Kstab-expression instruction."
+      }
+    ],
+    "cie-9701-s20-42-q1-a-iii": [
+      {
+        "from_question_id": "cie-9701-s20-42-q1-a-ii",
+        "context_key": "1(a):cadmium-EDTA-equilibrium",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              25,
+              225.193,
+              575.276,
+              289
+            ]
+          }
+        ],
+        "reason": "Retain the supplied cadmium EDTA formation equilibrium before the donor-atom instruction, without its scored response."
+      }
+    ],
+    "cie-9701-s20-42-q4-d-i": [
+      {
+        "from_question_id": "cie-9701-s20-42-q4-c",
+        "context_key": "4:phenolphthalein-structure",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              25,
+              56.173,
+              575.276,
+              268
+            ]
+          }
+        ],
+        "reason": "Retain the given phenolphthalein structure and formation diagram, excluding the preceding scored reaction-type task."
+      }
+    ],
+    "cie-9701-s20-42-q4-d-ii": [
+      {
+        "from_question_id": "cie-9701-s20-42-q4-c",
+        "context_key": "4:phenolphthalein-structure",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              25,
+              56.173,
+              575.276,
+              268
+            ]
+          }
+        ],
+        "reason": "Retain the given phenolphthalein structure and formation diagram needed for its reactions, excluding the preceding scored task."
+      }
+    ],
+    "cie-9701-w20-41-q5-c": [
+      {
+        "from_question_id": "cie-9701-w20-41-q5-b",
+        "context_key": "5:lead-after:a-ii",
+        "reason": "Keep the unscored heating and acid-treatment sequence defining Y and Z; no previous scored response is included."
+      }
+    ],
+    "cie-9701-w20-41-q5-d": [
+      {
+        "from_question_id": "cie-9701-w20-41-q5-b",
+        "context_key": "5:lead-after:a-ii",
+        "reason": "Keep the unscored heating and acid-treatment sequence defining Y and Z; no previous scored response is included."
+      }
+    ],
+    "cie-9701-w20-41-q5-e": [
+      {
+        "from_question_id": "cie-9701-w20-41-q5-b",
+        "context_key": "5:lead-after:a-ii",
+        "reason": "Keep the unscored heating and acid-treatment sequence defining Y and Z; no previous scored response is included."
+      }
+    ],
+    "cie-9701-w20-41-q6-b-i": [
+      {
+        "from_question_id": "cie-9701-w20-41-q6-a-ii",
+        "context_key": "6(a)",
+        "reason": "Keep the supplied silver-thiosulfate formation and ligand description defining P before subsequent comparisons and substitution."
+      }
+    ],
+    "cie-9701-w20-41-q6-b-ii": [
+      {
+        "from_question_id": "cie-9701-w20-41-q6-a-ii",
+        "context_key": "6(a)",
+        "reason": "Keep the supplied silver-thiosulfate formation and ligand description defining P before subsequent comparisons and substitution."
+      }
+    ],
+    "cie-9701-w20-41-q6-b-iii": [
+      {
+        "from_question_id": "cie-9701-w20-41-q6-a-ii",
+        "context_key": "6(a)",
+        "reason": "Keep the supplied silver-thiosulfate formation and ligand description defining P before subsequent comparisons and substitution."
+      }
+    ],
+    "cie-9701-w20-43-q5-c": [
+      {
+        "from_question_id": "cie-9701-w20-43-q5-b",
+        "context_key": "5:lead-after:a-ii",
+        "reason": "Keep the unscored heating and acid-treatment sequence defining Y and Z; no previous scored response is included."
+      }
+    ],
+    "cie-9701-w20-43-q5-d": [
+      {
+        "from_question_id": "cie-9701-w20-43-q5-b",
+        "context_key": "5:lead-after:a-ii",
+        "reason": "Keep the unscored heating and acid-treatment sequence defining Y and Z; no previous scored response is included."
+      }
+    ],
+    "cie-9701-w20-43-q5-e": [
+      {
+        "from_question_id": "cie-9701-w20-43-q5-b",
+        "context_key": "5:lead-after:a-ii",
+        "reason": "Keep the unscored heating and acid-treatment sequence defining Y and Z; no previous scored response is included."
+      }
+    ],
+    "cie-9701-w20-43-q6-b-i": [
+      {
+        "from_question_id": "cie-9701-w20-43-q6-a-ii",
+        "context_key": "6(a)",
+        "reason": "Keep the supplied silver-thiosulfate formation and ligand description defining P before subsequent comparisons and substitution."
+      }
+    ],
+    "cie-9701-w20-43-q6-b-ii": [
+      {
+        "from_question_id": "cie-9701-w20-43-q6-a-ii",
+        "context_key": "6(a)",
+        "reason": "Keep the supplied silver-thiosulfate formation and ligand description defining P before subsequent comparisons and substitution."
+      }
+    ],
+    "cie-9701-w20-43-q6-b-iii": [
+      {
+        "from_question_id": "cie-9701-w20-43-q6-a-ii",
+        "context_key": "6(a)",
+        "reason": "Keep the supplied silver-thiosulfate formation and ligand description defining P before subsequent comparisons and substitution."
+      }
+    ],
+    "cie-9701-m21-42-q4-c-iv": [
+      {
+        "from_question_id": "cie-9701-m21-42-q4-c-iii",
+        "context_key": "4(c):iron-edds-equilibrium",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              25,
+              453.264,
+              575.276,
+              503
+            ]
+          }
+        ],
+        "reason": "Retain the supplied iron edds complex-formation equilibrium, excluding the preceding scored reaction-type instruction."
+      }
+    ],
+    "cie-9701-s21-41-q5-c-i": [
+      {
+        "from_question_id": "cie-9701-s21-41-q5-b-i",
+        "context_key": "5(b)",
+        "reason": "The rate tangent and rate constant need the supplied concentration-time graph from part (b), without its scored half-life questions."
+      }
+    ],
+    "cie-9701-s21-41-q5-c-ii": [
+      {
+        "from_question_id": "cie-9701-s21-41-q5-b-i",
+        "context_key": "5(b)",
+        "reason": "The rate tangent and rate constant need the supplied concentration-time graph from part (b), without its scored half-life questions."
+      }
+    ],
+    "cie-9701-s21-43-q5-c-i": [
+      {
+        "from_question_id": "cie-9701-s21-43-q5-b-i",
+        "context_key": "5(b)",
+        "reason": "The rate tangent and rate constant need the supplied concentration-time graph from part (b), without its scored half-life questions."
+      }
+    ],
+    "cie-9701-s21-43-q5-c-ii": [
+      {
+        "from_question_id": "cie-9701-s21-43-q5-b-i",
+        "context_key": "5(b)",
+        "reason": "The rate tangent and rate constant need the supplied concentration-time graph from part (b), without its scored half-life questions."
+      }
+    ],
+    "cie-9701-s21-42-q3-d": [
+      {
+        "from_question_id": "cie-9701-s21-42-q3-c-iii",
+        "context_key": "3(c):silver-stability-data",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              25.0,
+              270.748,
+              575.28,
+              361
+            ]
+          }
+        ],
+        "reason": "Retain the supplied Ksp and thiosulfate Kstab table, excluding the preceding scored calculation."
+      }
+    ],
+    "cie-9701-s21-42-q3-b-ii": [
+      {
+        "from_question_id": "cie-9701-s21-42-q3-b-i",
+        "context_key": "3(b):given-half-cells",
+        "regions": [
+          {
+            "page_index": 6,
+            "bbox": [
+              25.0,
+              371.782,
+              575.28,
+              406
+            ]
+          }
+        ],
+        "reason": "Retain the supplied half-cell identities without the preceding scored voltage/direction task."
+      }
+    ],
+    "cie-9701-w21-41-q2-c": [
+      {
+        "from_question_id": "cie-9701-w21-41-q2-b",
+        "context_key": "2(b):buffer-composition",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              25.0,
+              523.75,
+              575.276,
+              560
+            ]
+          }
+        ],
+        "reason": "Retain the supplied propanoic-acid/propanoate buffer composition, excluding its salt-mass calculation."
+      }
+    ],
+    "cie-9701-w21-41-q3-e": [
+      {
+        "from_question_id": "cie-9701-w21-41-q3-c",
+        "context_key": "3:lead-after:b",
+        "reason": "Retain the supplied calcium/oxygen energy table needed for formation enthalpy, without the earlier bond-energy answer."
+      }
+    ],
+    "cie-9701-w21-41-q9-d-ii": [
+      {
+        "from_question_id": "cie-9701-w21-41-q9-c-i",
+        "context_key": "9(c)",
+        "reason": "Retain the explicitly supplied product T structure needed to assign molecular fragments, without the earlier scored reducing-reagent task."
+      }
+    ],
+    "cie-9701-w21-43-q2-c": [
+      {
+        "from_question_id": "cie-9701-w21-43-q2-b",
+        "context_key": "2(b):buffer-composition",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              25.0,
+              523.75,
+              575.276,
+              560
+            ]
+          }
+        ],
+        "reason": "Retain the supplied propanoic-acid/propanoate buffer composition, excluding its salt-mass calculation."
+      }
+    ],
+    "cie-9701-w21-43-q3-e": [
+      {
+        "from_question_id": "cie-9701-w21-43-q3-c",
+        "context_key": "3:lead-after:b",
+        "reason": "Retain the supplied calcium/oxygen energy table needed for formation enthalpy, without the earlier bond-energy answer."
+      }
+    ],
+    "cie-9701-w21-43-q9-d-ii": [
+      {
+        "from_question_id": "cie-9701-w21-43-q9-c-i",
+        "context_key": "9(c)",
+        "reason": "Retain the explicitly supplied product T structure needed to assign molecular fragments, without the earlier scored reducing-reagent task."
+      }
+    ],
+    "cie-9701-m22-42-q1-a-iii": [
+      {
+        "from_question_id": "cie-9701-m22-42-q1-a-ii",
+        "context_key": "1(a):supplied-partition-coefficient",
+        "regions": [
+          {
+            "page_index": 1,
+            "bbox": [
+              25.0,
+              276.777,
+              575.276,
+              338.0
+            ]
+          }
+        ],
+        "reason": "Retain the explicitly supplied cyclohexane/water partition coefficient and volumes for solvent comparison; omit the preceding scored mass calculation."
+      }
+    ],
+    "cie-9701-m22-42-q4-b-ii": [
+      {
+        "from_question_id": "cie-9701-m22-42-q4-b-i",
+        "context_key": "4(b):given-product-E",
+        "regions": [
+          {
+            "page_index": 11,
+            "bbox": [
+              390.0,
+              624.0,
+              516.0,
+              704.0
+            ]
+          }
+        ],
+        "reason": "Retain only the preprinted labelled structure E from the table, excluding blank scored reagent and intermediate cells. The directing-effect comparison does not need the preceding answer."
+      }
+    ],
+    "cie-9701-s22-41-q6-c-ii": [
+      {
+        "from_question_id": "cie-9701-s22-41-q6-b",
+        "context_key": "6:given-asparagine-structure",
+        "regions": [
+          {
+            "page_index": 15,
+            "bbox": [
+              210.0,
+              210.0,
+              380.0,
+              345.0
+            ]
+          }
+        ],
+        "reason": "Retain the preprinted labelled asparagine structure needed for protonation, polymer formation or amino-acid electrophoresis, without the earlier scored NMR table."
+      }
+    ],
+    "cie-9701-s22-41-q6-d": [
+      {
+        "from_question_id": "cie-9701-s22-41-q6-b",
+        "context_key": "6:given-asparagine-structure",
+        "regions": [
+          {
+            "page_index": 15,
+            "bbox": [
+              210.0,
+              210.0,
+              380.0,
+              345.0
+            ]
+          }
+        ],
+        "reason": "Retain the preprinted labelled asparagine structure needed for protonation, polymer formation or amino-acid electrophoresis, without the earlier scored NMR table."
+      }
+    ],
+    "cie-9701-s22-41-q6-e": [
+      {
+        "from_question_id": "cie-9701-s22-41-q6-b",
+        "context_key": "6:given-asparagine-structure",
+        "regions": [
+          {
+            "page_index": 15,
+            "bbox": [
+              210.0,
+              210.0,
+              380.0,
+              345.0
+            ]
+          }
+        ],
+        "reason": "Retain the preprinted labelled asparagine structure needed for protonation, polymer formation or amino-acid electrophoresis, without the earlier scored NMR table."
+      },
+      {
+        "from_question_id": "cie-9701-s22-41-q6-c-i",
+        "context_key": "6(c)",
+        "reason": "Retain the explicitly supplied asparagine isoelectric point needed for electrophoresis; no preceding definition answer is required."
+      }
+    ],
+    "cie-9701-s22-43-q6-c-ii": [
+      {
+        "from_question_id": "cie-9701-s22-43-q6-b",
+        "context_key": "6:given-asparagine-structure",
+        "regions": [
+          {
+            "page_index": 15,
+            "bbox": [
+              210.0,
+              210.0,
+              380.0,
+              345.0
+            ]
+          }
+        ],
+        "reason": "Retain the preprinted labelled asparagine structure needed for protonation, polymer formation or amino-acid electrophoresis, without the earlier scored NMR table."
+      }
+    ],
+    "cie-9701-s22-43-q6-d": [
+      {
+        "from_question_id": "cie-9701-s22-43-q6-b",
+        "context_key": "6:given-asparagine-structure",
+        "regions": [
+          {
+            "page_index": 15,
+            "bbox": [
+              210.0,
+              210.0,
+              380.0,
+              345.0
+            ]
+          }
+        ],
+        "reason": "Retain the preprinted labelled asparagine structure needed for protonation, polymer formation or amino-acid electrophoresis, without the earlier scored NMR table."
+      }
+    ],
+    "cie-9701-s22-43-q6-e": [
+      {
+        "from_question_id": "cie-9701-s22-43-q6-b",
+        "context_key": "6:given-asparagine-structure",
+        "regions": [
+          {
+            "page_index": 15,
+            "bbox": [
+              210.0,
+              210.0,
+              380.0,
+              345.0
+            ]
+          }
+        ],
+        "reason": "Retain the preprinted labelled asparagine structure needed for protonation, polymer formation or amino-acid electrophoresis, without the earlier scored NMR table."
+      },
+      {
+        "from_question_id": "cie-9701-s22-43-q6-c-i",
+        "context_key": "6(c)",
+        "reason": "Retain the explicitly supplied asparagine isoelectric point needed for electrophoresis; no preceding definition answer is required."
+      }
+    ],
+    "cie-9701-s22-42-q1-e-iii": [
+      {
+        "from_question_id": "cie-9701-s22-42-q1-e-ii",
+        "context_key": "1(e):given-nickel-stability-constants",
+        "regions": [
+          {
+            "page_index": 2,
+            "bbox": [
+              25.0,
+              430.544,
+              575.276,
+              518.0
+            ]
+          }
+        ],
+        "reason": "Retain the supplied ligand identities, equilibria and stability constants needed to compare nickel-complex stability. Exclude the preceding scored expression and units."
+      }
+    ],
+    "cie-9701-w22-41-q2-a-iii": [
+      {
+        "from_question_id": "cie-9701-w22-41-q2-a-ii",
+        "context_key": "2(a):given-catalysed-reaction",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              25.0,
+              198.777,
+              575.276,
+              273.0
+            ]
+          }
+        ],
+        "reason": "Retain the supplied iodide/peroxydisulfate reaction and iron catalyst for the activation-barrier comparison; exclude preceding scored catalytic equations."
+      }
+    ],
+    "cie-9701-w22-41-q7-b-i": [
+      {
+        "from_question_id": "cie-9701-w22-41-q7-a-i",
+        "context_key": "7(a)",
+        "reason": "Retain the supplied original amine P structure required for conversion or basicity comparison; the earlier chiral-centre answer is not required."
+      }
+    ],
+    "cie-9701-w22-41-q7-b-iii": [
+      {
+        "from_question_id": "cie-9701-w22-41-q7-a-i",
+        "context_key": "7(a)",
+        "reason": "Retain the supplied original amine P structure required for conversion or basicity comparison; the earlier chiral-centre answer is not required."
+      }
+    ],
+    "cie-9701-w22-43-q2-a-iii": [
+      {
+        "from_question_id": "cie-9701-w22-43-q2-a-ii",
+        "context_key": "2(a):given-catalysed-reaction",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              25.0,
+              198.777,
+              575.276,
+              273.0
+            ]
+          }
+        ],
+        "reason": "Retain the supplied iodide/peroxydisulfate reaction and iron catalyst for the activation-barrier comparison; exclude preceding scored catalytic equations."
+      }
+    ],
+    "cie-9701-w22-43-q7-b-i": [
+      {
+        "from_question_id": "cie-9701-w22-43-q7-a-i",
+        "context_key": "7(a)",
+        "reason": "Retain the supplied original amine P structure required for conversion or basicity comparison; the earlier chiral-centre answer is not required."
+      }
+    ],
+    "cie-9701-w22-43-q7-b-iii": [
+      {
+        "from_question_id": "cie-9701-w22-43-q7-a-i",
+        "context_key": "7(a)",
+        "reason": "Retain the supplied original amine P structure required for conversion or basicity comparison; the earlier chiral-centre answer is not required."
+      }
+    ],
+    "cie-9701-w22-42-q2-a-iii": [
+      {
+        "from_question_id": "cie-9701-w22-42-q2-a-ii",
+        "context_key": "2(a):given-initial-concentrations",
+        "regions": [
+          {
+            "page_index": 4,
+            "bbox": [
+              25.0,
+              211.769,
+              575.276,
+              246.0
+            ]
+          }
+        ],
+        "reason": "Retain the explicitly equal initial reactant concentrations needed to determine overall half-life behaviour; exclude the preceding numerical rate calculation."
+      }
+    ],
+    "cie-9701-m23-42-q1-c-iii": [
+      {
+        "from_question_id": "cie-9701-m23-42-q1-c-ii",
+        "context_key": "1:given-cation-radius-table",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              25,
+              422.03,
+              575.276,
+              524
+            ]
+          }
+        ],
+        "reason": "The comparison requires the supplied cation radii table, excluding the preceding thermal-stability explanation task."
+      }
+    ],
+    "cie-9701-m23-42-q2-c-iii": [
+      {
+        "from_question_id": "cie-9701-m23-42-q2-c-ii",
+        "context_key": "2:given-rate-equation",
+        "regions": [
+          {
+            "page_index": 6,
+            "bbox": [
+              25,
+              479.383,
+              575.276,
+              531
+            ]
+          }
+        ],
+        "reason": "The rate constant units require the supplied rate equation, excluding the preceding evidence task."
+      }
+    ],
+    "cie-9701-m23-42-q4-a-iii": [
+      {
+        "from_question_id": "cie-9701-m23-42-q4-a-ii",
+        "context_key": "4:given-amine-preparation",
+        "regions": [
+          {
+            "page_index": 11,
+            "bbox": [
+              25,
+              344.98,
+              575.276,
+              369
+            ]
+          }
+        ],
+        "reason": "The product question refers to the supplied bromoethane/ammonia reaction, not the previous mechanism or conditions answer."
+      }
+    ],
+    "cie-9701-m23-42-q4-d-iii": [
+      {
+        "from_question_id": "cie-9701-m23-42-q4-d-ii",
+        "context_key": "4:given-azo-coupling-introduction",
+        "regions": [
+          {
+            "page_index": 14,
+            "bbox": [
+              25,
+              264,
+              575.276,
+              303
+            ]
+          }
+        ],
+        "reason": "Retain the supplied identity of the azo coupling reaction introduced after the preceding scored task, without its answer space."
+      }
+    ],
+    "cie-9701-m23-42-q4-d-iv": [
+      {
+        "from_question_id": "cie-9701-m23-42-q4-d-ii",
+        "context_key": "4:given-azo-coupling-introduction",
+        "regions": [
+          {
+            "page_index": 14,
+            "bbox": [
+              25,
+              264,
+              575.276,
+              303
+            ]
+          }
+        ],
+        "reason": "Retain the supplied identity of the azo coupling reaction introduced after the preceding scored task, without its answer space."
+      }
+    ],
+    "cie-9701-m23-42-q4-d-v": [
+      {
+        "from_question_id": "cie-9701-m23-42-q4-d-ii",
+        "context_key": "4:given-azo-coupling-introduction",
+        "regions": [
+          {
+            "page_index": 14,
+            "bbox": [
+              25,
+              264,
+              575.276,
+              303
+            ]
+          }
+        ],
+        "reason": "Retain the supplied identity of the azo coupling reaction introduced after the preceding scored task, without its answer space."
+      }
+    ],
+    "cie-9701-s23-41-q1-d-v": [
+      {
+        "from_question_id": "cie-9701-s23-41-q1-d-iv",
+        "context_key": "1:given-edta-stability-data",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers.",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              25,
+              58.022,
+              575.276,
+              327
+            ]
+          }
+        ]
+      }
+    ],
+    "cie-9701-s23-41-q2-d-iii": [
+      {
+        "from_question_id": "cie-9701-s23-41-q2-d-ii",
+        "context_key": "2:given-byproduct-E",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers.",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              25,
+              565.859,
+              575.276,
+              701
+            ]
+          }
+        ]
+      }
+    ],
+    "cie-9701-s23-41-q4-d": [
+      {
+        "from_question_id": "cie-9701-s23-41-q4-b-i",
+        "context_key": "4(b)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      },
+      {
+        "from_question_id": "cie-9701-s23-41-q4-c",
+        "context_key": "4:given-W-structure",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers.",
+        "regions": [
+          {
+            "page_index": 12,
+            "bbox": [
+              25,
+              58.022,
+              575.276,
+              250
+            ]
+          }
+        ]
+      }
+    ],
+    "cie-9701-s23-41-q5-c": [
+      {
+        "from_question_id": "cie-9701-s23-41-q5-b-i",
+        "context_key": "5(b)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      }
+    ],
+    "cie-9701-s23-41-q6-b-i": [
+      {
+        "from_question_id": "cie-9701-s23-41-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      }
+    ],
+    "cie-9701-s23-41-q6-b-ii": [
+      {
+        "from_question_id": "cie-9701-s23-41-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      }
+    ],
+    "cie-9701-s23-41-q6-c-i": [
+      {
+        "from_question_id": "cie-9701-s23-41-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      }
+    ],
+    "cie-9701-s23-41-q6-c-ii": [
+      {
+        "from_question_id": "cie-9701-s23-41-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      }
+    ],
+    "cie-9701-s23-41-q7-c-ii": [
+      {
+        "from_question_id": "cie-9701-s23-41-q7-b-i",
+        "context_key": "7(b)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      }
+    ],
+    "cie-9701-s23-41-q7-d": [
+      {
+        "from_question_id": "cie-9701-s23-41-q7-c-i",
+        "context_key": "7(c)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      },
+      {
+        "from_question_id": "cie-9701-s23-41-q7-b-i",
+        "context_key": "7(b)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      }
+    ],
+    "cie-9701-s23-43-q1-d-v": [
+      {
+        "from_question_id": "cie-9701-s23-43-q1-d-iv",
+        "context_key": "1:given-edta-stability-data",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers.",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              25,
+              58.022,
+              575.276,
+              327
+            ]
+          }
+        ]
+      }
+    ],
+    "cie-9701-s23-43-q2-d-iii": [
+      {
+        "from_question_id": "cie-9701-s23-43-q2-d-ii",
+        "context_key": "2:given-byproduct-E",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers.",
+        "regions": [
+          {
+            "page_index": 7,
+            "bbox": [
+              25,
+              565.859,
+              575.276,
+              701
+            ]
+          }
+        ]
+      }
+    ],
+    "cie-9701-s23-43-q4-d": [
+      {
+        "from_question_id": "cie-9701-s23-43-q4-b-i",
+        "context_key": "4(b)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      },
+      {
+        "from_question_id": "cie-9701-s23-43-q4-c",
+        "context_key": "4:given-W-structure",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers.",
+        "regions": [
+          {
+            "page_index": 12,
+            "bbox": [
+              25,
+              58.022,
+              575.276,
+              250
+            ]
+          }
+        ]
+      }
+    ],
+    "cie-9701-s23-43-q5-c": [
+      {
+        "from_question_id": "cie-9701-s23-43-q5-b-i",
+        "context_key": "5(b)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      }
+    ],
+    "cie-9701-s23-43-q6-b-i": [
+      {
+        "from_question_id": "cie-9701-s23-43-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      }
+    ],
+    "cie-9701-s23-43-q6-b-ii": [
+      {
+        "from_question_id": "cie-9701-s23-43-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      }
+    ],
+    "cie-9701-s23-43-q6-c-i": [
+      {
+        "from_question_id": "cie-9701-s23-43-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      }
+    ],
+    "cie-9701-s23-43-q6-c-ii": [
+      {
+        "from_question_id": "cie-9701-s23-43-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      }
+    ],
+    "cie-9701-s23-43-q7-c-ii": [
+      {
+        "from_question_id": "cie-9701-s23-43-q7-b-i",
+        "context_key": "7(b)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      }
+    ],
+    "cie-9701-s23-43-q7-d": [
+      {
+        "from_question_id": "cie-9701-s23-43-q7-c-i",
+        "context_key": "7(c)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      },
+      {
+        "from_question_id": "cie-9701-s23-43-q7-b-i",
+        "context_key": "7(b)",
+        "reason": "Retain the originally supplied structure or equation needed by this independently selected subpart; exclude preceding scored answers."
+      }
+    ],
+    "cie-9701-s23-42-q6-b-i": [
+      {
+        "from_question_id": "cie-9701-s23-42-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "The perindopril structure supplied in part a is required for functional-group identification and hydrolysis products in independently selected part b."
+      }
+    ],
+    "cie-9701-s23-42-q6-b-ii": [
+      {
+        "from_question_id": "cie-9701-s23-42-q6-a-i",
+        "context_key": "6(a)",
+        "reason": "The perindopril structure supplied in part a is required for functional-group identification and hydrolysis products in independently selected part b."
+      }
+    ],
+    "cie-9701-s23-42-q9-d-ii": [
+      {
+        "from_question_id": "cie-9701-s23-42-q9-c",
+        "context_key": "9:given-standard-cell-reaction",
+        "regions": [
+          {
+            "page_index": 21,
+            "bbox": [
+              25,
+              506.35,
+              575.276,
+              555
+            ]
+          }
+        ],
+        "reason": "The nonstandard cell calculation requires the supplied standard cell potential and reaction, excluding the preceding Gibbs-energy calculation task and answer space."
+      }
+    ],
+    "cie-9701-s24-41-q5-b": [
+      {
+        "from_question_id": "cie-9701-s24-41-q5-a-i",
+        "context_key": "5(a)",
+        "reason": "Retain the supplied persulfate/iodide equation explicitly referred to as reaction 1 in this independently selected part."
+      }
+    ],
+    "cie-9701-s24-41-q5-c": [
+      {
+        "from_question_id": "cie-9701-s24-41-q5-a-i",
+        "context_key": "5(a)",
+        "reason": "Retain the supplied persulfate/iodide equation explicitly referred to as reaction 1 in this independently selected part."
+      }
+    ],
+    "cie-9701-s24-41-q6-d": [
+      {
+        "from_question_id": "cie-9701-s24-41-q6-b",
+        "context_key": "6:given-benzene-isomer-structures",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              25,
+              383.031,
+              575.276,
+              544
+            ]
+          }
+        ],
+        "reason": "Retain all four originally supplied benzene-isomer structures, excluding the preceding scored hybridisation table."
+      }
+    ],
+    "cie-9701-s24-41-q6-e": [
+      {
+        "from_question_id": "cie-9701-s24-41-q6-b",
+        "context_key": "6:given-benzene-isomer-structures",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              25,
+              383.031,
+              575.276,
+              544
+            ]
+          }
+        ],
+        "reason": "Retain all four originally supplied benzene-isomer structures, excluding the preceding scored hybridisation table."
+      }
+    ],
+    "cie-9701-s24-43-q5-b": [
+      {
+        "from_question_id": "cie-9701-s24-43-q5-a-i",
+        "context_key": "5(a)",
+        "reason": "Retain the supplied persulfate/iodide equation explicitly referred to as reaction 1 in this independently selected part."
+      }
+    ],
+    "cie-9701-s24-43-q5-c": [
+      {
+        "from_question_id": "cie-9701-s24-43-q5-a-i",
+        "context_key": "5(a)",
+        "reason": "Retain the supplied persulfate/iodide equation explicitly referred to as reaction 1 in this independently selected part."
+      }
+    ],
+    "cie-9701-s24-43-q6-d": [
+      {
+        "from_question_id": "cie-9701-s24-43-q6-b",
+        "context_key": "6:given-benzene-isomer-structures",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              25,
+              384.692,
+              575.276,
+              544
+            ]
+          }
+        ],
+        "reason": "Retain all four originally supplied benzene-isomer structures, excluding the preceding scored hybridisation table."
+      }
+    ],
+    "cie-9701-s24-43-q6-e": [
+      {
+        "from_question_id": "cie-9701-s24-43-q6-b",
+        "context_key": "6:given-benzene-isomer-structures",
+        "regions": [
+          {
+            "page_index": 13,
+            "bbox": [
+              25,
+              384.692,
+              575.276,
+              544
+            ]
+          }
+        ],
+        "reason": "Retain all four originally supplied benzene-isomer structures, excluding the preceding scored hybridisation table."
+      }
+    ],
+    "cie-9701-w24-41-q2-c": [
+      {
+        "from_question_id": "cie-9701-w24-41-q2-b-i",
+        "context_key": "2(b)",
+        "reason": "Retain the supplied energy-cycle species and process definitions referred to by the fluoride hydration calculation."
+      }
+    ],
+    "cie-9701-w24-43-q2-c": [
+      {
+        "from_question_id": "cie-9701-w24-43-q2-b-i",
+        "context_key": "2(b)",
+        "reason": "Retain the supplied energy-cycle species and process definitions referred to by the fluoride hydration calculation."
+      }
+    ],
+    "cie-9701-w24-42-q7-c": [
+      {
+        "from_question_id": "cie-9701-w24-42-q7-b-i",
+        "context_key": "7(b)",
+        "reason": "The carbon hybridisation question names diagram 2, which is supplied in the shared mechanism of part b; retain that unscored drawing without previous answer lines."
+      }
+    ],
+    "cie-9701-w24-42-q2-e-ii": [
+      {
+        "from_question_id": "cie-9701-w24-42-q2-d",
+        "context_key": "2:given-dissolution-thermodynamics",
+        "regions": [
+          {
+            "page_index": 4,
+            "bbox": [
+              25,
+              513.453,
+              575.276,
+              548
+            ]
+          }
+        ],
+        "reason": "The temperature prediction needs the supplied dissolution enthalpy and entropy, excluding the preceding Gibbs calculation and its answer space."
+      }
+    ],
+    "cie-9701-s25-41-q5-b-ii": [
+      {
+        "from_question_id": "cie-9701-s25-41-q5-b-i",
+        "context_key": "5:given-small-ammonia-addition",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              25,
+              281.828,
+              575.276,
+              305
+            ]
+          }
+        ],
+        "reason": "Retain only the supplied reagent condition or complex identities from the preceding task, excluding its scored instruction and answer space."
+      }
+    ],
+    "cie-9701-s25-43-q5-b-ii": [
+      {
+        "from_question_id": "cie-9701-s25-43-q5-b-i",
+        "context_key": "5:given-small-ammonia-addition",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              25,
+              281.828,
+              575.276,
+              305
+            ]
+          }
+        ],
+        "reason": "Retain only the supplied reagent condition or complex identities from the preceding task, excluding its scored instruction and answer space."
+      }
+    ],
+    "cie-9701-s25-41-q5-c-ii": [
+      {
+        "from_question_id": "cie-9701-s25-41-q5-c-i",
+        "context_key": "5:given-excess-ammonia-addition",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              25,
+              411.844,
+              575.276,
+              435
+            ]
+          }
+        ],
+        "reason": "Retain only the supplied reagent condition or complex identities from the preceding task, excluding its scored instruction and answer space."
+      }
+    ],
+    "cie-9701-s25-43-q5-c-ii": [
+      {
+        "from_question_id": "cie-9701-s25-43-q5-c-i",
+        "context_key": "5:given-excess-ammonia-addition",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              25,
+              411.844,
+              575.276,
+              435
+            ]
+          }
+        ],
+        "reason": "Retain only the supplied reagent condition or complex identities from the preceding task, excluding its scored instruction and answer space."
+      }
+    ],
+    "cie-9701-s25-41-q5-c-iii": [
+      {
+        "from_question_id": "cie-9701-s25-41-q5-c-i",
+        "context_key": "5:given-excess-ammonia-addition",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              25,
+              411.844,
+              575.276,
+              435
+            ]
+          }
+        ],
+        "reason": "Retain only the supplied reagent condition or complex identities from the preceding task, excluding its scored instruction and answer space."
+      }
+    ],
+    "cie-9701-s25-43-q5-c-iii": [
+      {
+        "from_question_id": "cie-9701-s25-43-q5-c-i",
+        "context_key": "5:given-excess-ammonia-addition",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              25,
+              411.844,
+              575.276,
+              435
+            ]
+          }
+        ],
+        "reason": "Retain only the supplied reagent condition or complex identities from the preceding task, excluding its scored instruction and answer space."
+      }
+    ],
+    "cie-9701-s25-41-q6-a-ii": [
+      {
+        "from_question_id": "cie-9701-s25-41-q6-a-i",
+        "context_key": "6:given-iron-cyanide-identities",
+        "regions": [
+          {
+            "page_index": 11,
+            "bbox": [
+              25,
+              86.827,
+              575.276,
+              134
+            ]
+          }
+        ],
+        "reason": "Retain only the supplied reagent condition or complex identities from the preceding task, excluding its scored instruction and answer space."
+      }
+    ],
+    "cie-9701-s25-43-q6-a-ii": [
+      {
+        "from_question_id": "cie-9701-s25-43-q6-a-i",
+        "context_key": "6:given-iron-cyanide-identities",
+        "regions": [
+          {
+            "page_index": 11,
+            "bbox": [
+              25,
+              86.827,
+              575.276,
+              134
+            ]
+          }
+        ],
+        "reason": "Retain only the supplied reagent condition or complex identities from the preceding task, excluding its scored instruction and answer space."
+      }
+    ],
+    "cie-9701-s25-42-q8-b": [
+      {
+        "from_question_id": "cie-9701-s25-42-q8-a",
+        "context_key": "8:given-compound-A-structure",
+        "regions": [
+          {
+            "page_index": 17,
+            "bbox": [
+              25,
+              60.823,
+              575.276,
+              214.124
+            ]
+          }
+        ],
+        "reason": "Retain supplied compound A and Figure 8.1 only; stop before the scored NMR reference/solvent instruction."
+      }
+    ],
+    "cie-9701-s25-42-q8-c": [
+      {
+        "from_question_id": "cie-9701-s25-42-q8-a",
+        "context_key": "8:given-compound-A-structure",
+        "regions": [
+          {
+            "page_index": 17,
+            "bbox": [
+              25,
+              60.823,
+              575.276,
+              214.124
+            ]
+          }
+        ],
+        "reason": "Retain supplied compound A and Figure 8.1 only; stop before the scored NMR reference/solvent instruction."
+      }
+    ],
+    "cie-9701-w25-42-q2-c": [
+      {
+        "from_question_id": "cie-9701-w25-42-q2-b",
+        "context_key": "2:given-rate-law-and-equal-concentrations",
+        "regions": [
+          {
+            "page_index": 3,
+            "bbox": [
+              25,
+              521.764,
+              575.276,
+              606.758
+            ]
+          }
+        ],
+        "reason": "Retain measured supplied reaction conditions only, excluding the scored preceding instruction and answer area."
+      }
+    ],
+    "cie-9701-w25-42-q5-a-iv": [
+      {
+        "from_question_id": "cie-9701-w25-42-q5-a-iii",
+        "context_key": "5:given-excess-concentrated-hcl",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              25,
+              269.154,
+              575.276,
+              292.436
+            ]
+          }
+        ],
+        "reason": "Retain measured supplied reaction conditions only, excluding the scored preceding instruction and answer area."
+      }
+    ],
+    "cie-9701-w25-42-q5-a-v": [
+      {
+        "from_question_id": "cie-9701-w25-42-q5-a-iii",
+        "context_key": "5:given-excess-concentrated-hcl",
+        "regions": [
+          {
+            "page_index": 9,
+            "bbox": [
+              25,
+              269.154,
+              575.276,
+              292.436
+            ]
+          }
+        ],
+        "reason": "Retain measured supplied reaction conditions only, excluding the scored preceding instruction and answer area."
+      }
+    ],
+    "cie-9701-s26-41-q8-a-iv": [
+      {
+        "from_question_id": "cie-9701-s26-41-q8-a-iii",
+        "context_key": "8:given-L-amide-class",
+        "regions": [
+          {
+            "page_index": 17,
+            "bbox": [
+              25,
+              478.757,
+              575.276,
+              502.5
+            ]
+          }
+        ],
+        "reason": "Retain only the supplied statement that L is an amide, excluding the scored drawing instruction."
+      }
+    ],
+    "cie-9701-s26-41-q8-a-v": [
+      {
+        "from_question_id": "cie-9701-s26-41-q8-a-iii",
+        "context_key": "8:given-L-amide-class",
+        "regions": [
+          {
+            "page_index": 17,
+            "bbox": [
+              25,
+              478.757,
+              575.276,
+              502.5
+            ]
+          }
+        ],
+        "reason": "Retain only the supplied statement that L is an amide, excluding the scored drawing instruction."
+      }
+    ],
+    "cie-9701-s26-41-q8-a-vi": [
+      {
+        "from_question_id": "cie-9701-s26-41-q8-a-iii",
+        "context_key": "8:given-L-amide-class",
+        "regions": [
+          {
+            "page_index": 17,
+            "bbox": [
+              25,
+              478.757,
+              575.276,
+              502.5
+            ]
+          }
+        ],
+        "reason": "Retain only the supplied statement that L is an amide, excluding the scored drawing instruction."
+      }
+    ],
+    "cie-9701-s26-41-q7-c-ii": [
+      {
+        "from_question_id": "cie-9701-s26-41-q7-b-i",
+        "context_key": "7(b)",
+        "reason": "Reuse the existing unscored introduction and complete preprinted G structure from Figure 7.2, without any preceding scored instruction."
+      }
+    ],
+    "cie-9701-s26-43-q8-a-iv": [
+      {
+        "from_question_id": "cie-9701-s26-43-q8-a-iii",
+        "context_key": "8:given-L-amide-class",
+        "regions": [
+          {
+            "page_index": 17,
+            "bbox": [
+              25,
+              481.052,
+              575.276,
+              501.052
+            ]
+          }
+        ],
+        "reason": "Retain only the supplied statement that L is an amide, excluding the scored drawing instruction."
+      }
+    ],
+    "cie-9701-s26-43-q8-a-v": [
+      {
+        "from_question_id": "cie-9701-s26-43-q8-a-iii",
+        "context_key": "8:given-L-amide-class",
+        "regions": [
+          {
+            "page_index": 17,
+            "bbox": [
+              25,
+              481.052,
+              575.276,
+              501.052
+            ]
+          }
+        ],
+        "reason": "Retain only the supplied statement that L is an amide, excluding the scored drawing instruction."
+      }
+    ],
+    "cie-9701-s26-43-q8-a-vi": [
+      {
+        "from_question_id": "cie-9701-s26-43-q8-a-iii",
+        "context_key": "8:given-L-amide-class",
+        "regions": [
+          {
+            "page_index": 17,
+            "bbox": [
+              25,
+              481.052,
+              575.276,
+              501.052
+            ]
+          }
+        ],
+        "reason": "Retain only the supplied statement that L is an amide, excluding the scored drawing instruction."
+      }
+    ],
+    "cie-9701-s26-43-q7-c-ii": [
+      {
+        "from_question_id": "cie-9701-s26-43-q7-b-i",
+        "context_key": "7(b)",
+        "reason": "Reuse the existing unscored introduction and complete preprinted G structure from Figure 7.2, without any preceding scored instruction."
+      }
+    ],
+    "cie-9701-s26-42-q7-b-ii": [
+      {
+        "from_question_id": "cie-9701-s26-42-q7-a-i",
+        "context_key": "7(a)",
+        "reason": "Retain the existing supplied alanine formula so this independently selected task does not depend on recognising its name."
+      }
+    ],
+    "cie-9701-s26-42-q7-c": [
+      {
+        "from_question_id": "cie-9701-s26-42-q7-a-i",
+        "context_key": "7(a)",
+        "reason": "Retain the existing supplied alanine formula so this independently selected task does not depend on recognising its name."
+      }
+    ],
+    "cie-9701-s26-42-q8-b-iii": [
+      {
+        "from_question_id": "cie-9701-s26-42-q8-c",
+        "context_key": "8:lead-after:b-iii",
+        "reason": "Include the preprinted Table 8.2 chemical-shift data needed for the requested NH shift range; no scored hydrolysis instruction is reused."
+      }
     ]
   }
 }

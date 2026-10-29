@@ -14,12 +14,21 @@ def label_path(value):
 
 def ms_label(row):
     """Join touching label tokens, excluding parenthesised answer prose."""
+    # Some historical PDFs contain a short duplicate text run directly over
+    # the full label: `6` and `6(c)` at the same visible origin. It is one
+    # printed label, not `66(c)`. Retain the longer run only at that origin.
+    row=[w for i,w in enumerate(row) if not any(j!=i and abs(w[0]-v[0])<.7 and abs(w[1]-v[1])<1 and v[4].startswith(w[4]) and (len(v[4])>len(w[4]) or (v[4]==w[4] and j<i)) for j,v in enumerate(row))]
     row=sorted(row,key=lambda w:w[0]);tokens=[row[0]]
     for word in row[1:]:
         if word[0]>tokens[-1][2]+3:break
         tokens.append(word)
     text=''.join(w[4] for w in tokens)
     text=re.sub(r'^(\d+)\(\(',r'\1(',text)
+    # Published MS tables sometimes print e.g. `4b(ii)` instead of
+    # `4(b)(ii)`. This unambiguous complete label must start a new row;
+    # otherwise its answer and mark are annexed to 4(b)(i). Keep the public
+    # label parser strict and normalise only this complete printed variant.
+    text=re.sub(r'^(\d+)([a-z])(\([ivx]+\))$',r'\1(\2)\3',text)
     return label_path(text),bool(re.match(r'^\d+\([a-z]',text))
 
 def supplement_contexts(parts,overrides,doc=None):
@@ -35,9 +44,17 @@ def supplement_contexts(parts,overrides,doc=None):
             origin=by_id.get(item['from_question_id'])
             if origin is None:raise ValueError('Context must come from the same parent: '+part['id'])
             if not item.get('reason'):raise ValueError('Context correction requires a reason')
-            found=[c for c in origin['contexts'] if c['key']==item['context_key']]
-            if len(found)!=1:raise ValueError('Unknown shared context: '+item['context_key'])
-            context=found[0]
+            if 'regions' in item:
+                if doc is None:raise ValueError('Measured context requires source verification')
+                for r in item['regions']:
+                    if not any(s['page_index']==r['page_index'] and fitz.Rect(s['bbox']).contains(fitz.Rect(r['bbox'])) for s in origin['own_regions']):raise ValueError('Measured lead-in must lie within its source task')
+                    text=layout_page(doc,r['page_index']).get_text(clip=fitz.Rect(logical_regions(doc,[r])[0]['bbox']))
+                    if re.search(r'\[\d+\]',text):raise ValueError('Measured context must not contain a scored task')
+                context={'key':item['context_key'],'regions':item['regions']}
+            else:
+                found=[c for c in origin['contexts'] if c['key']==item['context_key']]
+                if len(found)!=1:raise ValueError('Unknown shared context: '+item['context_key'])
+                context=found[0]
             if not any(c['key']==context['key'] for c in part['contexts']):part['contexts'].append(copy.deepcopy(context))
         if overrides.get(part['id']) and doc is not None:
             part['contexts'].sort(key=lambda c:min((r['page_index'],r['bbox'][1]) for r in logical_regions(doc,c['regions'])))
@@ -108,7 +125,7 @@ def safe_anchor_start(page,word):
     return min(candidates,key=lambda v:abs(v-word[1])) if candidates else y
 
 
-def qp_parts(doc,parent,n):
+def qp_parts(doc,parent,n,allow_unlabelled=False):
     """Return leaves with ancestor introduction regions, never preceding sibling answers."""
     rs=logical_regions(doc,parent);anchors=[];issues=[]
     for r in rs:
@@ -128,7 +145,12 @@ def qp_parts(doc,parent,n):
         else:issues.append('roman_without_letter');a['path']=None
     anchors=[a for a in anchors if a['path']]
     if len({a['path'] for a in anchors})!=len(anchors):issues.append('ambiguous_subpart_anchors')
-    if not anchors:return [],issues+['no_subpart_anchors']
+    if not anchors:
+        text='\n'.join(layout_page(doc,r['page_index']).get_text(clip=fitz.Rect(r['bbox'])) for r in rs)
+        scores=re.findall(r'\[(\d+)\]',text)
+        if allow_unlabelled and len(scores)==1 and not re.search(r'(?m)^\s*\([a-z]\)',text):
+            return [{'path':(),'label':str(n),'own_regions':parent,'contexts':[],'text':text,'marks':int(scores[0]),'order':0,'terminal_mark':None}],issues
+        return [],issues+['no_subpart_anchors']
     root_start=(rs[0]['page_index'],rs[0]['bbox'][1]);root_end=(rs[-1]['page_index'],rs[-1]['bbox'][3]);contexts=[]
     intro=slices(doc,rs,root_start,anchors[0]['pos'])
     if intro:contexts.append({'key':str(n),'regions':canonicalize(doc,intro)})

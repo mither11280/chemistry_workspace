@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "app_version": "0.5.1",
+  "bank_id": "cie-9701-as-teaching19-v1",
+  "revision": "2026-10-29.teaching-as19-a2-12.1.assets.1",
+  "ready": 7666,
+  "pending": 332,
+  "source_files": 352,
+  "install_seconds": 25.0592,
+  "personal_db_byte_identical": true,
+  "dependency_share_draft_and_ms_export": "passed",
+  "old_share_rejected": true,
+  "prompt_js_bundled": true,
+  "environment": "Frozen backend, empty PATH/PYTHONPATH, isolated profile and unrelated cwd."
+}

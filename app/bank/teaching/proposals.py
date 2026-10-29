@@ -28,9 +28,22 @@ RULES=[
 (19,r'infra.?red|wavenumber|fragment|M\s*\+\s*1|\[M.1\]|13C.*abundance','红外或有机质谱')]
 
 def compact(text):return re.sub(r'\s+',' ',text).strip()
+A2_RULES=[
+(1,r'lattice|hydration|enthalpy.*solution|enthalpy.*formation|Born.Haber|Group (?:2|II)','晶格、水合、溶解及第2族候选'),
+(2,r'entropy|Gibbs|spontaneous|feasible|feasibility|ΔG|∆G|ΔS|∆S','熵与自由能候选'),
+(3,r'electro|cell potential|\bE.?cell\b|Faraday|cathode|anode|coulomb','电化学候选'),
+(4,r'equilibri|\bK[acps]\b|buffer|\bpH\b|partition coefficient|solubility product','平衡候选'),
+(5,r'order.*reaction|reaction.*order|rate equation|rate.constant|half.life|rate.determining|Arrhenius|activation energy','动力学候选'),
+(6,r'transition|complex|ligand|K\s*(?:_\s*\{?\s*)?stab|stability constant|稳定常数|chromium|copper|cobalt|nickel|iron\b|Fe[23]|Cu[2+]|d.orbital','过渡元素及配合物稳定常数候选'),
+(7,r'benzene|phenol|phenylamine|aromatic|Friedel|arenes?|phenyl','芳香化学候选'),
+(8,r'acyl.chloride|COCl|benzoyl|ethanoyl|nucleophilic.addition.elimination','酰氯候选'),
+(9,r'amine|amide|amino|NH2|CONH','胺与酰胺候选'),
+(10,r'polymer|monomer|repeat.unit|Kevlar|nylon|polyester','聚合物候选'),
+(11,r'(?:two|three|four|multi|2|3|4).step|synthe(?:sis|sised|sized)|synthetic.route|reaction.scheme','多步合成候选，须排除仅问给定单步'),
+(12,r'NMR|chromatograph|infra.red|mass.spectr|m\s*[/⁄]\s*[ez]|chemical.shift|fragment|retention|TMS','分析技术候选')]
 def propose(record):
     text='\n'.join([record['task'],record.get('context',''),record.get('answer','')]);hits=[]
-    for n,pattern,reason in RULES:
+    for n,pattern,reason in A2_RULES if record.get('question_id','').split('-')[3:4] and record['question_id'].split('-')[3].startswith('4') else RULES:
         if re.search(pattern,text,re.I):hits.append({'chapter':n,'reason':reason})
     return hits
 

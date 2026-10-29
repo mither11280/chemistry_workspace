@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "runtime": "v0.5.1 frozen backend, isolated profile, actual browser controls",
+  "checks": [
+    "AS/A2 selection retained on course switch",
+    "A2 twelve chapter groups and counts",
+    "Kstab prompt selects chapter 6 and Paper 4",
+    "mixed AS/P4 worksheet named and saved",
+    "student and official-MS PDFs generated through UI",
+    "separate Data Booklet button opens source PDF",
+    "CIE2 code imported into independent draft with same 5 units and order",
+    "one-click clear leaves saved personal worksheet intact"
+  ],
+  "screenshot": "v051-ui-mixed-editor.jpg",
+  "real_user_profile_modified": false
+}

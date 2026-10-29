@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "actual_old_questions": 4457,
+  "new_questions": 7998,
+  "scenarios": {
+    "bundled-base": {
+      "status": "passed",
+      "seconds": 10.071,
+      "personal_and_manual_overlay_byte_identical": true,
+      "relaunch_idempotent": true
+    },
+    "activated-base": {
+      "status": "passed",
+      "seconds": 10.938,
+      "personal_and_manual_overlay_byte_identical": true,
+      "relaunch_idempotent": true
+    },
+    "activated-full": {
+      "status": "passed",
+      "seconds": 10.119,
+      "personal_and_manual_overlay_byte_identical": true,
+      "relaunch_idempotent": true
+    },
+    "missing-marker": {
+      "status": "passed",
+      "seconds": 10.319,
+      "personal_and_manual_overlay_byte_identical": true,
+      "relaunch_idempotent": true
+    },
+    "unknown-custom": {
+      "status": "passed",
+      "activation_preserved": true,
+      "notice": "保留当前自定义题库。它与新版内置题库不同，请先导出备份，再选择要使用的版本。"
+    },
+    "failed-switch-recovery": {
+      "status": "passed",
+      "old_pointer_catalog_and_work_restored": true,
+      "retry_succeeds": true
+    },
+    "delta-then-full-repeat": {
+      "status": "passed",
+      "seconds": 28.945,
+      "all_352_source_hashes_match": true,
+      "personal_and_manual_overlay_byte_identical": true,
+      "activation_idempotent": true
+    }
+  },
+  "scope": "Isolated actual-index profiles. No real user Application Support data opened or modified."
+}

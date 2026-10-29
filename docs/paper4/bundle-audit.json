@@ -1,0 +1,336 @@
+{
+  "app": "\u9898\u95f4.app",
+  "minimum_macos": "13.0",
+  "mach_o_count": 34,
+  "binaries": [
+    {
+      "path": "Contents/MacOS/QuestionSpace",
+      "architectures": "arm64",
+      "libraries": [
+        "/System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa",
+        "/System/Library/Frameworks/WebKit.framework/Versions/A/WebKit",
+        "/usr/lib/libSystem.B.dylib",
+        "/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit",
+        "/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork",
+        "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+        "/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation",
+        "/usr/lib/libobjc.A.dylib",
+        "/usr/lib/swift/libswiftCore.dylib",
+        "/usr/lib/swift/libswiftCoreFoundation.dylib",
+        "/usr/lib/swift/libswiftCoreImage.dylib",
+        "/usr/lib/swift/libswiftDarwin.dylib",
+        "/usr/lib/swift/libswiftDispatch.dylib",
+        "/usr/lib/swift/libswiftIOKit.dylib",
+        "/usr/lib/swift/libswiftMetal.dylib",
+        "/usr/lib/swift/libswiftOSLog.dylib",
+        "/usr/lib/swift/libswiftObjectiveC.dylib",
+        "/usr/lib/swift/libswiftQuartzCore.dylib",
+        "/usr/lib/swift/libswiftSpatial.dylib",
+        "/usr/lib/swift/libswiftUniformTypeIdentifiers.dylib",
+        "/usr/lib/swift/libswiftXPC.dylib",
+        "/usr/lib/swift/libswiftos.dylib",
+        "/usr/lib/swift/libswiftsimd.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/MacOS/QuestionBackend",
+      "architectures": "arm64",
+      "libraries": [
+        "/usr/lib/libSystem.B.dylib",
+        "/usr/lib/libz.1.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/libpython3.12.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libpython3.12.dylib",
+        "/usr/lib/libz.1.dylib",
+        "/usr/lib/libSystem.B.dylib",
+        "/usr/lib/libedit.3.dylib",
+        "/usr/lib/libncurses.5.4.dylib",
+        "/usr/lib/libpanel.5.4.dylib",
+        "/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration",
+        "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/pymupdf/_mupdf.so",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/_mupdf.so",
+        "/usr/lib/libSystem.B.dylib",
+        "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+        "@rpath/libmupdfcpp.so",
+        "/usr/lib/libc++.1.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/pymupdf/libmupdfcpp.so",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libmupdfcpp.so",
+        "@rpath/libmupdf.dylib",
+        "/usr/lib/libc++.1.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/pymupdf/libmupdf.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libmupdf.dylib",
+        "/usr/lib/libSystem.B.dylib",
+        "/usr/lib/libc++.1.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/pymupdf/_extra.so",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/_extra.so",
+        "@rpath/libmupdf.dylib",
+        "@rpath/libmupdfcpp.so",
+        "/usr/lib/libSystem.B.dylib",
+        "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+        "/usr/lib/libc++.1.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/rpds/rpds.cpython-312-darwin.so",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/rpds.cpython-312-darwin.so",
+        "/usr/lib/libiconv.2.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/_webp.cpython-312-darwin.so",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libwebp.7.dylib",
+        "@rpath/libwebpmux.3.dylib",
+        "@rpath/libwebpdemux.2.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/_imagingcms.cpython-312-darwin.so",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/liblcms2.2.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/_imagingft.cpython-312-darwin.so",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libfreetype.6.dylib",
+        "@rpath/libharfbuzz.0.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/_imagingmath.cpython-312-darwin.so",
+      "architectures": "arm64",
+      "libraries": [
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/_imaging.cpython-312-darwin.so",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libtiff.6.dylib",
+        "@rpath/libjpeg.62.4.0.dylib",
+        "@rpath/libopenjp2.2.5.3.dylib",
+        "@rpath/libz.1.3.1.zlib-ng.dylib",
+        "@rpath/libxcb.1.1.0.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/_imagingmorph.cpython-312-darwin.so",
+      "architectures": "arm64",
+      "libraries": [
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/_imagingtk.cpython-312-darwin.so",
+      "architectures": "arm64",
+      "libraries": [
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/_avif.cpython-312-darwin.so",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libavif.16.3.0.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libavif.16.3.0.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libavif.16.3.0.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/liblcms2.2.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/liblcms2.2.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libpng16.16.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libpng16.16.dylib",
+        "@rpath/libz.1.3.1.zlib-ng.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libxcb.1.1.0.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libxcb.1.1.0.dylib",
+        "@rpath/libXau.6.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libjpeg.62.4.0.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libjpeg.62.4.0.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libbrotlidec.1.1.0.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libbrotlidec.1.1.0.dylib",
+        "@rpath/libbrotlicommon.1.1.0.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libfreetype.6.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libfreetype.6.dylib",
+        "/usr/lib/libbz2.1.0.dylib",
+        "@rpath/libpng16.16.dylib",
+        "@rpath/libz.1.3.1.zlib-ng.dylib",
+        "@rpath/libbrotlidec.1.1.0.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libbrotlicommon.1.1.0.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libbrotlicommon.1.1.0.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libharfbuzz.0.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libharfbuzz.0.dylib",
+        "/usr/lib/libSystem.B.dylib",
+        "@rpath/libfreetype.6.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libsharpyuv.0.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libsharpyuv.0.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libz.1.3.1.zlib-ng.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libz.1.3.1.zlib-ng.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libwebp.7.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libwebp.7.dylib",
+        "@rpath/libsharpyuv.0.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libXau.6.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libXau.6.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libwebpmux.3.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libwebpmux.3.dylib",
+        "/usr/lib/libSystem.B.dylib",
+        "@rpath/libwebp.7.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libwebpdemux.2.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libwebpdemux.2.dylib",
+        "@rpath/libwebp.7.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/liblzma.5.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/liblzma.5.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libopenjp2.2.5.3.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libopenjp2.2.5.3.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    },
+    {
+      "path": "Contents/Helpers/QuestionBackend.app/Contents/Frameworks/PIL/__dot__dylibs/libtiff.6.dylib",
+      "architectures": "arm64",
+      "libraries": [
+        "@rpath/libtiff.6.dylib",
+        "@rpath/liblzma.5.dylib",
+        "@rpath/libjpeg.62.4.0.dylib",
+        "@rpath/libz.1.3.1.zlib-ng.dylib",
+        "/usr/lib/libSystem.B.dylib"
+      ]
+    }
+  ],
+  "issues": []
+}

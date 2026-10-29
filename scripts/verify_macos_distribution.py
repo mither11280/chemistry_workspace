@@ -86,6 +86,11 @@ def main():
                     assert get('/prompt.js')==(resources/'app/prompt.js').read_bytes()
                     bank=json.loads(get('/api/bank'));assert bank['total']==len(ready_units)
                     selected=json.loads(get('/api/questions?paper=1&year=2025&limit=8'));assert selected['total']==sum(q['paper']==1 and q['year']==2025 for q in ready_units)
+                    p4_units=[q for q in ready_units if q['paper']==4]
+                    if p4_units:
+                        a2=json.loads(get('/api/questions?course=A2&paper=4&limit=8'))
+                        assert a2['total']==len(p4_units)
+                        assert all(q['paper']==4 and q['qualification']=='A2' for q in a2['questions'])
                     if iteration==0:
                         sources=json.loads(get('/api/sources'));assert len(sources)==len(manifest['sources']) and all(s['status']['state']=='ready' for s in sources)
                         report['checks'].append('First launch seeded all '+str(len(sources))+' exact original sources into fresh Application Support')
@@ -108,6 +113,14 @@ def main():
                         assert feedback['report']['app_version']==health['version']
                         assert feedback['issue_url'].startswith('https://github.com/mither11280/chemistry_workspace/issues/new?')
                         report['checks'].append('Native app: SQL query, missing-source detection, HTTP PDF import, WebP, QP/MS export, share, save and draft passed')
+                        if p4_units:
+                            mixed={'title':'Native AS and A2 worksheet','question_ids':job['question_ids']+['cie-9701-m25-42-q2-c-i','cie-9701-m25-42-q2-c-ii'],'notes':'Mixed courses with a required prior result'}
+                            shared=post('/api/import',{'code':post('/api/share',mixed)['code']})
+                            assert shared==mixed
+                            for qid in mixed['question_ids'][-2:]:
+                                for kind in ['question','answer']:assert get('/preview/'+qid+'/'+kind+'/0').startswith(b'RIFF')
+                            for kind in ['questions','answers']:assert get(post('/api/export',{'job':mixed,'kind':kind})['url']).startswith(b'%PDF')
+                            report['checks'].append('Frozen A2 Paper 4 filter, dependent subpart previews, mixed AS/A2 share and both vector exports passed')
                     else:
                         jobs=json.loads(get('/api/jobs'));saved=next(j for j in jobs if j['id']==expected_job['id'])
                         assert saved['question_ids']==expected_job['question_ids'] and saved['notes']==expected_job['notes']

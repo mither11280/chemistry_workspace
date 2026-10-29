@@ -10,7 +10,7 @@ from bank.teaching.parts import label_path
 
 
 def question(qid,chapters,deps=(),part=('a',)):
-    return {'question_id':qid,'original_question_number':'1(a)','marks':2,'topics':[f'ch{max(chapters):02}'],'question':{'source_id':'qp','regions':[{'page_index':0,'bbox':[0,0,10,20]},{'page_index':0,'bbox':[0,100,10,200]}]},'answer':{'source_id':'ms','regions':[]},'metadata':{'teaching':{'taxonomy_id':TAXONOMY_ID,'status':'ready','primary_chapter':max(chapters),'required_chapters':list(chapters),'prerequisites':list(deps),'parent_question_id':'p','part_path':list(part),'source_order':{'a':0,'b':1,'c':2}.get(qid,0),'own_regions':[{'page_index':0,'bbox':[0,100,10,200]}],'contexts':[{'key':'shared','regions':[{'page_index':0,'bbox':[0,0,10,20]}]}],'evidence':[{'reason':'Synthetic requirement fixture','method':'test-fixture'}],'issues':[]}}}
+    return {'question_id':qid,'paper':2,'original_question_number':'1(a)','marks':2,'topics':[f'ch{max(chapters):02}'],'question':{'source_id':'qp','regions':[{'page_index':0,'bbox':[0,0,10,20]},{'page_index':0,'bbox':[0,100,10,200]}]},'answer':{'source_id':'ms','regions':[]},'metadata':{'teaching':{'taxonomy_id':TAXONOMY_ID,'status':'ready','primary_chapter':max(chapters),'required_chapters':list(chapters),'prerequisites':list(deps),'parent_question_id':'p','part_path':list(part),'source_order':{'a':0,'b':1,'c':2}.get(qid,0),'own_regions':[{'page_index':0,'bbox':[0,100,10,200]}],'contexts':[{'key':'shared','regions':[{'page_index':0,'bbox':[0,0,10,20]}]}],'evidence':[{'reason':'Synthetic requirement fixture','method':'test-fixture'}],'issues':[]}}}
 
 class TeachingTests(unittest.TestCase):
     def test_unknown_source_subset_does_not_create_empty_bank(self):

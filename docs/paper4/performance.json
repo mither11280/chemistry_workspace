@@ -1,0 +1,81 @@
+{
+  "status": "structural-checks-and-export-layout-inspection-passed",
+  "selection_units": 7998,
+  "ready": 7666,
+  "registered_sources": 352,
+  "initial_catalog_seconds": 3.2438,
+  "all_ready_dependency_closures_seconds": 2.2447,
+  "cold_preview_regions": 54,
+  "cold_preview_seconds": 1.439,
+  "cached_preview_seconds": 0.0521,
+  "twenty_question_ids": [
+    "cie-9701-m18-42-q1-a-i",
+    "cie-9701-m18-42-q7-c",
+    "cie-9701-m18-42-q2-a",
+    "cie-9701-m18-42-q1-b-i",
+    "cie-9701-s18-41-q2-a",
+    "cie-9701-m18-42-q1-d-ii",
+    "cie-9701-m18-42-q7-d-i",
+    "cie-9701-w18-42-q6-a-i",
+    "cie-9701-m18-42-q3-a-iv",
+    "cie-9701-m18-42-q7-a-i",
+    "cie-9701-m18-42-q8-b-i",
+    "cie-9701-m18-42-q8-a-i",
+    "cie-9701-s22-42-q3-b",
+    "cie-9701-s18-42-q1-a",
+    "cie-9701-s18-43-q1-a",
+    "cie-9701-w18-41-q1-a-i",
+    "cie-9701-w18-43-q1-a-i",
+    "cie-9701-m19-42-q1-b-i",
+    "cie-9701-s19-41-q1-a",
+    "cie-9701-s19-42-q1-a-i"
+  ],
+  "source_pdf_bytes": 202837951,
+  "index_json_bytes": 35429987,
+  "catalog_sqlite_bytes": 35979264,
+  "webp_cache_bytes": 575980,
+  "exports": {
+    "twenty-paper4-questions": {
+      "seconds": 0.4294,
+      "bytes": 1723526,
+      "pages": 14,
+      "resolved_units": 20,
+      "marks": 40,
+      "path": "exports/9f48538d32894dec8f446a343470f5ba_questions.pdf"
+    },
+    "twenty-paper4-answers": {
+      "seconds": 0.4483,
+      "bytes": 1068956,
+      "pages": 27,
+      "resolved_units": 20,
+      "marks": 40,
+      "path": "exports/fb6e305453be49a9a6761ebedb01322e_answers.pdf"
+    },
+    "mixed-dependencies-questions": {
+      "seconds": 0.205,
+      "bytes": 369567,
+      "pages": 12,
+      "resolved_units": 6,
+      "marks": 9,
+      "path": "exports/63cc4050a03d4d909513c7f629202b45_questions.pdf"
+    },
+    "mixed-dependencies-answers": {
+      "seconds": 0.1979,
+      "bytes": 512635,
+      "pages": 13,
+      "resolved_units": 6,
+      "marks": 9,
+      "path": "exports/ca864b2e9eb84043ac2d978cec41df56_answers.pdf"
+    }
+  },
+  "limits": [
+    "Cold previews have no WebP cache; OS disk caches were not flushed.",
+    "First catalog construction differs from complete native App startup.",
+    "No legacy per-question Paper 4 PDFs exist for an equivalent paired storage comparison.",
+    "Original bitmap content and source reference appendices are retained; vector content is not forcibly rasterised."
+  ],
+  "visual_inspection": {
+    "method": "agent-inspection-of-rendered-export-pages",
+    "scope": "All 14 student, 27 answer and 25 mixed sample export pages; no independent human review claimed."
+  }
+}

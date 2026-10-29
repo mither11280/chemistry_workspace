@@ -14,7 +14,7 @@ from PIL import Image
 from .format import DataError, SourceError, normalized_page, sha256
 from .pdf_layout import rotation
 
-RENDER_VERSION='webp-crop-layout-v2'
+RENDER_VERSION='webp-crop-layout-v4-answer-space-guard'
 
 class Renderer:
     def __init__(self,catalog,sources,cache=None,max_cache_bytes=128*1024*1024):
@@ -119,7 +119,7 @@ class Renderer:
                 p.insert_textbox(fitz.Rect(42,24,p.rect.width-42,47),header,fontname='china-s',fontsize=11,color=(.16,.22,.25))
                 p.draw_line((42,51),(p.rect.width-42,51),color=(.8,.83,.84),width=.5)
                 return p
-            page=new_page('CIE AS Chemistry 9701 | '+('Mark scheme' if answer else 'Worksheet'))
+            page=new_page('CIE Chemistry 9701 | '+('Mark scheme' if answer else 'Worksheet'))
             page.insert_textbox(fitz.Rect(42,88,553,165),title,fontname='china-s',fontsize=24)
             from .teaching.worksheet import resolve,export_regions
             resolved=resolve(self.catalog,job['question_ids']);job=dict(job,question_ids=resolved['question_ids'])
@@ -130,6 +130,8 @@ class Renderer:
             teaching=all(q.get('metadata',{}).get('teaching') for q in questions)
             instructions=('保留原题标签；Assignment 编号对应本作业题序。' if teaching else
                           '教师试用稿：题图与分类尚待逐题复核。请核对后使用。\n保留原题编号；Assignment 编号对应本作业题序。')
+            references={r['title'] for q in questions if 'question_id' in q for r in self.catalog.source(q['question']['source_id'])['metadata'].get('required_external_documents',[])}
+            if references:instructions+='\n配套参考：'+ '、'.join(sorted(references))+'（另附）。'
             page.insert_textbox(fitz.Rect(42,220,553,285),instructions,fontname='china-s',fontsize=11)
             if not answer:page.insert_text((42,315),'Name: ____________________    Class: _______________',fontsize=11)
             if job.get('notes'):page.insert_textbox(fitz.Rect(42,350,553,490),job['notes'],fontname='china-s',fontsize=11)

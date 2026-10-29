@@ -1,8 +1,24 @@
 """One-time, recoverable switch to the teaching generation; old work is archived, not converted."""
-import contextlib,json,os,shutil,uuid
+import contextlib,json,os,shutil,uuid,sqlite3
 from pathlib import Path
-from ..format import DataError,read_json,write_json
-from .taxonomy import BANK_ID
+from ..format import DataError,read_json,write_json,safe_path
+from .taxonomy import BANK_ID,TAXONOMY_ID,A2_TAXONOMY_ID
+
+def existing_teaching_state(data):
+    """A missing marker must not reset an otherwise identifiable v0.5 profile."""
+    pointer=data/'bank-updates/current.json'
+    try:
+        if pointer.exists():
+            active=safe_path(data/'bank-updates',read_json(pointer)['generation'])/'question-index.json'
+            if active.exists() and read_json(active).get('bank_id')==BANK_ID:return True
+        db=data/'catalog.sqlite3'
+        if db.exists():
+            from urllib.parse import quote
+            with sqlite3.connect('file:'+quote(str(db.resolve()))+'?mode=ro',uri=True) as connection:
+                total,teaching=connection.execute("SELECT count(*),sum(json_extract(payload,'$.metadata.teaching.taxonomy_id') IN (?,?)) FROM questions",(TAXONOMY_ID,A2_TAXONOMY_ID)).fetchone()
+                return total>0 and total==teaching
+    except (OSError,sqlite3.DatabaseError,ValueError,KeyError,DataError):pass
+    return False
 
 @contextlib.contextmanager
 def locked(path):
@@ -45,6 +61,9 @@ def prepare(root,resources):
         if index['bank_id']!=BANK_ID:return None
         data=root/'data';marker=data/'teaching-generation.json'
         if marker.exists() and read_json(marker).get('bank_id')==BANK_ID:return None
+        if existing_teaching_state(data):
+            write_json(marker,{'bank_id':BANK_ID,'archive_id':None,'recovered_from':'existing-teaching-contract'})
+            return None
         # Empty, fresh profiles need no archive. Existing state is moved intact,
         # including local calibration overlays, immutable generations and backup pointers.
         old_state=data.exists() and any(data.iterdir())

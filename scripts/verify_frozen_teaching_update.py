@@ -4,7 +4,7 @@ from pathlib import Path
 
 
 def main():
-    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--app',type=Path,required=True);p.add_argument('--package',type=Path,required=True);p.add_argument('--report',type=Path,required=True);p.add_argument('--expected-version',default='0.5.0');a=p.parse_args()
+    p=argparse.ArgumentParser(description=__doc__);p.add_argument('--app',type=Path,required=True);p.add_argument('--package',type=Path,required=True);p.add_argument('--report',type=Path,required=True);p.add_argument('--expected-version',default='0.5.1');a=p.parse_args()
     app=a.app.resolve();res=app/'Contents/Resources/workspace';helper=app/'Contents/Helpers/QuestionBackend.app/Contents/MacOS/QuestionBackend'
     initial=json.loads((res/'indexes/question-index.json').read_text())
     with zipfile.ZipFile(a.package) as z:target=json.loads(z.read('question-index.json'))

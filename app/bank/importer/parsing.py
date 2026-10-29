@@ -17,14 +17,20 @@ def body(page):
 def reference_page(page):return bool(re.search(r'^\s*(?:BLANK PAGE|The Periodic Table(?: of Elements)?)\s*$',page.get_text(),re.I|re.M))
 def region(page,bbox):return {'page_index':page,'bbox':[round(float(v),3) for v in bbox]}
 
-def question_starts(doc):
-    strong=[];weak=[]
+def question_starts(doc,include_text_run_numbers=False):
+    strong=[];weak=[];text_runs=[]
     for pi in range(1,len(doc)):
         p=normalized_page(doc,pi)
         if reference_page(p):continue
         top,bottom=body(p)
         blocks=p.get_text('dict')['blocks']
         all_spans=[s for b in blocks for line in b.get('lines',[]) if abs(line.get('dir',(1,0))[1])<.01 for s in line['spans']]
+        if include_text_run_numbers:
+            ws=p.get_text('words')
+            for word in ws:
+                if not(word[4].isdigit() and 1<=int(word[4])<=40 and p.rect.width*.07<=word[0]<=p.rect.width*.105 and top<=word[1]<bottom):continue
+                following=[v for v in ws if abs(v[1]-word[1])<2 and word[2]<v[0] and re.search('[A-Za-z]{2}',v[4])]
+                if len(following)>=2 and min(v[0] for v in following)-word[2]<30:text_runs.append((int(word[4]),pi,word[1]-3))
         for block in blocks:
             for line in block.get('lines',[]):
                 for span in line['spans']:
@@ -40,10 +46,20 @@ def question_starts(doc):
     alignment=Counter(round(r[3]) for r in selected).most_common(1)[0][0]
     # Main numbers align down the margin; diagram labels can be bold digits nearby.
     selected=[r[:3] for r in selected if abs(r[3]-alignment)<=2.5]
+    # A subset-font PDF can merge an entire question heading into one span,
+    # losing the bold/numeric-only span used above. Append only a unique next
+    # consecutive heading after all established main numbers, never a graph digit.
+    if include_text_run_numbers:
+        n=max(v[0] for v in selected)+1
+        while n<=40:
+            previous=max((pi,y) for _,pi,y in selected)
+            candidates=sorted(set(v for v in text_runs if v[0]==n and v[1:]>previous))
+            if len(candidates)!=1:break
+            selected.append(candidates[0]);n+=1
     return sorted(set(selected),key=lambda r:(r[1],r[2]))
 
 def parse_qp(doc,paper,starts=None):
-    starts=question_starts(doc) if starts is None else starts;result={};issues=[]
+    starts=question_starts(doc,include_text_run_numbers=paper==4) if starts is None else starts;result={};issues=[]
     by_number=defaultdict(list)
     for anchor in starts:by_number[anchor[0]].append(anchor)
     expected=list(range(1,(40 if paper==1 else max(by_number,default=0))+1))

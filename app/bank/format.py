@@ -76,6 +76,9 @@ def validate(index, manifest, schemas):
         relative_path(s['path'])
         if s['path'] in paths:raise DataError('重复 source path')
         paths.add(s['path'])
+        for reference in s['metadata'].get('required_external_documents',[]):
+            if reference['source_id'] not in sources:raise DataError('缺少已登记的配套参考文档: '+reference['source_id'])
+            if reference['source_id']==s['source_id']:raise DataError('参考文档不能指向自身')
         if len(s['pages']) != s['page_count']:raise DataError('页数与几何记录不一致')
         for n,p in enumerate(s['pages']):
             if p['page_index'] != n:raise DataError('页面几何必须从零连续编号')

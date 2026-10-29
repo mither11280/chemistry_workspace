@@ -6,15 +6,15 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: Application version (e.g. 0.5.0)
+        description: Application version (e.g. 0.5.1)
         required: true
-        default: '0.5.0'
+        default: '0.5.1'
       seed_release_tag:
         description: Existing Release containing the Cambridge-enabled seed DMG
         required: true
-        default: 'internal-v0.5.0'
+        default: 'internal-v0.5.1'
       publish:
-        description: Publish a GitHub Release after all verification gates
+        description: Stage a draft Release; full-bank acceptance and remote hashes are checked before public publication
         type: boolean
         default: false
       exam_redistribution_authorized:
@@ -105,7 +105,7 @@ jobs:
             dist/*.json
             dist/*Source.tar.gz
           retention-days: 30
-      - name: Publish release only with explicit exam redistribution confirmation
+      - name: Stage draft release with explicit exam redistribution confirmation
         if: inputs.publish
         env:
           RIGHTS_CONFIRMED: ${{ inputs.exam_redistribution_authorized }}
@@ -124,7 +124,10 @@ jobs:
             EXTRA=""
           fi
           DMG=$(find dist -maxdepth 1 -name '*.dmg' ! -name '*BEFORE-NOTARIZATION*' -print -quit)
-          gh release create "$TAG" --target "$GITHUB_SHA" --title "$TITLE" --notes-file packaging/release-notes.md $EXTRA "$DMG" "$DMG.sha256" dist/*.json dist/*Source.tar.gz
+          # This job verifies the App only. Complete bank/update attachments
+          # and downloaded remote hashes must pass separate acceptance before
+          # the draft can be made public.
+          gh release create "$TAG" --draft --target "$GITHUB_SHA" --title "$TITLE" --notes-file packaging/release-notes.md $EXTRA "$DMG" "$DMG.sha256" dist/*.json dist/*Source.tar.gz
       - name: Remove ephemeral signing credentials
         if: always() && env.CODESIGN_IDENTITY != ''
         run: |
