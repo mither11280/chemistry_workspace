@@ -112,8 +112,8 @@ class ExtensionTests(unittest.TestCase):
         files={s['source_id']:self.root/'fixture-input'/s['filename'] for s in self.manifest['sources']}
         rights={'redistribution_authorized':True,'statement':'Original authored synthetic fixtures','sha256':[s['sha256'] for s in self.manifest['sources']]}
         first=self.root/'new-index.qbank';second=self.root/'new-assets.qbank'
-        build_package(first,target,self.manifest,self.new,self.manifest,self.root/'schemas','Original new reader fixture',minimum_app_version='0.6.0')
-        build_package(second,target,self.manifest,self.new,self.manifest,self.root/'schemas','Original additional assets',source_files=files,authorization=rights,minimum_app_version='0.6.0')
+        build_package(first,target,self.manifest,self.new,self.manifest,self.root/'schemas','Original new reader fixture',minimum_app_version='0.5.2')
+        build_package(second,target,self.manifest,self.new,self.manifest,self.root/'schemas','Original additional assets',source_files=files,authorization=rights,minimum_app_version='0.5.2')
         with patch('bank.updates.READER_VERSION',(0,5,1)):
             with self.assertRaisesRegex(DataError,'更新版本'):inspect_package(first,self.root/'schemas')
         install_package(catalog,first);before=pointer_path(catalog).read_bytes()
@@ -125,7 +125,7 @@ class ExtensionTests(unittest.TestCase):
         folder=self.root/'data/bank-updates/generations/previous'
         write_json(folder/'question-index.json',old);write_json(folder/'source-manifest.json',self.manifest)
         write_json(self.root/'data/bank-updates/current.json',{'generation':'generations/previous','revision':old['revision']})
-        self.new['revision']='v060-authored'
+        self.new['revision']='v052-authored'
         self.new['questions'][-1]['metadata']['teaching'].update(required_chapters=[11],primary_chapter=11)
         self.new['questions'][-1]['topics']=['a2-ch11']
         with patch.dict(extension.KNOWN_RELEASES,{old['revision']:(extension.digest(old),extension.digest(self.manifest))}):

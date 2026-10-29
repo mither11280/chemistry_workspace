@@ -1,0 +1,23 @@
+{
+  "dmg": "ChemistryWorkspace-0.5.2-arm64-INTERNAL-UNNOTARIZED.dmg",
+  "checks": [
+    "Actual DMG mounted; copied app and Applications drag target verified; frozen stdlib and dependencies internal",
+    "First launch seeded all 352 exact original sources into fresh Application Support",
+    "Native app: SQL query, missing-source detection, HTTP PDF import, WebP, QP/MS export, share, save and draft passed",
+    "Frozen A2 Paper 4 filter, dependent subpart previews, mixed AS/A2 share and both vector exports passed",
+    "Native termination closed embedded backend; no orphan and no writes into app bundle (pass 1)",
+    "Replaced/reopened native app with version-bump fixture: saved jobs, notes, draft, sources and cache remained usable; upgrade backup created",
+    "Native termination closed embedded backend; no orphan and no writes into app bundle (pass 2)",
+    "Both launches used only relocated app paths, profile, Apple system libraries; no runtime.json, developer venv or source cwd"
+  ],
+  "environment": "Host macOS; app launched with empty PATH/PYTHONPATH, isolated profile and unrelated cwd. Not a claim that host Python was physically uninstalled.",
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+    "pymupdf": "1.26.5",
+    "pillow": "11.3.0",
+    "sqlite": "3.53.1",
+    "frozen": true,
+    "webp": true
+  },
+  "status": "passed"
+}

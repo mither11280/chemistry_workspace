@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "recorded_on": "2026-10-29",
-  "scope": "All 352 CIE 9701 sources listed in indexes/source-manifest.json: AS Paper 1/2, 2018-2026 A2 Paper 4 QP/MS including published cancelled-season practice material, syllabus and 2016-use Data Booklet. Bundled in the v0.5.1 App and authorized bank attachments.",
+  "scope": "All 352 CIE 9701 sources listed in indexes/source-manifest.json: AS Paper 1/2, 2018-2026 A2 Paper 4 QP/MS including published cancelled-season practice material, syllabus and 2016-use Data Booklet. Bundled in the v0.5.2 App and authorized bank attachments.",
   "publisher_attestation": "Repository maintainer explicitly confirmed redistribution authorization in this development task.",
   "evidence_type": "direct maintainer confirmation; underlying rights document is not stored in source",
   "copyright_owner": "Cambridge / respective original rights holders",

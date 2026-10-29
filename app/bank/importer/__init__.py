@@ -1,2 +1,2 @@
 """Maintainer-side CIE import engine. No UI or network dependency."""
-VERSION='0.6.0-parser.1'
+VERSION='0.5.2-parser.1'

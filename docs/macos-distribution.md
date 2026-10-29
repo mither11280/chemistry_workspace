@@ -4,7 +4,7 @@
 
 下载 arm64 DMG，打开后把「题间.app」拖到 Applications。打开应用即可使用，解释器、PyMuPDF、Pillow、SQLite、JSON Schema 和 WebP 编解码都在包内。无需 Python、pip、Swift、Xcode 或终端。当前最低 macOS 13，Apple Silicon arm64；不提供 Intel/Universal 安装包。
 
-包中包含当前 Source Manifest 对应的 13 个原始 PDF（12 份 QP/MS + 1 份考纲），首次启动按哈希校验并复制到用户目录，132 道题可直接预览、组卷。它们是独立版权数据，不受软件 MIT/AGPL 许可授权，见许可审查。
+包中包含v0.5.2 Source Manifest 对应的 352 个原始 PDF（Paper 1／2／4 QP/MS、考纲和 Data Booklet），首次启动按哈希校验并复制到用户目录，7,757 个可用选题单位可直接预览、组卷。它们是独立版权数据，不受软件 MIT/AGPL 许可授权，见许可审查。
 
 文件名含 `INTERNAL-UNNOTARIZED`：这是 ad-hoc 内部测试包，没有 Developer ID、没有 Apple 公证。Gatekeeper 可能拒绝首次启动；不能把它称为正式可信发行版。正式用户的“下载后双击即用”发行需要成功签名、公证、staple 和 Gatekeeper 验证。脚本不会自动移除 quarantine 或指导禁用 Gatekeeper 来伪造这一验收。
 

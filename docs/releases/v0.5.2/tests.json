@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "tests": 146,
+  "skipped": 0,
+  "seconds": 33.103,
+  "real_corpus_enabled": true,
+  "node_syntax": "passed",
+  "app_version": "0.5.2"
+}

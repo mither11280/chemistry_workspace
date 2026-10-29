@@ -41,7 +41,7 @@ def verify(previous, snapshot, sources, output):
     shutil.copytree(ROOT / 'app', resources / 'app', ignore=shutil.ignore_patterns('__pycache__'))
     (resources / 'indexes').mkdir(exist_ok=True)
     for name in ['question-index.json', 'source-manifest.json']:shutil.copyfile(previous / name, resources / 'indexes' / name)
-    write_json(resources / 'build-info.json', {'version': '0.6.0', 'distribution': 'development-source-acceptance'})
+    write_json(resources / 'build-info.json', {'version': '0.5.2', 'distribution': 'development-source-acceptance'})
     profile = output / 'profile';paths = read_json(sources)
     for source in manifest['sources']:
         assert sha256(paths[source['source_id']]) == source['sha256']
@@ -58,7 +58,7 @@ def verify(previous, snapshot, sources, output):
     package = output / 'reliability-index.qbank'
     package_info = build_package(package, new, manifest, old, old_manifest, ROOT / 'schemas',
         'Source-backed pending repairs and teacher-confirmed organic methods; preserves all identities and work.',
-        minimum_app_version='0.6.0')
+        minimum_app_version='0.5.2')
     env = dict(os.environ, QUESTION_BANK_HOME=str(profile.resolve()), QUESTION_BANK_RESOURCES=str(resources.resolve()))
     env.pop('QUESTION_BANK_ROOT', None)
     report = {'previous_revision': old['revision'], 'revision': new['revision'],

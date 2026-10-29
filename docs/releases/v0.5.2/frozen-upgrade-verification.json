@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "environment": "Both actual frozen helpers; empty PATH/PYTHONPATH; isolated profiles; no real teacher profile accessed",
+  "cases": [
+    {
+      "mode": "base",
+      "status": "passed",
+      "actual_old_frozen_app": "0.5.1",
+      "actual_new_frozen_app": "0.5.2",
+      "ready": 7757,
+      "pending": 241,
+      "personal_and_calibration_byte_identical": true,
+      "old_share_draft_notes_preserved": true,
+      "repaired_previews_and_both_exports": true,
+      "repeat_start_idempotent": true
+    },
+    {
+      "mode": "activated-full",
+      "status": "passed",
+      "actual_old_frozen_app": "0.5.1",
+      "actual_new_frozen_app": "0.5.2",
+      "ready": 7757,
+      "pending": 241,
+      "personal_and_calibration_byte_identical": true,
+      "old_share_draft_notes_preserved": true,
+      "repaired_previews_and_both_exports": true,
+      "repeat_start_idempotent": true
+    }
+  ]
+}

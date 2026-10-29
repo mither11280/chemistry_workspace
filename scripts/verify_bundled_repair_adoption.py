@@ -29,7 +29,7 @@ def verify(previous, snapshot, released_full, output):
         full = json.loads(archive.read('question-index.json'));full_manifest = json.loads(archive.read('source-manifest.json'))
     assert recognized(old, manifest) and recognized(full, full_manifest)
     resources = {}
-    for name, index, version in [('old', old, '0.5.1'), ('new', new, '0.6.0')]:
+    for name, index, version in [('old', old, '0.5.1'), ('new', new, '0.5.2')]:
         folder = output / (name + '-resources');folder.mkdir(parents=True)
         shutil.copytree(ROOT / 'schemas', folder / 'schemas')
         write_json(folder / 'indexes/question-index.json', index)

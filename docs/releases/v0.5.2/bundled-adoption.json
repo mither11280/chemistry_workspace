@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "previous_revision": "2026-10-29.teaching-as19-a2-12.1",
+  "revision": "2026-10-29.reliability.9",
+  "environment": "Isolated runtime/catalog metadata profiles; actual published v0.5.1 base/full indices.",
+  "cases": [
+    {
+      "mode": "bundled-base",
+      "status": "passed",
+      "revision": "2026-10-29.reliability.9",
+      "personal_and_manual_overlay_byte_identical": true,
+      "repeated_adoption_idempotent": true,
+      "version_backup_created": true,
+      "custom_preserved": false,
+      "actual_published_full_metadata_used": false
+    },
+    {
+      "mode": "activated-full",
+      "status": "passed",
+      "revision": "2026-10-29.reliability.9",
+      "personal_and_manual_overlay_byte_identical": true,
+      "repeated_adoption_idempotent": true,
+      "version_backup_created": true,
+      "custom_preserved": false,
+      "actual_published_full_metadata_used": true
+    },
+    {
+      "mode": "custom-full",
+      "status": "passed",
+      "revision": "2026-10-29.teaching-as19-a2-12.1.assets.1",
+      "personal_and_manual_overlay_byte_identical": true,
+      "repeated_adoption_idempotent": true,
+      "version_backup_created": true,
+      "custom_preserved": true,
+      "actual_published_full_metadata_used": true
+    },
+    {
+      "mode": "failed-rebuild",
+      "status": "passed",
+      "revision": "2026-10-29.reliability.9",
+      "personal_and_manual_overlay_byte_identical": true,
+      "repeated_adoption_idempotent": true,
+      "version_backup_created": true,
+      "custom_preserved": false,
+      "actual_published_full_metadata_used": true
+    }
+  ],
+  "original_teacher_profile_accessed": false,
+  "source_rendering_not_claimed_by_this_tool": true
+}

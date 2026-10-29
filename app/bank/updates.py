@@ -17,7 +17,7 @@ import fitz
 from .format import DataError,read_json,write_json,validate,validate_schema,relative_path,safe_path,sha256,geometry
 
 MAX_BYTES=512*1024*1024
-READER_VERSION=(0,6,0)
+READER_VERSION=(0,5,2)
 
 def encoded(value):return (json.dumps(value,ensure_ascii=False,sort_keys=True,indent=2)+'\n').encode()
 def digest(data):return hashlib.sha256(data).hexdigest()
@@ -25,10 +25,12 @@ def pointer_path(catalog):return catalog.data/'bank-updates/current.json'
 
 def required_reader(index):
     """New semantics must never be advertised as readable by the old App."""
+    # Paper 5 remains outside the 0.5.2 release, including future mixed banks.
+    if any(q['paper']==5 for q in index['questions']):return (0,6,0)
     for q in index['questions']:
         meta=q.get('metadata',{})
-        if q['paper']==5 or any(k in meta for k in ['knowledge_tags','crop_edge_recheck','ms_row_repair']) or meta.get('teaching',{}).get('taxonomy_id')=='chemistry-workspace-a2-teaching12-1.1.0':
-            return (0,6,0)
+        if any(k in meta for k in ['knowledge_tags','crop_edge_recheck','ms_row_repair']) or meta.get('teaching',{}).get('taxonomy_id')=='chemistry-workspace-a2-teaching12-1.1.0':
+            return (0,5,2)
     return (0,3,0)
 
 def active_contract(catalog,index,manifest):

@@ -253,6 +253,17 @@ class ScopeExtensionTests(unittest.TestCase):
             build_package(self.root / 'wrong.qbank', index, self.manifest, self.index,
                           self.manifest, ROOT / 'schemas', 'Original authored scope update', minimum_app_version='0.5.1')
 
+    def test_repair_release_does_not_advertise_paper5_support(self):
+        from bank.updates import required_reader, READER_VERSION
+        self.run_scope()
+        from bank.format import read_json
+        index = read_json(self.root / 'out/question-index.json')
+        self.assertEqual(required_reader(index), (0, 5, 2))
+        self.assertEqual(READER_VERSION, (0, 5, 2))
+        experimental = copy.deepcopy(index['questions'][0]);experimental['paper'] = 5
+        index['questions'].append(experimental)
+        self.assertEqual(required_reader(index), (0, 6, 0))
+
 
 class TeachingRepairTests(unittest.TestCase):
     save = ExactMSRepairTests.save

@@ -6,13 +6,13 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: Application version (e.g. 0.5.1)
+        description: Application version (e.g. 0.5.2)
         required: true
-        default: '0.5.1'
+        default: '0.5.2'
       seed_release_tag:
         description: Existing Release containing the Cambridge-enabled seed DMG
         required: true
-        default: 'internal-v0.5.1'
+        default: 'internal-v0.5.2'
       publish:
         description: Stage a draft Release; full-bank acceptance and remote hashes are checked before public publication
         type: boolean
