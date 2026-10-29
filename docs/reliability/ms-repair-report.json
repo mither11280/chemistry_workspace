@@ -1,0 +1,139 @@
+{
+  "previous_revision": "2026-10-29.reliability.1",
+  "revision": "2026-10-29.reliability.2",
+  "direct_ms_repairs": 13,
+  "remaining_pending": 304,
+  "repairs": [
+    {
+      "question_id": "cie-9701-s18-22-q2-c-i",
+      "before": [
+        "exact_ms_label_missing",
+        "subpart_marks_mismatch"
+      ],
+      "before_fingerprint": "95cda1ea6ea56e8e042d6b678a014513f8b830e65a9f875cc0e2d16933450655",
+      "after_fingerprint": "e50be11eb830da0e5e281d5d333a8321716bdbce3fa267272042087ed58837e7",
+      "reason": "Read the QP weak Brønsted-Lowry acid task and the official 2c(i) row: partial ionisation and proton donation supply exactly two marks. Compact label now resolves exactly; existing chapter 7 remains supported."
+    },
+    {
+      "question_id": "cie-9701-s18-22-q2-c-ii",
+      "before": [
+        "exact_ms_label_missing",
+        "subpart_marks_mismatch"
+      ],
+      "before_fingerprint": "95751643cb8e25a9c43119554339a614f432ae7491438ca4046bfdf3c3bb0541",
+      "after_fingerprint": "4dea945d0ce487c2c174b5e513007d883f47c5504397cf758228ac5512fcdaed",
+      "reason": "Read QP ammonium dissociation with states and exact official 2c(ii) row: balanced ammonium/water equilibrium and states give two marks. The equation and complete two scoring lines are retained; chapter 7 is unchanged."
+    },
+    {
+      "question_id": "cie-9701-s18-22-q3-b-iii",
+      "before": [
+        "subpart_marks_mismatch"
+      ],
+      "before_fingerprint": "079869ebb40810a917995606e8aa21bb870992e49aff68fa0554bbfbba47123f",
+      "after_fingerprint": "00819f17da44aab556d681d57c5a57cbbab5721c47a31fed46be78ca9e307df5",
+      "reason": "Read QP naming the polymerisation type and exact one-mark official addition row. Newly recognised following 3c(i) boundary removes neighbouring MS content; chapter 14 remains supported."
+    },
+    {
+      "question_id": "cie-9701-s18-22-q3-c-i",
+      "before": [
+        "exact_ms_label_missing",
+        "subpart_marks_mismatch"
+      ],
+      "before_fingerprint": "c3ed0b39631112bd0e1dfae0f66af8290d6af1e8d2e083f99005ed0ea86a5a96",
+      "after_fingerprint": "b2f4d9ee53684079e867f5fe232274f25eb74d904442b37b2ad5459ba7413af7",
+      "reason": "Read the exhaust-removal task and compact 3c(i) official row accepting catalytic converter or catalyst for one mark. Supplied exhaust context and existing nitrogen/pollution chapter mapping remain unchanged."
+    },
+    {
+      "question_id": "cie-9701-s18-22-q3-c-ii",
+      "before": [
+        "exact_ms_label_missing",
+        "subpart_marks_mismatch"
+      ],
+      "before_fingerprint": "507c1fcd6621c43c28cafa089f27c00083d83ebc5f066b320930f73e102bff5f",
+      "after_fingerprint": "b20cd192c941919b85eac83c049a89340b4c07c05a923812c295a82bc0f76916",
+      "reason": "Read the CO/NO2 exhaust equation task and compact 3c(ii) balanced official redox equation. The one-mark row is complete and distinct from both adjacent questions; existing chapter mapping is retained."
+    },
+    {
+      "question_id": "cie-9701-s18-22-q3-c-iii",
+      "before": [
+        "exact_ms_label_missing",
+        "subpart_marks_mismatch"
+      ],
+      "before_fingerprint": "578862467ed133acd5cb94663e49ce5cddd950ab620a9cbf2ae443e3ac1a5c93",
+      "after_fingerprint": "48da3f6543fd1d801d1fecb460e2c5ef19361a9f935aaac1dfc5eb53c2e99dec",
+      "reason": "Read the unburned-hydrocarbon environmental-consequence task and compact 3c(iii) row accepting photochemical smog or global dimming. The complete alternative answers occupy one mark across no extra task."
+    },
+    {
+      "question_id": "cie-9701-w18-21-q2-c",
+      "before": [
+        "exact_ms_label_missing",
+        "subpart_marks_mismatch"
+      ],
+      "before_fingerprint": "9cb8b6f3dd15ce1c01dada619d006ecb1a300165b137524f4be301569687ac72",
+      "after_fingerprint": "492b61656517045a53d3736c80be4fb19cbba3d607467e92ced6dc19b822af9b",
+      "reason": "Visually read the QP nitrate runoff task and exact 2(c) MS row despite fragmented embedded-font extraction. The complete three-point rubric covers nitrate leaching, algal growth/light blockage/bacterial decay, and oxygen depletion; chapter 12 is unchanged."
+    },
+    {
+      "question_id": "cie-9701-w18-22-q2-b-i",
+      "before": [
+        "exact_ms_label_missing",
+        "subpart_marks_mismatch"
+      ],
+      "before_fingerprint": "15c40c2da87d88a33e2e1307cff537043efef8c35a7c3eecff036b101cd8adb0",
+      "after_fingerprint": "3a2c9ee9a2f1b88cb6fc57427558d669aa35a4dd34cf0cca34225b7819934ad5",
+      "reason": "Visually read the sulfur dichloride outer-shell dot-and-cross task and exact 2(b)(i) one-mark MS diagram. All lone pairs, bonding electrons and atom labels are retained; chapter 3 is supported."
+    },
+    {
+      "question_id": "cie-9701-w18-22-q2-b-ii",
+      "before": [
+        "exact_ms_label_missing",
+        "subpart_marks_mismatch"
+      ],
+      "before_fingerprint": "d7ee1ea4ede5b056f137117a248e6757a30bf4e1563f5d8a86786cf18bedd38d",
+      "after_fingerprint": "69400789935f506c0dd7fe24f9b5e0d518aa7ef1fefef027f84f4d348b5a4537",
+      "reason": "Visually read the supplied exothermic sulfur chloride reaction and exact 2(b)(ii) official reaction-profile diagram. Both scoring criteria and complete energy curve, reactant/product levels, activation energy and enthalpy labels are included; existing chapters 5 and 8 are retained."
+    },
+    {
+      "question_id": "cie-9701-w18-22-q2-c-i",
+      "before": [
+        "exact_ms_label_missing",
+        "subpart_marks_mismatch"
+      ],
+      "before_fingerprint": "db616591a0fc004ce730023f7de54f1d137f946bc8f2a088e52842daf362739d",
+      "after_fingerprint": "e0584e3fbfa2fde57a8bbd038cbd32adf9c212fc2abd64290049f917cf3cbed3",
+      "reason": "Read QP Period 3 melting-point trend and exact 2(c)(i) one-mark MS row requiring the peak at silicon followed by a decrease. Original blank graph axes are intact; chapter 9 remains supported."
+    },
+    {
+      "question_id": "cie-9701-w18-23-q2-c",
+      "before": [
+        "exact_ms_label_missing",
+        "subpart_marks_mismatch"
+      ],
+      "before_fingerprint": "cb7096fd6d4ebb729d21e5fa8330421adc46984c556748d46fcb909a38ca9bc7",
+      "after_fingerprint": "eebfaebfd61669e73eaa17e8ec2a3f19fee685bfcf7eca2659aa000ae1700923",
+      "reason": "Visually read this variant QP nitrate runoff task and its own exact 2(c) MS row despite fragmented embedded-font extraction. All three eutrophication scoring stages are included; no other variant source is substituted."
+    },
+    {
+      "question_id": "cie-9701-s19-22-q5-a-ii",
+      "before": [
+        "subpart_marks_mismatch"
+      ],
+      "before_fingerprint": "41e0a01439f34524be0caa83ccd999a2a0df99f27df4f282df308c04d0a46413",
+      "after_fingerprint": "18113c37fb2e079f21cc83c936be758f24fb87d7cdc4c9a0281974c44993cb4f",
+      "reason": "Read the supplied ester structure and unscored alkaline-hydrolysis context with QP reagent task. Exact 5(a)(ii) MS accepts NaOH for one mark; the subsequent compact 5a(iii) row now starts separately instead of inflating this score. Chapter 17 is unchanged."
+    },
+    {
+      "question_id": "cie-9701-s19-22-q5-a-iii",
+      "before": [
+        "exact_ms_label_missing",
+        "subpart_marks_mismatch"
+      ],
+      "before_fingerprint": "9fce994569d81b55d7d42e5f4e65de5901641860e67dbd60c018425715daa360",
+      "after_fingerprint": "6bc732a39b1444cfdd1ca5a078690353a7590d766a486bbdd5ec314d674f51f5",
+      "reason": "Visually read QP displayed alcohol product task, given ester and alkaline hydrolysis context, and compact 5a(iii) official displayed propan-1-ol diagram. Its one-mark complete structure is independently located without a guessed label or model-written answer; chapter 17 is retained."
+    }
+  ],
+  "user_data_modified": false,
+  "question_coordinates_ids_marks_source_hashes_preserved": true,
+  "independent_human_review": false
+}

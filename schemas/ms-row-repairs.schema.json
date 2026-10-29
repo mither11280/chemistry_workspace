@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source-bound exact official MS row restoration approvals",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "repairs"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "repairs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["question_id", "before_fingerprint", "after_fingerprint", "reason"],
+        "properties": {
+          "question_id": {"type": "string", "minLength": 1},
+          "before_fingerprint": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "after_fingerprint": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "reason": {"type": "string", "minLength": 20}
+        }
+      }
+    }
+  }
+}

@@ -60920,7 +60920,7 @@
     ]
   },
   "cie-9701-s19-22-q5-a-ii": {
-    "fingerprint": "41e0a01439f34524be0caa83ccd999a2a0df99f27df4f282df308c04d0a46413",
+    "fingerprint": "18113c37fb2e079f21cc83c936be758f24fb87d7cdc4c9a0281974c44993cb4f",
     "required_chapters": [
       17
     ],
@@ -60936,11 +60936,15 @@
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
+      },
+      {
+        "method": "agent-read-exact-ms-row-restoration-v1",
+        "reason": "Read the supplied ester structure and unscored alkaline-hydrolysis context with QP reagent task. Exact 5(a)(ii) MS accepts NaOH for one mark; the subsequent compact 5a(iii) row now starts separately instead of inflating this score. Chapter 17 is unchanged."
       }
     ]
   },
   "cie-9701-s19-22-q5-a-iii": {
-    "fingerprint": "9fce994569d81b55d7d42e5f4e65de5901641860e67dbd60c018425715daa360",
+    "fingerprint": "6bc732a39b1444cfdd1ca5a078690353a7590d766a486bbdd5ec314d674f51f5",
     "required_chapters": [
       17
     ],
@@ -60956,6 +60960,10 @@
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
+      },
+      {
+        "method": "agent-read-exact-ms-row-restoration-v1",
+        "reason": "Visually read QP displayed alcohol product task, given ester and alkaline hydrolysis context, and compact 5a(iii) official displayed propan-1-ol diagram. Its one-mark complete structure is independently located without a guessed label or model-written answer; chapter 17 is retained."
       }
     ]
   },
@@ -63676,7 +63684,7 @@
     ]
   },
   "cie-9701-w18-21-q2-c": {
-    "fingerprint": "9cb8b6f3dd15ce1c01dada619d006ecb1a300165b137524f4be301569687ac72",
+    "fingerprint": "492b61656517045a53d3736c80be4fb19cbba3d607467e92ced6dc19b822af9b",
     "required_chapters": [
       12
     ],
@@ -63688,6 +63696,10 @@
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
+      },
+      {
+        "method": "agent-read-exact-ms-row-restoration-v1",
+        "reason": "Visually read the QP nitrate runoff task and exact 2(c) MS row despite fragmented embedded-font extraction. The complete three-point rubric covers nitrate leaching, algal growth/light blockage/bacterial decay, and oxygen depletion; chapter 12 is unchanged."
       }
     ]
   },
@@ -64191,7 +64203,7 @@
     ]
   },
   "cie-9701-w18-23-q2-c": {
-    "fingerprint": "cb7096fd6d4ebb729d21e5fa8330421adc46984c556748d46fcb909a38ca9bc7",
+    "fingerprint": "eebfaebfd61669e73eaa17e8ec2a3f19fee685bfcf7eca2659aa000ae1700923",
     "required_chapters": [
       12
     ],
@@ -64203,6 +64215,10 @@
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
+      },
+      {
+        "method": "agent-read-exact-ms-row-restoration-v1",
+        "reason": "Visually read this variant QP nitrate runoff task and its own exact 2(c) MS row despite fragmented embedded-font extraction. All three eutrophication scoring stages are included; no other variant source is substituted."
       }
     ]
   },
@@ -64662,7 +64678,7 @@
     ]
   },
   "cie-9701-w18-22-q2-b-i": {
-    "fingerprint": "15c40c2da87d88a33e2e1307cff537043efef8c35a7c3eecff036b101cd8adb0",
+    "fingerprint": "3a2c9ee9a2f1b88cb6fc57427558d669aa35a4dd34cf0cca34225b7819934ad5",
     "required_chapters": [
       3
     ],
@@ -64670,11 +64686,15 @@
       {
         "method": "agent-read-task-and-scoring-evidence",
         "reason": "Draw sulfur dichloride outer-electron bonding."
+      },
+      {
+        "method": "agent-read-exact-ms-row-restoration-v1",
+        "reason": "Visually read the sulfur dichloride outer-shell dot-and-cross task and exact 2(b)(i) one-mark MS diagram. All lone pairs, bonding electrons and atom labels are retained; chapter 3 is supported."
       }
     ]
   },
   "cie-9701-w18-22-q2-b-ii": {
-    "fingerprint": "d7ee1ea4ede5b056f137117a248e6757a30bf4e1563f5d8a86786cf18bedd38d",
+    "fingerprint": "69400789935f506c0dd7fe24f9b5e0d518aa7ef1fefef027f84f4d348b5a4537",
     "required_chapters": [
       5,
       8
@@ -64683,11 +64703,15 @@
       {
         "method": "agent-read-task-and-scoring-evidence",
         "reason": "Complete reaction profile using shared sulfur chloride reaction energetics."
+      },
+      {
+        "method": "agent-read-exact-ms-row-restoration-v1",
+        "reason": "Visually read the supplied exothermic sulfur chloride reaction and exact 2(b)(ii) official reaction-profile diagram. Both scoring criteria and complete energy curve, reactant/product levels, activation energy and enthalpy labels are included; existing chapters 5 and 8 are retained."
       }
     ]
   },
   "cie-9701-w18-22-q2-c-i": {
-    "fingerprint": "db616591a0fc004ce730023f7de54f1d137f946bc8f2a088e52842daf362739d",
+    "fingerprint": "e0584e3fbfa2fde57a8bbd038cbd32adf9c212fc2abd64290049f917cf3cbed3",
     "required_chapters": [
       9
     ],
@@ -64695,6 +64719,10 @@
       {
         "method": "agent-read-task-and-scoring-evidence",
         "reason": "Sketch Period 3 melting-point trend."
+      },
+      {
+        "method": "agent-read-exact-ms-row-restoration-v1",
+        "reason": "Read QP Period 3 melting-point trend and exact 2(c)(i) one-mark MS row requiring the peak at silicon followed by a decrease. Original blank graph axes are intact; chapter 9 remains supported."
       }
     ]
   },
@@ -67622,7 +67650,7 @@
     ]
   },
   "cie-9701-s18-22-q2-c-i": {
-    "fingerprint": "95cda1ea6ea56e8e042d6b678a014513f8b830e65a9f875cc0e2d16933450655",
+    "fingerprint": "e50be11eb830da0e5e281d5d333a8321716bdbce3fa267272042087ed58837e7",
     "required_chapters": [
       7
     ],
@@ -67630,11 +67658,15 @@
       {
         "method": "agent-read-task-and-scoring-evidence",
         "reason": "Define weak Brønsted-Lowry acid."
+      },
+      {
+        "method": "agent-read-exact-ms-row-restoration-v1",
+        "reason": "Read the QP weak Brønsted-Lowry acid task and the official 2c(i) row: partial ionisation and proton donation supply exactly two marks. Compact label now resolves exactly; existing chapter 7 remains supported."
       }
     ]
   },
   "cie-9701-s18-22-q2-c-ii": {
-    "fingerprint": "95751643cb8e25a9c43119554339a614f432ae7491438ca4046bfdf3c3bb0541",
+    "fingerprint": "4dea945d0ce487c2c174b5e513007d883f47c5504397cf758228ac5512fcdaed",
     "required_chapters": [
       7
     ],
@@ -67646,6 +67678,10 @@
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
+      },
+      {
+        "method": "agent-read-exact-ms-row-restoration-v1",
+        "reason": "Read QP ammonium dissociation with states and exact official 2c(ii) row: balanced ammonium/water equilibrium and states give two marks. The equation and complete two scoring lines are retained; chapter 7 is unchanged."
       }
     ]
   },
@@ -67795,7 +67831,7 @@
     ]
   },
   "cie-9701-s18-22-q3-b-iii": {
-    "fingerprint": "079869ebb40810a917995606e8aa21bb870992e49aff68fa0554bbfbba47123f",
+    "fingerprint": "00819f17da44aab556d681d57c5a57cbbab5721c47a31fed46be78ca9e307df5",
     "required_chapters": [
       14
     ],
@@ -67807,11 +67843,15 @@
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
+      },
+      {
+        "method": "agent-read-exact-ms-row-restoration-v1",
+        "reason": "Read QP naming the polymerisation type and exact one-mark official addition row. Newly recognised following 3c(i) boundary removes neighbouring MS content; chapter 14 remains supported."
       }
     ]
   },
   "cie-9701-s18-22-q3-c-i": {
-    "fingerprint": "c3ed0b39631112bd0e1dfae0f66af8290d6af1e8d2e083f99005ed0ea86a5a96",
+    "fingerprint": "b2f4d9ee53684079e867f5fe232274f25eb74d904442b37b2ad5459ba7413af7",
     "required_chapters": [
       12
     ],
@@ -67819,11 +67859,15 @@
       {
         "method": "agent-read-task-and-scoring-evidence",
         "reason": "Identify catalytic converter exhaust treatment."
+      },
+      {
+        "method": "agent-read-exact-ms-row-restoration-v1",
+        "reason": "Read the exhaust-removal task and compact 3c(i) official row accepting catalytic converter or catalyst for one mark. Supplied exhaust context and existing nitrogen/pollution chapter mapping remain unchanged."
       }
     ]
   },
   "cie-9701-s18-22-q3-c-ii": {
-    "fingerprint": "507c1fcd6621c43c28cafa089f27c00083d83ebc5f066b320930f73e102bff5f",
+    "fingerprint": "b20cd192c941919b85eac83c049a89340b4c07c05a923812c295a82bc0f76916",
     "required_chapters": [
       12
     ],
@@ -67831,11 +67875,15 @@
       {
         "method": "agent-read-task-and-scoring-evidence",
         "reason": "Write CO nitrogen dioxide redox removal equation."
+      },
+      {
+        "method": "agent-read-exact-ms-row-restoration-v1",
+        "reason": "Read the CO/NO2 exhaust equation task and compact 3c(ii) balanced official redox equation. The one-mark row is complete and distinct from both adjacent questions; existing chapter mapping is retained."
       }
     ]
   },
   "cie-9701-s18-22-q3-c-iii": {
-    "fingerprint": "578862467ed133acd5cb94663e49ce5cddd950ab620a9cbf2ae443e3ac1a5c93",
+    "fingerprint": "48da3f6543fd1d801d1fecb460e2c5ef19361a9f935aaac1dfc5eb53c2e99dec",
     "required_chapters": [
       12
     ],
@@ -67847,6 +67895,10 @@
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
+      },
+      {
+        "method": "agent-read-exact-ms-row-restoration-v1",
+        "reason": "Read the unburned-hydrocarbon environmental-consequence task and compact 3c(iii) row accepting photochemical smog or global dimming. The complete alternative answers occupy one mark across no extra task."
       }
     ]
   },
@@ -72452,18 +72504,20 @@
   "cie-9701-s18-42-q7-e": {
     "fingerprint": "5dfdc1b9bdf13e8f278c0deb8101e2882ffb22815fc8330d45e5c3d21fb2e498",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "AS optical-isomer drawing supports the valine amino-acid chemistry block."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Draw the two three-dimensional valine mirror images with the supplied R group; no amino-acid reaction is required. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
-    ]
+    ],
+    "issues": []
   },
   "cie-9701-s18-42-q7-f": {
     "fingerprint": "ea66bbe6e7cb8ddb2670087a5835367a751ec49827f5a80b51946cf3560ef795",
@@ -72500,34 +72554,38 @@
   "cie-9701-s18-42-q8-b": {
     "fingerprint": "6add00dba5d46e962af8b4fbb7b47f009be95a7c7d4ad6379d38a9036be57371",
     "required_chapters": [
-      12
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "AS chiral-centre counting supports the A2 calcitriol structure and NMR block."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Count chiral carbons in the supplied calcitriol structure; the separate later NMR tasks are not needed. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
-    ]
+    ],
+    "issues": []
   },
   "cie-9701-s18-42-q8-c": {
     "fingerprint": "345b8b0af5c970729667c5bc2b33aebd5a50649d3aec3ec61c6b1a6a9f1f7c78",
     "required_chapters": [
-      12
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "AS geometrical-isomer enumeration supports the same A2 calcitriol structure-analysis block."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Count geometrical isomers of the supplied calcitriol structure; the task does not require NMR interpretation. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
-    ]
+    ],
+    "issues": []
   },
   "cie-9701-s18-42-q8-d-i": {
     "fingerprint": "f15024191c1c9eb3d71e8c3f1118293f4dc25ea6222349369dae7ef3b32b7001",
@@ -73372,18 +73430,20 @@
   "cie-9701-s19-42-q7-c": {
     "fingerprint": "6a5c91dc75f34f19cc3a26ea6c0874a2ff476dd0dc0799914d25cfd7bf8fda36",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "AS optical-isomer drawing supports the amino-acid stereochemistry block."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Draw the alanine three-dimensional non-superimposable mirror-image pair from the given structural formula. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
-    ]
+    ],
+    "issues": []
   },
   "cie-9701-s19-42-q7-d-i": {
     "fingerprint": "b3daab8a823f4509e40aaa60e9416179bc0e19421783e0f3248da0b1ecd15f90",
@@ -75052,26 +75112,30 @@
   "cie-9701-s19-41-q8-e-i": {
     "fingerprint": "2f9cd3efade9b7f7088d40e0a2f9a4ee611faf7dfce2ca2d0e75c1ce34359a41",
     "required_chapters": [
-      12
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "AS chirality definition supports the same molecular-formula isomer analysis block."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Define a chiral centre as a carbon bonded to four different groups; no separate NMR result is needed. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
-    ]
+    ],
+    "issues": []
   },
   "cie-9701-s19-41-q8-e-ii": {
     "fingerprint": "d74432774128f1169ecde85e447f25fb41210c89af108705d49e9dc442ac90d9",
     "required_chapters": [
-      12
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "AS chiral carboxylic-acid structure deduction completes the same A2 isomer-analysis block."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Infer a chiral carboxylic-acid structure from the explicitly supplied C5H10O2 formula and chiral-centre condition; neither an earlier spectrum nor its interpretation is required. The official row supplies the corresponding branched acid. Apply the teacher-confirmed organic-stereochemistry chapter 11 rule without changing material or scoring.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
-    ]
+    ],
+    "issues": []
   },
   "cie-9701-s19-41-q9-a": {
     "fingerprint": "2bd9adfe697afe36f6e1a1f32f207c6ea0654f2cc725869645d2e8a5f7a5ac61",
@@ -75969,37 +76033,39 @@
   },
   "cie-9701-s18-41-q8-a": {
     "fingerprint": "542376acfa555109f8e47e8e0af2aa3fadabc38f1c1a22a6cb94685c8dc4a821",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "AS chirality on an isolated terpenoid has no reliable serving A2 theme in this parent; retain for manual chapter placement."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Locate the chiral carbon in the supplied abscisic acid structure. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "issues": [
-      "pure_as_task_without_reliable_a2_theme"
-    ]
+    "issues": []
   },
   "cie-9701-s18-41-q8-b": {
     "fingerprint": "7db502bf2b600a4cacb414921c16d3257466c957de968e0c068a3806d879941b",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "AS carbonyl reduction of the isolated terpenoid has no reliable serving A2 theme; do not invent an A2 chapter."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Infer the molecular formula after NaBH4 reduces the supplied abscisic-acid ketone to an alcohol; this is not amide reduction and does not require carboxylic-acid reduction. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "issues": [
-      "pure_as_task_without_reliable_a2_theme"
-    ]
+    "issues": []
   },
   "cie-9701-s18-41-q8-c-i": {
     "fingerprint": "20664af98c20108df8cf44fc8413734fdf11e6cf7791f7daae01f75a1fe12ad8",
@@ -76071,18 +76137,20 @@
   "cie-9701-s18-41-q9-b": {
     "fingerprint": "d76ddba4179b09a9c1d5b3dfd04efea0f07f19f2e2a7f586aa5cd21fde1c50de",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "AS chiral-centre identification supports the noradrenaline aliphatic-amine block."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Explain noradrenaline stereoisomerism from its chiral carbon; its amine name is background rather than a tested amine reaction. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
-    ]
+    ],
+    "issues": []
   },
   "cie-9701-s18-41-q9-c-i": {
     "fingerprint": "a1647ca4875515f177db62b1746b770c8b549b19d257650fa9330c512612ecf1",
@@ -79038,18 +79106,20 @@
   "cie-9701-m20-42-q4-a-ii": {
     "fingerprint": "ea64fa732b43f45530514efee6982196c24cabbc6fa9845d391fe4a70e8d5c4e",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "AS chiral-centre counting supports this amide hydrolysis/structure block."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Count chiral carbons on the supplied F structure; the surrounding amide topic does not make hydrolysis knowledge necessary for this leaf. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
-    ]
+    ],
+    "issues": []
   },
   "cie-9701-m20-42-q4-b": {
     "fingerprint": "510e080d044496f00eb9984a384947408be4364e96dc8c81e3e8ae443f7095d6",
@@ -79399,18 +79469,20 @@
   "cie-9701-m20-42-q6-c-i": {
     "fingerprint": "a3a1e8ee6e226584b132ae476fef51e98304472c4ad13f828e600891cb1c9082",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Draw and name optical stereoisomers of valine."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Draw and name the valine optical pair using the supplied R abbreviation. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
-    ]
+    ],
+    "issues": []
   },
   "cie-9701-m20-42-q6-c-ii": {
     "fingerprint": "ec6652af536d5e0383f396709eb3e2bdbf2465c1fa86090ed4d9eead038970de",
@@ -81355,19 +81427,21 @@
   "cie-9701-w20-41-q10-b-ii": {
     "fingerprint": "3e6614326b5979254e134e0c739991d47d32c751f0c2dc56f2bf385fbad0d055",
     "required_chapters": [
-      10
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Draw optical isomers of the amino-acid monomer, a stereochemical foundation of the polypeptide topic."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Draw and name the two 2-aminopropanoic-acid optical isomers; no polymerisation knowledge is needed. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-w20-41-q10-c-i": {
     "fingerprint": "6774382c5dfe49f58381e5dfac031daa403b46f84ae576dbe93ed34820f04730",
@@ -83040,20 +83114,21 @@
   },
   "cie-9701-m21-42-q6-c": {
     "fingerprint": "d866dddd90898a7919c03ec557d60b6e166800d1d217ace649cc507d4c6c8536",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "This isolated AS stereoisomer drawing task does not establish an A2 dependency from its proximity to polymer questions."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Complete the other two stereoisomer diagrams of the supplied dihydroxydicarboxylic-acid product; the oxidation and product constitution are already given. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "issues": [
-      "no_reliable_a2_serving_theme"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-m21-42-q6-d": {
@@ -83282,19 +83357,21 @@
   "cie-9701-m21-42-q7-c-vii": {
     "fingerprint": "878fe1659022354b3939a221c8737b75f97758920f415ed095e720047552eeab",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Identify the chiral centre of the supplied amino acid as foundation of its amine chemistry."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Mark the chiral centre on the provided proline structure, without requiring an amine reaction. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-m21-42-q7-d": {
     "fingerprint": "01f2e5104217e437f6ae73ded7c763766c28354f491757ca15e8c6355b6b0194",
@@ -84026,19 +84103,21 @@
   "cie-9701-s21-41-q7-c-i": {
     "fingerprint": "05e689e820e66e0eec91c688367a8792b9f8dfcd023cb121d4afd4d5222ac3fa",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Locate chiral centres in an amino-acid-containing amide compound."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Mark the chiral centres in the supplied glutathione structure; amide hydrolysis is not asked here. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-s21-41-q7-c-ii": {
     "fingerprint": "41968c84f53c7b91db12b11181e683b78a017b0a6cd4e691d454ded42d5be556",
@@ -86725,19 +86804,21 @@
   "cie-9701-w21-42-q8-a": {
     "fingerprint": "bf2eb0892c8b19f3d53a787fa39af69b712c7594943b79be355661c4f33d74ef",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Draw optical isomers of alanine as an amino-acid stereochemical foundation."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Draw the two alanine optical isomers using three-dimensional bonds. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-w21-42-q8-b": {
     "fingerprint": "ea219e65c9f00088869650f07358939195431fb5fff67409552871485ba80328",
@@ -87724,19 +87805,21 @@
   "cie-9701-s21-43-q7-c-i": {
     "fingerprint": "11d94211c4d4a4ecc1a084ad69a108e816eda6fae325e973087c77e3c44fff78",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Locate chiral centres in an amino-acid-containing amide compound."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Mark the chiral centres in this variant glutathione structure; the peptide context is supplied material. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-s21-43-q7-c-ii": {
     "fingerprint": "f601522be90be7755347f3b03ee9707af44bcccad4742adf2cc7edae707ea4ff",
@@ -88278,15 +88361,17 @@
   "cie-9701-m22-42-q4-a-ii": {
     "fingerprint": "84ef8e0a8b3a07e8697b79d2c2f170989f2ad01fc4b1bd2013c5fd7fa9e9ef49",
     "required_chapters": [
-      7
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Count chiral centres in the two supplied aromatic derivatives as AS stereochemistry supporting the phenol/phenylamine comparison."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Count the chiral centres in the supplied aromatic derivatives F and J; no benzene reaction is required for this leaf. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-m22-42-q4-b-i": {
     "fingerprint": "22de8d9d56b9d51c2910894f2d9337769e8dca03fb9ca007ee2cf550cdc1f3d1",
@@ -88490,15 +88575,17 @@
   "cie-9701-m22-42-q5-b-iii": {
     "fingerprint": "4fd60f3f43edcbc6ca849cff7107f4a411071496ff12b6488e278135d31e1774",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Draw the other three-dimensional alanine enantiomer as AS stereochemical foundation of the amino-acid task."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Draw the other three-dimensional alanine enantiomer from the provided first enantiomer. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-m22-42-q5-b-iv": {
     "fingerprint": "1f1c061b9a6fd3a815cc237c31e58627abafa5df70c7439e75f409b0d7c924ab",
@@ -89405,19 +89492,21 @@
   "cie-9701-s22-41-q6-a": {
     "fingerprint": "cee6dc5fd57276dada7db3cdcd0a38e95c774b9fc537d63e0c7265ca5e1da38a",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Define racemic mixture as equal amounts of enantiomers, recording the AS stereochemical foundation of the following chiral amino-acid context."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Define a racemic mixture in the amino-acid context; the definition is a stereochemistry task rather than an amine reaction. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-s22-41-q6-b": {
     "fingerprint": "193774a41f53c9d46047b457388c6102adc6cb7e47025564d60cfb5d85d41e9d",
@@ -90269,44 +90358,47 @@
   },
   "cie-9701-s22-42-q7-c-i": {
     "fingerprint": "fec43e7697e8930f5727d719c6148f268d731dfe282ed3a5cce956f0b2deeff3",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Count chiral centres in the supplied cortisone molecule. This standalone AS stereochemical task has no NMR or other reliable A2 requirement."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Count chiral carbons in the supplied cortisone structure, independently of the earlier NMR tasks. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "issues": [
-      "standalone_as_stereochemistry_without_reliable_a2_theme"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-s22-42-q7-c-ii": {
     "fingerprint": "48ac89ca1f455d898105c8dd76dfea6f3eac58dcc1dd86460d7cc8c4f6b4d856",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Infer molecular formula after borohydride reduction of supplied cortisone ketones. This standalone AS carbonyl reduction is not an NMR task."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Infer cortisone product formula after the supplied ketone groups undergo NaBH4 reduction to alcohols; no amide group is reduced. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "issues": [
-      "standalone_as_carbonyl_reduction_without_reliable_a2_theme"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-s22-42-q7-c-iii": {
     "fingerprint": "6fee39bfc66802b6ce168944abae7e8e144566f3d8c9017399f66bc643465801",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Define optical activity in a standalone AS cortisone subquestion. Nearby NMR questions do not establish an A2 analysis dependency."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Explain optical activity of cortisone; keep the exact official rubric and do not substitute a generated definition. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "issues": [
-      "standalone_as_optical_activity_without_reliable_a2_theme"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-s22-42-q8-a": {
@@ -91097,32 +91189,36 @@
   "cie-9701-w22-41-q7-a-i": {
     "fingerprint": "2efc5d14bc0568895d0145f5b3ec43ed40849e662f950e13f28ece58135a6c03",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Identify the chiral centre in the supplied amino-acid-derived amine P as supporting AS stereochemistry for amine chemistry."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Identify all chiral carbons of supplied organic amine P; the tested concept is stereochemistry, not an amine transformation. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-w22-41-q7-a-ii": {
     "fingerprint": "1c0c9d244ff2cba7bbfeb163ef5d40d1a8e706ac1cd6530001582e6ac21a5c4d",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Compare equal and opposite optical rotations of supplied amine P enantiomers as supporting stereochemical foundation."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Compare equal-and-opposite rotations produced by equal-concentration pure organic enantiomers. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-w22-41-q7-b-i": {
     "fingerprint": "eaea5712ebced41a0acb4621e508f2f7a48eb49c449b34c5fe33ed6b69854d0b",
@@ -92268,19 +92364,21 @@
   "cie-9701-w22-42-q8-a": {
     "fingerprint": "44f21f7cbe4ff78f7c377440fc2ff60a4b4e103cc3b531464bde07b117127a61",
     "required_chapters": [
-      12
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Identify the sole chiral carbon among the five ketones explicitly supplied for the following NMR comparisons; record AS stereochemistry as foundation of the analysis block."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Mark chiral carbons on the supplied five ketone structures; do not import the separate following NMR requirements into this leaf. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-w22-42-q8-b-i": {
     "fingerprint": "ac41b5870333f138fc168258198b37a147a5c829b7c8acff09a3e4084c52c45c",
@@ -94060,19 +94158,21 @@
   "cie-9701-s23-41-q6-a-ii": {
     "fingerprint": "997301a521e0100a6b6312015c567f6fb3652cd4eb9836741dbb58b4fb42e94d",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Represent the optical pair of the supplied amino-acid monomer as foundation of the same amino-acid/amide chemistry block."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Draw and name the organic optical pair of supplied H; the amino-acid functional groups are background here. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-s23-41-q6-b-i": {
     "fingerprint": "a75dd4309189f40d5fdac47b86a4c33875eb5a7192f4d6fe8933a330929dd556",
@@ -94951,19 +95051,21 @@
   "cie-9701-s23-43-q6-a-ii": {
     "fingerprint": "7c487ff052563487b509495a62dc48cd32a403f43eb04495165267674efabbb0",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Represent the optical pair of the supplied amino-acid monomer as foundation of the same amino-acid/amide chemistry block. Variant 43 task, supplied context and official MS text separately compared in full; differences are whitespace inside units and spectrum labels. Graphical material separately inspected; no pixel-identity claim."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Draw and name this variant organic H optical pair, retaining the existing independently measured structures and rubric. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-s23-43-q6-b-i": {
     "fingerprint": "f837d57b73ce446c9110e47553f11e70926b0173e4ca05907a9172065827e2f9",
@@ -100620,16 +100722,17 @@
   },
   "cie-9701-s24-41-q8-a-i": {
     "fingerprint": "abdca9ce3bb3df23afd3c954d113b5f72c88f0d411ed4496205dd0011a7cf300",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Count chiral carbons in the supplied sweetener, an isolated AS stereochemistry task; no peptide cleavage or other A2-specific knowledge is needed."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Count chiral carbons in supplied neotame; no peptide cleavage or amide reaction is needed. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "issues": [
-      "standalone_as_foundation_without_reliable_a2_theme"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-s24-41-q8-a-ii": {
@@ -100716,30 +100819,32 @@
   },
   "cie-9701-s24-41-q9-c-i": {
     "fingerprint": "c961daa0e226f9aea9ace24e8cb6c63133c45f23d943d41ad4a675863f6efffc",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Complete arrows for a supplied single-step Diels-Alder cycloaddition outside the named 12-chapter scope. The user reserves chapter 11 for actual multistep route inference, so do not force this one-step extension into it."
+        "method": "teacher-confirmed-scope-and-agent-source-reading-v1",
+        "reason": "Complete three curved arrows for the supplied diene/alkene Diels-Alder mechanism, with both official alternative arrow diagrams retained. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate.",
+        "policy_id": "a2-ch11-selected-single-step-methods-2026-10-29"
       }
     ],
-    "issues": [
-      "single_step_cycloaddition_without_reliable_taxonomy_fit"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-s24-41-q9-c-ii": {
     "fingerprint": "93d3a9a260120cd6cf731767cfacb23f6199d965c286adb618647aeab9ae84d2",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Apply the preceding supplied cycloaddition example to another one-step Diels-Alder reaction; no reliable chapter in the requested taxonomy is established."
+        "method": "teacher-confirmed-scope-and-agent-source-reading-v1",
+        "reason": "Draw the bicyclic Diels-Alder product from the displayed diene and methylcyclopentene, retaining the blank product box and official structure. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate.",
+        "policy_id": "a2-ch11-selected-single-step-methods-2026-10-29"
       }
     ],
-    "issues": [
-      "single_step_cycloaddition_without_reliable_taxonomy_fit"
-    ],
+    "issues": [],
     "prerequisites": [
       "cie-9701-s24-41-q9-c-i"
     ]
@@ -101517,20 +101622,21 @@
   },
   "cie-9701-s24-43-q8-a-i": {
     "fingerprint": "b47be99db73e28a08bea90bbd57c50d194591f528a459c7ab262dce1224e63f5",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Count chiral carbons in the supplied sweetener, an isolated AS stereochemistry task; no peptide cleavage or other A2-specific knowledge is needed. Variant 43 full task/context/MS text separately compared and graphical sheets inspected. Native font metrics differ and source completeness is still flagged; semantic classification does not clear that source gate."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Count chiral carbons in this variant supplied neotame; retain its unresolved physical-source gate. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "issues": [
-      "standalone_as_foundation_without_reliable_a2_theme"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-s24-43-q8-a-ii": {
@@ -101633,38 +101739,40 @@
   },
   "cie-9701-s24-43-q9-c-i": {
     "fingerprint": "12412093c8d2c479496710363b0ef9ec8f170076db84c0e3d0c0a923bc890a11",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Complete arrows for a supplied single-step Diels-Alder cycloaddition outside the named 12-chapter scope. The user reserves chapter 11 for actual multistep route inference, so do not force this one-step extension into it. Variant 43 full task/context/MS text separately compared and graphical sheets inspected. Native font metrics differ and source completeness is still flagged; semantic classification does not clear that source gate."
+        "method": "teacher-confirmed-scope-and-agent-source-reading-v1",
+        "reason": "Complete three curved arrows for the supplied diene/alkene Diels-Alder mechanism, with both official alternative arrow diagrams retained. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate.",
+        "policy_id": "a2-ch11-selected-single-step-methods-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "issues": [
-      "single_step_cycloaddition_without_reliable_taxonomy_fit"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-s24-43-q9-c-ii": {
     "fingerprint": "61238aaca050911b332d63a0dbe3af7cc2a80a39f67e9fe7f776c60f41809531",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Apply the preceding supplied cycloaddition example to another one-step Diels-Alder reaction; no reliable chapter in the requested taxonomy is established. Variant 43 full task/context/MS text separately compared and graphical sheets inspected. Native font metrics differ and source completeness is still flagged; semantic classification does not clear that source gate."
+        "method": "teacher-confirmed-scope-and-agent-source-reading-v1",
+        "reason": "Draw the bicyclic Diels-Alder product from the displayed diene and methylcyclopentene, retaining the blank product box and official structure. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate.",
+        "policy_id": "a2-ch11-selected-single-step-methods-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "issues": [
-      "single_step_cycloaddition_without_reliable_taxonomy_fit"
-    ],
+    "issues": [],
     "prerequisites": [
       "cie-9701-s24-43-q9-c-i"
     ]
@@ -107734,16 +107842,17 @@
   },
   "cie-9701-s25-42-q7-a": {
     "fingerprint": "bb184b20f2254b77d4480ba04574559d4df223959e928a0ff418bd36e0652809",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "An isolated AS enantiomer definition has no demonstrated A2-specific synthesis requirement in this task block."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Define enantiomers for the supplied 2-aminobutane pair while preserving the printed official marking row. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "issues": [
-      "standalone_as_foundation_without_reliable_a2_theme"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-s25-42-q7-b-i": {
@@ -108802,38 +108911,40 @@
   },
   "cie-9701-w25-41-q9-d-i": {
     "fingerprint": "82481713a55b0a5eba64e52984e895187d73348118e947d406e8e8b5294a5c0d",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Complete a supplied single-step ozonolysis cycloaddition mechanism; this extension has no reliable fit in the requested A2 twelve chapters and is not multistep synthesis."
+        "method": "teacher-confirmed-scope-and-agent-source-reading-v1",
+        "reason": "Complete the three curved arrows forming the ozonide intermediate, with the full official three-arrow scoring diagram. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate.",
+        "policy_id": "a2-ch11-selected-single-step-methods-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "issues": [
-      "single_step_ozonolysis_without_reliable_taxonomy_fit"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-w25-41-q9-d-ii": {
     "fingerprint": "dd2323a3db0440b55a96cb3e64f379bfacb57bbad7ff66942c0d2f7025ab660f",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Infer an alkene from the supplied one-step ozonolysis rule and carbonyl product; no integrated multistep route or defined A2 chapter requirement."
+        "method": "teacher-confirmed-scope-and-agent-source-reading-v1",
+        "reason": "Infer the original cyclic alkene from the supplied dicarbonyl product and the given ozone cleavage rule. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate.",
+        "policy_id": "a2-ch11-selected-single-step-methods-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "issues": [
-      "single_step_ozonolysis_without_reliable_taxonomy_fit"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-w25-43-q1-a-i": {
@@ -109661,38 +109772,40 @@
   },
   "cie-9701-w25-43-q9-d-i": {
     "fingerprint": "ad699792c99713570330356886a6c91731fc173079b566b9557e0f23d8c8b72f",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Complete a supplied single-step ozonolysis cycloaddition mechanism; this extension has no reliable fit in the requested A2 twelve chapters and is not multistep synthesis."
+        "method": "teacher-confirmed-scope-and-agent-source-reading-v1",
+        "reason": "Complete the three curved arrows forming the ozonide intermediate, with the full official three-arrow scoring diagram. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate.",
+        "policy_id": "a2-ch11-selected-single-step-methods-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "issues": [
-      "single_step_ozonolysis_without_reliable_taxonomy_fit"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-w25-43-q9-d-ii": {
     "fingerprint": "a7db540c671567b17d7a794ee58e548a560e7f6bafff779bfd18413eb9e5cc1e",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Infer an alkene from the supplied one-step ozonolysis rule and carbonyl product; no integrated multistep route or defined A2 chapter requirement."
+        "method": "teacher-confirmed-scope-and-agent-source-reading-v1",
+        "reason": "Infer the original cyclic alkene from the supplied dicarbonyl product and the given ozone cleavage rule. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate.",
+        "policy_id": "a2-ch11-selected-single-step-methods-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "issues": [
-      "single_step_ozonolysis_without_reliable_taxonomy_fit"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-w25-42-q1-a": {
@@ -110342,20 +110455,21 @@
   },
   "cie-9701-w25-42-q7-a": {
     "fingerprint": "977ae3e5722ab94ac0b72d033aaef939fb6fac801541acce8ca6fab7419ef6dd",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Isolated AS carbonyl-isomer chirality drawing does not require NMR, a multistep synthesis or another reliable A2 topic."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Identify the chiral organic carbonyl isomer and draw its two three-dimensional forms; a separate NMR analysis is not asked. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "issues": [
-      "standalone_as_foundation_without_reliable_a2_theme"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-w25-42-q7-b-i": {
@@ -110576,30 +110690,32 @@
   },
   "cie-9701-w25-42-q8-g-i": {
     "fingerprint": "5d03b12c9e18aa31ea4d1c7a37d7563433b395263a79100a9c15e4cef75de730",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Isolated AS optical-activity comparison without an A2 stereoselective-production requirement; amino-acid name alone does not add later knowledge."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Compare equal-concentration organic optical forms through their rotations of plane-polarised light. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "issues": [
-      "standalone_as_foundation_without_reliable_a2_theme"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-w25-42-q8-g-ii": {
     "fingerprint": "2d2da2ce3787f6cb759e613292d2e420791e94e7ee71b02a25a661ac61fa615d",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Name a racemic mixture in an isolated AS stereochemistry task without a demonstrated A2 method."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Name the equal-amount mixture of the organic optically active pair as a racemic mixture. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "issues": [
-      "standalone_as_foundation_without_reliable_a2_theme"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-w25-42-q9-a": {
@@ -111555,16 +111671,17 @@
   },
   "cie-9701-m26-42-q6-c-ii": {
     "fingerprint": "efd0e86108d9355123b38b53e334bb42c068b4e8fe0113a648c5017058ba408b",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Draw isolated organic enantiomers without a demonstrated stereoselective-production method; ligand naming alone does not make coordination knowledge necessary. Physical source page-count discrepancy remains gated independently of this semantic judgment."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Draw enantiomers of the supplied organic Z anion; this is not drawing coordination-complex isomers and does not clear missing-page/source issues. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "issues": [
-      "standalone_as_foundation_without_reliable_a2_theme"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-m26-42-q6-c-iii": {
@@ -112481,16 +112598,17 @@
   },
   "cie-9701-s26-41-q9-a": {
     "fingerprint": "cc74492ae28b200d92df4280dc9de462a87c4913becb83b15097c569ef345291",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "The isolated AS optical/geometrical-isomer drawing does not require an A2-specific method; amino-acid naming alone does not add such knowledge."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Draw and name the optical pair of supplied amino acid P and geometrical pair of Q; no amino-acid reaction is required. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "issues": [
-      "standalone_as_foundation_without_reliable_a2_theme"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-s26-41-q9-b-i": {
@@ -113416,16 +113534,17 @@
   },
   "cie-9701-s26-43-q9-a": {
     "fingerprint": "216d5adf33cf9b9916c053b53ecd01a46a01bd85613a0840bb3bfb19face3f54",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "The isolated AS optical/geometrical-isomer drawing does not require an A2-specific method; amino-acid naming alone does not add such knowledge."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Draw and name this variant amino-acid optical and geometrical pairs using the complete given student templates. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "issues": [
-      "standalone_as_foundation_without_reliable_a2_theme"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-s26-43-q9-b-i": {
@@ -115420,48 +115539,40 @@
   },
   "cie-9701-s18-43-q8-a": {
     "fingerprint": "2d3eb6e8c3b522b1e7493554963332ea0e84963fd149b49be4e29c1e23ee99bc",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "AS chirality on an isolated terpenoid has no reliable serving A2 theme in this parent; retain for manual chapter placement."
-      },
-      {
-        "method": "identical-task-context-and-official-ms-rgb-108dpi-v2-canonical-clip",
-        "reference_question_id": "cie-9701-s18-41-q8-a",
-        "reason": "Exact task/context/MS text, marks and every canonical-clipped, reading-oriented QP/MS RGB region match the read reference; every necessary prerequisite has matching material and is mapped by original part identity."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Locate the chiral carbon in this variant supplied abscisic acid structure. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "issues": [
-      "pure_as_task_without_reliable_a2_theme"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-s18-43-q8-b": {
     "fingerprint": "92b2817f7ef3d429301387fba19fa389b74ccc8120bfde9ace0fe2ffeb7a337e",
-    "required_chapters": [],
+    "required_chapters": [
+      11
+    ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "AS carbonyl reduction of the isolated terpenoid has no reliable serving A2 theme; do not invent an A2 chapter."
-      },
-      {
-        "method": "identical-task-context-and-official-ms-rgb-108dpi-v2-canonical-clip",
-        "reference_question_id": "cie-9701-s18-41-q8-b",
-        "reason": "Exact task/context/MS text, marks and every canonical-clipped, reading-oriented QP/MS RGB region match the read reference; every necessary prerequisite has matching material and is mapped by original part identity."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Infer the molecular formula after ketone-to-alcohol NaBH4 reduction of this variant supplied abscisic acid, leaving its acid group unchanged. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "issues": [
-      "pure_as_task_without_reliable_a2_theme"
-    ],
+    "issues": [],
     "prerequisites": []
   },
   "cie-9701-s18-43-q8-c-i": {
@@ -115558,24 +115669,21 @@
   "cie-9701-s18-43-q9-b": {
     "fingerprint": "82229be9525d7109a022993856daee3cd0daead223c3a20fb6c6ac7a2c33f67a",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "AS chiral-centre identification supports the noradrenaline aliphatic-amine block."
-      },
-      {
-        "method": "identical-task-context-and-official-ms-rgb-108dpi-v2-canonical-clip",
-        "reference_question_id": "cie-9701-s18-41-q9-b",
-        "reason": "Exact task/context/MS text, marks and every canonical-clipped, reading-oriented QP/MS RGB region match the read reference; every necessary prerequisite has matching material and is mapped by original part identity."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Explain this variant noradrenaline stereoisomerism from the chiral carbon, without requiring amine chemistry. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-s18-43-q9-c-i": {
     "fingerprint": "dd04aa9020dd40bee1f645dd54fdfbc505e352af443a2ce174d1ad80b4dc2c83",
@@ -118764,38 +118872,32 @@
   "cie-9701-s19-43-q8-e-i": {
     "fingerprint": "e5ff539c1d669f9366d7f2d439f511b9b509203bcc66a8d21d75b4dc3876f0af",
     "required_chapters": [
-      12
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "AS chirality definition supports the same molecular-formula isomer analysis block."
-      },
-      {
-        "method": "identical-task-context-and-official-ms-rgb-108dpi-v2-canonical-clip",
-        "reference_question_id": "cie-9701-s19-41-q8-e-i",
-        "reason": "Exact task/context/MS text, marks and every canonical-clipped, reading-oriented QP/MS RGB region match the read reference; every necessary prerequisite has matching material and is mapped by original part identity."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Define a chiral centre in this variant, independently of the preceding structure-analysis questions. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-s19-43-q8-e-ii": {
     "fingerprint": "de23c68cf3065e2bad8b8168d8e5f642326ae44b5d96cf4dab9d86e038309dde",
     "required_chapters": [
-      12
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "AS chiral carboxylic-acid structure deduction completes the same A2 isomer-analysis block."
-      },
-      {
-        "method": "identical-task-context-and-official-ms-rgb-108dpi-v2-canonical-clip",
-        "reference_question_id": "cie-9701-s19-41-q8-e-ii",
-        "reason": "Exact task/context/MS text, marks and every canonical-clipped, reading-oriented QP/MS RGB region match the read reference; every necessary prerequisite has matching material and is mapped by original part identity."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Infer a chiral carboxylic-acid structure from the explicitly supplied C5H10O2 formula and chiral-centre condition; neither an earlier spectrum nor its interpretation is required. The official row supplies the corresponding branched acid. Apply the teacher-confirmed organic-stereochemistry chapter 11 rule without changing material or scoring.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-s19-43-q9-a": {
     "fingerprint": "7198303565bed72d80df6e97d9536c7f5c6e4156fcd8f53e9ff4f94f13f68eef",
@@ -121099,24 +121201,21 @@
   "cie-9701-w20-43-q10-b-ii": {
     "fingerprint": "e8dc2ddd8cc3881af7c973ec8a62e63761c81db7233e13299787a65583c24ae2",
     "required_chapters": [
-      10
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Draw optical isomers of the amino-acid monomer, a stereochemical foundation of the polypeptide topic."
-      },
-      {
-        "method": "identical-task-context-and-official-ms-rgb-108dpi-v2-canonical-clip",
-        "reference_question_id": "cie-9701-w20-41-q10-b-ii",
-        "reason": "Exact task/context/MS text, marks and every canonical-clipped, reading-oriented QP/MS RGB region match the read reference; every necessary prerequisite has matching material and is mapped by original part identity."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Draw and name this variant 2-aminopropanoic-acid optical pair without requiring polypeptide chemistry. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-w20-43-q10-c-i": {
     "fingerprint": "ec65c000bea5e1ed7768ec555a6b920660605ab7c8ceda7ff3c15ccde6de69d0",
@@ -123244,24 +123343,21 @@
   "cie-9701-s22-43-q6-a": {
     "fingerprint": "e68d37a3fa86b2e86f316c2f5eb7310ccccb1707f23a0d87813015d3c5d2c63b",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Define racemic mixture as equal amounts of enantiomers, recording the AS stereochemical foundation of the following chiral amino-acid context."
-      },
-      {
-        "method": "identical-task-context-and-official-ms-rgb-108dpi-v2-canonical-clip",
-        "reference_question_id": "cie-9701-s22-41-q6-a",
-        "reason": "Exact task/context/MS text, marks and every canonical-clipped, reading-oriented QP/MS RGB region match the read reference; every necessary prerequisite has matching material and is mapped by original part identity."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Define the racemic mixture in this variant; no independent amino-acid chemistry requirement is introduced. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-s22-43-q6-b": {
     "fingerprint": "fbe19999c2d9286df970681a6208b5b2e5f0ade8d0fc94fbb156eb9357686fc8",
@@ -124473,42 +124569,36 @@
   "cie-9701-w22-43-q7-a-i": {
     "fingerprint": "51a248c7622f78694d99717a5355813feef24d97d23b189b4690cf78b53e2c58",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Identify the chiral centre in the supplied amino-acid-derived amine P as supporting AS stereochemistry for amine chemistry."
-      },
-      {
-        "method": "identical-task-context-and-official-ms-rgb-108dpi-v2-canonical-clip",
-        "reference_question_id": "cie-9701-w22-41-q7-a-i",
-        "reason": "Exact task/context/MS text, marks and every canonical-clipped, reading-oriented QP/MS RGB region match the read reference; every necessary prerequisite has matching material and is mapped by original part identity."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Identify all chiral carbons on this variant supplied organic P structure. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-w22-43-q7-a-ii": {
     "fingerprint": "deb3440ef884fdbf59070adcf70515cb1d723d164cc612e2a4f4569d0b0934d2",
     "required_chapters": [
-      9
+      11
     ],
     "evidence": [
       {
-        "method": "agent-read-task-and-scoring-evidence",
-        "reason": "Compare equal and opposite optical rotations of supplied amine P enantiomers as supporting stereochemical foundation."
-      },
-      {
-        "method": "identical-task-context-and-official-ms-rgb-108dpi-v2-canonical-clip",
-        "reference_question_id": "cie-9701-w22-41-q7-a-ii",
-        "reason": "Exact task/context/MS text, marks and every canonical-clipped, reading-oriented QP/MS RGB region match the read reference; every necessary prerequisite has matching material and is mapped by original part identity."
+        "method": "agent-read-task-context-ms-under-confirmed-teaching-policy-v1",
+        "reason": "Compare equal-and-opposite optical rotations for this variant organic enantiomer pair. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force.",
+        "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29"
       },
       {
         "method": "outer-vertical-ink-and-geometry-v2-answer-space-guard",
         "reason": "Only exterior bands proven ink-free by rendering and protected content geometry were removed; original answer space, diagrams, score labels and classification are retained."
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "issues": []
   },
   "cie-9701-w22-43-q7-b-i": {
     "fingerprint": "aed98b54e9cbb11623eba123af2609407eca961c0ef14733fd089f4b4b2f818a",

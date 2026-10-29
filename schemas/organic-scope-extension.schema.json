@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Chapter 11 single-step organic methods scope decision",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "policy_id", "confirmation_basis", "questions"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "policy_id": {"const": "a2-ch11-selected-single-step-methods-2026-10-29"},
+    "confirmation_basis": {"type": "string", "minLength": 20},
+    "questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["question_id", "fingerprint", "reason", "knowledge_tags"],
+        "properties": {
+          "question_id": {"type": "string", "minLength": 1},
+          "fingerprint": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "reason": {"type": "string", "minLength": 20},
+          "knowledge_tags": {
+            "type": "array", "uniqueItems": true, "minItems": 2,
+            "items": {"enum": ["organic.ozonolysis", "organic.diels-alder", "synthesis.single-step"]}
+          }
+        }
+      }
+    }
+  }
+}

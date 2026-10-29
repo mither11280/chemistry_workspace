@@ -31,7 +31,10 @@ def region_issues(doc, regions):
                     if intersection.width>1 and intersection.height>1 and not clip.contains(rect):
                         # Tiny PDF bounding-box rounding differences are harmless.
                         expanded=fitz.Rect(clip.x0-.8,clip.y0-.8,clip.x1+.8,clip.y1+.8)
-                        if not expanded.contains(rect):issues.append('text_crosses_crop_edge')
+                        if not expanded.contains(rect):
+                            from .crop_edges import excluded_ink_free
+                            if not excluded_ink_free(doc,pi,rect,clip):
+                                issues.append('text_crosses_crop_edge')
     return sorted(set(issues))
 
 

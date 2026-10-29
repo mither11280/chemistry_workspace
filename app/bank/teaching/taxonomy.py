@@ -17,7 +17,8 @@ NAMES=[
 ('羟基化合物','Hydroxy compounds'),('羧酸及衍生物（含腈）','Carboxylic acids and derivatives (with nitrile)'),
 ('羰基化合物及有机官能团检验','Carbonyl compounds (aldehydes and ketones) and organic functional group tests'),
 ('分析技术','Analytical techniques')]
-A2_TAXONOMY_ID='chemistry-workspace-a2-teaching12-1.0.0'
+A2_LEGACY_TAXONOMY_ID='chemistry-workspace-a2-teaching12-1.0.0'
+A2_TAXONOMY_ID='chemistry-workspace-a2-teaching12-1.1.0'
 A2_NAMES=[
 ('化学能量：晶格、溶解与水合','Chemical energetics (lattice energy + Group 2 hydration and solution)'),
 ('熵与吉布斯自由能','Entropy & Gibbs free energy'),('电化学','Electrochemistry'),
@@ -26,7 +27,7 @@ A2_NAMES=[
 ('苯、苯酚与苯胺','Benzene (benzene reactions + phenol + phenylamine)'),
 ('羧酸衍生物：酰氯','Carboxylic acids derivatives (acyl chloride)'),
 ('胺与酰胺','Amine and amides'),('聚合物','Polymers'),
-('有机多步合成','Organic synthesis (multi-step)'),
+('有机合成与方法','Organic synthesis (multi-step and selected single-step methods)'),
 ('分析技术：核磁与色谱','Analytical techniques (NMR + Chromatography)')]
 
 def course_for(question):return 'A2' if question['paper']==4 else 'AS'
@@ -61,14 +62,17 @@ def normalize_provenance(question):
         current['topic_mapping']=[]
 
 def topic_id(n,course='AS'):return ('a2-' if course=='A2' else '')+f'ch{n:02}'
-def topics(course='AS'):return [{'id':topic_id(n,course),'name':f'{n} {zh}','english':en} for n,(zh,en) in enumerate(A2_NAMES if course=='A2' else NAMES,1)]
+def topics(course='AS',legacy=False):
+    names=list(A2_NAMES if course=='A2' else NAMES)
+    if course=='A2' and legacy:names[10]=('有机多步合成','Organic synthesis (multi-step)')
+    return [{'id':topic_id(n,course),'name':f'{n} {zh}','english':en} for n,(zh,en) in enumerate(names,1)]
 def group(n,course='AS'):
     if course=='A2':return 'Physical chemistry' if n<=5 else 'Inorganic chemistry' if n==6 else 'Organic chemistry' if n<=11 else 'Analysis'
     return 'Physical chemistry' if n<=8 else 'Inorganic chemistry' if n<=12 else 'Organic chemistry'
 
 def validate_teaching(index):
     if index['bank_id']!=BANK_ID:return
-    if index['topics'] not in [topics(),topics('A2'),topics()+topics('A2')]:raise DataError('教学题库章节及顺序必须与AS/A2规范一致')
+    if index['topics'] not in [topics(),topics('A2'),topics()+topics('A2'),topics('A2',legacy=True),topics()+topics('A2',legacy=True)]:raise DataError('教学题库章节及顺序必须与AS/A2规范一致')
     qs={q['question_id']:q for q in index['questions']}
     visiting=set();done={};shared={}
     def visit(qid):
@@ -76,7 +80,8 @@ def validate_teaching(index):
         if qid in done:return done[qid]
         visiting.add(qid);q=qs[qid];m=q['metadata'].get('teaching',{})
         course=course_for(q)
-        if q['paper'] not in [1,2,4] or m.get('taxonomy_id')!=taxonomy_for(course):raise DataError('卷别与教学分类版本不匹配')
+        accepted=[A2_LEGACY_TAXONOMY_ID,A2_TAXONOMY_ID] if course=='A2' else [TAXONOMY_ID]
+        if q['paper'] not in [1,2,4] or m.get('taxonomy_id') not in accepted:raise DataError('卷别与教学分类版本不匹配')
         contexts=m.get('contexts',[]);own=m.get('own_regions',[])
         if q['question']['regions']!=[r for c in contexts for r in c['regions']]+own:raise DataError('题干区域必须与上下文及小问区域一致')
         for context in contexts:

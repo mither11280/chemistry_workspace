@@ -1,0 +1,1193 @@
+{
+  "previous_revision": "2026-10-29.teaching-as19-a2-12.1",
+  "revision": "2026-10-29.reliability.1",
+  "method": "excluded-font-box-ink-v1-288dpi",
+  "total": 7998,
+  "newly_ready_count": 15,
+  "newly_ready_ids": [
+    "cie-9701-w21-21-q4-a-i",
+    "cie-9701-w21-23-q4-a-i",
+    "cie-9701-m20-42-q5-c-v",
+    "cie-9701-m20-42-q5-c-vi",
+    "cie-9701-w21-42-q7-c-iv",
+    "cie-9701-w21-42-q7-c-v",
+    "cie-9701-s23-41-q3-b",
+    "cie-9701-s23-42-q1-b-ii",
+    "cie-9701-s23-42-q3-f",
+    "cie-9701-s23-42-q9-b",
+    "cie-9701-s23-43-q3-b",
+    "cie-9701-w23-41-q6-b-ii",
+    "cie-9701-w23-43-q6-b-ii",
+    "cie-9701-m24-42-q5-a-ii",
+    "cie-9701-s24-41-q4-d-ii"
+  ],
+  "remaining_pending": 317,
+  "issue_counts": {
+    "ms_answer_table_contamination_visual_confirmed": 3,
+    "exact_ms_label_missing": 50,
+    "subpart_marks_mismatch": 77,
+    "ms_parent_question_absent": 7,
+    "prerequisite_pending": 13,
+    "official_mass_fraction_interpretation_conflict": 1,
+    "official_ms_numeric_marks_absent": 1,
+    "official_question_withdrawn": 3,
+    "official_ms_duplicate_subpart_label": 14,
+    "official_qp_ms_marks_disagreement": 1,
+    "question:text_crosses_crop_edge": 33,
+    "official_ms_unbalanced_equation": 2,
+    "official_ambiguous_thermochemistry": 1,
+    "no_reliable_primary_chapter": 69,
+    "pure_as_task_without_reliable_a2_theme": 19,
+    "context:text_crosses_crop_edge": 15,
+    "no_reliable_a2_serving_theme": 8,
+    "official_ms_charge_effect_contradicts_lattice_energy_rule": 1,
+    "standalone_as_redox_without_reliable_a2_theme": 1,
+    "official_ms_entropy_expression_sign_inconsistent_with_value": 2,
+    "standalone_as_stereochemistry_without_reliable_a2_theme": 1,
+    "standalone_as_carbonyl_reduction_without_reliable_a2_theme": 1,
+    "standalone_as_optical_activity_without_reliable_a2_theme": 1,
+    "standalone_as_organic_redox_without_reliable_a2_theme": 1,
+    "standalone_as_foundation_without_reliable_a2_theme": 29,
+    "official_ms_expected_polymer_structure_missing": 2,
+    "official_ms_edta_free_ligand_charge_typo": 1,
+    "official_ms_titrant_concentration_typo": 1,
+    "official_ms_base_concentration_decimal_typo": 2,
+    "single_step_cycloaddition_without_reliable_taxonomy_fit": 4,
+    "source:physical_page_count_mismatch": 112,
+    "official_ms_incorrect_amine_precursor_names": 2,
+    "official_ms_iron_mass_conversion_exponent_typo": 1,
+    "official_qp_ms_nmr_shift_disagreement": 1,
+    "single_step_ozonolysis_without_reliable_taxonomy_fit": 4,
+    "official_ms_awarded_all_candidates_without_answer": 2,
+    "official_qp_oxygen_at_cathode_error": 1
+  },
+  "rechecked": [
+    {
+      "question_id": "cie-9701-w21-21-q4-a-i",
+      "material_fingerprint": "44952d49193e2463ad0f1764ae5c374d439194f9f1b03b71ca797b20b05289fc",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-w21-21-q4-a-ii",
+      "material_fingerprint": "f65acc6ac2996f749114f1223e9be1af6d7e375fd582397a5fd25638fa7e58fd",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w21-22-q3-e-iv",
+      "material_fingerprint": "702d6b18da99b2169b18d809b6c5d34213a7fb1d18d32908c65f8df53fd2b2e8",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w21-22-q3-e-v",
+      "material_fingerprint": "6345f006f6f1ab41fba4982956e0d2e32c7e3c9ecb8afaa106c6131751215d72",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w21-22-q3-e-vi",
+      "material_fingerprint": "a020fe702e39e7d9c4bfcd45894c2b616451f8ee674494e4a604055f61d23720",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w21-22-q3-e-vii",
+      "material_fingerprint": "558e8bff8f2ef8d4a367ad885164624ee039071769adcb52c64f03c61c6ee0b4",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w21-23-q4-a-i",
+      "material_fingerprint": "313db5ecb0ad2e99474bc682963ebe12a928317d114b22fb16aaa768f07fe7f8",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-w21-23-q4-a-ii",
+      "material_fingerprint": "e91e9169634208ab75b13a1e19b10768d48b1232a47755c13dcf942ebc7cc126",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-m19-42-q1-c-i",
+      "material_fingerprint": "8716561dcc257985a1b8b47522f99f555a8bee052e189d5bbac1bb0763057c4c",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-m19-42-q1-c-ii",
+      "material_fingerprint": "4679d8a2deaa76fa0f9d1fca1ddd124e80c7356782d063367a6779bcb4375ccd",
+      "removed_issues": [],
+      "before": [
+        "context:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "context:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-m20-42-q5-c-v",
+      "material_fingerprint": "c26c78779626c92348bce18f4e51a21eb3afd113bb2fa2130485c0744e726497",
+      "removed_issues": [
+        "context:text_crosses_crop_edge",
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "context:text_crosses_crop_edge",
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-m20-42-q5-c-vi",
+      "material_fingerprint": "f57424ef764f8d5f6f8362729e5f4462f84d037d898eac9587b55fea943c0fcc",
+      "removed_issues": [
+        "context:text_crosses_crop_edge"
+      ],
+      "before": [
+        "context:text_crosses_crop_edge",
+        "prerequisite_pending"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-m21-42-q4-c-iv",
+      "material_fingerprint": "81ab6086f1e24bf75b0bce9f98035a0b2b15896c45295d6ff67ac7efde0299a6",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-m21-42-q4-c-v",
+      "material_fingerprint": "378b930ed3d811f74b5615493e8f8b63716b4ffbbdfd6dc1fb627f5a309ab9e7",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s21-41-q3-c-i",
+      "material_fingerprint": "04014657c12ec65bd03a0c9c8b728a5e36c7afb95885f955480185a10d2e305f",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s21-41-q3-c-ii",
+      "material_fingerprint": "1db655e54d8f9527bac4a4a7f83d2958eff51515bb43106ca2b1394a71533048",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s21-43-q3-c-i",
+      "material_fingerprint": "d123734c32e3c408c2831bed0ab0d40c9c9280551c7de240fada10597326e092",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s21-43-q3-c-ii",
+      "material_fingerprint": "e7997c0722b9d7e8f6af3b429945ad5233968ca8274ccf4930ad0e941018fa63",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w21-41-q2-a-iii",
+      "material_fingerprint": "dd7a6fbfb7ed91dac07acc26257c6ac5616562985a8b0f3fb17dcc638b5d52c1",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w21-41-q2-a-iv",
+      "material_fingerprint": "d5641266209e34f6ffd9aaf028bbe2994012ebfa7a98786e329670b2a2b8d35c",
+      "removed_issues": [],
+      "before": [
+        "prerequisite_pending",
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w21-42-q7-c-iii",
+      "material_fingerprint": "e755ad88a8362861f84d2b81d5f11ccaac8243866cdb26565df296f242be58ce",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w21-42-q7-c-iv",
+      "material_fingerprint": "6eeb8d19a00b7412b0561405b6f3b8c0d5689448a33e5ccc3f4634d6847916c0",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-w21-43-q2-a-iii",
+      "material_fingerprint": "f3b2053934c5f81093e4759ef781df3f6dae500e66da3342a3f2866e7deb3ea9",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w21-43-q2-a-iv",
+      "material_fingerprint": "c29a38294f02934af4ac11d32b4777dbfd04ebebcc16ae95a81a1575a1d405e3",
+      "removed_issues": [],
+      "before": [
+        "prerequisite_pending",
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s23-41-q2-c",
+      "material_fingerprint": "50c78574ec2f40e79096d9088f9e430ace508ebbfbe89bfcd99468537ec48637",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s23-41-q3-b",
+      "material_fingerprint": "eef4f7dde20a9244f09295091f2b010d04f50759eb63c0e442008fb0c1fb7188",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-s23-42-q1-b-i",
+      "material_fingerprint": "05a086dfde2da117712bf81b290b05f2cc54873b71f99b7230d4b63693bf8342",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s23-42-q1-b-ii",
+      "material_fingerprint": "6f01704f1676d8976de0a0f7e90fb40975d24ddb97c91e11abc0f2e4110c8d45",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-s23-42-q1-d",
+      "material_fingerprint": "e79923629d1767b5d7260d3287ec9cedf01ff37a3031af9fd42bf649990b0eba",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "no_reliable_primary_chapter",
+        "question:text_crosses_crop_edge",
+        "standalone_as_foundation_without_reliable_a2_theme"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-s23-42-q3-e-ii",
+      "material_fingerprint": "b140355e0771f056b4b10f0618fbf60437012650304bb90edab5a36bd70afd9f",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s23-42-q3-f",
+      "material_fingerprint": "d35863013c4df44488c590f35017ed7156d3798787ede0536e8a3534af567999",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-s23-42-q9-a",
+      "material_fingerprint": "ea07d1be4e25fc46692959e930cf13a5a2804b2093019a6755696db3f35cf9e8",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s23-42-q9-b",
+      "material_fingerprint": "61114bf1f2ae8c0a7e7bd58bfb88fc6f4defefc83c5aebf309620aa46d97a1b1",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-s23-43-q2-c",
+      "material_fingerprint": "a61820435a699d72112ac2597b0736933a6b009f2652e37005eef0a863e05158",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s23-43-q3-b",
+      "material_fingerprint": "5b8d9f7bc5dbe26566042c5289ac66020d7350b3f4df34c7a30877e10f72f625",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-w23-41-q2-d-iv",
+      "material_fingerprint": "a9f6ac0b8ebcb594486893f194cf703bb14f6f1c1900d928afdf276b0403678a",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w23-41-q6-b-ii",
+      "material_fingerprint": "8ae3eaeff7f8206d82f7e8468ff1a51c70d42d9da561278825297cee51aa5b8d",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-w23-42-q6-b-ii",
+      "material_fingerprint": "8091bc06b886211b5af0718fcc76328468591f86462fefe51367f002a1717d47",
+      "removed_issues": [],
+      "before": [
+        "exact_ms_label_missing",
+        "question:text_crosses_crop_edge",
+        "subpart_marks_mismatch"
+      ],
+      "after_material_checks": [
+        "answer:empty_regions",
+        "ms_crop_subpart_identity_mismatch",
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w23-42-q7-c-ii",
+      "material_fingerprint": "94be7659852d19eb72d1598f0ec4286a6383b82e6106d81d5f8b696ee22dffeb",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w23-43-q2-d-iv",
+      "material_fingerprint": "c01a39046043de870365682d3867ee61c1d445d828c1f82b0acc4411482191fc",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w23-43-q6-b-ii",
+      "material_fingerprint": "7804b00431aeb126db234ca3a4d83bdcdd53302c1610792ce648ebf1db5f5abc",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-m24-42-q5-a-ii",
+      "material_fingerprint": "4e690df16b2abcdfdd42efe4821149b70180284455bf3df100fefc9c5c867c5a",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-s24-41-q4-d-i",
+      "material_fingerprint": "1134eee4b7e9e4e7e8bf0640b95f351d87e7bb6a3774ececf48602f24dd18395",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s24-41-q4-d-ii",
+      "material_fingerprint": "83c0a0633b93ffbdd5b93f30e984e89783f9995d2c4478b536fc782856fcbff5",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-s24-41-q9-c-i",
+      "material_fingerprint": "c961daa0e226f9aea9ace24e8cb6c63133c45f23d943d41ad4a675863f6efffc",
+      "removed_issues": [],
+      "before": [
+        "no_reliable_primary_chapter",
+        "question:text_crosses_crop_edge",
+        "single_step_cycloaddition_without_reliable_taxonomy_fit"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s24-41-q9-c-ii",
+      "material_fingerprint": "93d3a9a260120cd6cf731767cfacb23f6199d965c286adb618647aeab9ae84d2",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "no_reliable_primary_chapter",
+        "prerequisite_pending",
+        "question:text_crosses_crop_edge",
+        "single_step_cycloaddition_without_reliable_taxonomy_fit"
+      ],
+      "after_material_checks": []
+    },
+    {
+      "question_id": "cie-9701-s24-42-q1-d-i",
+      "material_fingerprint": "3184b6b21bab332b3993f6678dfd1f137d110879d2799f86e4c8aabbc776aaca",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s24-42-q1-d-ii",
+      "material_fingerprint": "b61c039748cd5060f88e6f0844e6d56b8f573c6a1de31252bf2f73ea9ebaa110",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s24-43-q4-b-ii",
+      "material_fingerprint": "b16e84b3a5c7d678e901c48df88442fbb555f5cb1b7d62e5a2129995c3b765cc",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge",
+        "source:physical_page_count_mismatch"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge",
+        "source:physical_page_count_mismatch"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s24-43-q4-c",
+      "material_fingerprint": "8195412559811fc074770b78a798c270f905491128f3ae226b1e90a750e03ad0",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "question:text_crosses_crop_edge",
+        "source:physical_page_count_mismatch"
+      ],
+      "after_material_checks": [
+        "source:physical_page_count_mismatch"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s24-43-q4-d-i",
+      "material_fingerprint": "47f71d72c2c4f2cc6e3e0e9673f84fbfc072b2b8d8287724e45dfbde80fb9330",
+      "removed_issues": [],
+      "before": [
+        "question:text_crosses_crop_edge",
+        "source:physical_page_count_mismatch"
+      ],
+      "after_material_checks": [
+        "question:text_crosses_crop_edge",
+        "source:physical_page_count_mismatch"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s24-43-q4-d-ii",
+      "material_fingerprint": "5f2e72a30b94119ac03955a60b998171dc0c6e125561478f1a0b491f6ea7d6a1",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "question:text_crosses_crop_edge",
+        "source:physical_page_count_mismatch"
+      ],
+      "after_material_checks": [
+        "source:physical_page_count_mismatch"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w25-41-q4-a",
+      "material_fingerprint": "6c9d0225342bda3c06d4b4bbf965df50d11d9458f74dee247a609c9a86ed95a3",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "context:text_crosses_crop_edge",
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "context:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w25-41-q4-b-i",
+      "material_fingerprint": "df6f431d8f353ee12985fe9fd73b0af3e08e6c89ae7f0742ca831eb4fc7a1ab4",
+      "removed_issues": [],
+      "before": [
+        "context:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "context:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w25-41-q4-b-ii",
+      "material_fingerprint": "287d855b4174d24474444710acd70ac1d108c05bc32e1f665637c30d328949ba",
+      "removed_issues": [],
+      "before": [
+        "context:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "context:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w25-41-q4-b-iii",
+      "material_fingerprint": "5f01badac5c5c90a3d37f115438eddc4fdd21a6af0b83a3107bd747620545ee1",
+      "removed_issues": [],
+      "before": [
+        "context:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "context:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w25-41-q4-c-i",
+      "material_fingerprint": "42bff2d2adb270938107ac712deac6d85af7afc9ce291cbed63ae805e7752ff3",
+      "removed_issues": [],
+      "before": [
+        "context:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "context:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w25-41-q4-c-ii",
+      "material_fingerprint": "2fd35f5f0824863642e65667c6a7ed7e94773f1d301815857bbb8dd4ae0ebda9",
+      "removed_issues": [],
+      "before": [
+        "context:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "context:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w25-41-q4-c-iii",
+      "material_fingerprint": "5b299daa238d7fab9c72327458ae5e2d6dc158fa4046996193d09fb99f5de70e",
+      "removed_issues": [],
+      "before": [
+        "context:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "context:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w25-43-q4-a",
+      "material_fingerprint": "7b37a99493d902de5a20bd3ae21b8c773eafcdfa5e0547ca80cac9e3c94c256b",
+      "removed_issues": [
+        "question:text_crosses_crop_edge"
+      ],
+      "before": [
+        "context:text_crosses_crop_edge",
+        "question:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "context:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w25-43-q4-b-i",
+      "material_fingerprint": "36a2a4f2ca4f189086decefcb4b39b20b49dc792e99271c5a436b133ea15df99",
+      "removed_issues": [],
+      "before": [
+        "context:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "context:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w25-43-q4-b-ii",
+      "material_fingerprint": "3ff0905c0f76a46d879436537e48a6ae48072d0f4b597bf7c5925b66a66da68d",
+      "removed_issues": [],
+      "before": [
+        "context:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "context:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w25-43-q4-b-iii",
+      "material_fingerprint": "c5b7a64fdb7870004532b0bc3b92de85a5a672edbee7052e3d2c9ab9e75f7bba",
+      "removed_issues": [],
+      "before": [
+        "context:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "context:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w25-43-q4-c-i",
+      "material_fingerprint": "c32baddd482e6381ba50e1876b3d7a8feff9b9360e7d2c1dfa9a8b956d3a31fa",
+      "removed_issues": [],
+      "before": [
+        "context:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "context:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w25-43-q4-c-ii",
+      "material_fingerprint": "06075cb757629a3c64d547f254984acf7061aa25d4bedb27fea78586614e80e8",
+      "removed_issues": [],
+      "before": [
+        "context:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "context:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w25-43-q4-c-iii",
+      "material_fingerprint": "7f9609cb7dc7bca15e694949ad737bf1da5abe6abb989935a64cffeb74f643d1",
+      "removed_issues": [],
+      "before": [
+        "context:text_crosses_crop_edge"
+      ],
+      "after_material_checks": [
+        "context:text_crosses_crop_edge"
+      ]
+    }
+  ],
+  "source_audits": [
+    {
+      "source_id": "cie-9701-2024-s-43-qp",
+      "sha256": "a9ba9573f9f9e307b811734ca8913204eb028d63905c38d095f84e4541a0b6c9",
+      "physical_pages": 25,
+      "declared_pages": 28,
+      "page_tree_count": 25,
+      "repaired_on_open": false,
+      "printed_page_numbers": [
+        {
+          "page_index": 1,
+          "printed_page_number": 2,
+          "candidates": [
+            2
+          ]
+        },
+        {
+          "page_index": 2,
+          "printed_page_number": 3,
+          "candidates": [
+            3
+          ]
+        },
+        {
+          "page_index": 3,
+          "printed_page_number": 4,
+          "candidates": [
+            4
+          ]
+        },
+        {
+          "page_index": 4,
+          "printed_page_number": 5,
+          "candidates": [
+            5
+          ]
+        },
+        {
+          "page_index": 5,
+          "printed_page_number": 6,
+          "candidates": [
+            6
+          ]
+        },
+        {
+          "page_index": 6,
+          "printed_page_number": 7,
+          "candidates": [
+            7
+          ]
+        },
+        {
+          "page_index": 7,
+          "printed_page_number": 8,
+          "candidates": [
+            8
+          ]
+        },
+        {
+          "page_index": 8,
+          "printed_page_number": 9,
+          "candidates": [
+            9
+          ]
+        },
+        {
+          "page_index": 9,
+          "printed_page_number": 10,
+          "candidates": [
+            10
+          ]
+        },
+        {
+          "page_index": 10,
+          "printed_page_number": 11,
+          "candidates": [
+            11
+          ]
+        },
+        {
+          "page_index": 11,
+          "printed_page_number": 12,
+          "candidates": [
+            12
+          ]
+        },
+        {
+          "page_index": 12,
+          "printed_page_number": 13,
+          "candidates": [
+            13
+          ]
+        },
+        {
+          "page_index": 13,
+          "printed_page_number": 14,
+          "candidates": [
+            14
+          ]
+        },
+        {
+          "page_index": 14,
+          "printed_page_number": 15,
+          "candidates": [
+            15
+          ]
+        },
+        {
+          "page_index": 15,
+          "printed_page_number": 16,
+          "candidates": [
+            16
+          ]
+        },
+        {
+          "page_index": 16,
+          "printed_page_number": 17,
+          "candidates": [
+            17
+          ]
+        },
+        {
+          "page_index": 17,
+          "printed_page_number": 18,
+          "candidates": [
+            18
+          ]
+        },
+        {
+          "page_index": 18,
+          "printed_page_number": 19,
+          "candidates": [
+            19
+          ]
+        },
+        {
+          "page_index": 19,
+          "printed_page_number": 20,
+          "candidates": [
+            20
+          ]
+        },
+        {
+          "page_index": 20,
+          "printed_page_number": 21,
+          "candidates": [
+            21
+          ]
+        },
+        {
+          "page_index": 21,
+          "printed_page_number": 22,
+          "candidates": [
+            22
+          ]
+        },
+        {
+          "page_index": 22,
+          "printed_page_number": 23,
+          "candidates": [
+            23
+          ]
+        },
+        {
+          "page_index": 23,
+          "printed_page_number": 24,
+          "candidates": [
+            24
+          ]
+        },
+        {
+          "page_index": 24,
+          "printed_page_number": 25,
+          "candidates": [
+            25
+          ]
+        }
+      ],
+      "missing_printed_pages": [
+        26,
+        27,
+        28
+      ],
+      "issues": [
+        "physical_page_count_mismatch",
+        "declared_printed_pages_not_found"
+      ],
+      "conclusion": "incomplete-physical-source-not-parser-count-error"
+    },
+    {
+      "source_id": "cie-9701-2026-m-42-qp",
+      "sha256": "c99f422866e976bf9912e95b6742eefec48597b3038b59427f4405ff1d8b4ff6",
+      "physical_pages": 23,
+      "declared_pages": 28,
+      "page_tree_count": 23,
+      "repaired_on_open": false,
+      "printed_page_numbers": [
+        {
+          "page_index": 1,
+          "printed_page_number": 3,
+          "candidates": [
+            3
+          ]
+        },
+        {
+          "page_index": 2,
+          "printed_page_number": 4,
+          "candidates": [
+            4
+          ]
+        },
+        {
+          "page_index": 3,
+          "printed_page_number": 5,
+          "candidates": [
+            5
+          ]
+        },
+        {
+          "page_index": 4,
+          "printed_page_number": 6,
+          "candidates": [
+            6
+          ]
+        },
+        {
+          "page_index": 5,
+          "printed_page_number": 7,
+          "candidates": [
+            7
+          ]
+        },
+        {
+          "page_index": 6,
+          "printed_page_number": 8,
+          "candidates": [
+            8
+          ]
+        },
+        {
+          "page_index": 7,
+          "printed_page_number": 9,
+          "candidates": [
+            9
+          ]
+        },
+        {
+          "page_index": 8,
+          "printed_page_number": 10,
+          "candidates": [
+            10
+          ]
+        },
+        {
+          "page_index": 9,
+          "printed_page_number": 11,
+          "candidates": [
+            11
+          ]
+        },
+        {
+          "page_index": 10,
+          "printed_page_number": 12,
+          "candidates": [
+            12
+          ]
+        },
+        {
+          "page_index": 11,
+          "printed_page_number": 13,
+          "candidates": [
+            13
+          ]
+        },
+        {
+          "page_index": 12,
+          "printed_page_number": 14,
+          "candidates": [
+            14
+          ]
+        },
+        {
+          "page_index": 13,
+          "printed_page_number": 15,
+          "candidates": [
+            15
+          ]
+        },
+        {
+          "page_index": 14,
+          "printed_page_number": 16,
+          "candidates": [
+            16
+          ]
+        },
+        {
+          "page_index": 15,
+          "printed_page_number": 18,
+          "candidates": [
+            18
+          ]
+        },
+        {
+          "page_index": 16,
+          "printed_page_number": 19,
+          "candidates": [
+            19
+          ]
+        },
+        {
+          "page_index": 17,
+          "printed_page_number": 20,
+          "candidates": [
+            20
+          ]
+        },
+        {
+          "page_index": 18,
+          "printed_page_number": 21,
+          "candidates": [
+            21
+          ]
+        },
+        {
+          "page_index": 19,
+          "printed_page_number": 22,
+          "candidates": [
+            22
+          ]
+        },
+        {
+          "page_index": 20,
+          "printed_page_number": 23,
+          "candidates": [
+            23
+          ]
+        },
+        {
+          "page_index": 21,
+          "printed_page_number": 24,
+          "candidates": [
+            24
+          ]
+        },
+        {
+          "page_index": 22,
+          "printed_page_number": 25,
+          "candidates": [
+            25
+          ]
+        }
+      ],
+      "missing_printed_pages": [
+        2,
+        17,
+        26,
+        27,
+        28
+      ],
+      "issues": [
+        "physical_page_count_mismatch",
+        "declared_printed_pages_not_found"
+      ],
+      "conclusion": "incomplete-physical-source-not-parser-count-error"
+    }
+  ],
+  "stable_ids_marks_coordinates_source_hashes_preserved": true,
+  "user_data_modified": false,
+  "independent_human_review": false
+}

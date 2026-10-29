@@ -1,0 +1,453 @@
+{
+  "previous_revision": "2026-10-29.reliability.3",
+  "revision": "2026-10-29.reliability.4",
+  "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29",
+  "directly_reclassified": 46,
+  "newly_ready": [
+    "cie-9701-s18-41-q8-a",
+    "cie-9701-s18-41-q8-b",
+    "cie-9701-s18-43-q8-a",
+    "cie-9701-s18-43-q8-b",
+    "cie-9701-m21-42-q6-c",
+    "cie-9701-s22-42-q7-c-i",
+    "cie-9701-s22-42-q7-c-ii",
+    "cie-9701-s22-42-q7-c-iii",
+    "cie-9701-s24-41-q8-a-i",
+    "cie-9701-s25-42-q7-a",
+    "cie-9701-w25-42-q7-a",
+    "cie-9701-w25-42-q8-g-i",
+    "cie-9701-w25-42-q8-g-ii",
+    "cie-9701-s26-41-q9-a",
+    "cie-9701-s26-43-q9-a"
+  ],
+  "newly_pending": [],
+  "dependent_chapter_changes": [],
+  "remaining_pending": 285,
+  "changes": [
+    {
+      "question_id": "cie-9701-s18-41-q8-a",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "pure_as_task_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s18-41-q8-b",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "pure_as_task_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s18-41-q9-b",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s18-42-q7-e",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s18-42-q8-b",
+      "previous_primary_chapter": 12,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s18-42-q8-c",
+      "previous_primary_chapter": 12,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s18-43-q8-a",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "pure_as_task_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s18-43-q8-b",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "pure_as_task_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s18-43-q9-b",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s19-41-q8-e-i",
+      "previous_primary_chapter": 12,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s19-42-q7-c",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s19-43-q8-e-i",
+      "previous_primary_chapter": 12,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-m20-42-q4-a-ii",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-m20-42-q6-c-i",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-w20-41-q10-b-ii",
+      "previous_primary_chapter": 10,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-w20-43-q10-b-ii",
+      "previous_primary_chapter": 10,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-m21-42-q6-c",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_a2_serving_theme",
+        "no_reliable_primary_chapter"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-m21-42-q7-c-vii",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s21-41-q7-c-i",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s21-43-q7-c-i",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-w21-42-q8-a",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-m22-42-q4-a-ii",
+      "previous_primary_chapter": 7,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-m22-42-q5-b-iii",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s22-41-q6-a",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s22-42-q7-c-i",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "standalone_as_stereochemistry_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s22-42-q7-c-ii",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "standalone_as_carbonyl_reduction_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s22-42-q7-c-iii",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "standalone_as_optical_activity_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s22-43-q6-a",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-w22-41-q7-a-i",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-w22-41-q7-a-ii",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-w22-42-q8-a",
+      "previous_primary_chapter": 12,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-w22-43-q7-a-i",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-w22-43-q7-a-ii",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s23-41-q6-a-ii",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s23-43-q6-a-ii",
+      "previous_primary_chapter": 9,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s24-41-q8-a-i",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "standalone_as_foundation_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s24-43-q8-a-i",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "standalone_as_foundation_without_reliable_a2_theme"
+      ],
+      "status": "pending",
+      "primary_chapter": null,
+      "remaining_issues": [
+        "source:physical_page_count_mismatch"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s25-42-q7-a",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "standalone_as_foundation_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-w25-42-q7-a",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "standalone_as_foundation_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-w25-42-q8-g-i",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "standalone_as_foundation_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-w25-42-q8-g-ii",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "standalone_as_foundation_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-m26-42-q6-c-ii",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "standalone_as_foundation_without_reliable_a2_theme"
+      ],
+      "status": "pending",
+      "primary_chapter": null,
+      "remaining_issues": [
+        "source:physical_page_count_mismatch"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s26-41-q9-a",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "standalone_as_foundation_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s26-43-q9-a",
+      "previous_primary_chapter": null,
+      "resolved_scope_issues": [
+        "no_reliable_primary_chapter",
+        "standalone_as_foundation_without_reliable_a2_theme"
+      ],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s19-41-q8-e-ii",
+      "previous_primary_chapter": 12,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-s19-43-q8-e-ii",
+      "previous_primary_chapter": 12,
+      "resolved_scope_issues": [],
+      "status": "ready",
+      "primary_chapter": 11,
+      "remaining_issues": []
+    }
+  ],
+  "coordinates_and_stable_identities_unchanged": true,
+  "independent_human_review": false
+}

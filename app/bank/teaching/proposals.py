@@ -39,7 +39,7 @@ A2_RULES=[
 (8,r'acyl.chloride|COCl|benzoyl|ethanoyl|nucleophilic.addition.elimination','酰氯候选'),
 (9,r'amine|amide|amino|NH2|CONH','胺与酰胺候选'),
 (10,r'polymer|monomer|repeat.unit|Kevlar|nylon|polyester','聚合物候选'),
-(11,r'(?:two|three|four|multi|2|3|4).step|synthe(?:sis|sised|sized)|synthetic.route|reaction.scheme','多步合成候选，须排除仅问给定单步'),
+(11,r'(?:two|three|four|multi|2|3|4).step|synthe(?:sis|sised|sized)|synthetic.route|reaction.scheme|ozonolysis|Diels[\s–-]+Alder|cycloaddition','有机合成候选；单步仅扩展臭氧化及环加成，其余按该步知识分类'),
 (12,r'NMR|chromatograph|infra.red|mass.spectr|m\s*[/⁄]\s*[ez]|chemical.shift|fragment|retention|TMS','分析技术候选')]
 def propose(record):
     text='\n'.join([record['task'],record.get('context',''),record.get('answer','')]);hits=[]

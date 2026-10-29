@@ -7,13 +7,19 @@ from .taxonomy import BANK_ID
 BASE_REVISION='2026-10-28.teaching19.1'
 KNOWN_INDEX_HASH='598e8d55a93f6940008359aaef2d65740be2e622c5293f18d7a567595e798f8d'
 KNOWN_MANIFEST_HASH='e3d4c0ec9e0f2b8e7ad4c1b191ad99d926cae319c3eb019aab7a8b8e864143b6'
+KNOWN_RELEASES={
+    '2026-10-29.teaching-as19-a2-12.1':(
+        'cd48a573989600696a63567dc6c7b918b2b9f1687a14c60cf04e3469a1c1d92b',
+        '7822f4c0be7df547d275ea745598526f9e4ac5c827da5ed4c560c5f71f68b737'),
+}
 
 def digest(value):return hashlib.sha256(json.dumps(value,sort_keys=True).encode()).hexdigest()
 
 def recognized(index,manifest):
-    if index.get('revision') not in [BASE_REVISION,BASE_REVISION+'.assets.1']:return False
-    normalized=dict(index,revision=BASE_REVISION)
-    return digest(normalized)==KNOWN_INDEX_HASH and digest(manifest)==KNOWN_MANIFEST_HASH
+    for base,(ih,mh) in {BASE_REVISION:(KNOWN_INDEX_HASH,KNOWN_MANIFEST_HASH),**KNOWN_RELEASES}.items():
+        if index.get('revision') in [base,base+'.assets.1']:
+            return digest(dict(index,revision=base))==ih and digest(manifest)==mh
+    return False
 
 def restore(catalog,backup):
     backup=Path(backup);pointer=catalog.data/'bank-updates/current.json'
@@ -29,7 +35,7 @@ def recover(catalog):
         restore(catalog,backup);journal.unlink()
 
 def prepare(catalog):
-    """Only retire an exact known v0.5.0 activation when the bundle adds A2."""
+    """Only retire an exact known published activation; keep custom banks intact."""
     recover(catalog)
     bundled=read_json(catalog.index_path);manifest=read_json(catalog.manifest_path)
     catalog.upgrade_notice=None

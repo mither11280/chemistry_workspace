@@ -28,6 +28,19 @@ def post(path,data):
         wrapped=prefix+'\ntry:\n'+''.join('    '+line+'\n' for line in script.splitlines())+'finally:\n    http.shutdown()\n    http.server_close()\n'
         result=subprocess.run([sys.executable,'-c',wrapped],cwd=root,env=env,capture_output=True,text=True,timeout=45)
         self.assertEqual(result.returncode,0,result.stdout+result.stderr)
+    def test_read_only_personal_work_requests_do_not_rewrite_database(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);make_fixture(root)
+            self.run_server_test(root,r'''
+job={'title':'Preserve stored work','question_ids':['fixture-q1'],'notes':'Original teacher note'}
+post('/api/save',job);post('/api/draft',job)
+before=server.DB.read_bytes()
+for i in range(3):
+ assert json.loads(get('/api/jobs'))[0]['notes']==job['notes']
+ assert json.loads(get('/api/draft'))['question_ids']==job['question_ids']
+ assert post('/api/import',{'code':post('/api/share',job)['code']})==job
+assert server.DB.read_bytes()==before
+''')
     def test_public_download_without_pdfs(self):
         with tempfile.TemporaryDirectory() as temp:
             root=Path(temp)

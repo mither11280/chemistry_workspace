@@ -201,7 +201,8 @@
                   "taxonomy_id": {
                     "enum": [
                       "chemistry-workspace-teaching19-1.0.0",
-                      "chemistry-workspace-a2-teaching12-1.0.0"
+                      "chemistry-workspace-a2-teaching12-1.0.0",
+                      "chemistry-workspace-a2-teaching12-1.1.0"
                     ]
                   },
                   "status": {
@@ -379,7 +380,10 @@
                     "if": {
                       "properties": {
                         "taxonomy_id": {
-                          "const": "chemistry-workspace-a2-teaching12-1.0.0"
+                          "enum": [
+                            "chemistry-workspace-a2-teaching12-1.0.0",
+                            "chemistry-workspace-a2-teaching12-1.1.0"
+                          ]
                         }
                       },
                       "required": [
@@ -405,7 +409,27 @@
                     }
                   }
                 ]
+              },
+              "knowledge_tags": {
+                "description": "Verified knowledge/method tags; independent of the single primary teaching chapter. Omitted means not tagged, not no knowledge.",
+                "type": "array",
+                "uniqueItems": true,
+                "items": {
+                  "type": "string",
+                  "pattern": "^[a-z][a-z0-9]*(?:[.-][a-z0-9]+)+$"
+                }
+              },
+              "knowledge_tags_version": {
+                "const": "chemistry-workspace-knowledge-tags-1.0.0"
               }
+            },
+            "dependentRequired": {
+              "knowledge_tags": [
+                "knowledge_tags_version"
+              ],
+              "knowledge_tags_version": [
+                "knowledge_tags"
+              ]
             }
           }
         },

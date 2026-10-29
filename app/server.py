@@ -38,7 +38,7 @@ def connection():
     if version>1:c.close();raise DataError('个人作业数据库版本较新，不能降级')
     c.execute('CREATE TABLE IF NOT EXISTS jobs (id TEXT PRIMARY KEY,title TEXT NOT NULL,body TEXT NOT NULL,updated REAL NOT NULL)')
     c.execute('CREATE TABLE IF NOT EXISTS draft (slot INTEGER PRIMARY KEY,body TEXT NOT NULL)')
-    c.execute('PRAGMA user_version=1')
+    if version==0:c.execute('PRAGMA user_version=1')
     return c
 with connection():pass
 

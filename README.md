@@ -2,6 +2,8 @@
 
 面向 A-Level 化学教师的本地组卷软件。支持离线题库检索、按描述选题、手动调整作业、学生卷／Mark Scheme PDF、个人作业和组卷代码分享。
 
+**主分支正在开发 v0.6。** 第一批源资料修复使可用单位从 7,666 增至 7,713、待整理从 332 减至 285；稳定 ID 和原卷哈希保留。新的 A2 分类规则及实测、剩余问题见[可靠性检查点](docs/reliability/README.md)。这不是新安装包已经发布；当前稳定下载仍为 v0.5.1，Paper 5 和教师工作流改进继续开发。
+
 **v0.5.1：新增 A2 Paper 4 与外围留白修正。** 本地登记的 2018–2026 年 60 对 Paper 4 QP/MS，从 510 道大题拆出 3,541 个计分小问，3,277 个可用、264 个待整理。保留 AS 的 4,457 个稳定题目 ID、个人作业和 CIE2 分享兼容。整库共 7,998 个单位，7,666 个可用。详见 [Paper 4 覆盖报告](docs/paper4/coverage.md) 与 [分类规范](docs/paper4/classification.md)。
 
 ## 下载与使用
@@ -14,7 +16,7 @@
 
 ## AS／A2 教学规则
 
-AS 使用原 19 章；A2 Paper 4 使用独立的 12 章，按 Physical／Inorganic／Organic／Analysis 展示。切换课程保留已选题，可混合组卷。Kstab 表达式、单位、计算和稳定性比较统一归 A2 第 6 章 Transition elements；真正需要更后章节时仍按最高编号。完整给定的单步转化按该步分类，综合推断或设计多步合成才归第 11 章。
+AS 使用原 19 章；A2 Paper 4 使用独立的 12 章，按 Physical／Inorganic／Organic／Analysis 展示。切换课程保留已选题，可混合组卷。Kstab 表达式、单位、计算和稳定性比较统一归 A2 第 6 章 Transition elements；真正需要更后章节时仍按最高编号。主分支的[分类 1.1](docs/reliability/classification-1.1.md) 扩展第 11 章，收录已确认的单步臭氧化／环加成、有机立体异构和普通醛酮还原；配合物异构仍归第 6 章。
 
 界面按 Physical／Inorganic／Organic chemistry 展示 19 章。每个选题单位只有一个主章节：**本问及必要前问真正需要的章节中，编号最大的一章**。背景名称和干扰选项不单独增加章节要求。
 

@@ -17,11 +17,19 @@ import fitz
 from .format import DataError,read_json,write_json,validate,validate_schema,relative_path,safe_path,sha256,geometry
 
 MAX_BYTES=512*1024*1024
-READER_VERSION=(0,5,1)
+READER_VERSION=(0,6,0)
 
 def encoded(value):return (json.dumps(value,ensure_ascii=False,sort_keys=True,indent=2)+'\n').encode()
 def digest(data):return hashlib.sha256(data).hexdigest()
 def pointer_path(catalog):return catalog.data/'bank-updates/current.json'
+
+def required_reader(index):
+    """New semantics must never be advertised as readable by the old App."""
+    for q in index['questions']:
+        meta=q.get('metadata',{})
+        if q['paper']==5 or any(k in meta for k in ['knowledge_tags','crop_edge_recheck','ms_row_repair']) or meta.get('teaching',{}).get('taxonomy_id')=='chemistry-workspace-a2-teaching12-1.1.0':
+            return (0,6,0)
+    return (0,3,0)
 
 def active_contract(catalog,index,manifest):
     pointer=pointer_path(catalog)
@@ -45,6 +53,7 @@ def compatible(old,old_manifest,index,manifest):
 
 def build_package(output,index,manifest,base_index,base_manifest,schemas,changelog,source_files=None,authorization=None,minimum_app_version="0.3.0"):
     validate(index,manifest,schemas);compatible(base_index,base_manifest,index,manifest)
+    if tuple(map(int,minimum_app_version.split('.')))<required_reader(index):raise DataError('更新包未声明新数据所需的最低 App 版本')
     if index['revision']==base_index['revision']:raise DataError('更新 revision 不得与基础版本相同')
     if not isinstance(changelog,str) or not changelog.strip():raise DataError('需要修复/更新说明')
     files={'question-index.json':encoded(index),'source-manifest.json':encoded(manifest)}
@@ -89,6 +98,7 @@ def inspect_package(path,schemas):
             payload={n:z.read(n) for n in info['files']}
             if any(digest(b)!=info['files'][n] for n,b in payload.items()):raise DataError('更新包校验和不匹配')
             validate(index,manifest,schemas)
+            if tuple(map(int,info['minimum_app_version'].split('.')))<required_reader(index):raise DataError('更新包未声明新数据所需的最低 App 版本')
             if info['revision']!=index['revision'] or info['bank_id']!=index['bank_id']:raise DataError('更新包身份不一致')
             declared={s['path']:s for s in manifest['sources']}
             for name in declared:
@@ -111,11 +121,12 @@ def install_package(catalog,path,expected_sha256=None):
     info,index,manifest,payload=inspect_package(path,catalog.resource_root/'schemas')
     old,old_manifest=catalog.public_contract()
     old_effective,old_effective_manifest=catalog.read_contract()
-    # The v0.5.1 full and delta assets intentionally describe the same target.
+    # Teaching full and delta asset packages may describe the same target.
     # A teacher may add the full bundle after a delta install, or reinstall it.
     # Permit that only for byte-equivalent public contracts, never a revision
-    # collision or a different custom bank. Sources are still hash checked.
-    same_assets=(info['minimum_app_version']=='0.5.1' and any(q['paper']==4 for q in index['questions']) and index==old and manifest==old_manifest)
+    # collision or a different custom bank. Reader capability was checked by
+    # inspection above; exact supplements are not tied to one App version.
+    same_assets=(index.get('bank_id')=='cie-9701-as-teaching19-v1' and index==old and manifest==old_manifest)
     if same_assets:
         imported=0
         for name,data in payload.items():

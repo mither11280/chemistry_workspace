@@ -1,5 +1,7 @@
 # A2 Paper 4 教学分类规范
 
+本页保留 v0.5.1 的 1.0 规范。主分支的新课程决定见[分类 1.1 扩展](../reliability/classification-1.1.md)，其中第 11 章的范围已按教师确认扩展；旧索引仍兼容读取。
+
 分类体系标识：`chemistry-workspace-a2-teaching12-1.0.0`。本规范是教师的教学顺序，并非 Cambridge 官方考纲条目编号。AS 继续使用 `chemistry-workspace-teaching19-1.0.0` 和 `ch01`–`ch19`，A2 使用 `a2-ch01`–`a2-ch12`；两者的相同章号不表示相同课程内容。
 
 | 学科组 | ID | 章节 |

@@ -1,0 +1,109 @@
+{
+  "previous_revision": "2026-10-29.reliability.2",
+  "revision": "2026-10-29.reliability.3",
+  "policy_id": "a2-ch11-selected-single-step-methods-2026-10-29",
+  "classified": 8,
+  "newly_ready": 4,
+  "remaining_pending": 300,
+  "questions": [
+    {
+      "question_id": "cie-9701-s24-41-q9-c-i",
+      "previous_status": "pending",
+      "fingerprint": "c961daa0e226f9aea9ace24e8cb6c63133c45f23d943d41ad4a675863f6efffc",
+      "knowledge_tags": [
+        "organic.diels-alder",
+        "synthesis.single-step"
+      ],
+      "status": "pending",
+      "remaining_issues": [
+        "question:text_crosses_crop_edge"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s24-41-q9-c-ii",
+      "previous_status": "pending",
+      "fingerprint": "93d3a9a260120cd6cf731767cfacb23f6199d965c286adb618647aeab9ae84d2",
+      "knowledge_tags": [
+        "organic.diels-alder",
+        "synthesis.single-step"
+      ],
+      "status": "pending",
+      "remaining_issues": [
+        "prerequisite_pending"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s24-43-q9-c-i",
+      "previous_status": "pending",
+      "fingerprint": "12412093c8d2c479496710363b0ef9ec8f170076db84c0e3d0c0a923bc890a11",
+      "knowledge_tags": [
+        "organic.diels-alder",
+        "synthesis.single-step"
+      ],
+      "status": "pending",
+      "remaining_issues": [
+        "source:physical_page_count_mismatch"
+      ]
+    },
+    {
+      "question_id": "cie-9701-s24-43-q9-c-ii",
+      "previous_status": "pending",
+      "fingerprint": "61238aaca050911b332d63a0dbe3af7cc2a80a39f67e9fe7f776c60f41809531",
+      "knowledge_tags": [
+        "organic.diels-alder",
+        "synthesis.single-step"
+      ],
+      "status": "pending",
+      "remaining_issues": [
+        "prerequisite_pending",
+        "source:physical_page_count_mismatch"
+      ]
+    },
+    {
+      "question_id": "cie-9701-w25-41-q9-d-i",
+      "previous_status": "pending",
+      "fingerprint": "82481713a55b0a5eba64e52984e895187d73348118e947d406e8e8b5294a5c0d",
+      "knowledge_tags": [
+        "organic.ozonolysis",
+        "synthesis.single-step"
+      ],
+      "status": "ready",
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-w25-41-q9-d-ii",
+      "previous_status": "pending",
+      "fingerprint": "dd2323a3db0440b55a96cb3e64f379bfacb57bbad7ff66942c0d2f7025ab660f",
+      "knowledge_tags": [
+        "organic.ozonolysis",
+        "synthesis.single-step"
+      ],
+      "status": "ready",
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-w25-43-q9-d-i",
+      "previous_status": "pending",
+      "fingerprint": "ad699792c99713570330356886a6c91731fc173079b566b9557e0f23d8c8b72f",
+      "knowledge_tags": [
+        "organic.ozonolysis",
+        "synthesis.single-step"
+      ],
+      "status": "ready",
+      "remaining_issues": []
+    },
+    {
+      "question_id": "cie-9701-w25-43-q9-d-ii",
+      "previous_status": "pending",
+      "fingerprint": "a7db540c671567b17d7a794ee58e548a560e7f6bafff779bfd18413eb9e5cc1e",
+      "knowledge_tags": [
+        "organic.ozonolysis",
+        "synthesis.single-step"
+      ],
+      "status": "ready",
+      "remaining_issues": []
+    }
+  ],
+  "ids_coordinates_marks_hashes_unchanged": true,
+  "independent_human_review": false
+}

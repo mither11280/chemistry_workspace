@@ -1,0 +1,562 @@
+{
+  "schema_version": "1.0.0",
+  "policy_id": "a2-organic-stereochemistry-and-carbonyl-reduction-2026-10-29",
+  "confirmation_basis": "Direct teacher instructions on 2026-10-29: keep every Paper 4 question in A2; put organic chirality/stereoisomerism and ordinary aldehyde/ketone reduction in chapter 11, retain coordination stereoisomers in chapter 6, classify actual amide reductions by chapter 9.",
+  "questions": [
+    {
+      "question_id": "cie-9701-s18-41-q8-a",
+      "material_fingerprint": "542376acfa555109f8e47e8e0af2aa3fadabc38f1c1a22a6cb94685c8dc4a821",
+      "before_teaching_fingerprint": "3fe7464da1068c5e824b88feff0c79023710a4fbbc39033d9342d87d91173cea",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Locate the chiral carbon in the supplied abscisic acid structure. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s18-41-q8-b",
+      "material_fingerprint": "7db502bf2b600a4cacb414921c16d3257466c957de968e0c068a3806d879941b",
+      "before_teaching_fingerprint": "1231f9985ec77907075e5b94af2a358a8a6fc48b1b41e854fa3e6942202f0654",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.carbonyl-reduction",
+        "synthesis.single-step"
+      ],
+      "reason": "Infer the molecular formula after NaBH4 reduces the supplied abscisic-acid ketone to an alcohol; this is not amide reduction and does not require carboxylic-acid reduction. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s18-41-q9-b",
+      "material_fingerprint": "d76ddba4179b09a9c1d5b3dfd04efea0f07f19f2e2a7f586aa5cd21fde1c50de",
+      "before_teaching_fingerprint": "1cbd98f418f3f694532f68cf566c17e930fc964344dbcb5ffa32cad01038e02c",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Explain noradrenaline stereoisomerism from its chiral carbon; its amine name is background rather than a tested amine reaction. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s18-42-q7-e",
+      "material_fingerprint": "5dfdc1b9bdf13e8f278c0deb8101e2882ffb22815fc8330d45e5c3d21fb2e498",
+      "before_teaching_fingerprint": "9d438660732814225ee8dbf78f4acc0839a60c66911ac67c10cf27e81e0d6d9d",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Draw the two three-dimensional valine mirror images with the supplied R group; no amino-acid reaction is required. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s18-42-q8-b",
+      "material_fingerprint": "6add00dba5d46e962af8b4fbb7b47f009be95a7c7d4ad6379d38a9036be57371",
+      "before_teaching_fingerprint": "4a2778e7ce560ecea058008e67f2539563a8eb38da16b28895d10aafa0a4f5e6",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Count chiral carbons in the supplied calcitriol structure; the separate later NMR tasks are not needed. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s18-42-q8-c",
+      "material_fingerprint": "345b8b0af5c970729667c5bc2b33aebd5a50649d3aec3ec61c6b1a6a9f1f7c78",
+      "before_teaching_fingerprint": "5d8f2df77db6cd4a96af7e3ec962976e653baa6168228e8445b59f7237e93add",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Count geometrical isomers of the supplied calcitriol structure; the task does not require NMR interpretation. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s18-43-q8-a",
+      "material_fingerprint": "2d3eb6e8c3b522b1e7493554963332ea0e84963fd149b49be4e29c1e23ee99bc",
+      "before_teaching_fingerprint": "19f9179a2e4fa4980fc55153def67eefd29c1cf8a31fe56c135db39e71387ef6",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Locate the chiral carbon in this variant supplied abscisic acid structure. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s18-43-q8-b",
+      "material_fingerprint": "92b2817f7ef3d429301387fba19fa389b74ccc8120bfde9ace0fe2ffeb7a337e",
+      "before_teaching_fingerprint": "5638b1aabe04f3ba5a020bca4782d1c005638858ab81a568a79f8e66f3b62fe5",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.carbonyl-reduction",
+        "synthesis.single-step"
+      ],
+      "reason": "Infer the molecular formula after ketone-to-alcohol NaBH4 reduction of this variant supplied abscisic acid, leaving its acid group unchanged. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s18-43-q9-b",
+      "material_fingerprint": "82229be9525d7109a022993856daee3cd0daead223c3a20fb6c6ac7a2c33f67a",
+      "before_teaching_fingerprint": "85ad25aafb35dcf0f43784dbc6c1535a30c240bc1d136d82652eee96ae1c427a",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Explain this variant noradrenaline stereoisomerism from the chiral carbon, without requiring amine chemistry. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s19-41-q8-e-i",
+      "material_fingerprint": "2f9cd3efade9b7f7088d40e0a2f9a4ee611faf7dfce2ca2d0e75c1ce34359a41",
+      "before_teaching_fingerprint": "5b480de0a6f486ff5c797668c403c2817bd8c22ce155400f224e1441d70c0446",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Define a chiral centre as a carbon bonded to four different groups; no separate NMR result is needed. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s19-42-q7-c",
+      "material_fingerprint": "6a5c91dc75f34f19cc3a26ea6c0874a2ff476dd0dc0799914d25cfd7bf8fda36",
+      "before_teaching_fingerprint": "772bbd053d5479923e6f1e226e88d4bafc1440f24c666d65bd67fca9633552e0",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Draw the alanine three-dimensional non-superimposable mirror-image pair from the given structural formula. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s19-43-q8-e-i",
+      "material_fingerprint": "e5ff539c1d669f9366d7f2d439f511b9b509203bcc66a8d21d75b4dc3876f0af",
+      "before_teaching_fingerprint": "ebfc45866ad442a1e887c799b84ab2fd2f78a5e4bede46bfb69230532e489194",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Define a chiral centre in this variant, independently of the preceding structure-analysis questions. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-m20-42-q4-a-ii",
+      "material_fingerprint": "ea64fa732b43f45530514efee6982196c24cabbc6fa9845d391fe4a70e8d5c4e",
+      "before_teaching_fingerprint": "ccf1c529a931092ebe1d317add81d6c65c81123c02b824b9705428c79e97c754",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Count chiral carbons on the supplied F structure; the surrounding amide topic does not make hydrolysis knowledge necessary for this leaf. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-m20-42-q6-c-i",
+      "material_fingerprint": "a3a1e8ee6e226584b132ae476fef51e98304472c4ad13f828e600891cb1c9082",
+      "before_teaching_fingerprint": "de36cc8efe8701521db97d3405509df1604cd83e0b2c0f37ca378ebed3f9fcc3",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Draw and name the valine optical pair using the supplied R abbreviation. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-w20-41-q10-b-ii",
+      "material_fingerprint": "3e6614326b5979254e134e0c739991d47d32c751f0c2dc56f2bf385fbad0d055",
+      "before_teaching_fingerprint": "d7cfd4ca9c7545c9d279d10c47752834a7e5f17cec884c6f6593f100c87a2c60",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Draw and name the two 2-aminopropanoic-acid optical isomers; no polymerisation knowledge is needed. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-w20-43-q10-b-ii",
+      "material_fingerprint": "e8dc2ddd8cc3881af7c973ec8a62e63761c81db7233e13299787a65583c24ae2",
+      "before_teaching_fingerprint": "e52c02b224ade392a5d63a28494be3bb38c10a780b4084468eaaa61a20a5f91c",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Draw and name this variant 2-aminopropanoic-acid optical pair without requiring polypeptide chemistry. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-m21-42-q6-c",
+      "material_fingerprint": "d866dddd90898a7919c03ec557d60b6e166800d1d217ace649cc507d4c6c8536",
+      "before_teaching_fingerprint": "956630049e31ce754ab8dc4e162a60935842748da9aab2f28378dab27da0d100",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Complete the other two stereoisomer diagrams of the supplied dihydroxydicarboxylic-acid product; the oxidation and product constitution are already given. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-m21-42-q7-c-vii",
+      "material_fingerprint": "878fe1659022354b3939a221c8737b75f97758920f415ed095e720047552eeab",
+      "before_teaching_fingerprint": "c936a049edbd965b87ab840de0295820fddd3892d661f24b7990e1836a2eb955",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Mark the chiral centre on the provided proline structure, without requiring an amine reaction. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s21-41-q7-c-i",
+      "material_fingerprint": "05e689e820e66e0eec91c688367a8792b9f8dfcd023cb121d4afd4d5222ac3fa",
+      "before_teaching_fingerprint": "040e856fb4ee06c675b8faa8c106a339e55d9432daed54e7ff99f97b844440f7",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Mark the chiral centres in the supplied glutathione structure; amide hydrolysis is not asked here. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s21-43-q7-c-i",
+      "material_fingerprint": "11d94211c4d4a4ecc1a084ad69a108e816eda6fae325e973087c77e3c44fff78",
+      "before_teaching_fingerprint": "f63742e19e27c3370613a4ef130bb02bd9d334c0096a1dbcb8cb0a20d837c95a",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Mark the chiral centres in this variant glutathione structure; the peptide context is supplied material. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-w21-42-q8-a",
+      "material_fingerprint": "bf2eb0892c8b19f3d53a787fa39af69b712c7594943b79be355661c4f33d74ef",
+      "before_teaching_fingerprint": "3f78a3ec5bdc2e581e7604b76b2f3b253524939d84390ebc2311b5b85d6d2528",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Draw the two alanine optical isomers using three-dimensional bonds. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-m22-42-q4-a-ii",
+      "material_fingerprint": "84ef8e0a8b3a07e8697b79d2c2f170989f2ad01fc4b1bd2013c5fd7fa9e9ef49",
+      "before_teaching_fingerprint": "6f3500d08cbeaab0b419cba18de44a472d4693fdcbd8fc8e39c89fdf5a80470f",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Count the chiral centres in the supplied aromatic derivatives F and J; no benzene reaction is required for this leaf. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-m22-42-q5-b-iii",
+      "material_fingerprint": "4fd60f3f43edcbc6ca849cff7107f4a411071496ff12b6488e278135d31e1774",
+      "before_teaching_fingerprint": "a95c3cb58da3a8eeebeeae56c28bca3a46b472bb39bae05efda697d2a29b5298",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Draw the other three-dimensional alanine enantiomer from the provided first enantiomer. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s22-41-q6-a",
+      "material_fingerprint": "cee6dc5fd57276dada7db3cdcd0a38e95c774b9fc537d63e0c7265ca5e1da38a",
+      "before_teaching_fingerprint": "2aa3efa45b44f8563d7fb5287f5856eade85dd05d104bdb443cad4e3fa97185d",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Define a racemic mixture in the amino-acid context; the definition is a stereochemistry task rather than an amine reaction. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s22-42-q7-c-i",
+      "material_fingerprint": "fec43e7697e8930f5727d719c6148f268d731dfe282ed3a5cce956f0b2deeff3",
+      "before_teaching_fingerprint": "630ee9804f185078a7b024ba086cd88e383711e1afd8af60a25f56632e875181",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Count chiral carbons in the supplied cortisone structure, independently of the earlier NMR tasks. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s22-42-q7-c-ii",
+      "material_fingerprint": "48ac89ca1f455d898105c8dd76dfea6f3eac58dcc1dd86460d7cc8c4f6b4d856",
+      "before_teaching_fingerprint": "0a1ea55f3bc54b0f5819beba308d397e685109ef2d95584c9daecb62122d1fe2",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.carbonyl-reduction",
+        "synthesis.single-step"
+      ],
+      "reason": "Infer cortisone product formula after the supplied ketone groups undergo NaBH4 reduction to alcohols; no amide group is reduced. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s22-42-q7-c-iii",
+      "material_fingerprint": "6fee39bfc66802b6ce168944abae7e8e144566f3d8c9017399f66bc643465801",
+      "before_teaching_fingerprint": "c3a3e6301f5b96735158aa41c8df9350eb876c77da9fda3add0640be75dac03c",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Explain optical activity of cortisone; keep the exact official rubric and do not substitute a generated definition. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s22-43-q6-a",
+      "material_fingerprint": "e68d37a3fa86b2e86f316c2f5eb7310ccccb1707f23a0d87813015d3c5d2c63b",
+      "before_teaching_fingerprint": "ebd3b738bdb61272dc1e18402c254e65ae11af56953b55c2325e98b76929125a",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Define the racemic mixture in this variant; no independent amino-acid chemistry requirement is introduced. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-w22-41-q7-a-i",
+      "material_fingerprint": "2efc5d14bc0568895d0145f5b3ec43ed40849e662f950e13f28ece58135a6c03",
+      "before_teaching_fingerprint": "2e5c573ab89be962d215036cc5c9ce25809233b80c6d44ec669464210f4113b9",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Identify all chiral carbons of supplied organic amine P; the tested concept is stereochemistry, not an amine transformation. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-w22-41-q7-a-ii",
+      "material_fingerprint": "1c0c9d244ff2cba7bbfeb163ef5d40d1a8e706ac1cd6530001582e6ac21a5c4d",
+      "before_teaching_fingerprint": "48b4f40cd41546352161a106681b05203c201d3246ddc44bb8e3a451f22ea11a",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Compare equal-and-opposite rotations produced by equal-concentration pure organic enantiomers. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-w22-42-q8-a",
+      "material_fingerprint": "44f21f7cbe4ff78f7c377440fc2ff60a4b4e103cc3b531464bde07b117127a61",
+      "before_teaching_fingerprint": "3aa5e2df170fe67feb65502c5ca335cb9efdd2d0a57c5b22a0d3b6f2e99d6265",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Mark chiral carbons on the supplied five ketone structures; do not import the separate following NMR requirements into this leaf. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-w22-43-q7-a-i",
+      "material_fingerprint": "51a248c7622f78694d99717a5355813feef24d97d23b189b4690cf78b53e2c58",
+      "before_teaching_fingerprint": "cb2b0f31fab56d6a3c779ce164a872b6935eed9f502add16f2cfef5ce0365850",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Identify all chiral carbons on this variant supplied organic P structure. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-w22-43-q7-a-ii",
+      "material_fingerprint": "deb3440ef884fdbf59070adcf70515cb1d723d164cc612e2a4f4569d0b0934d2",
+      "before_teaching_fingerprint": "8d8beb9276b3a683635f35e184c53a81e55cadc95ff5c8103a64895349c96062",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Compare equal-and-opposite optical rotations for this variant organic enantiomer pair. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s23-41-q6-a-ii",
+      "material_fingerprint": "997301a521e0100a6b6312015c567f6fb3652cd4eb9836741dbb58b4fb42e94d",
+      "before_teaching_fingerprint": "a958feaa1caddf5c99362a61e2bc063e7bac5c845e33956caf71ca96b6f7bd0d",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Draw and name the organic optical pair of supplied H; the amino-acid functional groups are background here. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s23-43-q6-a-ii",
+      "material_fingerprint": "7c487ff052563487b509495a62dc48cd32a403f43eb04495165267674efabbb0",
+      "before_teaching_fingerprint": "73ae4e76c6118bcde905054d4644b8d2850d95a95974be05cfe5de290408ae6d",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Draw and name this variant organic H optical pair, retaining the existing independently measured structures and rubric. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s24-41-q8-a-i",
+      "material_fingerprint": "abdca9ce3bb3df23afd3c954d113b5f72c88f0d411ed4496205dd0011a7cf300",
+      "before_teaching_fingerprint": "e4c0f2d2c739ae64fd0dfc1c1487781d2658c69c268936ee0f7705e63a8150b0",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Count chiral carbons in supplied neotame; no peptide cleavage or amide reaction is needed. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s24-43-q8-a-i",
+      "material_fingerprint": "b47be99db73e28a08bea90bbd57c50d194591f528a459c7ab262dce1224e63f5",
+      "before_teaching_fingerprint": "86e8dbce20bc62cba2580e9458746c14e871f98d19b894ff96acadb35e7c28f5",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Count chiral carbons in this variant supplied neotame; retain its unresolved physical-source gate. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s25-42-q7-a",
+      "material_fingerprint": "bb184b20f2254b77d4480ba04574559d4df223959e928a0ff418bd36e0652809",
+      "before_teaching_fingerprint": "f24c3ea1c590414c1ca5647243f4cc68ac39998ce165c58c6436503b0267b85c",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Define enantiomers for the supplied 2-aminobutane pair while preserving the printed official marking row. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-w25-42-q7-a",
+      "material_fingerprint": "977ae3e5722ab94ac0b72d033aaef939fb6fac801541acce8ca6fab7419ef6dd",
+      "before_teaching_fingerprint": "e431348c9ee157a25ba0d4d7814d0060253ebc3dc609bce0b433c48b4c968a89",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Identify the chiral organic carbonyl isomer and draw its two three-dimensional forms; a separate NMR analysis is not asked. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-w25-42-q8-g-i",
+      "material_fingerprint": "5d03b12c9e18aa31ea4d1c7a37d7563433b395263a79100a9c15e4cef75de730",
+      "before_teaching_fingerprint": "6b8b79e56ed9a6b74ff0d9a02fc9c100d8bafea8f56541d2a0a27aac28ee69bb",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Compare equal-concentration organic optical forms through their rotations of plane-polarised light. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-w25-42-q8-g-ii",
+      "material_fingerprint": "2d2da2ce3787f6cb759e613292d2e420791e94e7ee71b02a25a661ac61fa615d",
+      "before_teaching_fingerprint": "d652b13285bcbb970ce6a6b4d0fec6847f9101deb65a03acdf3feddcd714ddaf",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Name the equal-amount mixture of the organic optically active pair as a racemic mixture. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-m26-42-q6-c-ii",
+      "material_fingerprint": "efd0e86108d9355123b38b53e334bb42c068b4e8fe0113a648c5017058ba408b",
+      "before_teaching_fingerprint": "b8e91ca54ca6fc6794af9c284ac901a0ea1baa67b81b91e1b60b5ddb8d3e887c",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Draw enantiomers of the supplied organic Z anion; this is not drawing coordination-complex isomers and does not clear missing-page/source issues. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s26-41-q9-a",
+      "material_fingerprint": "cc74492ae28b200d92df4280dc9de462a87c4913becb83b15097c569ef345291",
+      "before_teaching_fingerprint": "24a7c3bc90387a989a5c2c8b3a6695ceb046caba92226d3afc976a95d36ea776",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Draw and name the optical pair of supplied amino acid P and geometrical pair of Q; no amino-acid reaction is required. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s26-43-q9-a",
+      "material_fingerprint": "216d5adf33cf9b9916c053b53ecd01a46a01bd85613a0840bb3bfb19face3f54",
+      "before_teaching_fingerprint": "ce7decae74c0739edf14068a0854f0cac5f977b820f7560aadb74be7e1a026dd",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Draw and name this variant amino-acid optical and geometrical pairs using the complete given student templates. Reinterpret the existing source-bound task/context/MS judgment under the teacher-confirmed A2 chapter 11 rule. The source, scoring and coordinates are unchanged; all non-classification gates remain in force."
+    },
+    {
+      "question_id": "cie-9701-s19-41-q8-e-ii",
+      "material_fingerprint": "d74432774128f1169ecde85e447f25fb41210c89af108705d49e9dc442ac90d9",
+      "before_teaching_fingerprint": "92840cb2f6ae1cc59fae27f1954548b419e2294725b27438631f7352c6330e04",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Infer a chiral carboxylic-acid structure from the explicitly supplied C5H10O2 formula and chiral-centre condition; neither an earlier spectrum nor its interpretation is required. The official row supplies the corresponding branched acid. Apply the teacher-confirmed organic-stereochemistry chapter 11 rule without changing material or scoring."
+    },
+    {
+      "question_id": "cie-9701-s19-43-q8-e-ii",
+      "material_fingerprint": "de23c68cf3065e2bad8b8168d8e5f642326ae44b5d96cf4dab9d86e038309dde",
+      "before_teaching_fingerprint": "baf5061435071a71bdf4d77fc464e82745bda3dcae6aedaa0cc45f77b0878c34",
+      "required_chapters": [
+        11
+      ],
+      "knowledge_tags": [
+        "organic.stereochemistry"
+      ],
+      "reason": "Infer a chiral carboxylic-acid structure from the explicitly supplied C5H10O2 formula and chiral-centre condition; neither an earlier spectrum nor its interpretation is required. The official row supplies the corresponding branched acid. Apply the teacher-confirmed organic-stereochemistry chapter 11 rule without changing material or scoring."
+    }
+  ]
+}

@@ -53,3 +53,13 @@ class PromptTests(unittest.TestCase):
         self.assertEqual(self.parse('第3章 5个小问',course='A2')['topics'],['a2-ch03'])
         self.assertEqual(self.parse('AS 第3章',course='A2')['topics'],['ch03'])
         self.assertEqual(self.parse('A2 pH buffer')['topics'],['a2-ch04'])
+
+    def test_confirmed_organic_methods_do_not_move_coordination_stereoisomers(self):
+        for description in ['A2 有机手性', 'A2 stereoisomers', 'A2 enantiomers', 'A2 外消旋',
+                            'A2 Diels-Alder', 'A2 臭氧化', 'A2 醛酮还原', 'A2 NaBH4还原酮']:
+            self.assertEqual(self.parse(description)['topics'], ['a2-ch11'])
+        self.assertEqual(self.parse('A2 配合物光学异构')['topics'], ['a2-ch06'])
+        self.assertEqual(self.parse('A2 complex stereoisomers')['topics'], ['a2-ch06'])
+        self.assertEqual(self.parse('A2 酰胺还原')['topics'], ['a2-ch09'])
+        self.assertNotIn('a2-ch11', self.parse('A2 NaBH4')['topics'])
+        self.assertEqual(self.parse('AS 手性')['topics'], ['ch13'])

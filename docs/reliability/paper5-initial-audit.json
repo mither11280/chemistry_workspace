@@ -1,0 +1,60 @@
+{
+  "status": "filename-only-initial-audit-not-registered-or-cut",
+  "filename_pairs": 63,
+  "by_year": {
+    "2019": 7,
+    "2024": 7,
+    "2022": 7,
+    "2026": 5,
+    "2020": 7,
+    "2018": 7,
+    "2021": 7,
+    "2025": 9,
+    "2023": 7
+  },
+  "variant_numbers": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "unpaired": [],
+  "examples": [
+    {
+      "filename": "Cambridge_AL_9701-52_2018_March_QP.pdf",
+      "pages": 12,
+      "table_mentions": 0,
+      "graph_mentions": 3,
+      "cover_component": "9701/52",
+      "status": "cover-and-layout-initial-reading-only",
+      "sha256": "22fc26697e911cf448bea62b34e5837507bd322e072ae8a3f8655415ebecdd73"
+    },
+    {
+      "filename": "9701_s23_qp_51.pdf",
+      "pages": 16,
+      "table_mentions": 8,
+      "graph_mentions": 9,
+      "cover_component": "9701/51",
+      "status": "cover-and-layout-initial-reading-only",
+      "sha256": "a6e48d2c16cfca9cdacfdd61f39a97cb0492d384f50c9c70a04643a22cbd86df"
+    },
+    {
+      "filename": "9701_s26_qp_52.pdf",
+      "pages": 12,
+      "table_mentions": 9,
+      "graph_mentions": 4,
+      "cover_component": "9701/52",
+      "status": "cover-and-layout-initial-reading-only",
+      "sha256": "8b9fef3331fb531dd701a14e2b1584cef8fac5369805abf6034c6db90b01f252"
+    },
+    {
+      "filename": "9701_s26_qp_54.pdf",
+      "pages": 12,
+      "table_mentions": 10,
+      "graph_mentions": 4,
+      "cover_component": "9701/54",
+      "status": "cover-and-layout-initial-reading-only",
+      "sha256": "742b39ee494f513445866a7623ba8af552340f10585b9339b93f0cb9654fd1ec"
+    }
+  ]
+}

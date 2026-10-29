@@ -7,7 +7,7 @@ sys.path.insert(0,str(ROOT/'app'))
 from bank.catalog import Catalog
 from bank.format import write_json,read_json
 from bank.teaching import extension
-from bank.teaching.taxonomy import BANK_ID,TAXONOMY_ID,A2_TAXONOMY_ID,topics
+from bank.teaching.taxonomy import BANK_ID,TAXONOMY_ID,A2_LEGACY_TAXONOMY_ID,topics
 
 class ExtensionTests(unittest.TestCase):
     def setUp(self):
@@ -24,7 +24,7 @@ class ExtensionTests(unittest.TestCase):
         self.catalog.rebuild()
         self.new=copy.deepcopy(self.index);self.new.update(revision='v051-synthetic',topics=topics()+topics('A2'))
         a2=copy.deepcopy(self.new['questions'][0]);a2.update(question_id='fixture-a2',paper=4,qualification='A2',topics=['a2-ch07'])
-        a2['metadata']['teaching'].update(taxonomy_id=A2_TAXONOMY_ID,primary_chapter=7,required_chapters=[7],parent_question_id='fixture-a2')
+        a2['metadata']['teaching'].update(taxonomy_id=A2_LEGACY_TAXONOMY_ID,primary_chapter=7,required_chapters=[7],parent_question_id='fixture-a2')
         self.new['questions'].append(a2)
     def tearDown(self):self.temp.cleanup()
     def activate_old(self,revision=None):
@@ -105,6 +105,35 @@ class ExtensionTests(unittest.TestCase):
         build_package(package,target,self.manifest,self.new,self.manifest,self.root/'schemas','A2 synthetic index',minimum_app_version='0.5.1')
         with patch('bank.updates.READER_VERSION',(0,5,0)):
             with self.assertRaisesRegex(DataError,'更新版本'):inspect_package(package,self.root/'schemas')
+    def test_new_reader_exact_asset_supplement_and_repeat_are_version_independent(self):
+        from bank.updates import build_package,install_package,inspect_package,pointer_path
+        from bank.format import DataError
+        catalog=self.launch_new();target=copy.deepcopy(self.new);target['revision']+='.assets.2'
+        files={s['source_id']:self.root/'fixture-input'/s['filename'] for s in self.manifest['sources']}
+        rights={'redistribution_authorized':True,'statement':'Original authored synthetic fixtures','sha256':[s['sha256'] for s in self.manifest['sources']]}
+        first=self.root/'new-index.qbank';second=self.root/'new-assets.qbank'
+        build_package(first,target,self.manifest,self.new,self.manifest,self.root/'schemas','Original new reader fixture',minimum_app_version='0.6.0')
+        build_package(second,target,self.manifest,self.new,self.manifest,self.root/'schemas','Original additional assets',source_files=files,authorization=rights,minimum_app_version='0.6.0')
+        with patch('bank.updates.READER_VERSION',(0,5,1)):
+            with self.assertRaisesRegex(DataError,'更新版本'):inspect_package(first,self.root/'schemas')
+        install_package(catalog,first);before=pointer_path(catalog).read_bytes()
+        self.assertEqual(install_package(catalog,second)['added_source_files'],2)
+        self.assertTrue(install_package(catalog,second)['already_installed'])
+        self.assertEqual(pointer_path(catalog).read_bytes(),before);self.assert_preserved(catalog)
+    def test_known_a2_release_is_backed_up_before_bundled_repairs(self):
+        old=copy.deepcopy(self.new);old['revision']='v051-authored'
+        folder=self.root/'data/bank-updates/generations/previous'
+        write_json(folder/'question-index.json',old);write_json(folder/'source-manifest.json',self.manifest)
+        write_json(self.root/'data/bank-updates/current.json',{'generation':'generations/previous','revision':old['revision']})
+        self.new['revision']='v060-authored'
+        self.new['questions'][-1]['metadata']['teaching'].update(required_chapters=[11],primary_chapter=11)
+        self.new['questions'][-1]['topics']=['a2-ch11']
+        with patch.dict(extension.KNOWN_RELEASES,{old['revision']:(extension.digest(old),extension.digest(self.manifest))}):
+            catalog=self.launch_new()
+        self.assertEqual(catalog.question('fixture-a2')['topics'],['a2-ch11'])
+        self.assertFalse((self.root/'data/bank-updates/current.json').exists())
+        self.assertTrue(any((self.root/'data/bundled-extension-backups').glob('*/active-index/question-index.json')))
+        self.assert_preserved(catalog)
     def test_missing_generation_marker_does_not_archive_v050_work(self):
         from bank.teaching.generation import prepare
         write_json(self.root/'indexes/question-index.json',self.new)

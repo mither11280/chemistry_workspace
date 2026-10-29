@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0.0",
+  "policy_id": "a2-ch11-selected-single-step-methods-2026-10-29",
+  "confirmation_basis": "Direct teacher confirmation in this task: extend chapter 11 to single-step ozonolysis and Diels-Alder/cycloaddition while retaining single-step tags.",
+  "questions": [
+    {
+      "question_id": "cie-9701-s24-41-q9-c-i",
+      "fingerprint": "c961daa0e226f9aea9ace24e8cb6c63133c45f23d943d41ad4a675863f6efffc",
+      "knowledge_tags": [
+        "organic.diels-alder",
+        "synthesis.single-step"
+      ],
+      "reason": "Complete three curved arrows for the supplied diene/alkene Diels-Alder mechanism, with both official alternative arrow diagrams retained. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate."
+    },
+    {
+      "question_id": "cie-9701-s24-41-q9-c-ii",
+      "fingerprint": "93d3a9a260120cd6cf731767cfacb23f6199d965c286adb618647aeab9ae84d2",
+      "knowledge_tags": [
+        "organic.diels-alder",
+        "synthesis.single-step"
+      ],
+      "reason": "Draw the bicyclic Diels-Alder product from the displayed diene and methylcyclopentene, retaining the blank product box and official structure. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate."
+    },
+    {
+      "question_id": "cie-9701-s24-43-q9-c-i",
+      "fingerprint": "12412093c8d2c479496710363b0ef9ec8f170076db84c0e3d0c0a923bc890a11",
+      "knowledge_tags": [
+        "organic.diels-alder",
+        "synthesis.single-step"
+      ],
+      "reason": "Complete three curved arrows for the supplied diene/alkene Diels-Alder mechanism, with both official alternative arrow diagrams retained. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate."
+    },
+    {
+      "question_id": "cie-9701-s24-43-q9-c-ii",
+      "fingerprint": "61238aaca050911b332d63a0dbe3af7cc2a80a39f67e9fe7f776c60f41809531",
+      "knowledge_tags": [
+        "organic.diels-alder",
+        "synthesis.single-step"
+      ],
+      "reason": "Draw the bicyclic Diels-Alder product from the displayed diene and methylcyclopentene, retaining the blank product box and official structure. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate."
+    },
+    {
+      "question_id": "cie-9701-w25-41-q9-d-i",
+      "fingerprint": "82481713a55b0a5eba64e52984e895187d73348118e947d406e8e8b5294a5c0d",
+      "knowledge_tags": [
+        "organic.ozonolysis",
+        "synthesis.single-step"
+      ],
+      "reason": "Complete the three curved arrows forming the ozonide intermediate, with the full official three-arrow scoring diagram. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate."
+    },
+    {
+      "question_id": "cie-9701-w25-41-q9-d-ii",
+      "fingerprint": "dd2323a3db0440b55a96cb3e64f379bfacb57bbad7ff66942c0d2f7025ab660f",
+      "knowledge_tags": [
+        "organic.ozonolysis",
+        "synthesis.single-step"
+      ],
+      "reason": "Infer the original cyclic alkene from the supplied dicarbonyl product and the given ozone cleavage rule. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate."
+    },
+    {
+      "question_id": "cie-9701-w25-43-q9-d-i",
+      "fingerprint": "ad699792c99713570330356886a6c91731fc173079b566b9557e0f23d8c8b72f",
+      "knowledge_tags": [
+        "organic.ozonolysis",
+        "synthesis.single-step"
+      ],
+      "reason": "Complete the three curved arrows forming the ozonide intermediate, with the full official three-arrow scoring diagram. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate."
+    },
+    {
+      "question_id": "cie-9701-w25-43-q9-d-ii",
+      "fingerprint": "a7db540c671567b17d7a794ee58e548a560e7f6bafff779bfd18413eb9e5cc1e",
+      "knowledge_tags": [
+        "organic.ozonolysis",
+        "synthesis.single-step"
+      ],
+      "reason": "Infer the original cyclic alkene from the supplied dicarbonyl product and the given ozone cleavage rule. The teacher explicitly extended chapter 11 to these selected single-step synthesis methods on 2026-10-29; this changes curriculum scope, not the source material or any unresolved source/crop gate."
+    }
+  ]
+}

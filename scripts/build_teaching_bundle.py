@@ -11,7 +11,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'app'))
 from bank.format import read_json,write_json
 from bank.teaching.taxonomy import BANK_ID
-from bank.updates import build_package
+from bank.updates import build_package,required_reader
 
 
 def main():
@@ -32,9 +32,10 @@ def main():
         previous={s['source_id']:s['sha256'] for s in read_json(a.previous_manifest)['sources']}
         files={s['source_id']:files[s['source_id']] for s in manifest['sources'] if previous.get(s['source_id'])!=s['sha256']}
     index=copy.deepcopy(base);index['revision']=a.revision or base['revision']+'.assets.1'
+    minimum='.'.join(map(str,max(required_reader(index),(0,5,1) if any(q['paper']==4 for q in index['questions']) else (0,5,0))))
     result=build_package(a.output,index,manifest,base,manifest,ROOT/'schemas',
                          '完整离线题库资料包：安装已登记的原卷与评分标准。保持当前教学代际及稳定题目ID。',
-                         source_files=files,authorization=read_json(a.authorization),minimum_app_version='0.5.1' if any(q['paper']==4 for q in index['questions']) else '0.5.0')
+                         source_files=files,authorization=read_json(a.authorization),minimum_app_version=minimum)
     result['path']=a.output.name
     result.update(bank_id=BANK_ID,base_revision=base['revision'],questions=len(index['questions']),
                   ready=sum(q['metadata']['teaching']['status']=='ready' for q in index['questions']),
